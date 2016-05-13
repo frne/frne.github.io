@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>News on Frank Neff</title>
-    <link>https://frne.githob.io/tags/news/</link>
+    <link>https://frne.github.io/tags/news/</link>
     <description>Recent content in News on Frank Neff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 12 May 2016 14:38:12 +0200</lastBuildDate>
-    <atom:link href="https://frne.githob.io/tags/news/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://frne.github.io/tags/news/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>New Blog</title>
-      <link>https://frne.githob.io/post/2016-05-12-new-blog/</link>
+      <link>https://frne.github.io/post/2016-05-12-new-blog/</link>
       <pubDate>Thu, 12 May 2016 14:38:12 +0200</pubDate>
       
-      <guid>https://frne.githob.io/post/2016-05-12-new-blog/</guid>
+      <guid>https://frne.github.io/post/2016-05-12-new-blog/</guid>
       <description>&lt;p&gt;You may have noticed, that I had not much time to blog about something in the past months&amp;hellip;
 One thing was, that we all need money, so I had to work very much. And as some of you know, I&amp;rsquo;m also studying in the evenings.&lt;/p&gt;
 

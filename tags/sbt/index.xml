@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sbt on Frank Neff</title>
-    <link>https://frne.githob.io/tags/sbt/</link>
+    <link>https://frne.github.io/tags/sbt/</link>
     <description>Recent content in Sbt on Frank Neff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 15 Apr 2016 22:15:28 +0200</lastBuildDate>
-    <atom:link href="https://frne.githob.io/tags/sbt/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://frne.github.io/tags/sbt/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Scala Compiler Tuning</title>
-      <link>https://frne.githob.io/post/2016-04-15-scala-compiler-tuning/</link>
+      <link>https://frne.github.io/post/2016-04-15-scala-compiler-tuning/</link>
       <pubDate>Fri, 15 Apr 2016 22:15:28 +0200</pubDate>
       
-      <guid>https://frne.githob.io/post/2016-04-15-scala-compiler-tuning/</guid>
+      <guid>https://frne.github.io/post/2016-04-15-scala-compiler-tuning/</guid>
       <description>
 
 &lt;p&gt;As my Scala projects go on, I want to share some compiler configuration and tricks with you, which I use on many
