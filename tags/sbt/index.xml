@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sbt on Frank Neff</title>
+    <link>https://frne.githob.com/tags/sbt/</link>
+    <description>Recent content in Sbt on Frank Neff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 15 Apr 2016 22:15:28 +0200</lastBuildDate>
+    <atom:link href="https://frne.githob.com/tags/sbt/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Scala Compiler Tuning</title>
+      <link>https://frne.githob.com/post/2016-04-15-scala-compiler-tuning/</link>
+      <pubDate>Fri, 15 Apr 2016 22:15:28 +0200</pubDate>
+      
+      <guid>https://frne.githob.com/post/2016-04-15-scala-compiler-tuning/</guid>
+      <description>
+
+&lt;p&gt;As my Scala projects go on, I want to share some compiler configuration and tricks with you, which I use on many
+projects. Some tiny configuration options can greatly improve your code and warn you about things, you would probably
+never discover.&lt;/p&gt;
+
+&lt;p&gt;Basically, you can pass compiler options to &lt;code&gt;scalac&lt;/code&gt; using console arguments:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ scalac -deprecation -unchecked -Xlint something.scala
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you are using SBT, it&amp;rsquo;s even simpler&amp;hellip; You can just use the following configurations snippet in your &lt;code&gt;build.sbt&lt;/code&gt;
+file to add scala options:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-scala&#34;&gt;scalacOptions ++= Seq(&amp;quot;-deprecation&amp;quot;, &amp;quot;-unchecked&amp;quot;, &amp;quot;-Xlint&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;common-scalac-options:bbac817e5eba02df1c886c101512f63a&#34;&gt;Common Scalac Options&lt;/h2&gt;
+
+&lt;p&gt;There are some common options which I&amp;rsquo;d like to share with you. Most of them make it harder to compile &amp;ldquo;not that good&amp;rdquo;
+code or warn about certain conditions:&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Option&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;-deprecation&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Emit warning and location for usages of deprecated APIs.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;-feature&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Emit warning and location for usages of features that should be imported explicitly.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;-unchecked&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Enable additional warnings where generated code depends on assumptions.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;-Xfatal-warnings&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Fail the compilation if there are any warnings.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;-Xlint&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Enable recommended additional warnings.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;-Ywarn-adapted-arg&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Warn if an argument list is modified to match the receiver.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;-Ywarn-dead-code&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Warn when dead code is identified.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;-Ywarn-inaccessible&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Warn about inaccessible types in method signatures.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;-Ywarn-nullary-override&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Warn when non-nullary overrides nullary, e.g. def foo() over def foo.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;-Ywarn-numeric-widen&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Warn when numerics are widened.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;-Ywarn-value-discard&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Warn when non-Unit expression results are unused.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;-Ywarn-unused&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;arn when local and private vals, vars, defs, and types are unused.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;This is just a very small subset of available options for the Scala compiler. If you want to see all options available,
+just ask your scalac for it. To show all the options, just run &lt;code&gt;scalac -X&lt;/code&gt; or &lt;code&gt;scalac -Y&lt;/code&gt;. You can also just display
+the compiler help using &lt;code&gt;scalac -help&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Finally, my personal Scala options (as SBT settings) for most of the Scala projects I currently work on:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-scala&#34;&gt;// compiler tuning for the win - makes it harder to build schwurbl
+scalacOptions ++= Seq(
+  &amp;quot;-deprecation&amp;quot;,
+  &amp;quot;-feature&amp;quot;,
+  &amp;quot;-unchecked&amp;quot;,
+  &amp;quot;-Xfatal-warnings&amp;quot;,
+  &amp;quot;-Xlint&amp;quot;,
+  &amp;quot;-Ywarn-adapted-args&amp;quot;,
+  &amp;quot;-Ywarn-dead-code&amp;quot;,
+  &amp;quot;-Ywarn-inaccessible&amp;quot;,
+  &amp;quot;-Ywarn-nullary-override&amp;quot;,
+  &amp;quot;-Ywarn-numeric-widen&amp;quot;,
+  &amp;quot;-Ywarn-value-discard&amp;quot;,
+  &amp;quot;-Ywarn-unused&amp;quot;,
+)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Of course there are also such options for javac, the Java compiler. Just run &lt;code&gt;javac -help&lt;/code&gt; or &lt;code&gt;javac -X&lt;/code&gt;&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;As always, I really apreciate feedback of all kinds, or just send me your compiler configuration&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

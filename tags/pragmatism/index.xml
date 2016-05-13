@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pragmatism on Frank Neff</title>
+    <link>https://frne.githob.com/tags/pragmatism/</link>
+    <description>Recent content in Pragmatism on Frank Neff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 Apr 2015 13:09:32 +0200</lastBuildDate>
+    <atom:link href="https://frne.githob.com/tags/pragmatism/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>If pragmatism raises technical debt, call it oversimplification (rant)</title>
+      <link>https://frne.githob.com/post/2015-04-21-pragmatism-technical-dept-oversimplification/</link>
+      <pubDate>Tue, 21 Apr 2015 13:09:32 +0200</pubDate>
+      
+      <guid>https://frne.githob.com/post/2015-04-21-pragmatism-technical-dept-oversimplification/</guid>
+      <description>
+
+&lt;p&gt;The word &amp;ldquo;pragmatism&amp;rdquo; or &amp;ldquo;pragmatic&amp;rdquo; is, in my personal opinion, the most
+overrated word in agile development. Many people use this as a buzzword without
+knowing what it means. I hear people saying &amp;ldquo;He solved that complex problem in
+half an hour, he&amp;rsquo;s so pragmatic!&amp;rdquo; and think for myself &amp;ldquo;Yeah, but that &amp;lsquo;solution&amp;rsquo;
+probably causes other devs three times more effort than a sustainable solution
+would take.&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Okay, but that&amp;rsquo;s only my anger speaking. Let&amp;rsquo;s read a definition of pragmatism:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;a reasonable and logical way of doing things or of thinking about problems
+that is based on dealing with specific situations instead of on ideas and
+theories &amp;ndash; &lt;a href=&#34;http://www.merriam-webster.com/dictionary/pragmatism&#34;&gt;merriam-webster.com&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;a-reasonable-and-logical-way:c8c0a6e2091ac900913db647f6239752&#34;&gt;A Reasonable and Logical Way&lt;/h2&gt;
+
+&lt;p&gt;So even pragmatic solutions have to be reasonable and logical. I would ask so
+many people out there: &amp;ldquo;Is missing out documentation, tests and software design
+principles really a logical and resonable way of solving problems?&amp;rdquo; At least I
+don&amp;rsquo;t think so. Maybe if it&amp;rsquo;s only for a Executive Board presentation, you can
+rapidly build a prototype without having documentation or tests. But doing that,
+one has to take care that this prototype is not going life two weeks later.&lt;/p&gt;
+
+&lt;h2 id=&#34;based-on-dealing-with-specific-situations:c8c0a6e2091ac900913db647f6239752&#34;&gt;Based on Dealing with Specific Situations&lt;/h2&gt;
+
+&lt;p&gt;Of course, if there is a disaster case, you cannot think about
+the best way to build a solution for 2 days. What I am talking about are
+estimated, scheduled projects which are barely &amp;ldquo;fucked up&amp;rdquo; technically, because
+one wants to finish them fast or without thinking about it. In a second, or
+maybe third release, technical dept is appearing but because you have not
+documented nor tested, you cannot refactor. This is not pragmatism!&lt;/p&gt;
+
+&lt;p&gt;For specific situations or problems in development, there are often provided
+patterns or parts of solutions. Using those &amp;ldquo;best practices&amp;rdquo; is probably the
+quintessential of pragmatism. Building an over-simplified custom solution,
+because one doesn&amp;rsquo;t understand the best practice, is not.&lt;/p&gt;
+
+&lt;h2 id=&#34;instead-of-on-ideas-and-theories:c8c0a6e2091ac900913db647f6239752&#34;&gt;Instead of on Ideas and Theories&lt;/h2&gt;
+
+&lt;p&gt;There are many theoretical approaches in development. Let&amp;rsquo;s take the &lt;a href=&#34;http://martinfowler.com/eaaCatalog/&#34;&gt;Enterprise
+Design/Architecture Patterns&lt;/a&gt;
+(&lt;a href=&#34;http://www.amazon.de/Patterns-Elements-Reusable-Object-Oriented-Software/dp/0201633612&#34;&gt;Gang of Four&lt;/a&gt;)
+as an example. There were some people telling me, that they don&amp;rsquo;t use them,
+because this is theoretic and has nothing to do with pragmatic solutions. But if
+a &amp;ldquo;pragmatic solution&amp;rdquo; is the best way to deal with a specific situation, then
+I would highly recommend those patterns because the are very pragmatic.&lt;/p&gt;
+
+&lt;h2 id=&#34;finishing:c8c0a6e2091ac900913db647f6239752&#34;&gt;Finishing&amp;hellip;&lt;/h2&gt;
+
+&lt;p&gt;Many people use words like &amp;ldquo;pragmatism&amp;rdquo; or &amp;ldquo;best practice&amp;rdquo; as buzzwords but
+don&amp;rsquo;t understand what they mean. Therefore, please be aware that pragmatism does
+not mean laziness or oversimplifying a complex problem. It means &lt;strong&gt;thinking
+practical, but also logical and resonable&lt;/strong&gt;, so don&amp;rsquo;t misuse them.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Solr on Frank Neff</title>
+    <link>https://frne.githob.com/tags/solr/</link>
+    <description>Recent content in Solr on Frank Neff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 23 Jul 2015 18:05:12 +0200</lastBuildDate>
+    <atom:link href="https://frne.githob.com/tags/solr/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Understanding Stemmers (Natural Language Processing)</title>
+      <link>https://frne.githob.com/post/2015-07-23-understanding-stemmers-nlp/</link>
+      <pubDate>Thu, 23 Jul 2015 18:05:12 +0200</pubDate>
+      
+      <guid>https://frne.githob.com/post/2015-07-23-understanding-stemmers-nlp/</guid>
+      <description>
+
+&lt;p&gt;I am interested in NLP and have already some experience with Apache Solr. It&amp;rsquo;s time to dig a little in-deep regarding
+stemmers. First of all, I was looking for a general definition of what a stemmer is, and I found this one, which IMHO
+is quite good:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;stemmer &amp;mdash; an algorithm for removing inflectional and derivational endings in order to reduce word forms to a common stem&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;So what a stemmer does is nothing more, than converting words to their word stem. For example, the three
+words &lt;code&gt;developing, developer, development&lt;/code&gt; will be converted to &lt;code&gt;develop&lt;/code&gt;. Therefore, stemmers are often used
+as filters.&lt;/p&gt;
+
+&lt;p&gt;This can be very handy in different situaltions e.g. when writing to a fulltext search index like
+&lt;a href=&#34;http://lucene.apache.org/solr/&#34;&gt;SOLR&lt;/a&gt; or &lt;a href=&#34;https://www.elastic.co/products/elasticsearch&#34;&gt;Elasticsearch&lt;/a&gt;.
+There are plenty of different stemming algorithms out there. To use them in a project, some different things have to
+be concerned:&lt;/p&gt;
+
+&lt;h2 id=&#34;language:09f98e0855dbb36093dfceb2b16e2828&#34;&gt;Language&lt;/h2&gt;
+
+&lt;p&gt;Stemming is based on common patterns, so it works a bit different in English than e.g. in German. Some stemmers support
+a variety of languages, some are only available in English. I would not recommend to use a stemmer in another language
+than your content is, because it maybe works, but only maybe.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://wiki.apache.org/solr/AnalyzersTokenizersTokenFilters#Stemming&#34;&gt;Here&lt;/a&gt; is a list of different stemmers which can
+be used in Apache SOLR, including supported languages.&lt;/p&gt;
+
+&lt;h2 id=&#34;time-consumed:09f98e0855dbb36093dfceb2b16e2828&#34;&gt;Time consumed&lt;/h2&gt;
+
+&lt;p&gt;As with every algorithm, there are faster and slower ones. Depending on where they are used, performance could have a huge
+impact on success. Generally said: Slower does not necessarily mean more precise.&lt;/p&gt;
+
+&lt;h2 id=&#34;agressiveness:09f98e0855dbb36093dfceb2b16e2828&#34;&gt;Agressiveness&lt;/h2&gt;
+
+&lt;p&gt;Because a stemmer does not really &amp;ldquo;understand&amp;rdquo; the language of the content which it&amp;rsquo;s processing, it all depends on the
+patterns which are applied. The PorterStemmer for example removes word endings like &amp;ldquo;e&amp;rdquo;, &amp;ldquo;er&amp;rdquo; and &amp;ldquo;ing&amp;rdquo;.
+Therefore, the following conversion will be made:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;horse, horses &amp;gt; &lt;strong&gt;hors&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;develoment, developer, developing &amp;gt; &lt;strong&gt;develop&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Depending on the task to be done, this can be great or totally disfunctional. I would recommend to try out different
+stemming algorithms whith some edge-cases of specific domain and evaluating the result. For many stemmers, there is
+good documentation describing the agressiveness of the algorithm.&lt;/p&gt;
+
+&lt;h2 id=&#34;different-stemmers:09f98e0855dbb36093dfceb2b16e2828&#34;&gt;Different stemmers&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://tartarus.org/~martin/PorterStemmer/&#34;&gt;Porter&lt;/a&gt; (English)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://snowball.tartarus.org/algorithms/english/stemmer.html&#34;&gt;Porter 2&lt;/a&gt; (English)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://snowball.tartarus.org/&#34;&gt;Snowball&lt;/a&gt; (Multi Language)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://lexicalresearch.com/kstem-doc.txt&#34;&gt;KStem&lt;/a&gt; (English, less agressive then porter)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;usage-in-java:09f98e0855dbb36093dfceb2b16e2828&#34;&gt;Usage in Java&lt;/h2&gt;
+
+&lt;p&gt;For a recent project, I used some of the SOLR / Lucene filters in Java. Just a short example how they can be used:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;public class EnglishTokenizer implements TokenizerInterface {
+
+    @Override
+    public Collection&amp;lt;String&amp;gt; tokenize(String content) throws TokenizerException {
+        try {
+            // read content
+            StringReader inputText = new StringReader(content);
+            Map&amp;lt;String, String&amp;gt; tkargs = new HashMap&amp;lt;String, String&amp;gt;();
+            tkargs.put(&amp;quot;luceneMatchVersion&amp;quot;, &amp;quot;LUCENE_51&amp;quot;);
+
+            // char filter (html)
+            CharFilterFactory hcff = new HTMLStripCharFilterFactory(tkargs);
+            Reader strippedInput = hcff.create(inputText);
+
+            // tokenizer
+            TokenizerFactory tkf = new StandardTokenizerFactory(tkargs);
+            Tokenizer tkz = tkf.create();
+            tkz.setReader(inputText);
+
+            // stopwords filter
+            Map&amp;lt;String, String&amp;gt; stfargs = new HashMap&amp;lt;String, String&amp;gt;();
+            stfargs.put(&amp;quot;luceneMatchVersion&amp;quot;, &amp;quot;LUCENE_51&amp;quot;);
+            stfargs.put(&amp;quot;words&amp;quot;, &amp;quot;lucene/en/stopwords.txt&amp;quot;);
+            stfargs.put(&amp;quot;ignoreCase&amp;quot;, &amp;quot;true&amp;quot;);
+            StopFilterFactory stff = new StopFilterFactory(stfargs);
+            stff.inform(new ClasspathResourceLoader());
+            TokenStream stfts = stff.create(tkz);
+
+            // K stem filter
+            Map&amp;lt;String, String&amp;gt; ksffparam = new HashMap&amp;lt;String, String&amp;gt;();
+            KStemFilterFactory ksff = new KStemFilterFactory(ksffparam);
+            TokenStream ksts = ksff.create(stfts);
+
+            // synonyms filter
+            Map&amp;lt;String, String&amp;gt; syffargs = new HashMap&amp;lt;String, String&amp;gt;();
+            syffargs.put(&amp;quot;luceneMatchVersion&amp;quot;, &amp;quot;LUCENE_51&amp;quot;);
+            syffargs.put(&amp;quot;synonyms&amp;quot;, &amp;quot;lucene/en/synonyms.txt&amp;quot;);
+            syffargs.put(&amp;quot;ignoreCase&amp;quot;, &amp;quot;true&amp;quot;);
+            syffargs.put(&amp;quot;expand&amp;quot;, &amp;quot;false&amp;quot;);
+            SynonymFilterFactory syff = new SynonymFilterFactory(syffargs);
+            syff.inform(new ClasspathResourceLoader());
+            TokenStream syfts = syff.create(ksts);
+
+            // lower case filter
+            LowerCaseFilterFactory lcf = new LowerCaseFilterFactory(tkargs);
+            TokenStream ts = lcf.create(syfts);
+
+            // process token stream
+            ts.reset();
+
+            CharTermAttribute termAttrib = (CharTermAttribute) ts.getAttribute(CharTermAttribute.class);
+
+            Collection&amp;lt;String&amp;gt; tokens = new ArrayList&amp;lt;String&amp;gt;();
+            while (ts.incrementToken()) {
+                tokens.add(termAttrib.toString());
+            }
+
+            ts.end();
+            ts.close();
+
+            return tokens;
+        } catch (IOException e) {
+            throw new TokenizerException(e);
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In the above example, a set of filters is applied to a string to tokenize, filter (and stem) words. For stemming, the
+KStem filter is used. The filters are all from the package &lt;code&gt;org.apache.solr:solr-core:5.2.1&lt;/code&gt; which is available on
+the &lt;a href=&#34;http://mvnrepository.com/artifact/org.apache.solr/solr-core/5.2.1&#34;&gt;maven repository&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;tokeinzer-example:09f98e0855dbb36093dfceb2b16e2828&#34;&gt;Tokeinzer Example&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Content&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Java Developer - Zurich - financial markets - Salary negotiable depending on experience. A number of exciting Java
+opportunities exist to join a highly successful and growing provider&amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;Result (Tokens)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;java, development, zurich, financial, market, salary, negotiable, depend, experience, number, exciting, java,
+opportunity, exist, join, highly, successful, grow, provider&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;sources-more-information:09f98e0855dbb36093dfceb2b16e2828&#34;&gt;Sources / More Information&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://lexicalresearch.com/papers.html&#34;&gt;lexicalresearch.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://wiki.apache.org/solr/LanguageAnalysis&#34;&gt;Apache SOLR Wiki&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://snowball.tartarus.org/&#34;&gt;Snowball Project&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
