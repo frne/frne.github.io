@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Frank Neff</title>
-    <link>https://frne.githob.com/post/</link>
+    <link>https://frne.githob.io/post/</link>
     <description>Recent content in Posts on Frank Neff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 12 May 2016 14:38:12 +0200</lastBuildDate>
-    <atom:link href="https://frne.githob.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://frne.githob.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>New Blog</title>
-      <link>https://frne.githob.com/post/2016-05-12-new-blog/</link>
+      <link>https://frne.githob.io/post/2016-05-12-new-blog/</link>
       <pubDate>Thu, 12 May 2016 14:38:12 +0200</pubDate>
       
-      <guid>https://frne.githob.com/post/2016-05-12-new-blog/</guid>
+      <guid>https://frne.githob.io/post/2016-05-12-new-blog/</guid>
       <description>&lt;p&gt;You may have noticed, that I had not much time to blog about something in the past months&amp;hellip;
 One thing was, that we all need money, so I had to work very much. And as some of you know, I&amp;rsquo;m also studying in the evenings.&lt;/p&gt;
 
@@ -35,10 +35,10 @@ can find it on &lt;a href=&#34;https://frne.github.com&#34;&gt;frne.github.com&l
     
     <item>
       <title>Scala Compiler Tuning</title>
-      <link>https://frne.githob.com/post/2016-04-15-scala-compiler-tuning/</link>
+      <link>https://frne.githob.io/post/2016-04-15-scala-compiler-tuning/</link>
       <pubDate>Fri, 15 Apr 2016 22:15:28 +0200</pubDate>
       
-      <guid>https://frne.githob.com/post/2016-04-15-scala-compiler-tuning/</guid>
+      <guid>https://frne.githob.io/post/2016-04-15-scala-compiler-tuning/</guid>
       <description>
 
 &lt;p&gt;As my Scala projects go on, I want to share some compiler configuration and tricks with you, which I use on many
@@ -163,10 +163,10 @@ scalacOptions ++= Seq(
     
     <item>
       <title>Understanding Stemmers (Natural Language Processing)</title>
-      <link>https://frne.githob.com/post/2015-07-23-understanding-stemmers-nlp/</link>
+      <link>https://frne.githob.io/post/2015-07-23-understanding-stemmers-nlp/</link>
       <pubDate>Thu, 23 Jul 2015 18:05:12 +0200</pubDate>
       
-      <guid>https://frne.githob.com/post/2015-07-23-understanding-stemmers-nlp/</guid>
+      <guid>https://frne.githob.io/post/2015-07-23-understanding-stemmers-nlp/</guid>
       <description>
 
 &lt;p&gt;I am interested in NLP and have already some experience with Apache Solr. It&amp;rsquo;s time to dig a little in-deep regarding
@@ -329,10 +329,10 @@ opportunity, exist, join, highly, successful, grow, provider&lt;/p&gt;
     
     <item>
       <title>If pragmatism raises technical debt, call it oversimplification (rant)</title>
-      <link>https://frne.githob.com/post/2015-04-21-pragmatism-technical-dept-oversimplification/</link>
+      <link>https://frne.githob.io/post/2015-04-21-pragmatism-technical-dept-oversimplification/</link>
       <pubDate>Tue, 21 Apr 2015 13:09:32 +0200</pubDate>
       
-      <guid>https://frne.githob.com/post/2015-04-21-pragmatism-technical-dept-oversimplification/</guid>
+      <guid>https://frne.githob.io/post/2015-04-21-pragmatism-technical-dept-oversimplification/</guid>
       <description>
 
 &lt;p&gt;The word &amp;ldquo;pragmatism&amp;rdquo; or &amp;ldquo;pragmatic&amp;rdquo; is, in my personal opinion, the most

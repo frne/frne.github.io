@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Java on Frank Neff</title>
-    <link>https://frne.githob.com/tags/java/</link>
+    <link>https://frne.githob.io/tags/java/</link>
     <description>Recent content in Java on Frank Neff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 23 Jul 2015 18:05:12 +0200</lastBuildDate>
-    <atom:link href="https://frne.githob.com/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://frne.githob.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Understanding Stemmers (Natural Language Processing)</title>
-      <link>https://frne.githob.com/post/2015-07-23-understanding-stemmers-nlp/</link>
+      <link>https://frne.githob.io/post/2015-07-23-understanding-stemmers-nlp/</link>
       <pubDate>Thu, 23 Jul 2015 18:05:12 +0200</pubDate>
       
-      <guid>https://frne.githob.com/post/2015-07-23-understanding-stemmers-nlp/</guid>
+      <guid>https://frne.githob.io/post/2015-07-23-understanding-stemmers-nlp/</guid>
       <description>
 
 &lt;p&gt;I am interested in NLP and have already some experience with Apache Solr. It&amp;rsquo;s time to dig a little in-deep regarding
