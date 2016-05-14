@@ -7,27 +7,28 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-        <meta property="og:title" content=" Understanding Stemmers (Natural Language Processing) &middot;  Frank Neff" />
+        <meta property="og:title" content=" Play Framework Actor Pooling with Guice (Java) &middot;  Frank Neff" />
         <meta property="og:site_name" content="Frank Neff" />
-        <meta property="og:url" content="https://frne.github.io/post/2015-07-23-understanding-stemmers-nlp/" />
+        <meta property="og:url" content="https://frne.github.io/post/2016-05-02-play-guice-actor-pooling/" />
 
     
         <meta property="og:type" content="article" />
-        <meta property="og:article:published_time" content="2015-07-23T18:05:12&#43;02:00" />
+        <meta property="og:article:published_time" content="2016-05-02T23:11:01&#43;02:00" />
+        <meta property="og:article:tag" content="play" />
+        <meta property="og:article:tag" content="guice" />
+        <meta property="og:article:tag" content="akka" />
         <meta property="og:article:tag" content="java" />
-        <meta property="og:article:tag" content="nlp" />
-        <meta property="og:article:tag" content="solr" />
         
 
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@" />
         <meta name="twitter:creator" content="@" />
-        <meta name="twitter:title" content="Understanding Stemmers (Natural Language Processing)" />
+        <meta name="twitter:title" content="Play Framework Actor Pooling with Guice (Java)" />
         <meta name="twitter:description" content="" />
-        <meta name="twitter:url" content="https://frne.github.io/post/2015-07-23-understanding-stemmers-nlp/" />
+        <meta name="twitter:url" content="https://frne.github.io/post/2016-05-02-play-guice-actor-pooling/" />
     
 
-        <title> Understanding Stemmers (Natural Language Processing) &middot;  Frank Neff</title>
+        <title> Play Framework Actor Pooling with Guice (Java) &middot;  Frank Neff</title>
 
     
         <meta name="description" content="" />
@@ -46,21 +47,21 @@
     
 
     
-        <link rel="canonical" href="https://frne.github.io/post/2015-07-23-understanding-stemmers-nlp/" />
+        <link rel="canonical" href="https://frne.github.io/post/2016-05-02-play-guice-actor-pooling/" />
 
     
     <script type="application/ld+json">
     { 
         "@context": "http://schema.org",
         "@type": "Article",
-        "headline": "Understanding Stemmers (Natural Language Processing)",
+        "headline": "Play Framework Actor Pooling with Guice (Java)",
         "author": {
             "@type": "Person",
             "name": "http://profiles.google.com/?rel=author"
         },
-        "datePublished": "2015-07-23",
+        "datePublished": "2016-05-02",
         "description": "",
-        "wordCount":  677 
+        "wordCount":  393 
     }
     </script>
     
@@ -435,185 +436,124 @@
 
 <article id="" class="post">
     <div class="post-stamp">
-        <time datetime="2015-07-23T18:05:12&#43;02:00">
-            23 Jul 2015
+        <time datetime="2016-05-02T23:11:01&#43;02:00">
+            2 May 2016
         </time>
         <span class="taglist">
         
         &middot;
         
+            <a href="https://frne.github.io/tags/play/">play</a>
+        
+            <a href="https://frne.github.io/tags/guice/">guice</a>
+        
+            <a href="https://frne.github.io/tags/akka/">akka</a>
+        
             <a href="https://frne.github.io/tags/java/">java</a>
-        
-            <a href="https://frne.github.io/tags/nlp/">nlp</a>
-        
-            <a href="https://frne.github.io/tags/solr/">solr</a>
         
         
         </span>
     </div>
-    <h1 class="post-title">Understanding Stemmers (Natural Language Processing)</h1>
+    <h1 class="post-title">Play Framework Actor Pooling with Guice (Java)</h1>
     
 
-<p>I am interested in NLP and have already some experience with Apache Solr. It&rsquo;s time to dig a little in-deep regarding
-stemmers. First of all, I was looking for a general definition of what a stemmer is, and I found this one, which IMHO
-is quite good:</p>
+<p>Working with the Play! Framework means working with Akka, intentionally or not. But working with Akka Actors can be
+tricky, especially when it comes to dependency injection. Play! 2.4 uses Google&rsquo;s
+<a href="https://www.playframework.com/documentation/2.4.x/JavaDependencyInjection">Guice</a> for DI and of course it has the
+ability to also bind Actors so an <code>ActorRef</code> can be injected anywhere.</p>
 
-<blockquote>
-<p>stemmer &mdash; an algorithm for removing inflectional and derivational endings in order to reduce word forms to a common stem</p>
-</blockquote>
+<h2 id="single-actor-di:2846612b84587f2b8728b61a4b52ff6d">Single Actor DI</h2>
 
-<p>So what a stemmer does is nothing more, than converting words to their word stem. For example, the three
-words <code>developing, developer, development</code> will be converted to <code>develop</code>. Therefore, stemmers are often used
-as filters.</p>
+<p>Biding and injecting one single Actor is simple and well
+<a href="https://www.playframework.com/documentation/2.4.x/JavaAkka#Dependency-injecting-actors">documented</a> . Just bind it in
+a Module:</p>
 
-<p>This can be very handy in different situaltions e.g. when writing to a fulltext search index like
-<a href="http://lucene.apache.org/solr/">SOLR</a> or <a href="https://www.elastic.co/products/elasticsearch">Elasticsearch</a>.
-There are plenty of different stemming algorithms out there. To use them in a project, some different things have to
-be concerned:</p>
+<pre><code class="language-java">package modules;
 
-<h2 id="language:09f98e0855dbb36093dfceb2b16e2828">Language</h2>
+import actors.MyExampleActor;
+import com.google.inject.AbstractModule;
+import play.libs.akka.AkkaGuiceSupport;
 
-<p>Stemming is based on common patterns, so it works a bit different in English than e.g. in German. Some stemmers support
-a variety of languages, some are only available in English. I would not recommend to use a stemmer in another language
-than your content is, because it maybe works, but only maybe.</p>
+public class ActorModule extends AbstractModule implements AkkaGuiceSupport {
 
-<p><a href="https://wiki.apache.org/solr/AnalyzersTokenizersTokenFilters#Stemming">Here</a> is a list of different stemmers which can
-be used in Apache SOLR, including supported languages.</p>
-
-<h2 id="time-consumed:09f98e0855dbb36093dfceb2b16e2828">Time consumed</h2>
-
-<p>As with every algorithm, there are faster and slower ones. Depending on where they are used, performance could have a huge
-impact on success. Generally said: Slower does not necessarily mean more precise.</p>
-
-<h2 id="agressiveness:09f98e0855dbb36093dfceb2b16e2828">Agressiveness</h2>
-
-<p>Because a stemmer does not really &ldquo;understand&rdquo; the language of the content which it&rsquo;s processing, it all depends on the
-patterns which are applied. The PorterStemmer for example removes word endings like &ldquo;e&rdquo;, &ldquo;er&rdquo; and &ldquo;ing&rdquo;.
-Therefore, the following conversion will be made:</p>
-
-<blockquote>
-<p>horse, horses &gt; <strong>hors</strong></p>
-
-<p>develoment, developer, developing &gt; <strong>develop</strong></p>
-</blockquote>
-
-<p>Depending on the task to be done, this can be great or totally disfunctional. I would recommend to try out different
-stemming algorithms whith some edge-cases of specific domain and evaluating the result. For many stemmers, there is
-good documentation describing the agressiveness of the algorithm.</p>
-
-<h2 id="different-stemmers:09f98e0855dbb36093dfceb2b16e2828">Different stemmers</h2>
-
-<ul>
-<li><a href="http://tartarus.org/~martin/PorterStemmer/">Porter</a> (English)</li>
-<li><a href="http://snowball.tartarus.org/algorithms/english/stemmer.html">Porter 2</a> (English)</li>
-<li><a href="http://snowball.tartarus.org/">Snowball</a> (Multi Language)</li>
-<li><a href="http://lexicalresearch.com/kstem-doc.txt">KStem</a> (English, less agressive then porter)</li>
-</ul>
-
-<h2 id="usage-in-java:09f98e0855dbb36093dfceb2b16e2828">Usage in Java</h2>
-
-<p>For a recent project, I used some of the SOLR / Lucene filters in Java. Just a short example how they can be used:</p>
-
-<pre><code class="language-java">public class EnglishTokenizer implements TokenizerInterface {
+    public static final String EXAMPLE_ACTOR_DI_NAME = &quot;my-example-actor&quot;;
 
     @Override
-    public Collection&lt;String&gt; tokenize(String content) throws TokenizerException {
-        try {
-            // read content
-            StringReader inputText = new StringReader(content);
-            Map&lt;String, String&gt; tkargs = new HashMap&lt;String, String&gt;();
-            tkargs.put(&quot;luceneMatchVersion&quot;, &quot;LUCENE_51&quot;);
-
-            // char filter (html)
-            CharFilterFactory hcff = new HTMLStripCharFilterFactory(tkargs);
-            Reader strippedInput = hcff.create(inputText);
-
-            // tokenizer
-            TokenizerFactory tkf = new StandardTokenizerFactory(tkargs);
-            Tokenizer tkz = tkf.create();
-            tkz.setReader(inputText);
-
-            // stopwords filter
-            Map&lt;String, String&gt; stfargs = new HashMap&lt;String, String&gt;();
-            stfargs.put(&quot;luceneMatchVersion&quot;, &quot;LUCENE_51&quot;);
-            stfargs.put(&quot;words&quot;, &quot;lucene/en/stopwords.txt&quot;);
-            stfargs.put(&quot;ignoreCase&quot;, &quot;true&quot;);
-            StopFilterFactory stff = new StopFilterFactory(stfargs);
-            stff.inform(new ClasspathResourceLoader());
-            TokenStream stfts = stff.create(tkz);
-
-            // K stem filter
-            Map&lt;String, String&gt; ksffparam = new HashMap&lt;String, String&gt;();
-            KStemFilterFactory ksff = new KStemFilterFactory(ksffparam);
-            TokenStream ksts = ksff.create(stfts);
-
-            // synonyms filter
-            Map&lt;String, String&gt; syffargs = new HashMap&lt;String, String&gt;();
-            syffargs.put(&quot;luceneMatchVersion&quot;, &quot;LUCENE_51&quot;);
-            syffargs.put(&quot;synonyms&quot;, &quot;lucene/en/synonyms.txt&quot;);
-            syffargs.put(&quot;ignoreCase&quot;, &quot;true&quot;);
-            syffargs.put(&quot;expand&quot;, &quot;false&quot;);
-            SynonymFilterFactory syff = new SynonymFilterFactory(syffargs);
-            syff.inform(new ClasspathResourceLoader());
-            TokenStream syfts = syff.create(ksts);
-
-            // lower case filter
-            LowerCaseFilterFactory lcf = new LowerCaseFilterFactory(tkargs);
-            TokenStream ts = lcf.create(syfts);
-
-            // process token stream
-            ts.reset();
-
-            CharTermAttribute termAttrib = (CharTermAttribute) ts.getAttribute(CharTermAttribute.class);
-
-            Collection&lt;String&gt; tokens = new ArrayList&lt;String&gt;();
-            while (ts.incrementToken()) {
-                tokens.add(termAttrib.toString());
-            }
-
-            ts.end();
-            ts.close();
-
-            return tokens;
-        } catch (IOException e) {
-            throw new TokenizerException(e);
-        }
+    protected void configure() {
+        bindActor(MyExampleActor.class, EXAMPLE_ACTOR_DI_NAME);
     }
 }
 </code></pre>
 
-<p>In the above example, a set of filters is applied to a string to tokenize, filter (and stem) words. For stemming, the
-KStem filter is used. The filters are all from the package <code>org.apache.solr:solr-core:5.2.1</code> which is available on
-the <a href="http://mvnrepository.com/artifact/org.apache.solr/solr-core/5.2.1">maven repository</a>.</p>
+<p>Enable the module in the app configuration:</p>
 
-<h3 id="tokeinzer-example:09f98e0855dbb36093dfceb2b16e2828">Tokeinzer Example</h3>
+<pre><code class="language-scala">play.modules.enabled = ${play.modules.enabled} [
+  modules.ActorModule
+]
+</code></pre>
 
-<p><strong>Content</strong></p>
+<p>Now you can inject the bound actor into every class using the <code>@Inject</code> and <code>@Named</code> annotation, e.g. in a Controller:</p>
 
-<blockquote>
-<p>Java Developer - Zurich - financial markets - Salary negotiable depending on experience. A number of exciting Java
-opportunities exist to join a highly successful and growing provider&hellip;</p>
-</blockquote>
+<p><strong>Keep in mind:</strong> Actors should always be injected as <code>ActorRef</code> and not as the concrete class which has been
+implemented.</p>
 
-<p><strong>Result (Tokens)</strong></p>
+<pre><code class="language-java">package controllers;
 
-<blockquote>
-<p>java, development, zurich, financial, market, salary, negotiable, depend, experience, number, exciting, java,
-opportunity, exist, join, highly, successful, grow, provider</p>
-</blockquote>
+import akka.actor.ActorRef;
+import akka.util.Timeout;
+import modules.ActorModule;
+import play.mvc.Controller;
+import play.mvc.Result;
+import scala.concurrent.Await;
+import scala.concurrent.duration.Duration;
+import scala.concurrent.duration.FiniteDuration;
 
-<h2 id="sources-more-information:09f98e0855dbb36093dfceb2b16e2828">Sources / More Information</h2>
+import javax.inject.Inject;
+import javax.inject.Named;
+import java.util.concurrent.TimeUnit;
 
-<ul>
-<li><a href="http://lexicalresearch.com/papers.html">lexicalresearch.com</a></li>
-<li><a href="https://wiki.apache.org/solr/LanguageAnalysis">Apache SOLR Wiki</a></li>
-<li><a href="http://snowball.tartarus.org/">Snowball Project</a></li>
-</ul>
+public class AssetController extends Controller {
+
+    @Inject
+    @Named(ActorModule.EXAMPLE_ACTOR_DI_NAME)
+    ActorRef exampleActor;
+
+    public Result publish(String assetType, String assetUuid) {
+        FiniteDuration duration = Duration.create(5, TimeUnit.SECONDS);
+        String response = Await.result(
+                ask(exampleActor, &quot;ask something&quot;, new Timeout(duration)).mapTo(classTag(Strijg.class)),
+                duration
+        );
+        return ok(response);
+    }
+}
+</code></pre>
+
+<p><em>// disclaimer: Stuff like error handling and message protocols intentionally left out in favor of clarity</em></p>
+
+<h2 id="actor-pools:2846612b84587f2b8728b61a4b52ff6d">Actor Pools</h2>
+
+<p>As you maybe know, there is the possibility to create pools of Actors instead of only one single instance. A pool
+behaves like a single actor, using a <a href="http://doc.akka.io/docs/akka/current/java/routing.html">router</a> to distribute
+messages to different child actors. The configuration options are huge, but most of the time, I personally only need an option
+to bind an actor pool using <a href="http://doc.akka.io/docs/akka/current/java/routing.html#Pool">round robin distribution</a>. No
+problems to achive this using the Akka configuration, but I could not find any documentation how to combine it using
+Play / Guice DI (in Java).</p>
+
+<p>It turned out, that it is simple once you know it. Just pass the props of a <code>RoundRobinPool</code> to the <code>bindActor</code> method
+as a third argument:</p>
+
+<pre><code class="language-java">bindActor(MyExampleActor.class, EXAMPLE_ACTOR_DI_NAME, p -&gt; new RoundRobinPool(5).props(p));
+</code></pre>
+
+<p>Now, instead of a single instance of <code>MyExampleActor</code> there is a pool of 5 of them waiting for messages.</p>
+
+<p>The example works for Play! Framework 2.4 using Java 8 and will maybe break in future versions.</p>
 
     <div id="social-bar">
 	<ul class="rrssb-buttons clearfix">
       <li class="email">
-          <a href="mailto:?subject=Understanding%20Stemmers%20%28Natural%20Language%20Processing%29&amp;body=https://frne.github.io/post/2015-07-23-understanding-stemmers-nlp/">
+          <a href="mailto:?subject=Play%20Framework%20Actor%20Pooling%20with%20Guice%20%28Java%29&amp;body=https://frne.github.io/post/2016-05-02-play-guice-actor-pooling/">
               <span class="icon">
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28px" height="28px" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve">
                       <path transform="scale(0.014,-0.014) translate(0,-1670)" d="M1792 826v-794q0 -66 -47 -113t-113 -47h-1472q-66 0 -113 47t-47 113v794q44 -49 101 -87q362 -246 497 -345q57 -42 92.5 -65.5t94.5 -48t110 -24.5h1h1q51 0 110 24.5t94.5 48t92.5 65.5q170 123 498 345q57 39 100 87zM1792 1120q0 -79 -49 -151t-122 -123 q-376 -261 -468 -325q-10 -7 -42.5 -30.5t-54 -38t-52 -32.5t-57.5 -27t-50 -9h-1h-1q-23 0 -50 9t-57.5 27t-52 32.5t-54 38t-42.5 30.5q-91 64 -262 182.5t-205 142.5q-62 42 -117 115.5t-55 136.5q0 78 41.5 130t118.5 52h1472q65 0 112.5 -47t47.5 -113z"/>
@@ -623,7 +563,7 @@ opportunity, exist, join, highly, successful, grow, provider</p>
           </a>
       </li>
       <li class="facebook">
-          <a href="https://www.facebook.com/sharer/sharer.php?u=https://frne.github.io/post/2015-07-23-understanding-stemmers-nlp/" class="popup">
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https://frne.github.io/post/2016-05-02-play-guice-actor-pooling/" class="popup">
               <span class="icon">
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28px" height="28px" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve">
                       <path d="M27.825,4.783c0-2.427-2.182-4.608-4.608-4.608H4.783c-2.422,0-4.608,2.182-4.608,4.608v18.434 c0,2.427,2.181,4.608,4.608,4.608H14V17.379h-3.379v-4.608H14v-1.795c0-3.089,2.335-5.885,5.192-5.885h3.718v4.608h-3.726 c-0.408,0-0.884,0.492-0.884,1.236v1.836h4.609v4.608h-4.609v10.446h4.916c2.422,0,4.608-2.188,4.608-4.608V4.783z"/>
@@ -633,7 +573,7 @@ opportunity, exist, join, highly, successful, grow, provider</p>
           </a>
       </li>
 			<li class="twitter">
-          <a href="http://twitter.com/home?status=Understanding%20Stemmers%20%28Natural%20Language%20Processing%29%20https://frne.github.io/post/2015-07-23-understanding-stemmers-nlp/" class="popup">
+          <a href="http://twitter.com/home?status=Play%20Framework%20Actor%20Pooling%20with%20Guice%20%28Java%29%20https://frne.github.io/post/2016-05-02-play-guice-actor-pooling/" class="popup">
               <span class="icon">
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28px" height="28px" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve">
 		                  <path d="M24.253,8.756C24.689,17.08,18.297,24.182,9.97,24.62c-3.122,0.162-6.219-0.646-8.861-2.32 c2.703,0.179,5.376-0.648,7.508-2.321c-2.072-0.247-3.818-1.661-4.489-3.638c0.801,0.128,1.62,0.076,2.399-0.155 C4.045,15.72,2.215,13.6,2.115,11.077c0.688,0.275,1.426,0.407,2.168,0.386c-2.135-1.65-2.729-4.621-1.394-6.965 C5.575,7.816,9.54,9.84,13.803,10.071c-0.842-2.739,0.694-5.64,3.434-6.482c2.018-0.623,4.212,0.044,5.546,1.683 c1.186-0.213,2.318-0.662,3.329-1.317c-0.385,1.256-1.247,2.312-2.399,2.942c1.048-0.106,2.069-0.394,3.019-0.851 C26.275,7.229,25.39,8.196,24.253,8.756z"/>
@@ -643,7 +583,7 @@ opportunity, exist, join, highly, successful, grow, provider</p>
           </a>
       </li>
 			<li class="linkedin">
-          <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://frne.github.io/post/2015-07-23-understanding-stemmers-nlp/&amp;title=Understanding%20Stemmers%20%28Natural%20Language%20Processing%29&amp;summary=I%20am%20interested%20in%20NLP%20and%20have%20already%20some%20experience%20with%20Apache%20Solr.%20It%26rsquo%3bs%20time%20to%20dig%20a%20little%20in-deep%20regarding%20stemmers.%20First%20of%20all%2c%20I%20was%20looking%20for%20a%20general%20definition%20of%20what%20a%20stemmer%20is%2c%20and%20I%20found%20this%20one%2c%20which%20IMHO%20is%20quite%20good%3a%20stemmer%20%26mdash%3b%20an%20algorithm%20for%20removing%20inflectional%20and%20derivational%20endings%20in%20order%20to%20reduce%20word%20forms%20to%20a%20common%20stem%20So%20what%20a%20stemmer%20does%20is%20nothing%20more%2c%20than%20converting%20words%20to%20their%20word%20stem...." class="popup">
+          <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://frne.github.io/post/2016-05-02-play-guice-actor-pooling/&amp;title=Play%20Framework%20Actor%20Pooling%20with%20Guice%20%28Java%29&amp;summary=Working%20with%20the%20Play%21%20Framework%20means%20working%20with%20Akka%2c%20intentionally%20or%20not.%20But%20working%20with%20Akka%20Actors%20can%20be%20tricky%2c%20especially%20when%20it%20comes%20to%20dependency%20injection.%20Play%21%202.4%20uses%20Google%26rsquo%3bs%20Guice%20for%20DI%20and%20of%20course%20it%20has%20the%20ability%20to%20also%20bind%20Actors%20so%20an%20ActorRef%20can%20be%20injected%20anywhere.%20Single%20Actor%20DI%20Biding%20and%20injecting%20one%20single%20Actor%20is%20simple%20and%20well%20documented%20.%20Just%20bind%20it%20in%20a%20Module%3a%20package%20modules%3b%20import%20actors.MyExampleActor%3b%20import%20com.google.inject.AbstractModule%3b%20import%20play.libs.akka.AkkaGuiceSupport%3b%20public%20class%20ActorModule%20extends%20AbstractModule%20implements%20AkkaGuiceSupport%20%7b%20public%20static%20final%20String%20EXAMPLE_ACTOR_DI_NAME%20%3d%20%26quot%3bmy-example-actor%26quot%3b%3b%20%40Override%20protected%20void%20configure%28%29%20%7b%20bindActor%28MyExampleActor.class%2c%20EXAMPLE_ACTOR_DI_NAME%29%3b%20%7d%20%7d%20Enable%20the%20module%20in%20the%20app%20configuration%3a%20play.modules.enabled%20%3d%20%24%7bplay.modules.enabled%7d%20%5b%20modules.ActorModule%20%5d%20Now%20you%20can%20inject%20the%20bound%20actor%20into%20every%20class%20using%20the%20%40Inject%20and%20%40Named%20annotation%2c%20e.g...." class="popup">
               <span class="icon">
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28px" height="28px" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve">
                       <path d="M25.424,15.887v8.447h-4.896v-7.882c0-1.979-0.709-3.331-2.48-3.331c-1.354,0-2.158,0.911-2.514,1.803 c-0.129,0.315-0.162,0.753-0.162,1.194v8.216h-4.899c0,0,0.066-13.349,0-14.731h4.899v2.088c-0.01,0.016-0.023,0.032-0.033,0.048 h0.033V11.69c0.65-1.002,1.812-2.435,4.414-2.435C23.008,9.254,25.424,11.361,25.424,15.887z M5.348,2.501 c-1.676,0-2.772,1.092-2.772,2.539c0,1.421,1.066,2.538,2.717,2.546h0.032c1.709,0,2.771-1.132,2.771-2.546 C8.054,3.593,7.019,2.501,5.343,2.501H5.348z M2.867,24.334h4.897V9.603H2.867V24.334z"/>
@@ -654,7 +594,7 @@ opportunity, exist, join, highly, successful, grow, provider</p>
       </li>
       <li class="tumblr">
 					<script>
-						document.write('<a href="http://www.tumblr.com/share?v=3&amp;u=' + encodeURIComponent('https:\/\/frne.github.io\/post\/2015-07-23-understanding-stemmers-nlp\/') + '&amp;t=Understanding Stemmers (Natural Language Processing)" class="popup">');
+						document.write('<a href="http://www.tumblr.com/share?v=3&amp;u=' + encodeURIComponent('https:\/\/frne.github.io\/post\/2016-05-02-play-guice-actor-pooling\/') + '&amp;t=Play Framework Actor Pooling with Guice (Java)" class="popup">');
 					</script>
               <span class="icon">
                   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="28px" height="28px" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve">
@@ -665,7 +605,7 @@ opportunity, exist, join, highly, successful, grow, provider</p>
           <script>document.write('</a>');</script>
       </li>
       <li class="reddit">
-          <a href="http://www.reddit.com/submit?url=https://frne.github.io/post/2015-07-23-understanding-stemmers-nlp/">
+          <a href="http://www.reddit.com/submit?url=https://frne.github.io/post/2016-05-02-play-guice-actor-pooling/">
               <span class="icon">
                   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="28px" height="28px" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve">
 											<g>
@@ -680,7 +620,7 @@ opportunity, exist, join, highly, successful, grow, provider</p>
           </a>
       </li>
       <li class="googleplus">
-          <a href="https://plus.google.com/share?url=https://frne.github.io/post/2015-07-23-understanding-stemmers-nlp/" class="popup">
+          <a href="https://plus.google.com/share?url=https://frne.github.io/post/2016-05-02-play-guice-actor-pooling/" class="popup">
               <span class="icon">
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28px" height="28px" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve">
                       <g>
@@ -699,7 +639,7 @@ opportunity, exist, join, highly, successful, grow, provider</p>
 						if (firstimg !== undefined) {
 							imgurl = firstimg.src;
 						}
-						document.write('<a href="http://pinterest.com/pin/create/button/?url=https:\/\/frne.github.io\/post\/2015-07-23-understanding-stemmers-nlp\/&amp;media=' + imgurl + '&amp;description=Understanding Stemmers (Natural Language Processing)" class="popup">');
+						document.write('<a href="http://pinterest.com/pin/create/button/?url=https:\/\/frne.github.io\/post\/2016-05-02-play-guice-actor-pooling\/&amp;media=' + imgurl + '&amp;description=Play Framework Actor Pooling with Guice (Java)" class="popup">');
 					</script>
               <span class="icon">
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28px" height="28px" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve">
@@ -710,7 +650,7 @@ opportunity, exist, join, highly, successful, grow, provider</p>
           <script>document.write('</a>');</script>
       </li>
       <li class="pocket">
-          <a href="https://getpocket.com/save?url=https://frne.github.io/post/2015-07-23-understanding-stemmers-nlp/"  class="popup">
+          <a href="https://getpocket.com/save?url=https://frne.github.io/post/2016-05-02-play-guice-actor-pooling/"  class="popup">
               <span class="icon">
                   <svg width="32px" height="28px" viewBox="0 0 32 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
                       <path d="M28.7817528,0.00172488695 C30.8117487,0.00431221738 31.9749312,1.12074529 31.9644402,3.10781507 C31.942147,6.67703739 32.1336065,10.2669583 31.8057648,13.8090137 C30.7147076,25.5813672 17.2181194,31.8996281 7.20714461,25.3808491 C2.71833574,22.4571656 0.196577202,18.3122624 0.0549495772,12.9357897 C-0.0342233715,9.5774348 0.00642900214,6.21519891 0.0300336062,2.85555035 C0.0405245414,1.1129833 1.21157517,0.0146615391 3.01995012,0.00819321302 C7.34746087,-0.00603710433 11.6775944,0.00431221738 16.0064164,0.00172488695 C20.2644248,0.00172488695 24.5237444,-0.00215610869 28.7817528,0.00172488695 L28.7817528,0.00172488695 Z M8.64885184,7.85611511 C7.38773662,7.99113854 6.66148108,8.42606978 6.29310958,9.33228474 C5.90114134,10.2969233 6.17774769,11.1421181 6.89875951,11.8276216 C9.35282156,14.161969 11.8108164,16.4924215 14.2976518,18.7943114 C15.3844131,19.7966007 16.5354102,19.7836177 17.6116843,18.7813283 C20.0185529,16.5495467 22.4070683,14.2982907 24.7824746,12.0327533 C25.9845979,10.8850542 26.1012707,9.56468083 25.1469132,8.60653379 C24.1361858,7.59255976 22.8449191,7.6743528 21.5890476,8.85191291 C19.9936451,10.3488554 18.3680912,11.8172352 16.8395462,13.3777945 C16.1342655,14.093159 15.7200114,14.0048744 15.0566806,13.3440386 C13.4599671,11.7484252 11.8081945,10.2060421 10.1262706,8.70001155 C9.65564653,8.27936164 9.00411403,8.05345704 8.64885184,7.85611511 L8.64885184,7.85611511 L8.64885184,7.85611511 Z"></path>

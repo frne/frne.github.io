@@ -6,8 +6,111 @@
     <description>Recent content in Java on Frank Neff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 Jul 2015 18:05:12 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 02 May 2016 23:11:01 +0200</lastBuildDate>
     <atom:link href="https://frne.github.io/categories/java/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Play Framework Actor Pooling with Guice (Java)</title>
+      <link>https://frne.github.io/post/2016-05-02-play-guice-actor-pooling/</link>
+      <pubDate>Mon, 02 May 2016 23:11:01 +0200</pubDate>
+      
+      <guid>https://frne.github.io/post/2016-05-02-play-guice-actor-pooling/</guid>
+      <description>
+
+&lt;p&gt;Working with the Play! Framework means working with Akka, intentionally or not. But working with Akka Actors can be
+tricky, especially when it comes to dependency injection. Play! 2.4 uses Google&amp;rsquo;s
+&lt;a href=&#34;https://www.playframework.com/documentation/2.4.x/JavaDependencyInjection&#34;&gt;Guice&lt;/a&gt; for DI and of course it has the
+ability to also bind Actors so an &lt;code&gt;ActorRef&lt;/code&gt; can be injected anywhere.&lt;/p&gt;
+
+&lt;h2 id=&#34;single-actor-di:2846612b84587f2b8728b61a4b52ff6d&#34;&gt;Single Actor DI&lt;/h2&gt;
+
+&lt;p&gt;Biding and injecting one single Actor is simple and well
+&lt;a href=&#34;https://www.playframework.com/documentation/2.4.x/JavaAkka#Dependency-injecting-actors&#34;&gt;documented&lt;/a&gt; . Just bind it in
+a Module:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;package modules;
+
+import actors.MyExampleActor;
+import com.google.inject.AbstractModule;
+import play.libs.akka.AkkaGuiceSupport;
+
+public class ActorModule extends AbstractModule implements AkkaGuiceSupport {
+
+    public static final String EXAMPLE_ACTOR_DI_NAME = &amp;quot;my-example-actor&amp;quot;;
+
+    @Override
+    protected void configure() {
+        bindActor(MyExampleActor.class, EXAMPLE_ACTOR_DI_NAME);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Enable the module in the app configuration:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-scala&#34;&gt;play.modules.enabled = ${play.modules.enabled} [
+  modules.ActorModule
+]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now you can inject the bound actor into every class using the &lt;code&gt;@Inject&lt;/code&gt; and &lt;code&gt;@Named&lt;/code&gt; annotation, e.g. in a Controller:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Keep in mind:&lt;/strong&gt; Actors should always be injected as &lt;code&gt;ActorRef&lt;/code&gt; and not as the concrete class which has been
+implemented.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;package controllers;
+
+import akka.actor.ActorRef;
+import akka.util.Timeout;
+import modules.ActorModule;
+import play.mvc.Controller;
+import play.mvc.Result;
+import scala.concurrent.Await;
+import scala.concurrent.duration.Duration;
+import scala.concurrent.duration.FiniteDuration;
+
+import javax.inject.Inject;
+import javax.inject.Named;
+import java.util.concurrent.TimeUnit;
+
+public class AssetController extends Controller {
+
+    @Inject
+    @Named(ActorModule.EXAMPLE_ACTOR_DI_NAME)
+    ActorRef exampleActor;
+
+    public Result publish(String assetType, String assetUuid) {
+        FiniteDuration duration = Duration.create(5, TimeUnit.SECONDS);
+        String response = Await.result(
+                ask(exampleActor, &amp;quot;ask something&amp;quot;, new Timeout(duration)).mapTo(classTag(Strijg.class)),
+                duration
+        );
+        return ok(response);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;em&gt;// disclaimer: Stuff like error handling and message protocols intentionally left out in favor of clarity&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;actor-pools:2846612b84587f2b8728b61a4b52ff6d&#34;&gt;Actor Pools&lt;/h2&gt;
+
+&lt;p&gt;As you maybe know, there is the possibility to create pools of Actors instead of only one single instance. A pool
+behaves like a single actor, using a &lt;a href=&#34;http://doc.akka.io/docs/akka/current/java/routing.html&#34;&gt;router&lt;/a&gt; to distribute
+messages to different child actors. The configuration options are huge, but most of the time, I personally only need an option
+to bind an actor pool using &lt;a href=&#34;http://doc.akka.io/docs/akka/current/java/routing.html#Pool&#34;&gt;round robin distribution&lt;/a&gt;. No
+problems to achive this using the Akka configuration, but I could not find any documentation how to combine it using
+Play / Guice DI (in Java).&lt;/p&gt;
+
+&lt;p&gt;It turned out, that it is simple once you know it. Just pass the props of a &lt;code&gt;RoundRobinPool&lt;/code&gt; to the &lt;code&gt;bindActor&lt;/code&gt; method
+as a third argument:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;bindActor(MyExampleActor.class, EXAMPLE_ACTOR_DI_NAME, p -&amp;gt; new RoundRobinPool(5).props(p));
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now, instead of a single instance of &lt;code&gt;MyExampleActor&lt;/code&gt; there is a pool of 5 of them waiting for messages.&lt;/p&gt;
+
+&lt;p&gt;The example works for Play! Framework 2.4 using Java 8 and will maybe break in future versions.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Understanding Stemmers (Natural Language Processing)</title>
