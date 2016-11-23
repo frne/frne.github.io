@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Frank Neff</title>
+    <link>https://frne.github.io/tags/books/index.xml</link>
+    <description>Recent content on Frank Neff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://frne.github.io/tags/books/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Free E-Books about Reactive Apps, Streaming, Data Science and Scala</title>
+      <link>https://frne.github.io/post/2016-11-10-free-ebooks/</link>
+      <pubDate>Thu, 10 Nov 2016 23:50:12 +0100</pubDate>
+      
+      <guid>https://frne.github.io/post/2016-11-10-free-ebooks/</guid>
+      <description>
+
+&lt;p&gt;As you may know, there are always some free books and articles. You just have to fond them&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s a (of course incomplete) list of free literature I like. Get it, if you&amp;rsquo;re interested. You may have to register or something:&lt;/p&gt;
+
+&lt;h2 id=&#34;reactive-applications-streaming&#34;&gt;Reactive Applications &amp;amp; Streaming&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://info.lightbend.com/COLL-20XX-Designing-Reactive-Systems_RES-LP.html?lst=WS&amp;amp;_ga=1.220672216.1772974351.1472801586&#34;&gt;Designing Reactive Systems: The Role Of Actors In Distributed Architecture - Hugh McKee&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://info.lightbend.com/COLL-20XX-Fast-Data-Architectures-for-Streaming-Apps_LP.html?lst=WS&amp;amp;_ga=1.13549559.1772974351.1472801586&#34;&gt;Fast Data Architectures For Streaming Applications -  Dean Wampler&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://info.lightbend.com/COLL-20XX-Developing-Reactive-Microservices_RES-LP.html?lst=WS&amp;amp;_ga=1.245824452.1772974351.1472801586&#34;&gt;Developing Reactive Microservices - Markus Eisele&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://info.lightbend.com/COLL-20XX-Reactive-Microservices-Architecture-RES-LP.html?lst=WS&amp;amp;_ga=1.219149529.1772974351.1472801586&#34;&gt;Reactive Microservices Architecture - Jonas Bonér&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;data-science-machine-learning&#34;&gt;Data Science &amp;amp; Machine Learning&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www-bcf.usc.edu/~gareth/ISL/&#34;&gt;An Introduction to Statistical Learning - Gareth James, Daniela Witten, Trevor Hastie and Robert Tibshirani&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://leanpub.com/rprogramming&#34;&gt;R Programming for Data Science - Roger D. Peng&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://statweb.stanford.edu/~tibs/ElemStatLearn/&#34;&gt;The Elements of Statistical Learning - Trevor Hastie, Robert Tibshirani, Jerome Friedman&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;scala&#34;&gt;Scala&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.scala-lang.org/docu/files/ScalaByExample.pdf&#34;&gt;Scala By Example - Martin Odersky&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.onlineprogrammingbooks.com/free-ebook-scala-for-the-impatient/&#34;&gt;Scala for the Impatient - Cay Horstmann&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.artima.com/pins1ed/&#34;&gt;Programming in Scala, First Edition - Martin Odersky, Lex Spoon, and Bill Venners&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you liked one of those books, make a donation or buy a hardcopy to support the authors ;)&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

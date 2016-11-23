@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Compiler on Frank Neff</title>
-    <link>https://frne.github.io/tags/compiler/</link>
-    <description>Recent content in Compiler on Frank Neff</description>
+    <title>Frank Neff</title>
+    <link>https://frne.github.io/tags/compiler/index.xml</link>
+    <description>Recent content on Frank Neff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 15 Apr 2016 22:15:28 +0200</lastBuildDate>
     <atom:link href="https://frne.github.io/tags/compiler/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -32,7 +31,7 @@ file to add scala options:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-scala&#34;&gt;scalacOptions ++= Seq(&amp;quot;-deprecation&amp;quot;, &amp;quot;-unchecked&amp;quot;, &amp;quot;-Xlint&amp;quot;)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;common-scalac-options:bbac817e5eba02df1c886c101512f63a&#34;&gt;Common Scalac Options&lt;/h2&gt;
+&lt;h2 id=&#34;common-scalac-options&#34;&gt;Common Scalac Options&lt;/h2&gt;
 
 &lt;p&gt;There are some common options which I&amp;rsquo;d like to share with you. Most of them make it harder to compile &amp;ldquo;not that good&amp;rdquo;
 code or warn about certain conditions:&lt;/p&gt;

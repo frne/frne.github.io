@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Play on Frank Neff</title>
-    <link>https://frne.github.io/tags/play/</link>
-    <description>Recent content in Play on Frank Neff</description>
+    <title>Frank Neff</title>
+    <link>https://frne.github.io/tags/play/index.xml</link>
+    <description>Recent content on Frank Neff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 May 2016 23:11:01 +0200</lastBuildDate>
     <atom:link href="https://frne.github.io/tags/play/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -22,7 +21,7 @@ tricky, especially when it comes to dependency injection. Play! 2.4 uses Google&
 &lt;a href=&#34;https://www.playframework.com/documentation/2.4.x/JavaDependencyInjection&#34;&gt;Guice&lt;/a&gt; for DI and of course it has the
 ability to also bind Actors so an &lt;code&gt;ActorRef&lt;/code&gt; can be injected anywhere.&lt;/p&gt;
 
-&lt;h2 id=&#34;single-actor-di:2846612b84587f2b8728b61a4b52ff6d&#34;&gt;Single Actor DI&lt;/h2&gt;
+&lt;h2 id=&#34;single-actor-di&#34;&gt;Single Actor DI&lt;/h2&gt;
 
 &lt;p&gt;Biding and injecting one single Actor is simple and well
 &lt;a href=&#34;https://www.playframework.com/documentation/2.4.x/JavaAkka#Dependency-injecting-actors&#34;&gt;documented&lt;/a&gt; . Just bind it in
@@ -91,7 +90,7 @@ public class AssetController extends Controller {
 
 &lt;p&gt;&lt;em&gt;// disclaimer: Stuff like error handling and message protocols intentionally left out in favor of clarity&lt;/em&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;actor-pools:2846612b84587f2b8728b61a4b52ff6d&#34;&gt;Actor Pools&lt;/h2&gt;
+&lt;h2 id=&#34;actor-pools&#34;&gt;Actor Pools&lt;/h2&gt;
 
 &lt;p&gt;As you maybe know, there is the possibility to create pools of Actors instead of only one single instance. A pool
 behaves like a single actor, using a &lt;a href=&#34;http://doc.akka.io/docs/akka/current/java/routing.html&#34;&gt;router&lt;/a&gt; to distribute

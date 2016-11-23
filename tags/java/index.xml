@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Java on Frank Neff</title>
-    <link>https://frne.github.io/tags/java/</link>
-    <description>Recent content in Java on Frank Neff</description>
+    <title>Frank Neff</title>
+    <link>https://frne.github.io/tags/java/index.xml</link>
+    <description>Recent content on Frank Neff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 May 2016 23:11:01 +0200</lastBuildDate>
     <atom:link href="https://frne.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -22,7 +21,7 @@ tricky, especially when it comes to dependency injection. Play! 2.4 uses Google&
 &lt;a href=&#34;https://www.playframework.com/documentation/2.4.x/JavaDependencyInjection&#34;&gt;Guice&lt;/a&gt; for DI and of course it has the
 ability to also bind Actors so an &lt;code&gt;ActorRef&lt;/code&gt; can be injected anywhere.&lt;/p&gt;
 
-&lt;h2 id=&#34;single-actor-di:2846612b84587f2b8728b61a4b52ff6d&#34;&gt;Single Actor DI&lt;/h2&gt;
+&lt;h2 id=&#34;single-actor-di&#34;&gt;Single Actor DI&lt;/h2&gt;
 
 &lt;p&gt;Biding and injecting one single Actor is simple and well
 &lt;a href=&#34;https://www.playframework.com/documentation/2.4.x/JavaAkka#Dependency-injecting-actors&#34;&gt;documented&lt;/a&gt; . Just bind it in
@@ -91,7 +90,7 @@ public class AssetController extends Controller {
 
 &lt;p&gt;&lt;em&gt;// disclaimer: Stuff like error handling and message protocols intentionally left out in favor of clarity&lt;/em&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;actor-pools:2846612b84587f2b8728b61a4b52ff6d&#34;&gt;Actor Pools&lt;/h2&gt;
+&lt;h2 id=&#34;actor-pools&#34;&gt;Actor Pools&lt;/h2&gt;
 
 &lt;p&gt;As you maybe know, there is the possibility to create pools of Actors instead of only one single instance. A pool
 behaves like a single actor, using a &lt;a href=&#34;http://doc.akka.io/docs/akka/current/java/routing.html&#34;&gt;router&lt;/a&gt; to distribute
@@ -137,7 +136,7 @@ as filters.&lt;/p&gt;
 There are plenty of different stemming algorithms out there. To use them in a project, some different things have to
 be concerned:&lt;/p&gt;
 
-&lt;h2 id=&#34;language:09f98e0855dbb36093dfceb2b16e2828&#34;&gt;Language&lt;/h2&gt;
+&lt;h2 id=&#34;language&#34;&gt;Language&lt;/h2&gt;
 
 &lt;p&gt;Stemming is based on common patterns, so it works a bit different in English than e.g. in German. Some stemmers support
 a variety of languages, some are only available in English. I would not recommend to use a stemmer in another language
@@ -146,12 +145,12 @@ than your content is, because it maybe works, but only maybe.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://wiki.apache.org/solr/AnalyzersTokenizersTokenFilters#Stemming&#34;&gt;Here&lt;/a&gt; is a list of different stemmers which can
 be used in Apache SOLR, including supported languages.&lt;/p&gt;
 
-&lt;h2 id=&#34;time-consumed:09f98e0855dbb36093dfceb2b16e2828&#34;&gt;Time consumed&lt;/h2&gt;
+&lt;h2 id=&#34;time-consumed&#34;&gt;Time consumed&lt;/h2&gt;
 
 &lt;p&gt;As with every algorithm, there are faster and slower ones. Depending on where they are used, performance could have a huge
 impact on success. Generally said: Slower does not necessarily mean more precise.&lt;/p&gt;
 
-&lt;h2 id=&#34;agressiveness:09f98e0855dbb36093dfceb2b16e2828&#34;&gt;Agressiveness&lt;/h2&gt;
+&lt;h2 id=&#34;agressiveness&#34;&gt;Agressiveness&lt;/h2&gt;
 
 &lt;p&gt;Because a stemmer does not really &amp;ldquo;understand&amp;rdquo; the language of the content which it&amp;rsquo;s processing, it all depends on the
 patterns which are applied. The PorterStemmer for example removes word endings like &amp;ldquo;e&amp;rdquo;, &amp;ldquo;er&amp;rdquo; and &amp;ldquo;ing&amp;rdquo;.
@@ -167,7 +166,7 @@ Therefore, the following conversion will be made:&lt;/p&gt;
 stemming algorithms whith some edge-cases of specific domain and evaluating the result. For many stemmers, there is
 good documentation describing the agressiveness of the algorithm.&lt;/p&gt;
 
-&lt;h2 id=&#34;different-stemmers:09f98e0855dbb36093dfceb2b16e2828&#34;&gt;Different stemmers&lt;/h2&gt;
+&lt;h2 id=&#34;different-stemmers&#34;&gt;Different stemmers&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://tartarus.org/~martin/PorterStemmer/&#34;&gt;Porter&lt;/a&gt; (English)&lt;/li&gt;
@@ -176,7 +175,7 @@ good documentation describing the agressiveness of the algorithm.&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;http://lexicalresearch.com/kstem-doc.txt&#34;&gt;KStem&lt;/a&gt; (English, less agressive then porter)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;usage-in-java:09f98e0855dbb36093dfceb2b16e2828&#34;&gt;Usage in Java&lt;/h2&gt;
+&lt;h2 id=&#34;usage-in-java&#34;&gt;Usage in Java&lt;/h2&gt;
 
 &lt;p&gt;For a recent project, I used some of the SOLR / Lucene filters in Java. Just a short example how they can be used:&lt;/p&gt;
 
@@ -252,7 +251,7 @@ good documentation describing the agressiveness of the algorithm.&lt;/p&gt;
 KStem filter is used. The filters are all from the package &lt;code&gt;org.apache.solr:solr-core:5.2.1&lt;/code&gt; which is available on
 the &lt;a href=&#34;http://mvnrepository.com/artifact/org.apache.solr/solr-core/5.2.1&#34;&gt;maven repository&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h3 id=&#34;tokeinzer-example:09f98e0855dbb36093dfceb2b16e2828&#34;&gt;Tokeinzer Example&lt;/h3&gt;
+&lt;h3 id=&#34;tokeinzer-example&#34;&gt;Tokeinzer Example&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;Content&lt;/strong&gt;&lt;/p&gt;
 
@@ -268,7 +267,7 @@ opportunities exist to join a highly successful and growing provider&amp;hellip;
 opportunity, exist, join, highly, successful, grow, provider&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&#34;sources-more-information:09f98e0855dbb36093dfceb2b16e2828&#34;&gt;Sources / More Information&lt;/h2&gt;
+&lt;h2 id=&#34;sources-more-information&#34;&gt;Sources / More Information&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://lexicalresearch.com/papers.html&#34;&gt;lexicalresearch.com&lt;/a&gt;&lt;/li&gt;

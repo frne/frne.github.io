@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Agile on Frank Neff</title>
-    <link>https://frne.github.io/tags/agile/</link>
-    <description>Recent content in Agile on Frank Neff</description>
+    <title>Frank Neff</title>
+    <link>https://frne.github.io/tags/agile/index.xml</link>
+    <description>Recent content on Frank Neff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Apr 2015 13:09:32 +0200</lastBuildDate>
     <atom:link href="https://frne.github.io/tags/agile/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -32,7 +31,7 @@ that is based on dealing with specific situations instead of on ideas and
 theories &amp;ndash; &lt;a href=&#34;http://www.merriam-webster.com/dictionary/pragmatism&#34;&gt;merriam-webster.com&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&#34;a-reasonable-and-logical-way:c8c0a6e2091ac900913db647f6239752&#34;&gt;A Reasonable and Logical Way&lt;/h2&gt;
+&lt;h2 id=&#34;a-reasonable-and-logical-way&#34;&gt;A Reasonable and Logical Way&lt;/h2&gt;
 
 &lt;p&gt;So even pragmatic solutions have to be reasonable and logical. I would ask so
 many people out there: &amp;ldquo;Is missing out documentation, tests and software design
@@ -41,7 +40,7 @@ don&amp;rsquo;t think so. Maybe if it&amp;rsquo;s only for a Executive Board pre
 rapidly build a prototype without having documentation or tests. But doing that,
 one has to take care that this prototype is not going life two weeks later.&lt;/p&gt;
 
-&lt;h2 id=&#34;based-on-dealing-with-specific-situations:c8c0a6e2091ac900913db647f6239752&#34;&gt;Based on Dealing with Specific Situations&lt;/h2&gt;
+&lt;h2 id=&#34;based-on-dealing-with-specific-situations&#34;&gt;Based on Dealing with Specific Situations&lt;/h2&gt;
 
 &lt;p&gt;Of course, if there is a disaster case, you cannot think about
 the best way to build a solution for 2 days. What I am talking about are
@@ -55,7 +54,7 @@ patterns or parts of solutions. Using those &amp;ldquo;best practices&amp;rdquo;
 quintessential of pragmatism. Building an over-simplified custom solution,
 because one doesn&amp;rsquo;t understand the best practice, is not.&lt;/p&gt;
 
-&lt;h2 id=&#34;instead-of-on-ideas-and-theories:c8c0a6e2091ac900913db647f6239752&#34;&gt;Instead of on Ideas and Theories&lt;/h2&gt;
+&lt;h2 id=&#34;instead-of-on-ideas-and-theories&#34;&gt;Instead of on Ideas and Theories&lt;/h2&gt;
 
 &lt;p&gt;There are many theoretical approaches in development. Let&amp;rsquo;s take the &lt;a href=&#34;http://martinfowler.com/eaaCatalog/&#34;&gt;Enterprise
 Design/Architecture Patterns&lt;/a&gt;
@@ -65,7 +64,7 @@ because this is theoretic and has nothing to do with pragmatic solutions. But if
 a &amp;ldquo;pragmatic solution&amp;rdquo; is the best way to deal with a specific situation, then
 I would highly recommend those patterns because the are very pragmatic.&lt;/p&gt;
 
-&lt;h2 id=&#34;finishing:c8c0a6e2091ac900913db647f6239752&#34;&gt;Finishing&amp;hellip;&lt;/h2&gt;
+&lt;h2 id=&#34;finishing&#34;&gt;Finishing&amp;hellip;&lt;/h2&gt;
 
 &lt;p&gt;Many people use words like &amp;ldquo;pragmatism&amp;rdquo; or &amp;ldquo;best practice&amp;rdquo; as buzzwords but
 don&amp;rsquo;t understand what they mean. Therefore, please be aware that pragmatism does

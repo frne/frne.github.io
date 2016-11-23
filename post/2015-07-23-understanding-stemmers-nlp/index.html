@@ -428,7 +428,7 @@
             <nav>
     <ul>
         <li>
-            <a href="http://github.com/swddsw"><i class="fa fa-github" aria-hidden="true"></i>&nbsp;github.com/swddsw</a>
+            <a href="http://github.com/frne"><i class="fa fa-github" aria-hidden="true"></i>&nbsp;github.com/frne</a>
         </li>
     </ul>
 </nav>
@@ -487,7 +487,7 @@ as filters.</p>
 There are plenty of different stemming algorithms out there. To use them in a project, some different things have to
 be concerned:</p>
 
-<h2 id="language:09f98e0855dbb36093dfceb2b16e2828">Language</h2>
+<h2 id="language">Language</h2>
 
 <p>Stemming is based on common patterns, so it works a bit different in English than e.g. in German. Some stemmers support
 a variety of languages, some are only available in English. I would not recommend to use a stemmer in another language
@@ -496,12 +496,12 @@ than your content is, because it maybe works, but only maybe.</p>
 <p><a href="https://wiki.apache.org/solr/AnalyzersTokenizersTokenFilters#Stemming">Here</a> is a list of different stemmers which can
 be used in Apache SOLR, including supported languages.</p>
 
-<h2 id="time-consumed:09f98e0855dbb36093dfceb2b16e2828">Time consumed</h2>
+<h2 id="time-consumed">Time consumed</h2>
 
 <p>As with every algorithm, there are faster and slower ones. Depending on where they are used, performance could have a huge
 impact on success. Generally said: Slower does not necessarily mean more precise.</p>
 
-<h2 id="agressiveness:09f98e0855dbb36093dfceb2b16e2828">Agressiveness</h2>
+<h2 id="agressiveness">Agressiveness</h2>
 
 <p>Because a stemmer does not really &ldquo;understand&rdquo; the language of the content which it&rsquo;s processing, it all depends on the
 patterns which are applied. The PorterStemmer for example removes word endings like &ldquo;e&rdquo;, &ldquo;er&rdquo; and &ldquo;ing&rdquo;.
@@ -517,7 +517,7 @@ Therefore, the following conversion will be made:</p>
 stemming algorithms whith some edge-cases of specific domain and evaluating the result. For many stemmers, there is
 good documentation describing the agressiveness of the algorithm.</p>
 
-<h2 id="different-stemmers:09f98e0855dbb36093dfceb2b16e2828">Different stemmers</h2>
+<h2 id="different-stemmers">Different stemmers</h2>
 
 <ul>
 <li><a href="http://tartarus.org/~martin/PorterStemmer/">Porter</a> (English)</li>
@@ -526,7 +526,7 @@ good documentation describing the agressiveness of the algorithm.</p>
 <li><a href="http://lexicalresearch.com/kstem-doc.txt">KStem</a> (English, less agressive then porter)</li>
 </ul>
 
-<h2 id="usage-in-java:09f98e0855dbb36093dfceb2b16e2828">Usage in Java</h2>
+<h2 id="usage-in-java">Usage in Java</h2>
 
 <p>For a recent project, I used some of the SOLR / Lucene filters in Java. Just a short example how they can be used:</p>
 
@@ -602,7 +602,7 @@ good documentation describing the agressiveness of the algorithm.</p>
 KStem filter is used. The filters are all from the package <code>org.apache.solr:solr-core:5.2.1</code> which is available on
 the <a href="http://mvnrepository.com/artifact/org.apache.solr/solr-core/5.2.1">maven repository</a>.</p>
 
-<h3 id="tokeinzer-example:09f98e0855dbb36093dfceb2b16e2828">Tokeinzer Example</h3>
+<h3 id="tokeinzer-example">Tokeinzer Example</h3>
 
 <p><strong>Content</strong></p>
 
@@ -618,7 +618,7 @@ opportunities exist to join a highly successful and growing provider&hellip;</p>
 opportunity, exist, join, highly, successful, grow, provider</p>
 </blockquote>
 
-<h2 id="sources-more-information:09f98e0855dbb36093dfceb2b16e2828">Sources / More Information</h2>
+<h2 id="sources-more-information">Sources / More Information</h2>
 
 <ul>
 <li><a href="http://lexicalresearch.com/papers.html">lexicalresearch.com</a></li>
@@ -659,7 +659,7 @@ opportunity, exist, join, highly, successful, grow, provider</p>
           </a>
       </li>
 			<li class="linkedin">
-          <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://frne.github.io/post/2015-07-23-understanding-stemmers-nlp/&amp;title=Understanding%20Stemmers%20%28Natural%20Language%20Processing%29&amp;summary=I%20am%20interested%20in%20NLP%20and%20have%20already%20some%20experience%20with%20Apache%20Solr.%20It%26rsquo%3bs%20time%20to%20dig%20a%20little%20in-deep%20regarding%20stemmers.%20First%20of%20all%2c%20I%20was%20looking%20for%20a%20general%20definition%20of%20what%20a%20stemmer%20is%2c%20and%20I%20found%20this%20one%2c%20which%20IMHO%20is%20quite%20good%3a%20stemmer%20%26mdash%3b%20an%20algorithm%20for%20removing%20inflectional%20and%20derivational%20endings%20in%20order%20to%20reduce%20word%20forms%20to%20a%20common%20stem%20So%20what%20a%20stemmer%20does%20is%20nothing%20more%2c%20than%20converting%20words%20to%20their%20word%20stem...." class="popup">
+          <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://frne.github.io/post/2015-07-23-understanding-stemmers-nlp/&amp;title=Understanding%20Stemmers%20%28Natural%20Language%20Processing%29&amp;summary=I%20am%20interested%20in%20NLP%20and%20have%20already%20some%20experience%20with%20Apache%20Solr.%20It%26rsquo%3bs%20time%20to%20dig%20a%20little%20in-deep%20regarding%20stemmers.%20First%20of%20all%2c%20I%20was%20looking%20for%20a%20general%20definition%20of%20what%20a%20stemmer%20is%2c%20and%20I%20found%20this%20one%2c%20which%20IMHO%20is%20quite%20good%3a%0a%20stemmer%20%26mdash%3b%20an%20algorithm%20for%20removing%20inflectional%20and%20derivational%20endings%20in%20order%20to%20reduce%20word%20forms%20to%20a%20common%20stem%0a%20So%20what%20a%20stemmer%20does%20is%20nothing%20more%2c%20than%20converting%20words%20to%20their%20word%20stem...." class="popup">
               <span class="icon">
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28px" height="28px" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve">
                       <path d="M25.424,15.887v8.447h-4.896v-7.882c0-1.979-0.709-3.331-2.48-3.331c-1.354,0-2.158,0.911-2.514,1.803 c-0.129,0.315-0.162,0.753-0.162,1.194v8.216h-4.899c0,0,0.066-13.349,0-14.731h4.899v2.088c-0.01,0.016-0.023,0.032-0.033,0.048 h0.033V11.69c0.65-1.002,1.812-2.435,4.414-2.435C23.008,9.254,25.424,11.361,25.424,15.887z M5.348,2.501 c-1.676,0-2.772,1.092-2.772,2.539c0,1.421,1.066,2.538,2.717,2.546h0.032c1.709,0,2.771-1.132,2.771-2.546 C8.054,3.593,7.019,2.501,5.343,2.501H5.348z M2.867,24.334h4.897V9.603H2.867V24.334z"/>
@@ -741,9 +741,7 @@ opportunity, exist, join, highly, successful, grow, provider</p>
     <div itemprop="author" itemscope itemtype="http://schema.org/Person">
   <h5>About the Author</h5>
   <section>
-    <p>Frank Neff is a Software Engineer with a strong relation to JVM technologies like Java, Scala and the
-      Lightbend Stack. In his free time, he's contributiong to Open Source projects, speaking at conferences and
-      blogging about software stuff. <a href="httpa://frne.github.com/" rel="me">More info...</a>
+    <p>Frank Neff is a full time coder in love with the JVM. Doing eHealth systems in Java, he likes secure software that performs. Open minded, with a passion in object oriented & functional programming, he is always interested in new ideas and technology. <a href="httpa://frne.github.com/" rel="me">More info...</a>
     </p>
   </section>
 </div>

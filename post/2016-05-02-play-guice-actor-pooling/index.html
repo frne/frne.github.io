@@ -429,7 +429,7 @@
             <nav>
     <ul>
         <li>
-            <a href="http://github.com/swddsw"><i class="fa fa-github" aria-hidden="true"></i>&nbsp;github.com/swddsw</a>
+            <a href="http://github.com/frne"><i class="fa fa-github" aria-hidden="true"></i>&nbsp;github.com/frne</a>
         </li>
     </ul>
 </nav>
@@ -478,7 +478,7 @@ tricky, especially when it comes to dependency injection. Play! 2.4 uses Google&
 <a href="https://www.playframework.com/documentation/2.4.x/JavaDependencyInjection">Guice</a> for DI and of course it has the
 ability to also bind Actors so an <code>ActorRef</code> can be injected anywhere.</p>
 
-<h2 id="single-actor-di:2846612b84587f2b8728b61a4b52ff6d">Single Actor DI</h2>
+<h2 id="single-actor-di">Single Actor DI</h2>
 
 <p>Biding and injecting one single Actor is simple and well
 <a href="https://www.playframework.com/documentation/2.4.x/JavaAkka#Dependency-injecting-actors">documented</a> . Just bind it in
@@ -547,7 +547,7 @@ public class AssetController extends Controller {
 
 <p><em>// disclaimer: Stuff like error handling and message protocols intentionally left out in favor of clarity</em></p>
 
-<h2 id="actor-pools:2846612b84587f2b8728b61a4b52ff6d">Actor Pools</h2>
+<h2 id="actor-pools">Actor Pools</h2>
 
 <p>As you maybe know, there is the possibility to create pools of Actors instead of only one single instance. A pool
 behaves like a single actor, using a <a href="http://doc.akka.io/docs/akka/current/java/routing.html">router</a> to distribute
@@ -599,7 +599,7 @@ as a third argument:</p>
           </a>
       </li>
 			<li class="linkedin">
-          <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://frne.github.io/post/2016-05-02-play-guice-actor-pooling/&amp;title=Play%20Framework%20Actor%20Pooling%20with%20Guice%20%28Java%29&amp;summary=Working%20with%20the%20Play%21%20Framework%20means%20working%20with%20Akka%2c%20intentionally%20or%20not.%20But%20working%20with%20Akka%20Actors%20can%20be%20tricky%2c%20especially%20when%20it%20comes%20to%20dependency%20injection.%20Play%21%202.4%20uses%20Google%26rsquo%3bs%20Guice%20for%20DI%20and%20of%20course%20it%20has%20the%20ability%20to%20also%20bind%20Actors%20so%20an%20ActorRef%20can%20be%20injected%20anywhere.%20Single%20Actor%20DI%20Biding%20and%20injecting%20one%20single%20Actor%20is%20simple%20and%20well%20documented%20.%20Just%20bind%20it%20in%20a%20Module%3a%20package%20modules%3b%20import%20actors.MyExampleActor%3b%20import%20com.google.inject.AbstractModule%3b%20import%20play.libs.akka.AkkaGuiceSupport%3b%20public%20class%20ActorModule%20extends%20AbstractModule%20implements%20AkkaGuiceSupport%20%7b%20public%20static%20final%20String%20EXAMPLE_ACTOR_DI_NAME%20%3d%20%26quot%3bmy-example-actor%26quot%3b%3b%20%40Override%20protected%20void%20configure%28%29%20%7b%20bindActor%28MyExampleActor.class%2c%20EXAMPLE_ACTOR_DI_NAME%29%3b%20%7d%20%7d%20Enable%20the%20module%20in%20the%20app%20configuration%3a%20play.modules.enabled%20%3d%20%24%7bplay.modules.enabled%7d%20%5b%20modules.ActorModule%20%5d%20Now%20you%20can%20inject%20the%20bound%20actor%20into%20every%20class%20using%20the%20%40Inject%20and%20%40Named%20annotation%2c%20e.g...." class="popup">
+          <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://frne.github.io/post/2016-05-02-play-guice-actor-pooling/&amp;title=Play%20Framework%20Actor%20Pooling%20with%20Guice%20%28Java%29&amp;summary=Working%20with%20the%20Play%21%20Framework%20means%20working%20with%20Akka%2c%20intentionally%20or%20not.%20But%20working%20with%20Akka%20Actors%20can%20be%20tricky%2c%20especially%20when%20it%20comes%20to%20dependency%20injection.%20Play%21%202.4%20uses%20Google%26rsquo%3bs%20Guice%20for%20DI%20and%20of%20course%20it%20has%20the%20ability%20to%20also%20bind%20Actors%20so%20an%20ActorRef%20can%20be%20injected%20anywhere.%0aSingle%20Actor%20DI%20Biding%20and%20injecting%20one%20single%20Actor%20is%20simple%20and%20well%20documented%20.%20Just%20bind%20it%20in%20a%20Module%3a..." class="popup">
               <span class="icon">
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28px" height="28px" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve">
                       <path d="M25.424,15.887v8.447h-4.896v-7.882c0-1.979-0.709-3.331-2.48-3.331c-1.354,0-2.158,0.911-2.514,1.803 c-0.129,0.315-0.162,0.753-0.162,1.194v8.216h-4.899c0,0,0.066-13.349,0-14.731h4.899v2.088c-0.01,0.016-0.023,0.032-0.033,0.048 h0.033V11.69c0.65-1.002,1.812-2.435,4.414-2.435C23.008,9.254,25.424,11.361,25.424,15.887z M5.348,2.501 c-1.676,0-2.772,1.092-2.772,2.539c0,1.421,1.066,2.538,2.717,2.546h0.032c1.709,0,2.771-1.132,2.771-2.546 C8.054,3.593,7.019,2.501,5.343,2.501H5.348z M2.867,24.334h4.897V9.603H2.867V24.334z"/>
@@ -681,9 +681,7 @@ as a third argument:</p>
     <div itemprop="author" itemscope itemtype="http://schema.org/Person">
   <h5>About the Author</h5>
   <section>
-    <p>Frank Neff is a Software Engineer with a strong relation to JVM technologies like Java, Scala and the
-      Lightbend Stack. In his free time, he's contributiong to Open Source projects, speaking at conferences and
-      blogging about software stuff. <a href="httpa://frne.github.com/" rel="me">More info...</a>
+    <p>Frank Neff is a full time coder in love with the JVM. Doing eHealth systems in Java, he likes secure software that performs. Open minded, with a passion in object oriented & functional programming, he is always interested in new ideas and technology. <a href="httpa://frne.github.com/" rel="me">More info...</a>
     </p>
   </section>
 </div>

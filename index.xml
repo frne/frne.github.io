@@ -2,12 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Frank Neff</title>
-    <link>https://frne.github.io/</link>
+    <link>https://frne.github.io/index.xml</link>
     <description>Recent content on Frank Neff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 May 2016 10:27:49 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 10 Nov 2016 23:50:12 +0100</lastBuildDate>
     <atom:link href="https://frne.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Free E-Books about Reactive Apps, Streaming, Data Science and Scala</title>
+      <link>https://frne.github.io/post/2016-11-10-free-ebooks/</link>
+      <pubDate>Thu, 10 Nov 2016 23:50:12 +0100</pubDate>
+      
+      <guid>https://frne.github.io/post/2016-11-10-free-ebooks/</guid>
+      <description>
+
+&lt;p&gt;As you may know, there are always some free books and articles. You just have to fond them&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s a (of course incomplete) list of free literature I like. Get it, if you&amp;rsquo;re interested. You may have to register or something:&lt;/p&gt;
+
+&lt;h2 id=&#34;reactive-applications-streaming&#34;&gt;Reactive Applications &amp;amp; Streaming&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://info.lightbend.com/COLL-20XX-Designing-Reactive-Systems_RES-LP.html?lst=WS&amp;amp;_ga=1.220672216.1772974351.1472801586&#34;&gt;Designing Reactive Systems: The Role Of Actors In Distributed Architecture - Hugh McKee&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://info.lightbend.com/COLL-20XX-Fast-Data-Architectures-for-Streaming-Apps_LP.html?lst=WS&amp;amp;_ga=1.13549559.1772974351.1472801586&#34;&gt;Fast Data Architectures For Streaming Applications -  Dean Wampler&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://info.lightbend.com/COLL-20XX-Developing-Reactive-Microservices_RES-LP.html?lst=WS&amp;amp;_ga=1.245824452.1772974351.1472801586&#34;&gt;Developing Reactive Microservices - Markus Eisele&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://info.lightbend.com/COLL-20XX-Reactive-Microservices-Architecture-RES-LP.html?lst=WS&amp;amp;_ga=1.219149529.1772974351.1472801586&#34;&gt;Reactive Microservices Architecture - Jonas Bonér&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;data-science-machine-learning&#34;&gt;Data Science &amp;amp; Machine Learning&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www-bcf.usc.edu/~gareth/ISL/&#34;&gt;An Introduction to Statistical Learning - Gareth James, Daniela Witten, Trevor Hastie and Robert Tibshirani&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://leanpub.com/rprogramming&#34;&gt;R Programming for Data Science - Roger D. Peng&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://statweb.stanford.edu/~tibs/ElemStatLearn/&#34;&gt;The Elements of Statistical Learning - Trevor Hastie, Robert Tibshirani, Jerome Friedman&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;scala&#34;&gt;Scala&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.scala-lang.org/docu/files/ScalaByExample.pdf&#34;&gt;Scala By Example - Martin Odersky&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.onlineprogrammingbooks.com/free-ebook-scala-for-the-impatient/&#34;&gt;Scala for the Impatient - Cay Horstmann&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.artima.com/pins1ed/&#34;&gt;Programming in Scala, First Edition - Martin Odersky, Lex Spoon, and Bill Venners&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you liked one of those books, make a donation or buy a hardcopy to support the authors ;)&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Slides: Principles of Object Orientation</title>
@@ -70,7 +111,7 @@ tricky, especially when it comes to dependency injection. Play! 2.4 uses Google&
 &lt;a href=&#34;https://www.playframework.com/documentation/2.4.x/JavaDependencyInjection&#34;&gt;Guice&lt;/a&gt; for DI and of course it has the
 ability to also bind Actors so an &lt;code&gt;ActorRef&lt;/code&gt; can be injected anywhere.&lt;/p&gt;
 
-&lt;h2 id=&#34;single-actor-di:2846612b84587f2b8728b61a4b52ff6d&#34;&gt;Single Actor DI&lt;/h2&gt;
+&lt;h2 id=&#34;single-actor-di&#34;&gt;Single Actor DI&lt;/h2&gt;
 
 &lt;p&gt;Biding and injecting one single Actor is simple and well
 &lt;a href=&#34;https://www.playframework.com/documentation/2.4.x/JavaAkka#Dependency-injecting-actors&#34;&gt;documented&lt;/a&gt; . Just bind it in
@@ -139,7 +180,7 @@ public class AssetController extends Controller {
 
 &lt;p&gt;&lt;em&gt;// disclaimer: Stuff like error handling and message protocols intentionally left out in favor of clarity&lt;/em&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;actor-pools:2846612b84587f2b8728b61a4b52ff6d&#34;&gt;Actor Pools&lt;/h2&gt;
+&lt;h2 id=&#34;actor-pools&#34;&gt;Actor Pools&lt;/h2&gt;
 
 &lt;p&gt;As you maybe know, there is the possibility to create pools of Actors instead of only one single instance. A pool
 behaves like a single actor, using a &lt;a href=&#34;http://doc.akka.io/docs/akka/current/java/routing.html&#34;&gt;router&lt;/a&gt; to distribute
@@ -183,7 +224,7 @@ file to add scala options:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-scala&#34;&gt;scalacOptions ++= Seq(&amp;quot;-deprecation&amp;quot;, &amp;quot;-unchecked&amp;quot;, &amp;quot;-Xlint&amp;quot;)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;common-scalac-options:bbac817e5eba02df1c886c101512f63a&#34;&gt;Common Scalac Options&lt;/h2&gt;
+&lt;h2 id=&#34;common-scalac-options&#34;&gt;Common Scalac Options&lt;/h2&gt;
 
 &lt;p&gt;There are some common options which I&amp;rsquo;d like to share with you. Most of them make it harder to compile &amp;ldquo;not that good&amp;rdquo;
 code or warn about certain conditions:&lt;/p&gt;
@@ -313,7 +354,7 @@ as filters.&lt;/p&gt;
 There are plenty of different stemming algorithms out there. To use them in a project, some different things have to
 be concerned:&lt;/p&gt;
 
-&lt;h2 id=&#34;language:09f98e0855dbb36093dfceb2b16e2828&#34;&gt;Language&lt;/h2&gt;
+&lt;h2 id=&#34;language&#34;&gt;Language&lt;/h2&gt;
 
 &lt;p&gt;Stemming is based on common patterns, so it works a bit different in English than e.g. in German. Some stemmers support
 a variety of languages, some are only available in English. I would not recommend to use a stemmer in another language
@@ -322,12 +363,12 @@ than your content is, because it maybe works, but only maybe.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://wiki.apache.org/solr/AnalyzersTokenizersTokenFilters#Stemming&#34;&gt;Here&lt;/a&gt; is a list of different stemmers which can
 be used in Apache SOLR, including supported languages.&lt;/p&gt;
 
-&lt;h2 id=&#34;time-consumed:09f98e0855dbb36093dfceb2b16e2828&#34;&gt;Time consumed&lt;/h2&gt;
+&lt;h2 id=&#34;time-consumed&#34;&gt;Time consumed&lt;/h2&gt;
 
 &lt;p&gt;As with every algorithm, there are faster and slower ones. Depending on where they are used, performance could have a huge
 impact on success. Generally said: Slower does not necessarily mean more precise.&lt;/p&gt;
 
-&lt;h2 id=&#34;agressiveness:09f98e0855dbb36093dfceb2b16e2828&#34;&gt;Agressiveness&lt;/h2&gt;
+&lt;h2 id=&#34;agressiveness&#34;&gt;Agressiveness&lt;/h2&gt;
 
 &lt;p&gt;Because a stemmer does not really &amp;ldquo;understand&amp;rdquo; the language of the content which it&amp;rsquo;s processing, it all depends on the
 patterns which are applied. The PorterStemmer for example removes word endings like &amp;ldquo;e&amp;rdquo;, &amp;ldquo;er&amp;rdquo; and &amp;ldquo;ing&amp;rdquo;.
@@ -343,7 +384,7 @@ Therefore, the following conversion will be made:&lt;/p&gt;
 stemming algorithms whith some edge-cases of specific domain and evaluating the result. For many stemmers, there is
 good documentation describing the agressiveness of the algorithm.&lt;/p&gt;
 
-&lt;h2 id=&#34;different-stemmers:09f98e0855dbb36093dfceb2b16e2828&#34;&gt;Different stemmers&lt;/h2&gt;
+&lt;h2 id=&#34;different-stemmers&#34;&gt;Different stemmers&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://tartarus.org/~martin/PorterStemmer/&#34;&gt;Porter&lt;/a&gt; (English)&lt;/li&gt;
@@ -352,7 +393,7 @@ good documentation describing the agressiveness of the algorithm.&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;http://lexicalresearch.com/kstem-doc.txt&#34;&gt;KStem&lt;/a&gt; (English, less agressive then porter)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;usage-in-java:09f98e0855dbb36093dfceb2b16e2828&#34;&gt;Usage in Java&lt;/h2&gt;
+&lt;h2 id=&#34;usage-in-java&#34;&gt;Usage in Java&lt;/h2&gt;
 
 &lt;p&gt;For a recent project, I used some of the SOLR / Lucene filters in Java. Just a short example how they can be used:&lt;/p&gt;
 
@@ -428,7 +469,7 @@ good documentation describing the agressiveness of the algorithm.&lt;/p&gt;
 KStem filter is used. The filters are all from the package &lt;code&gt;org.apache.solr:solr-core:5.2.1&lt;/code&gt; which is available on
 the &lt;a href=&#34;http://mvnrepository.com/artifact/org.apache.solr/solr-core/5.2.1&#34;&gt;maven repository&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h3 id=&#34;tokeinzer-example:09f98e0855dbb36093dfceb2b16e2828&#34;&gt;Tokeinzer Example&lt;/h3&gt;
+&lt;h3 id=&#34;tokeinzer-example&#34;&gt;Tokeinzer Example&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;Content&lt;/strong&gt;&lt;/p&gt;
 
@@ -444,7 +485,7 @@ opportunities exist to join a highly successful and growing provider&amp;hellip;
 opportunity, exist, join, highly, successful, grow, provider&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&#34;sources-more-information:09f98e0855dbb36093dfceb2b16e2828&#34;&gt;Sources / More Information&lt;/h2&gt;
+&lt;h2 id=&#34;sources-more-information&#34;&gt;Sources / More Information&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://lexicalresearch.com/papers.html&#34;&gt;lexicalresearch.com&lt;/a&gt;&lt;/li&gt;
@@ -477,7 +518,7 @@ that is based on dealing with specific situations instead of on ideas and
 theories &amp;ndash; &lt;a href=&#34;http://www.merriam-webster.com/dictionary/pragmatism&#34;&gt;merriam-webster.com&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&#34;a-reasonable-and-logical-way:c8c0a6e2091ac900913db647f6239752&#34;&gt;A Reasonable and Logical Way&lt;/h2&gt;
+&lt;h2 id=&#34;a-reasonable-and-logical-way&#34;&gt;A Reasonable and Logical Way&lt;/h2&gt;
 
 &lt;p&gt;So even pragmatic solutions have to be reasonable and logical. I would ask so
 many people out there: &amp;ldquo;Is missing out documentation, tests and software design
@@ -486,7 +527,7 @@ don&amp;rsquo;t think so. Maybe if it&amp;rsquo;s only for a Executive Board pre
 rapidly build a prototype without having documentation or tests. But doing that,
 one has to take care that this prototype is not going life two weeks later.&lt;/p&gt;
 
-&lt;h2 id=&#34;based-on-dealing-with-specific-situations:c8c0a6e2091ac900913db647f6239752&#34;&gt;Based on Dealing with Specific Situations&lt;/h2&gt;
+&lt;h2 id=&#34;based-on-dealing-with-specific-situations&#34;&gt;Based on Dealing with Specific Situations&lt;/h2&gt;
 
 &lt;p&gt;Of course, if there is a disaster case, you cannot think about
 the best way to build a solution for 2 days. What I am talking about are
@@ -500,7 +541,7 @@ patterns or parts of solutions. Using those &amp;ldquo;best practices&amp;rdquo;
 quintessential of pragmatism. Building an over-simplified custom solution,
 because one doesn&amp;rsquo;t understand the best practice, is not.&lt;/p&gt;
 
-&lt;h2 id=&#34;instead-of-on-ideas-and-theories:c8c0a6e2091ac900913db647f6239752&#34;&gt;Instead of on Ideas and Theories&lt;/h2&gt;
+&lt;h2 id=&#34;instead-of-on-ideas-and-theories&#34;&gt;Instead of on Ideas and Theories&lt;/h2&gt;
 
 &lt;p&gt;There are many theoretical approaches in development. Let&amp;rsquo;s take the &lt;a href=&#34;http://martinfowler.com/eaaCatalog/&#34;&gt;Enterprise
 Design/Architecture Patterns&lt;/a&gt;
@@ -510,7 +551,7 @@ because this is theoretic and has nothing to do with pragmatic solutions. But if
 a &amp;ldquo;pragmatic solution&amp;rdquo; is the best way to deal with a specific situation, then
 I would highly recommend those patterns because the are very pragmatic.&lt;/p&gt;
 
-&lt;h2 id=&#34;finishing:c8c0a6e2091ac900913db647f6239752&#34;&gt;Finishing&amp;hellip;&lt;/h2&gt;
+&lt;h2 id=&#34;finishing&#34;&gt;Finishing&amp;hellip;&lt;/h2&gt;
 
 &lt;p&gt;Many people use words like &amp;ldquo;pragmatism&amp;rdquo; or &amp;ldquo;best practice&amp;rdquo; as buzzwords but
 don&amp;rsquo;t understand what they mean. Therefore, please be aware that pragmatism does
