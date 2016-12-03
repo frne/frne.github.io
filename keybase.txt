@@ -1,0 +1,72 @@
+==================================================================
+https://keybase.io/frne
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://frne.github.io
+  * I am frne (https://keybase.io/frne) on keybase.
+  * I have a public key with fingerprint 881B 7822 494C 8ABC 18C3  65E1 8CE6 A551 DD24 52AA
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101b57dd68bf0650c7832520ce7462c04a20492435145622336b9b50d60955958710a",
+            "fingerprint": "881b7822494c8abc18c365e18ce6a551dd2452aa",
+            "host": "keybase.io",
+            "key_id": "8ce6a551dd2452aa",
+            "kid": "0101b57dd68bf0650c7832520ce7462c04a20492435145622336b9b50d60955958710a",
+            "uid": "f4e1425d69a5789b0be9e6d2f2025919",
+            "username": "frne"
+        },
+        "service": {
+            "hostname": "frne.github.io",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1480750744,
+    "expire_in": 157680000,
+    "prev": "05bdc14703c5aa1a2faff916d5253ec118542b0e899d7eb7e221f28a034bc6b4",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owGtUn9QFGUYvgPU44ogxZ/YaHtKQ5Lufrvf/rgUFJhxpitQMsgmOffb/Q424fa6
+XVDDkAYU4VARkIoBqhlMRBPDK3/EKBqaBM3UxKjE6OAQNUROExNqwkS7VDP90Z99
+/7zzve/zPO/7vPNWRYRabNa1ricvNdP3D1h7RpDl5aSCpkICqfJOwllIbMPTAefK
+WNPd2xSZcBIkRVIIcrLM8shDspCUOJ4GEJAS5hgWSCQjApIRAENDioEsADTNIgFB
+UmZJAUIB8hxFikQ84VG82djv8yte3ZDleQpxPACMwEi8iCSKl2gWYiNgVoSQkmXA
+QCCaxBxVMxnGcEjU8EpFNXLGxz093n/g/+e586flPAymGABlVhAhxwuIRFjArAw8
+gARQoAQTqGG/V8zDJtrvxcSb8YSRKVAkbC7VdPGv6spsRc/JR3+58flVXZXUXKOW
+o+s+zWly9Z0+E7wdI/ffMm6keGVjiwajAPs1RfUSTspASrpi6lIMT3KQ5BgmnsA7
+fIofuxUTATmWJ41n9sEF5mogkiWK4cgMWoKiSInAI3o8AsXKEEAaSxTFQwYgEvOC
+IHMYcRgAygN4kaQZJLGIIUxnr3tVwmm00sVsQ1NTsr2inu83bNvLQxaHWaw2y8wZ
+IeZ9WezhUf8cnWVv5OSjvqiu+b+sbt9dbm0ZvXVhavG4Q29678qtirGvBrsqayp6
+oTNilGgOu5Ab3rl1yyfiVMRYQkbgp+Ibu/MDTH/4qnPkLrvtfPBoo7W16pRLtHZI
+zRMxfO1g59HTg99nbk8IGTmxoK2sFM6Uh6scG2zFl++98epb6RW/7qt/EFCvP0z8
+gg8enl2obUxNuTHnkb4PPlv3DZHQfqfqdPRckf5tqzemqLitvi264XhmfDDupas1
+n1//qDikO3N/W+LYvHPOheMnFk0gvLluaGD0YllLRJAZ6OnuXZalfnoGJs9fMEOt
+do9XBoUSRzDYH3iYskWrBXVa3c2GgnePeVyu3JPXNt2tnKdNrrGi+vLOobKs52xR
+cctfaUyK+z3Q53iRDZb0jO3aWHovOS7vy660nrTX/Palqenrnh5zXKHJ5edLIw+V
+odub80onanpi3VJlS0rtUEr/wtbhWYXtQyGg+8j9pB/9j1Vnfeg4Yk0eqVuz5Pg7
+k6E1i87+HHvQoV5utq9oTFSXPPXCDx1NvYGvw+be7It+v0M+FDp74trtrpOV1Kkz
+O0I3lH4bHDg2nHp4D2pYfbBm/R9n01dcEmKe2Nu6rDeiOF1M1Oy25wsTn72by6yy
+7J+VMhXoa9l0pyjS65pTYnt8bfOEdzANXV0au+fjNvszDfvUsouTk5lvA/5BQkv1
++iLXd/UZfwI=
+=Os2O
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/frne
+
+==================================================================
