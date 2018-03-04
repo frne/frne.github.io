@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Franks.codes</title>
+    <link>https://frne.github.io/categories/</link>
+    <description>Recent content in Categories on Franks.codes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 12 May 2016 14:38:12 +0200</lastBuildDate>
+    
+	<atom:link href="https://frne.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Annoucements</title>
+      <link>https://frne.github.io/categories/annoucements/</link>
+      <pubDate>Thu, 12 May 2016 14:38:12 +0200</pubDate>
+      
+      <guid>https://frne.github.io/categories/annoucements/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bigdata</title>
+      <link>https://frne.github.io/categories/bigdata/</link>
+      <pubDate>Fri, 02 Mar 2018 19:15:03 +0100</pubDate>
+      
+      <guid>https://frne.github.io/categories/bigdata/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Business</title>
+      <link>https://frne.github.io/categories/business/</link>
+      <pubDate>Tue, 21 Apr 2015 13:09:32 +0200</pubDate>
+      
+      <guid>https://frne.github.io/categories/business/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Functional Programming</title>
+      <link>https://frne.github.io/categories/functional-programming/</link>
+      <pubDate>Fri, 02 Mar 2018 19:15:03 +0100</pubDate>
+      
+      <guid>https://frne.github.io/categories/functional-programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java</title>
+      <link>https://frne.github.io/categories/java/</link>
+      <pubDate>Mon, 02 May 2016 23:11:01 +0200</pubDate>
+      
+      <guid>https://frne.github.io/categories/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scala</title>
+      <link>https://frne.github.io/categories/scala/</link>
+      <pubDate>Fri, 02 Mar 2018 19:15:03 +0100</pubDate>
+      
+      <guid>https://frne.github.io/categories/scala/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Software Engineering</title>
+      <link>https://frne.github.io/categories/software-engineering/</link>
+      <pubDate>Sun, 15 May 2016 10:27:49 +0200</pubDate>
+      
+      <guid>https://frne.github.io/categories/software-engineering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Talks</title>
+      <link>https://frne.github.io/categories/talks/</link>
+      <pubDate>Sun, 15 May 2016 10:27:49 +0200</pubDate>
+      
+      <guid>https://frne.github.io/categories/talks/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

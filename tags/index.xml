@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Franks.codes</title>
+    <link>https://frne.github.io/tags/</link>
+    <description>Recent content in Tags on Franks.codes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 Apr 2015 13:09:32 +0200</lastBuildDate>
+    
+	<atom:link href="https://frne.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Agile</title>
+      <link>https://frne.github.io/tags/agile/</link>
+      <pubDate>Tue, 21 Apr 2015 13:09:32 +0200</pubDate>
+      
+      <guid>https://frne.github.io/tags/agile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Akka</title>
+      <link>https://frne.github.io/tags/akka/</link>
+      <pubDate>Mon, 02 May 2016 23:11:01 +0200</pubDate>
+      
+      <guid>https://frne.github.io/tags/akka/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Compiler</title>
+      <link>https://frne.github.io/tags/compiler/</link>
+      <pubDate>Fri, 15 Apr 2016 22:15:28 +0200</pubDate>
+      
+      <guid>https://frne.github.io/tags/compiler/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fp</title>
+      <link>https://frne.github.io/tags/fp/</link>
+      <pubDate>Fri, 02 Mar 2018 19:15:03 +0100</pubDate>
+      
+      <guid>https://frne.github.io/tags/fp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Grasp</title>
+      <link>https://frne.github.io/tags/grasp/</link>
+      <pubDate>Sun, 15 May 2016 10:27:49 +0200</pubDate>
+      
+      <guid>https://frne.github.io/tags/grasp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Guice</title>
+      <link>https://frne.github.io/tags/guice/</link>
+      <pubDate>Mon, 02 May 2016 23:11:01 +0200</pubDate>
+      
+      <guid>https://frne.github.io/tags/guice/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java</title>
+      <link>https://frne.github.io/tags/java/</link>
+      <pubDate>Mon, 02 May 2016 23:11:01 +0200</pubDate>
+      
+      <guid>https://frne.github.io/tags/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Job</title>
+      <link>https://frne.github.io/tags/job/</link>
+      <pubDate>Thu, 12 May 2016 14:38:12 +0200</pubDate>
+      
+      <guid>https://frne.github.io/tags/job/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>News</title>
+      <link>https://frne.github.io/tags/news/</link>
+      <pubDate>Thu, 12 May 2016 14:38:12 +0200</pubDate>
+      
+      <guid>https://frne.github.io/tags/news/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nlp</title>
+      <link>https://frne.github.io/tags/nlp/</link>
+      <pubDate>Thu, 23 Jul 2015 18:05:12 +0200</pubDate>
+      
+      <guid>https://frne.github.io/tags/nlp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Object Orientation</title>
+      <link>https://frne.github.io/tags/object-orientation/</link>
+      <pubDate>Sun, 15 May 2016 10:27:49 +0200</pubDate>
+      
+      <guid>https://frne.github.io/tags/object-orientation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Patterns</title>
+      <link>https://frne.github.io/tags/patterns/</link>
+      <pubDate>Sun, 15 May 2016 10:27:49 +0200</pubDate>
+      
+      <guid>https://frne.github.io/tags/patterns/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Play</title>
+      <link>https://frne.github.io/tags/play/</link>
+      <pubDate>Mon, 02 May 2016 23:11:01 +0200</pubDate>
+      
+      <guid>https://frne.github.io/tags/play/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pragmatism</title>
+      <link>https://frne.github.io/tags/pragmatism/</link>
+      <pubDate>Tue, 21 Apr 2015 13:09:32 +0200</pubDate>
+      
+      <guid>https://frne.github.io/tags/pragmatism/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sbt</title>
+      <link>https://frne.github.io/tags/sbt/</link>
+      <pubDate>Fri, 15 Apr 2016 22:15:28 +0200</pubDate>
+      
+      <guid>https://frne.github.io/tags/sbt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scala</title>
+      <link>https://frne.github.io/tags/scala/</link>
+      <pubDate>Fri, 15 Apr 2016 22:15:28 +0200</pubDate>
+      
+      <guid>https://frne.github.io/tags/scala/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shapeless</title>
+      <link>https://frne.github.io/tags/shapeless/</link>
+      <pubDate>Fri, 02 Mar 2018 19:15:03 +0100</pubDate>
+      
+      <guid>https://frne.github.io/tags/shapeless/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Solid</title>
+      <link>https://frne.github.io/tags/solid/</link>
+      <pubDate>Sun, 15 May 2016 10:27:49 +0200</pubDate>
+      
+      <guid>https://frne.github.io/tags/solid/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Solr</title>
+      <link>https://frne.github.io/tags/solr/</link>
+      <pubDate>Thu, 23 Jul 2015 18:05:12 +0200</pubDate>
+      
+      <guid>https://frne.github.io/tags/solr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spark</title>
+      <link>https://frne.github.io/tags/spark/</link>
+      <pubDate>Fri, 02 Mar 2018 19:15:03 +0100</pubDate>
+      
+      <guid>https://frne.github.io/tags/spark/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Typelevel</title>
+      <link>https://frne.github.io/tags/typelevel/</link>
+      <pubDate>Fri, 02 Mar 2018 19:15:03 +0100</pubDate>
+      
+      <guid>https://frne.github.io/tags/typelevel/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

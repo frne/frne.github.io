@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Frank Neff</title>
-    <link>https://frne.github.io/categories/software-engineering/index.xml</link>
-    <description>Recent content on Frank Neff</description>
+    <title>Software Engineering on Franks.codes</title>
+    <link>https://frne.github.io/categories/software-engineering/</link>
+    <description>Recent content in Software Engineering on Franks.codes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="https://frne.github.io/categories/software-engineering/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 15 May 2016 10:27:49 +0200</lastBuildDate>
+    
+	<atom:link href="https://frne.github.io/categories/software-engineering/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Slides: Principles of Object Orientation</title>
@@ -14,22 +17,8 @@
       <pubDate>Sun, 15 May 2016 10:27:49 +0200</pubDate>
       
       <guid>https://frne.github.io/post/2016-05-15-slides-principles-of-object-orientation/</guid>
-      <description>&lt;p&gt;Some time ago, in school, there was a somehow funny situation: The prof was talking about object orientation and
-patterns. He came up with &lt;a href=&#34;https://en.wikipedia.org/wiki/Single_responsibility_principle&#34;&gt;SRP&lt;/a&gt; but left out some
-important others. I asked if we will talk about all GRASP and SOLID principles, because in my personal opinion, they are
-part of &amp;ldquo;the basics&amp;rdquo;.&lt;/p&gt;
-
-&lt;p&gt;His answer was not what is was expecting&amp;hellip; He told me to prepare a talk about those principles in front of the class.
-And so did I:&lt;/p&gt;
-
-&lt;script async class=&#39;speakerdeck-embed&#39; data-id=&#39;af913bec51cd412b8e6f2a1231bf89ed&#39; data-ratio=&#39;1.33333333333333&#39; src=&#39;//speakerdeck.com/assets/embed.js&#39;&gt;&lt;/script&gt;
-
-&lt;p&gt;I submitted my slides to him yesterday, and now I&amp;rsquo;m waiting for approval. I have held talks at developer
-meetups, conferences and in different companies, but never at school. Looks like maybe I&amp;rsquo;m going to be a substitute
-teacher in the near future ;)&lt;/p&gt;
-
-&lt;p&gt;Feedback welcome.&lt;/p&gt;
-</description>
+      <description>Some time ago, in school, there was a somehow funny situation: The prof was talking about object orientation and patterns. He came up with SRP but left out some important others. I asked if we will talk about all GRASP and SOLID principles, because in my personal opinion, they are part of &amp;ldquo;the basics&amp;rdquo;.
+His answer was not what is was expecting&amp;hellip; He told me to prepare a talk about those principles in front of the class.</description>
     </item>
     
   </channel>

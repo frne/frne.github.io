@@ -1,53 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Post-rsses on Frank Neff</title>
-    <link>https://frne.github.io/post/index.xml</link>
-    <description>Recent content in Post-rsses on Frank Neff</description>
+    <title>Posts on Franks.codes</title>
+    <link>https://frne.github.io/post/</link>
+    <description>Recent content in Posts on Franks.codes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 10 Nov 2016 23:50:12 +0100</lastBuildDate>
-    <atom:link href="https://frne.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 02 Mar 2018 19:15:03 +0100</lastBuildDate>
+    
+	<atom:link href="https://frne.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
-      <title>Free E-Books about Reactive Apps, Streaming, Data Science and Scala</title>
-      <link>https://frne.github.io/post/2016-11-10-free-ebooks/</link>
-      <pubDate>Thu, 10 Nov 2016 23:50:12 +0100</pubDate>
+      <title>Using Shapeless for Data Cleaning in Apache Spark</title>
+      <link>https://frne.github.io/post/2017-12-14-generic-derivation-for-spark-data-cleaning/</link>
+      <pubDate>Fri, 02 Mar 2018 19:15:03 +0100</pubDate>
       
-      <guid>https://frne.github.io/post/2016-11-10-free-ebooks/</guid>
-      <description>
-
-&lt;p&gt;As you may know, there are always some free books and articles. You just have to fond them&amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;Here&amp;rsquo;s a (of course incomplete) list of free literature I like. Get it, if you&amp;rsquo;re interested. You may have to register or something:&lt;/p&gt;
-
-&lt;h2 id=&#34;reactive-applications-streaming&#34;&gt;Reactive Applications &amp;amp; Streaming&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://info.lightbend.com/COLL-20XX-Designing-Reactive-Systems_RES-LP.html?lst=WS&amp;amp;_ga=1.220672216.1772974351.1472801586&#34;&gt;Designing Reactive Systems: The Role Of Actors In Distributed Architecture - Hugh McKee&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://info.lightbend.com/COLL-20XX-Fast-Data-Architectures-for-Streaming-Apps_LP.html?lst=WS&amp;amp;_ga=1.13549559.1772974351.1472801586&#34;&gt;Fast Data Architectures For Streaming Applications -  Dean Wampler&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://info.lightbend.com/COLL-20XX-Developing-Reactive-Microservices_RES-LP.html?lst=WS&amp;amp;_ga=1.245824452.1772974351.1472801586&#34;&gt;Developing Reactive Microservices - Markus Eisele&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://info.lightbend.com/COLL-20XX-Reactive-Microservices-Architecture-RES-LP.html?lst=WS&amp;amp;_ga=1.219149529.1772974351.1472801586&#34;&gt;Reactive Microservices Architecture - Jonas Bonér&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;data-science-machine-learning&#34;&gt;Data Science &amp;amp; Machine Learning&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www-bcf.usc.edu/~gareth/ISL/&#34;&gt;An Introduction to Statistical Learning - Gareth James, Daniela Witten, Trevor Hastie and Robert Tibshirani&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://leanpub.com/rprogramming&#34;&gt;R Programming for Data Science - Roger D. Peng&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://statweb.stanford.edu/~tibs/ElemStatLearn/&#34;&gt;The Elements of Statistical Learning - Trevor Hastie, Robert Tibshirani, Jerome Friedman&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;scala&#34;&gt;Scala&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.scala-lang.org/docu/files/ScalaByExample.pdf&#34;&gt;Scala By Example - Martin Odersky&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.onlineprogrammingbooks.com/free-ebook-scala-for-the-impatient/&#34;&gt;Scala for the Impatient - Cay Horstmann&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.artima.com/pins1ed/&#34;&gt;Programming in Scala, First Edition - Martin Odersky, Lex Spoon, and Bill Venners&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;If you liked one of those books, make a donation or buy a hardcopy to support the authors ;)&lt;/p&gt;
-</description>
+      <guid>https://frne.github.io/post/2017-12-14-generic-derivation-for-spark-data-cleaning/</guid>
+      <description>When it comes to importing data into a BigData infrastructure like Hadoop, Apache Spark is one of the most used tools for ETL jobs. Because input data &amp;ndash; in this case CSV &amp;ndash; has often invalid values, a data cleaning layer is needed. Most tasks in data cleaning are very specific and therefore need to be implemented depending on your data, but some tasks can be generalized. In this post, I&amp;rsquo;ll not go into Spark, ETL or BigData in general, but provide one approach to clean null / empty values off a data set.</description>
     </item>
     
     <item>
@@ -56,22 +26,8 @@
       <pubDate>Sun, 15 May 2016 10:27:49 +0200</pubDate>
       
       <guid>https://frne.github.io/post/2016-05-15-slides-principles-of-object-orientation/</guid>
-      <description>&lt;p&gt;Some time ago, in school, there was a somehow funny situation: The prof was talking about object orientation and
-patterns. He came up with &lt;a href=&#34;https://en.wikipedia.org/wiki/Single_responsibility_principle&#34;&gt;SRP&lt;/a&gt; but left out some
-important others. I asked if we will talk about all GRASP and SOLID principles, because in my personal opinion, they are
-part of &amp;ldquo;the basics&amp;rdquo;.&lt;/p&gt;
-
-&lt;p&gt;His answer was not what is was expecting&amp;hellip; He told me to prepare a talk about those principles in front of the class.
-And so did I:&lt;/p&gt;
-
-&lt;script async class=&#39;speakerdeck-embed&#39; data-id=&#39;af913bec51cd412b8e6f2a1231bf89ed&#39; data-ratio=&#39;1.33333333333333&#39; src=&#39;//speakerdeck.com/assets/embed.js&#39;&gt;&lt;/script&gt;
-
-&lt;p&gt;I submitted my slides to him yesterday, and now I&amp;rsquo;m waiting for approval. I have held talks at developer
-meetups, conferences and in different companies, but never at school. Looks like maybe I&amp;rsquo;m going to be a substitute
-teacher in the near future ;)&lt;/p&gt;
-
-&lt;p&gt;Feedback welcome.&lt;/p&gt;
-</description>
+      <description>Some time ago, in school, there was a somehow funny situation: The prof was talking about object orientation and patterns. He came up with SRP but left out some important others. I asked if we will talk about all GRASP and SOLID principles, because in my personal opinion, they are part of &amp;ldquo;the basics&amp;rdquo;.
+His answer was not what is was expecting&amp;hellip; He told me to prepare a talk about those principles in front of the class.</description>
     </item>
     
     <item>
@@ -80,22 +36,8 @@ teacher in the near future ;)&lt;/p&gt;
       <pubDate>Thu, 12 May 2016 14:38:12 +0200</pubDate>
       
       <guid>https://frne.github.io/post/2016-05-12-new-blog/</guid>
-      <description>&lt;p&gt;You may have noticed, that I had not much time to blog about something in the past months&amp;hellip;
-One thing was, that we all need money, so I had to work very much. And as some of you know, I&amp;rsquo;m also studying in the evenings.&lt;/p&gt;
-
-&lt;p&gt;Long story short, I&amp;rsquo;ve restarted blogging with a new engine and new design once again. Key is (not just to use new swag),
-to simplify blogging for me, so I can put more time in the articles and less in managing the blog itself. I&amp;rsquo;m not much
-of a frontend developer or a designer, so the design will maybe not impress you ;)&lt;/p&gt;
-
-&lt;p&gt;Technically, the new blog is based on &lt;a href=&#34;http://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; and &lt;a href=&#34;https://pages.github.com/&#34;&gt;GitHub Pages&lt;/a&gt;, and you
-can find it on &lt;a href=&#34;https://frne.github.com&#34;&gt;frne.github.com&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;I will port some of the older articles and of course add new ones.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Big news: Currently for hire!&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;If you are looking a motivated Java/Scala dev in the area of Zurich (Switzerland), we maybe should talk ;)&lt;/p&gt;
-</description>
+      <description>You may have noticed, that I had not much time to blog about something in the past months&amp;hellip; One thing was, that we all need money, so I had to work very much. And as some of you know, I&amp;rsquo;m also studying in the evenings.
+Long story short, I&amp;rsquo;ve restarted blogging with a new engine and new design once again. Key is (not just to use new swag), to simplify blogging for me, so I can put more time in the articles and less in managing the blog itself.</description>
     </item>
     
     <item>
@@ -104,101 +46,8 @@ can find it on &lt;a href=&#34;https://frne.github.com&#34;&gt;frne.github.com&l
       <pubDate>Mon, 02 May 2016 23:11:01 +0200</pubDate>
       
       <guid>https://frne.github.io/post/2016-05-02-play-guice-actor-pooling/</guid>
-      <description>
-
-&lt;p&gt;Working with the Play! Framework means working with Akka, intentionally or not. But working with Akka Actors can be
-tricky, especially when it comes to dependency injection. Play! 2.4 uses Google&amp;rsquo;s
-&lt;a href=&#34;https://www.playframework.com/documentation/2.4.x/JavaDependencyInjection&#34;&gt;Guice&lt;/a&gt; for DI and of course it has the
-ability to also bind Actors so an &lt;code&gt;ActorRef&lt;/code&gt; can be injected anywhere.&lt;/p&gt;
-
-&lt;h2 id=&#34;single-actor-di&#34;&gt;Single Actor DI&lt;/h2&gt;
-
-&lt;p&gt;Biding and injecting one single Actor is simple and well
-&lt;a href=&#34;https://www.playframework.com/documentation/2.4.x/JavaAkka#Dependency-injecting-actors&#34;&gt;documented&lt;/a&gt; . Just bind it in
-a Module:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;package modules;
-
-import actors.MyExampleActor;
-import com.google.inject.AbstractModule;
-import play.libs.akka.AkkaGuiceSupport;
-
-public class ActorModule extends AbstractModule implements AkkaGuiceSupport {
-
-    public static final String EXAMPLE_ACTOR_DI_NAME = &amp;quot;my-example-actor&amp;quot;;
-
-    @Override
-    protected void configure() {
-        bindActor(MyExampleActor.class, EXAMPLE_ACTOR_DI_NAME);
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Enable the module in the app configuration:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-scala&#34;&gt;play.modules.enabled = ${play.modules.enabled} [
-  modules.ActorModule
-]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now you can inject the bound actor into every class using the &lt;code&gt;@Inject&lt;/code&gt; and &lt;code&gt;@Named&lt;/code&gt; annotation, e.g. in a Controller:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Keep in mind:&lt;/strong&gt; Actors should always be injected as &lt;code&gt;ActorRef&lt;/code&gt; and not as the concrete class which has been
-implemented.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;package controllers;
-
-import akka.actor.ActorRef;
-import akka.util.Timeout;
-import modules.ActorModule;
-import play.mvc.Controller;
-import play.mvc.Result;
-import scala.concurrent.Await;
-import scala.concurrent.duration.Duration;
-import scala.concurrent.duration.FiniteDuration;
-
-import javax.inject.Inject;
-import javax.inject.Named;
-import java.util.concurrent.TimeUnit;
-
-public class AssetController extends Controller {
-
-    @Inject
-    @Named(ActorModule.EXAMPLE_ACTOR_DI_NAME)
-    ActorRef exampleActor;
-
-    public Result publish(String assetType, String assetUuid) {
-        FiniteDuration duration = Duration.create(5, TimeUnit.SECONDS);
-        String response = Await.result(
-                ask(exampleActor, &amp;quot;ask something&amp;quot;, new Timeout(duration)).mapTo(classTag(Strijg.class)),
-                duration
-        );
-        return ok(response);
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;em&gt;// disclaimer: Stuff like error handling and message protocols intentionally left out in favor of clarity&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;actor-pools&#34;&gt;Actor Pools&lt;/h2&gt;
-
-&lt;p&gt;As you maybe know, there is the possibility to create pools of Actors instead of only one single instance. A pool
-behaves like a single actor, using a &lt;a href=&#34;http://doc.akka.io/docs/akka/current/java/routing.html&#34;&gt;router&lt;/a&gt; to distribute
-messages to different child actors. The configuration options are huge, but most of the time, I personally only need an option
-to bind an actor pool using &lt;a href=&#34;http://doc.akka.io/docs/akka/current/java/routing.html#Pool&#34;&gt;round robin distribution&lt;/a&gt;. No
-problems to achive this using the Akka configuration, but I could not find any documentation how to combine it using
-Play / Guice DI (in Java).&lt;/p&gt;
-
-&lt;p&gt;It turned out, that it is simple once you know it. Just pass the props of a &lt;code&gt;RoundRobinPool&lt;/code&gt; to the &lt;code&gt;bindActor&lt;/code&gt; method
-as a third argument:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;bindActor(MyExampleActor.class, EXAMPLE_ACTOR_DI_NAME, p -&amp;gt; new RoundRobinPool(5).props(p));
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now, instead of a single instance of &lt;code&gt;MyExampleActor&lt;/code&gt; there is a pool of 5 of them waiting for messages.&lt;/p&gt;
-
-&lt;p&gt;The example works for Play! Framework 2.4 using Java 8 and will maybe break in future versions.&lt;/p&gt;
-</description>
+      <description>Working with the Play! Framework means working with Akka, intentionally or not. But working with Akka Actors can be tricky, especially when it comes to dependency injection. Play! 2.4 uses Google&amp;rsquo;s Guice for DI and of course it has the ability to also bind Actors so an ActorRef can be injected anywhere.
+Single Actor DI Biding and injecting one single Actor is simple and well documented . Just bind it in a Module:</description>
     </item>
     
     <item>
@@ -207,126 +56,9 @@ as a third argument:&lt;/p&gt;
       <pubDate>Fri, 15 Apr 2016 22:15:28 +0200</pubDate>
       
       <guid>https://frne.github.io/post/2016-04-15-scala-compiler-tuning/</guid>
-      <description>
-
-&lt;p&gt;As my Scala projects go on, I want to share some compiler configuration and tricks with you, which I use on many
-projects. Some tiny configuration options can greatly improve your code and warn you about things, you would probably
-never discover.&lt;/p&gt;
-
-&lt;p&gt;Basically, you can pass compiler options to &lt;code&gt;scalac&lt;/code&gt; using console arguments:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ scalac -deprecation -unchecked -Xlint something.scala
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If you are using SBT, it&amp;rsquo;s even simpler&amp;hellip; You can just use the following configurations snippet in your &lt;code&gt;build.sbt&lt;/code&gt;
-file to add scala options:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-scala&#34;&gt;scalacOptions ++= Seq(&amp;quot;-deprecation&amp;quot;, &amp;quot;-unchecked&amp;quot;, &amp;quot;-Xlint&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;common-scalac-options&#34;&gt;Common Scalac Options&lt;/h2&gt;
-
-&lt;p&gt;There are some common options which I&amp;rsquo;d like to share with you. Most of them make it harder to compile &amp;ldquo;not that good&amp;rdquo;
-code or warn about certain conditions:&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Option&lt;/th&gt;
-&lt;th&gt;Description&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;-deprecation&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Emit warning and location for usages of deprecated APIs.&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;-feature&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Emit warning and location for usages of features that should be imported explicitly.&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;-unchecked&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Enable additional warnings where generated code depends on assumptions.&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;-Xfatal-warnings&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Fail the compilation if there are any warnings.&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;-Xlint&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Enable recommended additional warnings.&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;-Ywarn-adapted-arg&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Warn if an argument list is modified to match the receiver.&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;-Ywarn-dead-code&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Warn when dead code is identified.&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;-Ywarn-inaccessible&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Warn about inaccessible types in method signatures.&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;-Ywarn-nullary-override&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Warn when non-nullary overrides nullary, e.g. def foo() over def foo.&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;-Ywarn-numeric-widen&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Warn when numerics are widened.&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;-Ywarn-value-discard&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Warn when non-Unit expression results are unused.&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;-Ywarn-unused&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;arn when local and private vals, vars, defs, and types are unused.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;This is just a very small subset of available options for the Scala compiler. If you want to see all options available,
-just ask your scalac for it. To show all the options, just run &lt;code&gt;scalac -X&lt;/code&gt; or &lt;code&gt;scalac -Y&lt;/code&gt;. You can also just display
-the compiler help using &lt;code&gt;scalac -help&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Finally, my personal Scala options (as SBT settings) for most of the Scala projects I currently work on:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-scala&#34;&gt;// compiler tuning for the win - makes it harder to build schwurbl
-scalacOptions ++= Seq(
-  &amp;quot;-deprecation&amp;quot;,
-  &amp;quot;-feature&amp;quot;,
-  &amp;quot;-unchecked&amp;quot;,
-  &amp;quot;-Xfatal-warnings&amp;quot;,
-  &amp;quot;-Xlint&amp;quot;,
-  &amp;quot;-Ywarn-adapted-args&amp;quot;,
-  &amp;quot;-Ywarn-dead-code&amp;quot;,
-  &amp;quot;-Ywarn-inaccessible&amp;quot;,
-  &amp;quot;-Ywarn-nullary-override&amp;quot;,
-  &amp;quot;-Ywarn-numeric-widen&amp;quot;,
-  &amp;quot;-Ywarn-value-discard&amp;quot;,
-  &amp;quot;-Ywarn-unused&amp;quot;,
-)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Of course there are also such options for javac, the Java compiler. Just run &lt;code&gt;javac -help&lt;/code&gt; or &lt;code&gt;javac -X&lt;/code&gt;&amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;As always, I really apreciate feedback of all kinds, or just send me your compiler configuration&amp;hellip;&lt;/p&gt;
-</description>
+      <description>As my Scala projects go on, I want to share some compiler configuration and tricks with you, which I use on many projects. Some tiny configuration options can greatly improve your code and warn you about things, you would probably never discover.
+Basically, you can pass compiler options to scalac using console arguments:
+$ scalac -deprecation -unchecked -Xlint something.scala If you are using SBT, it&amp;rsquo;s even simpler&amp;hellip; You can just use the following configurations snippet in your build.</description>
     </item>
     
     <item>
@@ -335,164 +67,9 @@ scalacOptions ++= Seq(
       <pubDate>Thu, 23 Jul 2015 18:05:12 +0200</pubDate>
       
       <guid>https://frne.github.io/post/2015-07-23-understanding-stemmers-nlp/</guid>
-      <description>
-
-&lt;p&gt;I am interested in NLP and have already some experience with Apache Solr. It&amp;rsquo;s time to dig a little in-deep regarding
-stemmers. First of all, I was looking for a general definition of what a stemmer is, and I found this one, which IMHO
-is quite good:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;stemmer &amp;mdash; an algorithm for removing inflectional and derivational endings in order to reduce word forms to a common stem&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;So what a stemmer does is nothing more, than converting words to their word stem. For example, the three
-words &lt;code&gt;developing, developer, development&lt;/code&gt; will be converted to &lt;code&gt;develop&lt;/code&gt;. Therefore, stemmers are often used
-as filters.&lt;/p&gt;
-
-&lt;p&gt;This can be very handy in different situaltions e.g. when writing to a fulltext search index like
-&lt;a href=&#34;http://lucene.apache.org/solr/&#34;&gt;SOLR&lt;/a&gt; or &lt;a href=&#34;https://www.elastic.co/products/elasticsearch&#34;&gt;Elasticsearch&lt;/a&gt;.
-There are plenty of different stemming algorithms out there. To use them in a project, some different things have to
-be concerned:&lt;/p&gt;
-
-&lt;h2 id=&#34;language&#34;&gt;Language&lt;/h2&gt;
-
-&lt;p&gt;Stemming is based on common patterns, so it works a bit different in English than e.g. in German. Some stemmers support
-a variety of languages, some are only available in English. I would not recommend to use a stemmer in another language
-than your content is, because it maybe works, but only maybe.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://wiki.apache.org/solr/AnalyzersTokenizersTokenFilters#Stemming&#34;&gt;Here&lt;/a&gt; is a list of different stemmers which can
-be used in Apache SOLR, including supported languages.&lt;/p&gt;
-
-&lt;h2 id=&#34;time-consumed&#34;&gt;Time consumed&lt;/h2&gt;
-
-&lt;p&gt;As with every algorithm, there are faster and slower ones. Depending on where they are used, performance could have a huge
-impact on success. Generally said: Slower does not necessarily mean more precise.&lt;/p&gt;
-
-&lt;h2 id=&#34;agressiveness&#34;&gt;Agressiveness&lt;/h2&gt;
-
-&lt;p&gt;Because a stemmer does not really &amp;ldquo;understand&amp;rdquo; the language of the content which it&amp;rsquo;s processing, it all depends on the
-patterns which are applied. The PorterStemmer for example removes word endings like &amp;ldquo;e&amp;rdquo;, &amp;ldquo;er&amp;rdquo; and &amp;ldquo;ing&amp;rdquo;.
-Therefore, the following conversion will be made:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;horse, horses &amp;gt; &lt;strong&gt;hors&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;develoment, developer, developing &amp;gt; &lt;strong&gt;develop&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Depending on the task to be done, this can be great or totally disfunctional. I would recommend to try out different
-stemming algorithms whith some edge-cases of specific domain and evaluating the result. For many stemmers, there is
-good documentation describing the agressiveness of the algorithm.&lt;/p&gt;
-
-&lt;h2 id=&#34;different-stemmers&#34;&gt;Different stemmers&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://tartarus.org/~martin/PorterStemmer/&#34;&gt;Porter&lt;/a&gt; (English)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://snowball.tartarus.org/algorithms/english/stemmer.html&#34;&gt;Porter 2&lt;/a&gt; (English)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://snowball.tartarus.org/&#34;&gt;Snowball&lt;/a&gt; (Multi Language)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://lexicalresearch.com/kstem-doc.txt&#34;&gt;KStem&lt;/a&gt; (English, less agressive then porter)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;usage-in-java&#34;&gt;Usage in Java&lt;/h2&gt;
-
-&lt;p&gt;For a recent project, I used some of the SOLR / Lucene filters in Java. Just a short example how they can be used:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;public class EnglishTokenizer implements TokenizerInterface {
-
-    @Override
-    public Collection&amp;lt;String&amp;gt; tokenize(String content) throws TokenizerException {
-        try {
-            // read content
-            StringReader inputText = new StringReader(content);
-            Map&amp;lt;String, String&amp;gt; tkargs = new HashMap&amp;lt;String, String&amp;gt;();
-            tkargs.put(&amp;quot;luceneMatchVersion&amp;quot;, &amp;quot;LUCENE_51&amp;quot;);
-
-            // char filter (html)
-            CharFilterFactory hcff = new HTMLStripCharFilterFactory(tkargs);
-            Reader strippedInput = hcff.create(inputText);
-
-            // tokenizer
-            TokenizerFactory tkf = new StandardTokenizerFactory(tkargs);
-            Tokenizer tkz = tkf.create();
-            tkz.setReader(inputText);
-
-            // stopwords filter
-            Map&amp;lt;String, String&amp;gt; stfargs = new HashMap&amp;lt;String, String&amp;gt;();
-            stfargs.put(&amp;quot;luceneMatchVersion&amp;quot;, &amp;quot;LUCENE_51&amp;quot;);
-            stfargs.put(&amp;quot;words&amp;quot;, &amp;quot;lucene/en/stopwords.txt&amp;quot;);
-            stfargs.put(&amp;quot;ignoreCase&amp;quot;, &amp;quot;true&amp;quot;);
-            StopFilterFactory stff = new StopFilterFactory(stfargs);
-            stff.inform(new ClasspathResourceLoader());
-            TokenStream stfts = stff.create(tkz);
-
-            // K stem filter
-            Map&amp;lt;String, String&amp;gt; ksffparam = new HashMap&amp;lt;String, String&amp;gt;();
-            KStemFilterFactory ksff = new KStemFilterFactory(ksffparam);
-            TokenStream ksts = ksff.create(stfts);
-
-            // synonyms filter
-            Map&amp;lt;String, String&amp;gt; syffargs = new HashMap&amp;lt;String, String&amp;gt;();
-            syffargs.put(&amp;quot;luceneMatchVersion&amp;quot;, &amp;quot;LUCENE_51&amp;quot;);
-            syffargs.put(&amp;quot;synonyms&amp;quot;, &amp;quot;lucene/en/synonyms.txt&amp;quot;);
-            syffargs.put(&amp;quot;ignoreCase&amp;quot;, &amp;quot;true&amp;quot;);
-            syffargs.put(&amp;quot;expand&amp;quot;, &amp;quot;false&amp;quot;);
-            SynonymFilterFactory syff = new SynonymFilterFactory(syffargs);
-            syff.inform(new ClasspathResourceLoader());
-            TokenStream syfts = syff.create(ksts);
-
-            // lower case filter
-            LowerCaseFilterFactory lcf = new LowerCaseFilterFactory(tkargs);
-            TokenStream ts = lcf.create(syfts);
-
-            // process token stream
-            ts.reset();
-
-            CharTermAttribute termAttrib = (CharTermAttribute) ts.getAttribute(CharTermAttribute.class);
-
-            Collection&amp;lt;String&amp;gt; tokens = new ArrayList&amp;lt;String&amp;gt;();
-            while (ts.incrementToken()) {
-                tokens.add(termAttrib.toString());
-            }
-
-            ts.end();
-            ts.close();
-
-            return tokens;
-        } catch (IOException e) {
-            throw new TokenizerException(e);
-        }
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;In the above example, a set of filters is applied to a string to tokenize, filter (and stem) words. For stemming, the
-KStem filter is used. The filters are all from the package &lt;code&gt;org.apache.solr:solr-core:5.2.1&lt;/code&gt; which is available on
-the &lt;a href=&#34;http://mvnrepository.com/artifact/org.apache.solr/solr-core/5.2.1&#34;&gt;maven repository&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&#34;tokeinzer-example&#34;&gt;Tokeinzer Example&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Content&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Java Developer - Zurich - financial markets - Salary negotiable depending on experience. A number of exciting Java
-opportunities exist to join a highly successful and growing provider&amp;hellip;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;strong&gt;Result (Tokens)&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;java, development, zurich, financial, market, salary, negotiable, depend, experience, number, exciting, java,
-opportunity, exist, join, highly, successful, grow, provider&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;sources-more-information&#34;&gt;Sources / More Information&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://lexicalresearch.com/papers.html&#34;&gt;lexicalresearch.com&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://wiki.apache.org/solr/LanguageAnalysis&#34;&gt;Apache SOLR Wiki&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://snowball.tartarus.org/&#34;&gt;Snowball Project&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>I am interested in NLP and have already some experience with Apache Solr. It&amp;rsquo;s time to dig a little in-deep regarding stemmers. First of all, I was looking for a general definition of what a stemmer is, and I found this one, which IMHO is quite good:
+ stemmer &amp;mdash; an algorithm for removing inflectional and derivational endings in order to reduce word forms to a common stem
+ So what a stemmer does is nothing more, than converting words to their word stem.</description>
     </item>
     
     <item>
@@ -501,63 +78,8 @@ opportunity, exist, join, highly, successful, grow, provider&lt;/p&gt;
       <pubDate>Tue, 21 Apr 2015 13:09:32 +0200</pubDate>
       
       <guid>https://frne.github.io/post/2015-04-21-pragmatism-technical-dept-oversimplification/</guid>
-      <description>
-
-&lt;p&gt;The word &amp;ldquo;pragmatism&amp;rdquo; or &amp;ldquo;pragmatic&amp;rdquo; is, in my personal opinion, the most
-overrated word in agile development. Many people use this as a buzzword without
-knowing what it means. I hear people saying &amp;ldquo;He solved that complex problem in
-half an hour, he&amp;rsquo;s so pragmatic!&amp;rdquo; and think for myself &amp;ldquo;Yeah, but that &amp;lsquo;solution&amp;rsquo;
-probably causes other devs three times more effort than a sustainable solution
-would take.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;Okay, but that&amp;rsquo;s only my anger speaking. Let&amp;rsquo;s read a definition of pragmatism:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;a reasonable and logical way of doing things or of thinking about problems
-that is based on dealing with specific situations instead of on ideas and
-theories &amp;ndash; &lt;a href=&#34;http://www.merriam-webster.com/dictionary/pragmatism&#34;&gt;merriam-webster.com&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;a-reasonable-and-logical-way&#34;&gt;A Reasonable and Logical Way&lt;/h2&gt;
-
-&lt;p&gt;So even pragmatic solutions have to be reasonable and logical. I would ask so
-many people out there: &amp;ldquo;Is missing out documentation, tests and software design
-principles really a logical and resonable way of solving problems?&amp;rdquo; At least I
-don&amp;rsquo;t think so. Maybe if it&amp;rsquo;s only for a Executive Board presentation, you can
-rapidly build a prototype without having documentation or tests. But doing that,
-one has to take care that this prototype is not going life two weeks later.&lt;/p&gt;
-
-&lt;h2 id=&#34;based-on-dealing-with-specific-situations&#34;&gt;Based on Dealing with Specific Situations&lt;/h2&gt;
-
-&lt;p&gt;Of course, if there is a disaster case, you cannot think about
-the best way to build a solution for 2 days. What I am talking about are
-estimated, scheduled projects which are barely &amp;ldquo;fucked up&amp;rdquo; technically, because
-one wants to finish them fast or without thinking about it. In a second, or
-maybe third release, technical dept is appearing but because you have not
-documented nor tested, you cannot refactor. This is not pragmatism!&lt;/p&gt;
-
-&lt;p&gt;For specific situations or problems in development, there are often provided
-patterns or parts of solutions. Using those &amp;ldquo;best practices&amp;rdquo; is probably the
-quintessential of pragmatism. Building an over-simplified custom solution,
-because one doesn&amp;rsquo;t understand the best practice, is not.&lt;/p&gt;
-
-&lt;h2 id=&#34;instead-of-on-ideas-and-theories&#34;&gt;Instead of on Ideas and Theories&lt;/h2&gt;
-
-&lt;p&gt;There are many theoretical approaches in development. Let&amp;rsquo;s take the &lt;a href=&#34;http://martinfowler.com/eaaCatalog/&#34;&gt;Enterprise
-Design/Architecture Patterns&lt;/a&gt;
-(&lt;a href=&#34;http://www.amazon.de/Patterns-Elements-Reusable-Object-Oriented-Software/dp/0201633612&#34;&gt;Gang of Four&lt;/a&gt;)
-as an example. There were some people telling me, that they don&amp;rsquo;t use them,
-because this is theoretic and has nothing to do with pragmatic solutions. But if
-a &amp;ldquo;pragmatic solution&amp;rdquo; is the best way to deal with a specific situation, then
-I would highly recommend those patterns because the are very pragmatic.&lt;/p&gt;
-
-&lt;h2 id=&#34;finishing&#34;&gt;Finishing&amp;hellip;&lt;/h2&gt;
-
-&lt;p&gt;Many people use words like &amp;ldquo;pragmatism&amp;rdquo; or &amp;ldquo;best practice&amp;rdquo; as buzzwords but
-don&amp;rsquo;t understand what they mean. Therefore, please be aware that pragmatism does
-not mean laziness or oversimplifying a complex problem. It means &lt;strong&gt;thinking
-practical, but also logical and resonable&lt;/strong&gt;, so don&amp;rsquo;t misuse them.&lt;/p&gt;
-</description>
+      <description>The word &amp;ldquo;pragmatism&amp;rdquo; or &amp;ldquo;pragmatic&amp;rdquo; is, in my personal opinion, the most overrated word in agile development. Many people use this as a buzzword without knowing what it means. I hear people saying &amp;ldquo;He solved that complex problem in half an hour, he&amp;rsquo;s so pragmatic!&amp;rdquo; and think for myself &amp;ldquo;Yeah, but that &amp;lsquo;solution&amp;rsquo; probably causes other devs three times more effort than a sustainable solution would take.&amp;rdquo;
+Okay, but that&amp;rsquo;s only my anger speaking.</description>
     </item>
     
   </channel>

@@ -1,544 +1,312 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-    <head>
+  <title>Java</title>
+  <meta property="og:title" content="Java" />
+  <meta name="twitter:title" content="Java" />
+  <meta name="author" content="Frank Neff"/>
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@frank_neff" />
+  <meta name="twitter:creator" content="@frank_neff" />
+  <meta property="og:url" content="https://frne.github.io/categories/java/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Franks.codes" />
+  <meta property="og:site_name" content="Franks.codes" />
 
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="Hugo 0.37" />
+  <link rel="canonical" href="https://frne.github.io/categories/java/" />
+  <link rel="alternate" href="https://frne.github.io/categories/java/index.xml" type="application/rss+xml" title="Franks.codes">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://frne.github.io/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" /><link rel="stylesheet" href="https://frne.github.io/css/syntax.css" /><link rel="stylesheet" href="https://frne.github.io/css/codeblock.css" />
 
-        <meta property="og:title" content=" Java &middot;  Frank Neff" />
-        <meta property="og:site_name" content="Frank Neff" />
-        <meta property="og:url" content="https://frne.github.io/categories/java/" />
 
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
     
-        <meta property="og:type" content="website" />
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
     
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
 
-        <title> Java &middot;  Frank Neff</title>
+</head>
 
-    
-        <meta name="description" content="" />
-    
-        
-        <meta name="p:domain_verify" content="fc173d84e3a4de948ed4bda2908afd3e"/>
-        <meta name="HandheldFriendly" content="True" />
-        <meta name="MobileOptimized" content="320" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://frne.github.io/">Franks.codes</a>
+    </div>
 
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
         
           
-
-    
-        <link href="https://frne.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Frank Neff" />
-    
-
-    
-        <link href="https://frne.github.io/categories/java/index.xml" rel="alternate" type="application/rss+xml" title="Java &middot; Frank Neff" />
-    
-        <link rel="canonical" href="https://frne.github.io/categories/java/" />
-
-    
-    
-    <style>
-    * {
-        padding: 0;
-        margin: 0
-    }
-
-    body, html {
-        font-size: 1em;
-        line-height: 1.65em;
-        font-family: "Open Sans", sans-serif;
-        font-weight: 300;
-        color: #444
-    }
-
-    html {
-        height: 100%
-    }
-
-    body {
-        padding: 2em 2.5em 1em 20em
-    }
-
-    header {
-        border-right: 1px #eee solid;
-        padding: 2em;
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 13.5em
-    }
-
-    #content {
-        display: block;
-        width: 100%
-    }
-
-    footer {
-        padding: 1em 0 2.5em;
-        font-size: .8em;
-        line-height: 1.5em;
-        color: #888
-    }
-
-    article {
-        border-bottom: .1em #eee solid;
-        padding-bottom: 1.7em;
-        max-width: 56em
-    }
-
-    h4, h5, h6, hr, p {
-        margin-top: .9em;
-        margin-bottom: .9em
-    }
-
-    h1, h2, h3, h4, h5, h6 {
-        font-family: "Bree Serif", serif;
-        font-weight: 400 !important
-    }
-
-    h1 {
-        font-size: 2.5em;
-        line-height: 1.1em;
-        margin-top: .6em;
-        margin-bottom: .6em
-    }
-
-    h2 {
-        font-size: 1.9em;
-        line-height: 1.2em;
-        margin-top: .7em;
-        margin-bottom: .7em
-    }
-
-    h3 {
-        font-size: 1.4em;
-        line-height: 1.3em;
-        margin-top: .8em;
-        margin-bottom: .8em
-    }
-
-    h4 {
-        font-size: 1.3em
-    }
-
-    h5 {
-        font-size: 1.2em
-    }
-
-    h6 {
-        font-size: 1.1em
-    }
-
-    header h6 {
-        font-size: 0.9em
-    }
-
-    iframe, img {
-        max-width: 100%
-    }
-
-    a {
-        font-weight: 700;
-        text-decoration: none;
-        color: #5cc265
-    }
-
-    a:hover {
-        text-decoration: underline
-    }
-
-    h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-        font-weight: 400 !important
-    }
-
-    strong {
-        font-weight: 700
-    }
-
-    blockquote {
-        border-left: .4em solid #eee;
-        padding-left: 1.2em;
-        font-size: 1.3em
-    }
-
-    hr {
-        border: 0;
-        height: 1px;
-        background: #eee
-    }
-
-    ol, ul {
-        margin-left: 3em
-    }
-
-    code {
-        font-size: 1.4em;
-        background: #eee;
-        padding: 0 3px;
-    }
-
-    pre {
-        font-size: .8em;
-        line-height: 2em;
-        background: #eee;
-        padding: 1em;
-        word-break: break-all;
-        word-wrap: break-word;
-        white-space: pre;
-        white-space: -moz-pre-wrap;
-        white-space: pre-wrap
-    }
-
-    pre code {
-        font-size: 1.1em;
-    }
-
-    input {
-        font-size: 1em;
-        padding: .3em
-    }
-
-    header h1 {
-        font-size: 1.9em;
-        margin-top: .8em;
-        margin-bottom: .6em
-    }
-
-    header h1 a {
-        color: #444
-    }
-
-    header h1 a:hover {
-        text-decoration: none
-    }
-
-    header #logo img {
-        width: 9em;
-        height: 9em;
-        border-radius: 4.5em;
-        -moz-border-radius: 4.5em;
-        -webkit-border-radius: 4.5em;
-        border: none
-    }
-
-    #follow-icons {
-        font-size: .7em;
-        margin-top: -.7em;
-        margin-bottom: 1.5em
-    }
-
-    #follow-icons a {
-        color: #ccc
-    }
-
-    #follow-icons span {
-        vertical-align: top;
-        margin-left: -.15em;
-        margin-right: -.15em
-    }
-
-    #follow-icons span .fa-stack-1x {
-        font-size: 1.05em;
-        line-height: 1.9em
-    }
-
-    header h6 {
-        margin-top: .5em
-    }
-
-    article span.post-stamp {
-        color: #888
-    }
-
-    h1.post-title {
-        margin-top: .35em;
-        margin-bottom: .6em
-    }
-
-    h3.post-title {
-        margin-top: .4em;
-        padding-bottom: .9em;
-        border-bottom: 1px solid #eee;
-        font-size: 1.2em;
-        color: #444
-    }
-
-    .post-title .feature-star {
-        font-size: .9em
-    }
-
-    .feature-star, .separator, .taglist {
-        color: #ccc
-    }
-
-    .taglist a {
-        background-color: #ccc;
-        color: #fff;
-        display: inline-block;
-        line-height: 1.5em;
-        padding: .3em .6em;
-        vertical-align: 20%;
-        font-size: .5em;
-        font-family: "Open Sans", sans-serif;
-        font-weight: 700 !important;
-        text-transform: uppercase;
-        letter-spacing: .05em;
-        border-radius: .25em;
-        -moz-border-radius: .25em;
-        -webkit-border-radius: .25em
-    }
-
-    .topiclist a {
-
-    }
-
-    #social-bar {
-        margin-top: 1.5em;
-        background-color: #eee;
-        padding: .5em
-    }
-
-    #comments {
-        margin-top: .15em;
-        padding-bottom: .2em;
-        border-bottom: 1px solid #eee
-    }
-
-    .pagination {
-        margin-bottom: 1em
-    }
-
-    footer a {
-        font-weight: 300;
-        color: #888;
-        text-decoration: underline
-    }
-
-    footer a:hover {
-        color: #444;
-        text-decoration: none
-    }
-
-    @media only screen and (min-width: 1281px) {
-        body, html {
-            font-size: 1.1em
-        }
-    }
-
-    @media only screen and (max-width: 800px) {
-        body {
-            padding: 0
-        }
-
-        header {
-            border-right: none;
-            border-bottom: 1px #eee solid;
-            position: relative;
-            height: auto;
-            width: auto;
-            text-align: center;
-            padding-bottom: 1em
-        }
-
-        #content {
-            margin-left: 0;
-            padding: 2em 2em 1em;
-            width: auto
-        }
-
-        footer {
-            padding: 0 2.5em 2em
-        }
-    }
-
-    @media only screen and (max-width: 320px) {
-        #content, header {
-            padding: 1.2em 1.2em .6em
-        }
-
-        footer {
-            padding: 0 1.5em 1.2em
-        }
-
-        ol, ul {
-            margin-left: 2em
-        }
-    }
-
-     
-
-    article table thead tr th {
-        text-align: left;
-    }
-
-    nav ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        font-size: 0.9em;
-    }
-</style>
-
-
-        <link rel="stylesheet" href="https://frne.github.io/css/prism.css"/>
-    </head>
-    <body>
-        <header id="header">
-            <a id="logo" href="https://frne.github.io/"><img src="https://frne.github.io/img/profile.jpg" alt="Frank Neff" /></a>
-            <h1><a href="https://frne.github.io/">Frank Neff</a></h1>
-            <p></p>
-
-            <div id="follow-icons">
-	<a href="http://twitter.com/frank_neff" rel="me"><i class="fa fa-twitter-square fa-2x"></i></a>
-	<a href="https://www.linkedin.com/in/frankneff" rel="me"><i class="fa fa-linkedin-square fa-2x"></i></a>
-	<a href="http://github.com/frne" rel="me"><i class="fa fa-github-square fa-2x"></i></a>
-	<a href="https://plus.google.com/u/0/108756509079797052112" rel="author"><i class="fa fa-google-plus-square fa-2x"></i></a>
-	<a href="https://frne.github.io/index.xml" rel="me"><i class="fa fa-rss-square fa-2x"></i></a> 
-</div>  
-
-            <nav>
-    <ul>
-        <li>
-            <a href="http://github.com/frne"><i class="fa fa-github" aria-hidden="true"></i>&nbsp;github.com/frne</a>
-        </li>
-    </ul>
+            <li>
+              <a title="categories" href="https://frne.github.io/categories">categories</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="tags" href="https://frne.github.io/tags">tags</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="source" href="https://github.com/frne/blog">source</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+      </div>
+    </div>
+
+  </div>
 </nav>
 
-        </header>
 
 
-<main id="content">
 
-	<h1 class="post-title">Java</h1> 
     
+  <header class="header-section ">
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 col-lg-offset-1 col-md-12">
+            <div class="page-heading">
+              <h1>#Java</h1>
+              <hr class="small">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+    
+  <div class="container" role="main">
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1 col-md-12">
         
-<section class="post">
-	<h3 class="post-title">
-		<a href="https://frne.github.io/post/2016-05-02-play-guice-actor-pooling/">Play Framework Actor Pooling with Guice (Java)</a>
-		<span class="separator"> &middot; </span>
-		<time datetime="2016-05-02T23:11:01&#43;02:00">
-            2 May 2016
-        </time>
-		
-			&nbsp;in&nbsp;
-			<span class="topiclist">
-            
+        <div class="posts-list">
+          
+            <article class="post-preview">
+              <a href="https://frne.github.io/post/2016-05-02-play-guice-actor-pooling/">
+                <h2 class="post-title">Play Framework Actor Pooling with Guice (Java)</h2>
 
-            
                 
-                    <a href="https://frne.github.io/categories/java">Java</a>
-                
-            
-        </span>
-		
-		
-			<br>
-			<span class="taglist">
-			
-				<a href="https://frne.github.io/tags/play/">play</a>
-			
-				<a href="https://frne.github.io/tags/guice/">guice</a>
-			
-				<a href="https://frne.github.io/tags/akka/">akka</a>
-			
-				<a href="https://frne.github.io/tags/java/">java</a>
-			
-			</span>
-		
-	</h3>
-</section>
+              </a>
 
-    
+              <p class="post-meta">
+                Posted on May 2, 2016
+              </p>
+              <div class="post-entry">
+                
+                  Working with the Play! Framework means working with Akka, intentionally or not. But working with Akka Actors can be tricky, especially when it comes to dependency injection. Play! 2.4 uses Google&rsquo;s Guice for DI and of course it has the ability to also bind Actors so an ActorRef can be injected anywhere.
+Single Actor DI Biding and injecting one single Actor is simple and well documented . Just bind it in a Module:
+                  <a href="https://frne.github.io/post/2016-05-02-play-guice-actor-pooling/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <span class="post-meta">
+                  
+                    #<a href="https://frne.github.io//tags/play/">play</a>&nbsp;
+                  
+                    #<a href="https://frne.github.io//tags/guice/">guice</a>&nbsp;
+                  
+                    #<a href="https://frne.github.io//tags/akka/">akka</a>&nbsp;
+                  
+                    #<a href="https://frne.github.io//tags/java/">java</a>&nbsp;
+                  
+                </span>
+              
+
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://frne.github.io/post/2015-07-23-understanding-stemmers-nlp/">
+                <h2 class="post-title">Understanding Stemmers (Natural Language Processing)</h2>
+
+                
+              </a>
+
+              <p class="post-meta">
+                Posted on July 23, 2015
+              </p>
+              <div class="post-entry">
+                
+                  I am interested in NLP and have already some experience with Apache Solr. It&rsquo;s time to dig a little in-deep regarding stemmers. First of all, I was looking for a general definition of what a stemmer is, and I found this one, which IMHO is quite good:
+ stemmer &mdash; an algorithm for removing inflectional and derivational endings in order to reduce word forms to a common stem
+ So what a stemmer does is nothing more, than converting words to their word stem.
+                  <a href="https://frne.github.io/post/2015-07-23-understanding-stemmers-nlp/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <span class="post-meta">
+                  
+                    #<a href="https://frne.github.io//tags/java/">java</a>&nbsp;
+                  
+                    #<a href="https://frne.github.io//tags/nlp/">nlp</a>&nbsp;
+                  
+                    #<a href="https://frne.github.io//tags/solr/">solr</a>&nbsp;
+                  
+                </span>
+              
+
+            </article>
+          
+        </div>
         
-<section class="post">
-	<h3 class="post-title">
-		<a href="https://frne.github.io/post/2015-07-23-understanding-stemmers-nlp/">Understanding Stemmers (Natural Language Processing)</a>
-		<span class="separator"> &middot; </span>
-		<time datetime="2015-07-23T18:05:12&#43;02:00">
-            23 Jul 2015
-        </time>
-		
-			&nbsp;in&nbsp;
-			<span class="topiclist">
+      </div>
+    </div>
+  </div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1 col-md-12">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="https://github.com/frne" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/frank_neff" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/frankneff" title="LinkedIn">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://stackoverflow.com/users/1045760/frank-neff" title="StackOverflow">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
             
-
+              Frank Neff
             
-                
-                    <a href="https://frne.github.io/categories/java">Java</a>
-                
-            
-        </span>
-		
-		
-			<br>
-			<span class="taglist">
-			
-				<a href="https://frne.github.io/tags/java/">java</a>
-			
-				<a href="https://frne.github.io/tags/nlp/">nlp</a>
-			
-				<a href="https://frne.github.io/tags/solr/">solr</a>
-			
-			</span>
-		
-	</h3>
-</section>
+          
 
-    
+          &nbsp;&bull;&nbsp;
+          2018
 
-    <nav class="pagination">
-	
-	<span class="page-number">Page 1 of 1</span>
-	
-</nav>
-</main>
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://frne.github.io/">Franks.codes</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.37</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
 
-    <footer id="footer">
-        <section id="footer-message">&copy; Frank Neff. All rights reserved. Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>. <a href="https://github.com/kathyqian/crisp-ghost-theme" target="_blank">Crisp</a> theme by <a href="http://kathyqian.com" target="_blank">Kathy Qian</a>.</section>
-    </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://frne.github.io/js/main.js"></script><script> renderMathInElement(document.body); </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script>
+<script src="https://frne.github.io/js/load-photoswipe.js"></script>
 
-    <script type="text/javascript">
-        var preElements = document.getElementsByTagName('pre');
-        for(var i = 0; i < preElements.length; ++ i) {
-            var element = preElements[i];
-            element.className += " line-numbers"
-        }
-    </script>
 
-    <script type="application/javascript" src="https://frne.github.io/js/prism.js"></script>
 
-    <script>
-      (function(c,f){asyncLoader=function(i,h){i.foreach(function(k,j){e(j,d(j),h)});if(typeof h.callback=="function"){var g=setInterval(function(){if(f.readyState==="complete"){clearInterval(g);h.callback()}},10)}};var d=function(g){var h=g.split(".");return h[h.length-1]},e=function(h,i,g){switch(i){case"js":a(h,g);break;case"css":b(h);break;default:break}},a=function(i,h){var g=document.createElement("script");g.type="text/javascript";g.async=true;g.src=i;document.getElementsByTagName("head")[0].appendChild(g)},b=function(g){var h=document.createElement("link");h.type="text/css";h.rel="stylesheet";h.href=g;document.getElementsByTagName("head")[0].appendChild(h)};Array.prototype.foreach=function(h){for(var g=0;g<this.length;g++){h(g,this[g])}}})(this,document);
 
-      var WebFontConfig={google:{families:["Open Sans:300italic,700italic,300,700","Bree+Serif"]}};
-      asyncLoader([
-        "//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css",
-        "//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js",
-        "//cdnjs.cloudflare.com/ajax/libs/webfont/1.5.16/webfontloader.js"
-      ],{
-        callback:function(){
-          asyncLoader([
-            "https:\/\/frne.github.io\/css/rrssb.css",
-            "https:\/\/frne.github.io\/js/gist.min.js",
-            "https:\/\/frne.github.io\/js/rrssb.min.js"
-          ], { callback:function() {
-              hljs.initHighlighting();
-          }});
-        }
-      });
-    </script>
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-        ga('create', 'UA-36036584-6', 'auto');
-        ga('send', 'pageview');
-    </script>
 
-	</body>
+  </body>
 </html>
+

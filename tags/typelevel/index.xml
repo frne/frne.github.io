@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Typelevel on Franks.codes</title>
+    <link>https://frne.github.io/tags/typelevel/</link>
+    <description>Recent content in Typelevel on Franks.codes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 02 Mar 2018 19:15:03 +0100</lastBuildDate>
+    
+	<atom:link href="https://frne.github.io/tags/typelevel/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Using Shapeless for Data Cleaning in Apache Spark</title>
+      <link>https://frne.github.io/post/2017-12-14-generic-derivation-for-spark-data-cleaning/</link>
+      <pubDate>Fri, 02 Mar 2018 19:15:03 +0100</pubDate>
+      
+      <guid>https://frne.github.io/post/2017-12-14-generic-derivation-for-spark-data-cleaning/</guid>
+      <description>When it comes to importing data into a BigData infrastructure like Hadoop, Apache Spark is one of the most used tools for ETL jobs. Because input data &amp;ndash; in this case CSV &amp;ndash; has often invalid values, a data cleaning layer is needed. Most tasks in data cleaning are very specific and therefore need to be implemented depending on your data, but some tasks can be generalized. In this post, I&amp;rsquo;ll not go into Spark, ETL or BigData in general, but provide one approach to clean null / empty values off a data set.</description>
+    </item>
+    
+  </channel>
+</rss>
