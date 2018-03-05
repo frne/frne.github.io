@@ -239,7 +239,7 @@ functions result or an exception instance:</p>
 
     <span class="nd">@Override</span>
     <span class="k">default</span> <span class="n">Result</span><span class="o">&lt;</span><span class="n">R</span><span class="o">&gt;</span> <span class="nf">apply</span><span class="o">(</span><span class="n">T</span> <span class="n">t</span><span class="o">)</span> <span class="o">{</span>
-        <span class="k">try</span> <span class="o">{</span>
+        <span class="k">try</span><span class="o">{</span>
             <span class="k">return</span> <span class="n">Result</span><span class="o">.</span><span class="na">success</span><span class="o">(</span><span class="n">applyChecked</span><span class="o">(</span><span class="n">t</span><span class="o">));</span>
         <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">Exception</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
             <span class="k">return</span> <span class="n">Result</span><span class="o">.</span><span class="na">error</span><span class="o">(</span><span class="n">e</span><span class="o">);</span>
@@ -268,13 +268,17 @@ functions result or an exception instance:</p>
         <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">isSuccess</span><span class="o">()</span> <span class="o">{</span>
             <span class="k">return</span> <span class="n">error</span> <span class="o">==</span> <span class="kc">null</span><span class="o">;</span>
         <span class="o">}</span>
-        
+
         <span class="kd">public</span> <span class="o">&lt;</span><span class="n">A</span><span class="o">&gt;</span> <span class="n">Result</span><span class="o">&lt;</span><span class="n">A</span><span class="o">&gt;</span> <span class="nf">map</span><span class="o">(</span><span class="n">Function</span><span class="o">&lt;</span><span class="n">T</span><span class="o">,</span> <span class="n">A</span><span class="o">&gt;</span> <span class="n">f</span><span class="o">)</span> <span class="o">{</span>
             <span class="k">return</span> <span class="n">isSuccess</span><span class="o">()</span> <span class="o">?</span> <span class="n">Result</span><span class="o">.</span><span class="na">success</span><span class="o">(</span><span class="n">f</span><span class="o">.</span><span class="na">apply</span><span class="o">(</span><span class="n">result</span><span class="o">))</span> <span class="o">:</span> <span class="n">Result</span><span class="o">.</span><span class="na">error</span><span class="o">(</span><span class="n">error</span><span class="o">);</span>
         <span class="o">}</span>
 
         <span class="kd">public</span> <span class="o">&lt;</span><span class="n">A</span><span class="o">&gt;</span> <span class="n">A</span> <span class="nf">fold</span><span class="o">(</span><span class="n">Function</span><span class="o">&lt;</span><span class="n">Exception</span> <span class="o">,</span><span class="n">A</span><span class="o">&gt;</span> <span class="n">errorFn</span><span class="o">,</span> <span class="n">Function</span><span class="o">&lt;</span><span class="n">T</span><span class="o">,</span> <span class="n">A</span><span class="o">&gt;</span> <span class="n">successFn</span><span class="o">)</span> <span class="o">{</span>
             <span class="k">return</span> <span class="n">isSuccess</span><span class="o">()</span> <span class="o">?</span> <span class="n">successFn</span><span class="o">.</span><span class="na">apply</span><span class="o">(</span><span class="n">result</span><span class="o">)</span> <span class="o">:</span> <span class="n">errorFn</span><span class="o">.</span><span class="na">apply</span><span class="o">(</span><span class="n">error</span><span class="o">);</span>
+        <span class="o">}</span>
+
+        <span class="kd">public</span> <span class="n">T</span> <span class="nf">getOrElse</span><span class="o">(</span><span class="n">Function</span><span class="o">&lt;</span><span class="n">Exception</span><span class="o">,</span> <span class="n">T</span><span class="o">&gt;</span> <span class="n">f</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">return</span> <span class="n">isSuccess</span><span class="o">()</span> <span class="o">?</span> <span class="n">result</span> <span class="o">:</span> <span class="n">f</span><span class="o">.</span><span class="na">apply</span><span class="o">(</span><span class="n">error</span><span class="o">);</span>
         <span class="o">}</span>
     <span class="o">}</span>
 
@@ -292,7 +296,11 @@ be used (and defined) like a normal <code>Function&lt;T, R&gt;</code> but will r
     <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">...</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
         <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">res</span><span class="o">(</span><span class="s">&#34;42&#34;</span><span class="o">));</span> <span class="c1">// Success: 43
 </span><span class="c1"></span>        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">res</span><span class="o">(</span><span class="s">&#34;foo&#34;</span><span class="o">));</span> <span class="c1">// Error: input was not a number!
-</span><span class="c1"></span>    <span class="o">}</span>
+</span><span class="c1"></span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">strPlusOne</span><span class="o">.</span><span class="na">apply</span><span class="o">(</span><span class="s">&#34;bar&#34;</span><span class="o">).</span>
+            <span class="n">map</span><span class="o">(</span><span class="nl">Object:</span><span class="o">:</span><span class="n">toString</span><span class="o">).</span>
+            <span class="n">getOrElse</span><span class="o">(</span><span class="n">e</span> <span class="o">-&gt;</span> <span class="s">&#34;NaN&#34;</span><span class="o">));</span>
+    <span class="o">}</span>
 
     <span class="kd">private</span> <span class="kd">static</span> <span class="n">String</span> <span class="nf">res</span><span class="o">(</span><span class="n">String</span> <span class="n">in</span><span class="o">)</span> <span class="o">{</span>
         <span class="k">return</span> <span class="n">strPlusOne</span><span class="o">.</span><span class="na">apply</span><span class="o">(</span><span class="n">in</span><span class="o">).</span><span class="na">fold</span><span class="o">(</span>
@@ -301,8 +309,11 @@ be used (and defined) like a normal <code>Function&lt;T, R&gt;</code> but will r
         <span class="o">);</span>
     <span class="o">}</span>
 <span class="o">}</span></code></pre></div>
-<p>As you can see in the <code>res</code> helper method, fold can be used to return either a success or an error string depending on
-the <code>Result</code> state. Now, a lambda throwing exceptions (<code>NumberFormatException</code> in that case), can be used without any
+<p>As you can see in the <code>res</code> helper method, <code>fold</code> can be used to return either a success or an error string depending on
+the <code>Result</code> state. Or, linke in the second example, <code>map</code> and <code>getOrElse</code> can be used to achieve the same. This
+entirely depends on how you are used to code&hellip;</p>
+
+<p>Now, a lambda throwing exceptions (<code>NumberFormatException</code> in that case), can be used without any
 side effect. Of course similar implementations do also work for other functional interfaces like <code>BiFUnction</code>,
 <code>Supplier</code>, etc.</p>
 
