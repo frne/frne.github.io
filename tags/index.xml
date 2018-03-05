@@ -39,6 +39,15 @@
     </item>
     
     <item>
+      <title>Exceptions</title>
+      <link>https://frne.github.io/tags/exceptions/</link>
+      <pubDate>Wed, 06 Sep 2017 19:57:00 +0100</pubDate>
+      
+      <guid>https://frne.github.io/tags/exceptions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Fp</title>
       <link>https://frne.github.io/tags/fp/</link>
       <pubDate>Fri, 02 Mar 2018 19:15:03 +0100</pubDate>
@@ -66,6 +75,15 @@
     </item>
     
     <item>
+      <title>Implicits</title>
+      <link>https://frne.github.io/tags/implicits/</link>
+      <pubDate>Mon, 18 Dec 2017 22:04:38 +0100</pubDate>
+      
+      <guid>https://frne.github.io/tags/implicits/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Java</title>
       <link>https://frne.github.io/tags/java/</link>
       <pubDate>Mon, 02 May 2016 23:11:01 +0200</pubDate>
@@ -80,6 +98,24 @@
       <pubDate>Thu, 12 May 2016 14:38:12 +0200</pubDate>
       
       <guid>https://frne.github.io/tags/job/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lambda</title>
+      <link>https://frne.github.io/tags/lambda/</link>
+      <pubDate>Wed, 06 Sep 2017 19:57:00 +0100</pubDate>
+      
+      <guid>https://frne.github.io/tags/lambda/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Libs</title>
+      <link>https://frne.github.io/tags/libs/</link>
+      <pubDate>Mon, 18 Dec 2017 22:04:38 +0100</pubDate>
+      
+      <guid>https://frne.github.io/tags/libs/</guid>
       <description></description>
     </item>
     
@@ -179,6 +215,15 @@
       <pubDate>Thu, 23 Jul 2015 18:05:12 +0200</pubDate>
       
       <guid>https://frne.github.io/tags/solr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Solrj</title>
+      <link>https://frne.github.io/tags/solrj/</link>
+      <pubDate>Mon, 18 Dec 2017 22:04:38 +0100</pubDate>
+      
+      <guid>https://frne.github.io/tags/solrj/</guid>
       <description></description>
     </item>
     

@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Using Shapeless for Data Cleaning in Apache Spark</title>
+  <meta property="og:title" content="Using Shapeless for Data Cleaning in Apache Spark" />
+  <meta name="twitter:title" content="Using Shapeless for Data Cleaning in Apache Spark" />
+  <meta name="description" content="When it comes to importing data into a BigData infrastructure like Hadoop, Apache Spark is one of the most used tools for ETL jobs. Because input data &ndash; in this case CSV &ndash; has often invalid values, a data cleaning layer is needed. Most tasks in data cleaning are very specific and therefore need to be implemented depending on your data, but some tasks can be generalized. In this post, I&rsquo;ll not go into Spark, ETL or BigData in general, but provide one approach to clean null / empty values off a data set.">
+  <meta property="og:description" content="When it comes to importing data into a BigData infrastructure like Hadoop, Apache Spark is one of the most used tools for ETL jobs. Because input data &ndash; in this case CSV &ndash; has often invalid values, a data cleaning layer is needed. Most tasks in data cleaning are very specific and therefore need to be implemented depending on your data, but some tasks can be generalized. In this post, I&rsquo;ll not go into Spark, ETL or BigData in general, but provide one approach to clean null / empty values off a data set.">
+  <meta name="twitter:description" content="When it comes to importing data into a BigData infrastructure like Hadoop, Apache Spark is one of the most used tools for ETL jobs. Because input data &ndash; in this case CSV &ndash; has often …">
+  <meta name="author" content="Frank Neff"/>
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@frank_neff" />
+  <meta name="twitter:creator" content="@frank_neff" />
+  <meta property="og:url" content="https://frne.github.io/post/2018-03-02-generic-derivation-for-spark-data-cleaning/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Franks.codes" />
+  <meta property="og:site_name" content="Franks.codes" />
+
+  <meta name="generator" content="Hugo 0.37" />
+  <link rel="canonical" href="https://frne.github.io/post/2018-03-02-generic-derivation-for-spark-data-cleaning/" />
+  <link rel="alternate" href="https://frne.github.io/index.xml" type="application/rss+xml" title="Franks.codes">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://frne.github.io/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" /><link rel="stylesheet" href="https://frne.github.io/css/syntax.css" /><link rel="stylesheet" href="https://frne.github.io/css/codeblock.css" />
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://frne.github.io/">Franks.codes</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="categories" href="https://frne.github.io/categories">categories</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="tags" href="https://frne.github.io/tags">tags</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="source" href="https://github.com/frne/blog">source</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 col-lg-offset-1 col-md-12">
+            <div class="post-heading">
+              <h1>Using Shapeless for Data Cleaning in Apache Spark</h1>
+                
+                
+                  <span class="post-meta">
+  
+  
+  
+  <i class="fa fa-calendar-o"></i>&nbsp;Posted on March 2, 2018
+  
+  
+      
+      in
+      
+          <a href="https://frne.github.io/categories/scala/">Scala</a>
+          
+            ,&nbsp;
+          
+      
+          <a href="https://frne.github.io/categories/functional-programming/">Functional Programming</a>
+          
+            ,&nbsp;
+          
+      
+          <a href="https://frne.github.io/categories/bigdata/">BigData</a>
+          
+      
+  
+  
+  
+</span>
+
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-10 col-lg-offset-1 col-md-12">
+      <article role="main" class="blog-post">
+        
+
+<p>When it comes to importing data into a BigData infrastructure like Hadoop, <a href="https://spark.apache.org/">Apache Spark</a> is
+one of the most used tools for <a href="https://en.wikipedia.org/wiki/Extract,_transform,_load">ETL</a> jobs. Because input data
+&ndash; in this case CSV &ndash; has often invalid values, a data cleaning layer is needed. Most tasks in data cleaning
+are very specific and therefore need to be implemented depending on your data, but some tasks can be generalized. In this
+post, I&rsquo;ll not go into Spark, ETL or BigData in general, but provide one approach to clean null / empty values off a data
+set. This can be used in virtually any Scala project, Spark data-cleaning is only a nice use case to demonstrate it.</p>
+
+<h2 id="the-problem">The Problem</h2>
+
+<p>To describe the problem which needs to be solved, let&rsquo;s say that we have a Stream of case objects as input. Some
+optional values in the input case class must be present, so we transform a <code>Stream[A]</code> to a <code>Stream[B]</code> where <code>B</code> is a
+new case class which contains the same values but maybe not optional:</p>
+<div class="highlight"><pre class="chroma"><code class="language-scala" data-lang="scala"><span class="k">case</span> <span class="k">class</span> <span class="nc">A</span><span class="o">(</span><span class="n">normal</span><span class="k">:</span> <span class="kt">String</span><span class="o">,</span> <span class="n">mandatory</span><span class="k">:</span> <span class="kt">Option</span><span class="o">[</span><span class="kt">String</span><span class="o">],</span> <span class="n">opt</span><span class="k">:</span> <span class="kt">Option</span><span class="o">[</span><span class="kt">String</span><span class="o">])</span>
+
+<span class="k">case</span> <span class="k">class</span> <span class="nc">B</span><span class="o">(</span><span class="n">normal</span><span class="k">:</span> <span class="kt">String</span><span class="o">,</span> <span class="n">mandatory</span><span class="k">:</span> <span class="kt">String</span><span class="o">,</span> <span class="n">opt</span><span class="k">:</span> <span class="kt">Option</span><span class="o">[</span><span class="kt">String</span><span class="o">])</span>
+
+<span class="k">def</span> <span class="n">transform</span><span class="o">(</span><span class="n">a</span><span class="k">:</span> <span class="kt">A</span><span class="o">)</span><span class="k">:</span> <span class="kt">Option</span><span class="o">[</span><span class="kt">B</span><span class="o">]</span> <span class="k">=</span> <span class="o">???</span>
+
+<span class="k">val</span> <span class="n">importStream</span><span class="k">:</span> <span class="kt">Stream</span><span class="o">[</span><span class="kt">A</span><span class="o">]</span> <span class="k">=</span> <span class="o">???</span>
+
+<span class="k">val</span> <span class="n">cleaned</span> <span class="k">=</span> <span class="n">importStream</span><span class="o">.</span><span class="n">flatMap</span><span class="o">(</span><span class="n">transform</span><span class="o">)</span></code></pre></div>
+<p>So far, so good. The <code>mandatory</code> field exists in both classes, but in the result <code>B</code> it is not optional. As one can see,
+the transform function returns an <code>Option[B]</code>, which should be <code>None</code> if one of those &ldquo;mandatory&rdquo; fields has no value.
+In that tiny example, the transform method can just be implemented using a simple for-comprehention:</p>
+<div class="highlight"><pre class="chroma"><code class="language-scala" data-lang="scala"><span class="k">def</span> <span class="n">transform</span><span class="o">(</span><span class="n">a</span><span class="k">:</span> <span class="kt">A</span><span class="o">)</span><span class="k">:</span> <span class="kt">Option</span><span class="o">[</span><span class="kt">B</span><span class="o">]</span> <span class="k">=</span> <span class="k">for</span> <span class="o">{</span>
+  <span class="n">mandatory</span> <span class="k">&lt;-</span> <span class="n">a</span><span class="o">.</span><span class="n">mandatory</span>
+<span class="o">}</span> <span class="k">yield</span> <span class="n">B</span><span class="o">(</span><span class="n">a</span><span class="o">.</span><span class="n">normal</span><span class="o">,</span> <span class="n">mandatory</span><span class="o">,</span> <span class="n">b</span><span class="o">.</span><span class="n">opt</span><span class="o">)</span></code></pre></div>
+<h2 id="the-generic-approach">The Generic Approach</h2>
+
+<p>The later transform implementation is very simple and straight forward. That said, nothing speaks against that
+specific implementation. If you only need this at a single point, and for a more or less small class, stop reading here
+and use the for-comprehention.</p>
+
+<p>But&hellip; Depending on the data, such case classes can be way bigger, having like 50 properties. Or one needs to transform
+50 different classes. In that case, a generic function like the following becomes very handy:</p>
+<div class="highlight"><pre class="chroma"><code class="language-scala" data-lang="scala"><span class="k">def</span> <span class="n">enforceNotNulls</span><span class="o">[</span><span class="kt">A</span>, <span class="kt">B</span><span class="o">](</span><span class="n">a</span><span class="k">:</span> <span class="kt">A</span><span class="o">)</span><span class="k">:</span> <span class="kt">Option</span><span class="o">[</span><span class="kt">B</span><span class="o">]</span></code></pre></div>
+<p>Because every case class implements <code>Product</code>, the <code>HList</code> of the <a href="https://github.com/milessabin/shapeless">Shapeless</a>
+library can be utilized to do transformations on them. For an example, a trait called <code>PartialProjector</code> is defined:</p>
+<div class="highlight"><pre class="chroma"><code class="language-scala" data-lang="scala"><span class="k">import</span> <span class="nn">shapeless.</span><span class="o">{</span><span class="k">:</span><span class="kt">:</span><span class="o">,</span> <span class="nc">Generic</span><span class="o">,</span> <span class="nc">HList</span><span class="o">}</span>
+
+<span class="k">trait</span> <span class="nc">PartialProjector</span><span class="o">[</span><span class="kt">A</span>, <span class="kt">B</span><span class="o">]</span> <span class="nc">extends</span> <span class="nc">Serializable</span> <span class="o">{</span>
+  <span class="k">def</span> <span class="n">enforceNotNulls</span><span class="o">(</span><span class="n">a</span><span class="k">:</span> <span class="kt">A</span><span class="o">)</span><span class="k">:</span> <span class="kt">Option</span><span class="o">[</span><span class="kt">B</span><span class="o">]</span>
+<span class="o">}</span></code></pre></div>
+<p>This trait must now be implemented for all types which can be transformed. We&rsquo;ll use Scalas implicit resolution
+afterwards to find the right function for the type to be transformed and call them recursively. To start with a simple
+example, an <code>identProjector</code> instance is implemented, which just maps all input types to options:</p>
+<div class="highlight"><pre class="chroma"><code class="language-scala" data-lang="scala"><span class="k">object</span> <span class="nc">PartialProjector</span> <span class="k">extends</span> <span class="nc">LowPrioInstances</span> <span class="o">{</span>
+
+  <span class="k">def</span> <span class="n">instance</span><span class="o">[</span><span class="kt">A</span>, <span class="kt">B</span><span class="o">](</span><span class="n">f</span><span class="k">:</span> <span class="kt">A</span> <span class="o">=&gt;</span> <span class="nc">Option</span><span class="o">[</span><span class="kt">B</span><span class="o">])</span><span class="k">:</span> <span class="kt">PartialProjector</span><span class="o">[</span><span class="kt">A</span>, <span class="kt">B</span><span class="o">]</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">PartialProjector</span><span class="o">[</span><span class="kt">A</span>, <span class="kt">B</span><span class="o">]</span> <span class="o">{</span>
+    <span class="k">override</span> <span class="k">def</span> <span class="n">enforceNotNulls</span><span class="o">(</span><span class="n">a</span><span class="k">:</span> <span class="kt">A</span><span class="o">)</span><span class="k">:</span> <span class="kt">Option</span><span class="o">[</span><span class="kt">B</span><span class="o">]</span> <span class="k">=</span> <span class="n">f</span><span class="o">(</span><span class="n">a</span><span class="o">)</span>
+  <span class="o">}</span>
+
+  <span class="k">implicit</span> <span class="k">def</span> <span class="n">identProjector</span><span class="o">[</span><span class="kt">A</span><span class="o">]</span><span class="k">:</span> <span class="kt">PartialProjector</span><span class="o">[</span><span class="kt">A</span>, <span class="kt">A</span><span class="o">]</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">PartialProjector</span><span class="o">[</span><span class="kt">A</span>, <span class="kt">A</span><span class="o">]</span> <span class="o">{</span>
+    <span class="k">override</span> <span class="k">def</span> <span class="n">enforceNotNulls</span><span class="o">(</span><span class="n">a</span><span class="k">:</span> <span class="kt">A</span><span class="o">)</span><span class="k">:</span> <span class="kt">Option</span><span class="o">[</span><span class="kt">A</span><span class="o">]</span> <span class="k">=</span> <span class="nc">Option</span><span class="o">(</span><span class="n">a</span><span class="o">)</span>
+  <span class="o">}</span>
+
+  <span class="k">def</span> <span class="n">apply</span><span class="o">[</span><span class="kt">A</span>, <span class="kt">B</span><span class="o">](</span><span class="k">implicit</span> <span class="n">partialProjector</span><span class="k">:</span> <span class="kt">PartialProjector</span><span class="o">[</span><span class="kt">A</span>, <span class="kt">B</span><span class="o">])</span><span class="k">:</span> <span class="kt">PartialProjector</span><span class="o">[</span><span class="kt">A</span>, <span class="kt">B</span><span class="o">]</span> <span class="k">=</span> <span class="n">partialProjector</span>
+<span class="o">}</span></code></pre></div>
+<p>This example is already usable for simple types like strings:</p>
+<div class="highlight"><pre class="chroma"><code class="language-scala" data-lang="scala"><span class="nc">PartialProjector</span><span class="o">[</span><span class="kt">String</span>, <span class="kt">Option</span><span class="o">[</span><span class="kt">String</span><span class="o">]](</span><span class="s">&#34;foo&#34;</span><span class="o">)</span> <span class="c1">// Some(&#34;foo&#34;)
+</span><span class="c1"></span><span class="nc">PartialProjector</span><span class="o">[</span><span class="kt">String</span>, <span class="kt">Option</span><span class="o">[</span><span class="kt">String</span><span class="o">]](</span><span class="kc">null</span><span class="o">)</span> <span class="o">//</span> <span class="nc">None</span></code></pre></div>
+<p>As already mentioned, the <code>apply[A,B]</code> method of the <code>PartialProjector</code> object uses implicit resolution to find a
+fitting implementation of the trait for the given type <code>A</code>. The <code>instance</code> function is just a helper to instantiate the
+<code>PartialProjector</code> trait. Because there is only one implicit (the <code>identProjector</code>) which fits every type, results will
+always be <code>Some(A)</code> unless input is <code>null</code>.</p>
+
+<h3 id="implementation-for-specific-types">Implementation for Specific Types</h3>
+
+<p>As a next step, specific types must be implemented. If, for example, an <code>Option(String)</code> is transformed, the result
+should not be <code>Some(Some(String))</code>, but <code>Some(String)</code>. To achieve that, a second implicit for option types needs to be
+implemented:</p>
+<div class="highlight"><pre class="chroma"><code class="language-scala" data-lang="scala"><span class="k">trait</span> <span class="nc">LowPrioInstances</span> <span class="o">{</span>
+  <span class="k">implicit</span> <span class="k">def</span> <span class="n">identProjector</span><span class="o">[</span><span class="kt">A</span><span class="o">]</span><span class="k">:</span> <span class="kt">PartialProjector</span><span class="o">[</span><span class="kt">A</span>, <span class="kt">A</span><span class="o">]</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">PartialProjector</span><span class="o">[</span><span class="kt">A</span>, <span class="kt">A</span><span class="o">]</span> <span class="o">{</span>
+    <span class="k">override</span> <span class="k">def</span> <span class="n">enforceNotNulls</span><span class="o">(</span><span class="n">a</span><span class="k">:</span> <span class="kt">A</span><span class="o">)</span><span class="k">:</span> <span class="kt">Option</span><span class="o">[</span><span class="kt">A</span><span class="o">]</span> <span class="k">=</span> <span class="nc">Option</span><span class="o">(</span><span class="n">a</span><span class="o">)</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="k">object</span> <span class="nc">PartialProjector</span> <span class="k">extends</span> <span class="nc">LowPrioInstances</span> <span class="o">{</span>
+
+  <span class="k">def</span> <span class="n">instance</span><span class="o">[</span><span class="kt">A</span>, <span class="kt">B</span><span class="o">](</span><span class="n">func</span><span class="k">:</span> <span class="kt">A</span> <span class="o">=&gt;</span> <span class="nc">Option</span><span class="o">[</span><span class="kt">B</span><span class="o">])</span><span class="k">:</span> <span class="kt">PartialProjector</span><span class="o">[</span><span class="kt">A</span>, <span class="kt">B</span><span class="o">]</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">PartialProjector</span><span class="o">[</span><span class="kt">A</span>, <span class="kt">B</span><span class="o">]</span> <span class="o">{</span>
+    <span class="k">override</span> <span class="k">def</span> <span class="n">enforceNotNulls</span><span class="o">(</span><span class="n">a</span><span class="k">:</span> <span class="kt">A</span><span class="o">)</span><span class="k">:</span> <span class="kt">Option</span><span class="o">[</span><span class="kt">B</span><span class="o">]</span> <span class="k">=</span> <span class="n">func</span><span class="o">(</span><span class="n">a</span><span class="o">)</span>
+  <span class="o">}</span>
+
+  <span class="k">implicit</span> <span class="k">def</span> <span class="n">optProjector</span><span class="o">[</span><span class="kt">A</span><span class="o">]</span><span class="k">:</span> <span class="kt">PartialProjector</span><span class="o">[</span><span class="kt">Option</span><span class="o">[</span><span class="kt">A</span><span class="o">]</span>, <span class="kt">A</span><span class="o">]</span> <span class="k">=</span> <span class="n">instance</span> <span class="o">{</span>
+    <span class="k">case</span> <span class="nc">Some</span><span class="o">(</span><span class="n">x</span><span class="o">)</span> <span class="k">=&gt;</span> <span class="nc">Option</span><span class="o">(</span><span class="n">x</span><span class="o">)</span>
+    <span class="k">case</span> <span class="nc">None</span> <span class="k">=&gt;</span> <span class="nc">None</span>
+  <span class="o">}</span>
+
+  <span class="k">def</span> <span class="n">apply</span><span class="o">[</span><span class="kt">A</span>, <span class="kt">B</span><span class="o">](</span><span class="k">implicit</span> <span class="n">partialProjector</span><span class="k">:</span> <span class="kt">PartialProjector</span><span class="o">[</span><span class="kt">A</span>, <span class="kt">B</span><span class="o">])</span><span class="k">:</span> <span class="kt">PartialProjector</span><span class="o">[</span><span class="kt">A</span>, <span class="kt">B</span><span class="o">]</span> <span class="k">=</span> <span class="n">partialProjector</span>
+<span class="o">}</span></code></pre></div>
+<p>First of all, because the <code>identProjector</code> matches every given type, it was moved to a parent trait <code>LowPrioInstances</code>.
+As the name suggests, this implicit will only be used, if none in <code>PartialProjector</code> matches. Also, there is a new
+implicit <code>optProjector</code> which handles <code>Option[Any]</code> types.</p>
+
+<h3 id="case-classes">Case Classes</h3>
+
+<p>To transform case classes, first of all, an implicit for HLists (which is used to generically represent case classes) is
+needed:</p>
+<div class="highlight"><pre class="chroma"><code class="language-scala" data-lang="scala"><span class="k">implicit</span> <span class="k">def</span> <span class="n">hConsProjector</span><span class="o">[</span><span class="kt">H</span>, <span class="kt">H0</span>, <span class="kt">T</span> <span class="k">&lt;:</span> <span class="kt">HList</span>, <span class="kt">T0</span> <span class="k">&lt;:</span> <span class="kt">HList</span><span class="o">](</span><span class="k">implicit</span>
+    <span class="n">hProjector</span><span class="k">:</span> <span class="kt">PartialProjector</span><span class="o">[</span><span class="kt">H</span>, <span class="kt">H0</span><span class="o">],</span>
+    <span class="n">tProjector</span><span class="k">:</span> <span class="kt">PartialProjector</span><span class="o">[</span><span class="kt">T</span>, <span class="kt">T0</span><span class="o">])</span><span class="k">:</span> <span class="kt">PartialProjector</span><span class="o">[</span><span class="kt">H</span> <span class="kt">::</span> <span class="kt">T</span>, <span class="kt">H0</span> <span class="kt">::</span> <span class="kt">T0</span><span class="o">]</span> <span class="k">=</span> <span class="n">instance</span><span class="o">(</span>
+      <span class="n">hList</span> <span class="k">=&gt;</span> <span class="o">{</span>
+        <span class="k">for</span> <span class="o">{</span>
+          <span class="n">h</span> <span class="k">&lt;-</span> <span class="n">hProjector</span><span class="o">.</span><span class="n">enforceNotNulls</span><span class="o">(</span><span class="n">hList</span><span class="o">.</span><span class="n">head</span><span class="o">)</span>
+          <span class="n">t</span> <span class="k">&lt;-</span> <span class="n">tProjector</span><span class="o">.</span><span class="n">enforceNotNulls</span><span class="o">(</span><span class="n">hList</span><span class="o">.</span><span class="n">tail</span><span class="o">)</span>
+        <span class="o">}</span> <span class="k">yield</span> <span class="n">h</span> <span class="k">:</span><span class="kt">:</span> <span class="kt">t</span>
+      <span class="o">}</span>
+    <span class="o">)</span></code></pre></div>
+<p>Because a HList has a <code>head</code> and a <code>tail</code> (like Scala lists), the <code>hConsProjector</code> uses two implicits. The first
+<code>hProjector</code> is an instance to transform the head element. This could e.g be of type <code>String</code> or <code>Option[Int]</code>, etc. The
+second one, <code>tProjector</code>, is an instance to transform the tail, which is another HList. So this will resolve to
+<code>hConsProjector</code> which is simply a recursive call. For the last, empty tail element (<code>HNil</code>), one could write a
+<code>hNilProjector</code>, but the <code>identProjector</code> already handles this correctly, so we don&rsquo;t need one.</p>
+
+<p>Now that the PartialProjector can handle HLists, one more implicit is needed to transform case classes:</p>
+<div class="highlight"><pre class="chroma"><code class="language-scala" data-lang="scala"><span class="k">implicit</span> <span class="k">def</span> <span class="n">cClassProjector</span><span class="o">[</span><span class="kt">CC1</span>, <span class="kt">CC2</span>, <span class="kt">Repr1</span>, <span class="kt">Repr2</span><span class="o">](</span><span class="k">implicit</span>
+    <span class="n">gen1</span><span class="k">:</span> <span class="kt">Generic.Aux</span><span class="o">[</span><span class="kt">CC1</span>, <span class="kt">Repr1</span><span class="o">],</span>
+    <span class="n">gen2</span><span class="k">:</span> <span class="kt">Generic.Aux</span><span class="o">[</span><span class="kt">CC2</span>, <span class="kt">Repr2</span><span class="o">],</span>
+    <span class="n">projector</span><span class="k">:</span> <span class="kt">PartialProjector</span><span class="o">[</span><span class="kt">Repr1</span>, <span class="kt">Repr2</span><span class="o">])</span><span class="k">:</span> <span class="kt">PartialProjector</span><span class="o">[</span><span class="kt">CC1</span>, <span class="kt">CC2</span><span class="o">]</span> <span class="k">=</span> <span class="n">instance</span><span class="o">(</span>
+      <span class="n">cc1</span> <span class="k">=&gt;</span> <span class="o">{</span>
+        <span class="n">projector</span><span class="o">.</span><span class="n">enforceNotNulls</span><span class="o">(</span><span class="n">gen1</span><span class="o">.</span><span class="n">to</span><span class="o">(</span><span class="n">cc1</span><span class="o">)).</span><span class="n">map</span><span class="o">(</span><span class="n">gen2</span><span class="o">.</span><span class="n">from</span><span class="o">)</span>
+      <span class="o">}</span>
+    <span class="o">)</span></code></pre></div>
+<p>This function takes an implicit for generic representations of source and target case classes (<code>gen1</code> and <code>gen2</code>).
+The third generic is a<code>projector</code> to transform the generics, which will resolve to <code>hConsProjector</code>. The method
+derives an HList from the input case object, runs the transformation on it and instanciates the target case class from
+the transformation result.</p>
+
+<h3 id="usage">Usage</h3>
+
+<p>The <code>PartialProjector</code> can now be used like the generic function <code>transform[A,B]</code> in the problem definition to enforce
+not <code>null</code> / <code>None</code> elements in case classes:</p>
+<div class="highlight"><pre class="chroma"><code class="language-scala" data-lang="scala"><span class="k">case</span> <span class="k">class</span> <span class="nc">A</span><span class="o">(</span><span class="n">normal</span><span class="k">:</span> <span class="kt">String</span><span class="o">,</span> <span class="n">mandatory</span><span class="k">:</span> <span class="kt">Option</span><span class="o">[</span><span class="kt">String</span><span class="o">],</span> <span class="n">opt</span><span class="k">:</span> <span class="kt">Option</span><span class="o">[</span><span class="kt">String</span><span class="o">])</span>
+
+<span class="k">case</span> <span class="k">class</span> <span class="nc">B</span><span class="o">(</span><span class="n">normal</span><span class="k">:</span> <span class="kt">String</span><span class="o">,</span> <span class="n">mandatory</span><span class="k">:</span> <span class="kt">String</span><span class="o">,</span> <span class="n">opt</span><span class="k">:</span> <span class="kt">Option</span><span class="o">[</span><span class="kt">String</span><span class="o">])</span>
+
+<span class="k">def</span> <span class="n">in1</span> <span class="k">=</span> <span class="n">A</span><span class="o">(</span><span class="s">&#34;foo&#34;</span><span class="o">,</span> <span class="nc">Some</span><span class="o">(</span><span class="s">&#34;bar&#34;</span><span class="o">),</span> <span class="nc">Some</span><span class="o">(</span><span class="s">&#34;baz&#34;</span><span class="o">))</span>
+<span class="k">def</span> <span class="n">in2</span> <span class="k">=</span> <span class="n">A</span><span class="o">(</span><span class="s">&#34;foo&#34;</span><span class="o">,</span> <span class="nc">None</span><span class="o">,</span> <span class="nc">Some</span><span class="o">(</span><span class="s">&#34;baz&#34;</span><span class="o">))</span>
+
+<span class="k">def</span> <span class="n">res1</span><span class="k">:</span> <span class="kt">Option</span><span class="o">[</span><span class="kt">B</span><span class="o">]</span> <span class="k">=</span> <span class="nc">PartialProjector</span><span class="o">[</span><span class="kt">A</span>, <span class="kt">B</span><span class="o">].</span><span class="n">enforceNotNulls</span><span class="o">(</span><span class="n">in1</span><span class="o">)</span> <span class="c1">// Some(B(&#34;foo&#34;, &#34;bar&#34;, &#34;baz&#34;))
+</span><span class="c1"></span><span class="k">def</span> <span class="n">res2</span><span class="k">:</span> <span class="kt">Option</span><span class="o">[</span><span class="kt">B</span><span class="o">]</span> <span class="k">=</span> <span class="nc">PartialProjector</span><span class="o">[</span><span class="kt">A</span>, <span class="kt">B</span><span class="o">].</span><span class="n">enforceNotNulls</span><span class="o">(</span><span class="n">in2</span><span class="o">)</span> <span class="o">//</span> <span class="nc">None</span></code></pre></div>
+<h2 id="but-spark">But Spark&hellip;</h2>
+
+<p>I used some glue-code is SPark to make things easier. The following will load CSV data from HDFS, create a <code>DataSet[A]</code>
+and transform it to a <code>DataSet[B]</code>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-scala" data-lang="scala"><span class="k">def</span> <span class="n">importData</span><span class="o">[</span><span class="kt">A</span> <span class="k">&lt;:</span> <span class="kt">Product</span> <span class="kt">:</span> <span class="kt">TypeTag</span> <span class="kt">:</span> <span class="kt">NotNothing</span>, <span class="kt">B</span> <span class="k">&lt;:</span> <span class="kt">Product</span> <span class="kt">:</span> <span class="kt">TypeTag</span> <span class="kt">:</span> <span class="kt">NotNothing</span><span class="o">]</span>
+  <span class="o">(</span><span class="n">name</span><span class="k">:</span> <span class="kt">String</span><span class="o">,</span> <span class="n">importFun</span><span class="k">:</span> <span class="kt">DataFrameReader</span> <span class="o">=&gt;</span> <span class="nc">Dataset</span><span class="o">[</span><span class="kt">Row</span><span class="o">],</span> <span class="n">filterFun</span><span class="k">:</span> <span class="kt">Dataset</span><span class="o">[</span><span class="kt">Row</span><span class="o">]</span> <span class="k">=&gt;</span> <span class="nc">Row</span> <span class="k">=&gt;</span> <span class="nc">Boolean</span> <span class="k">=</span> <span class="k">_</span> <span class="k">=&gt;</span> <span class="k">_</span> <span class="k">=&gt;</span> <span class="kc">true</span><span class="o">)</span>
+  <span class="o">(</span><span class="k">implicit</span> <span class="n">spark</span><span class="k">:</span> <span class="kt">SparkSession</span><span class="o">,</span> <span class="n">projector</span><span class="k">:</span> <span class="kt">PartialProjector</span><span class="o">[</span><span class="kt">A</span>, <span class="kt">B</span><span class="o">])</span><span class="k">:</span> <span class="kt">Dataset</span><span class="o">[</span><span class="kt">B</span><span class="o">]</span> <span class="k">=</span> <span class="o">{</span>
+    <span class="k">import</span> <span class="nn">spark.implicits._</span>
+
+    <span class="k">val</span> <span class="n">schema</span> <span class="k">=</span> <span class="nc">Encoders</span><span class="o">.</span><span class="n">product</span><span class="o">[</span><span class="kt">A</span><span class="o">].</span><span class="n">schema</span>
+
+    <span class="k">val</span> <span class="n">reader</span><span class="k">:</span> <span class="kt">DataFrameReader</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">read</span><span class="o">.</span><span class="n">schema</span><span class="o">(</span><span class="n">schema</span><span class="o">)</span>
+    <span class="k">val</span> <span class="n">ds</span><span class="k">:</span> <span class="kt">Dataset</span><span class="o">[</span><span class="kt">Row</span><span class="o">]</span> <span class="k">=</span> <span class="n">importFun</span><span class="o">(</span><span class="n">reader</span><span class="o">)</span>
+    <span class="k">val</span> <span class="n">filterPred</span><span class="k">:</span> <span class="kt">Row</span> <span class="o">=&gt;</span> <span class="nc">Boolean</span> <span class="k">=</span> <span class="n">filterFun</span><span class="o">(</span><span class="n">ds</span><span class="o">)</span>
+    <span class="k">val</span> <span class="n">filteredDs</span><span class="k">:</span> <span class="kt">Dataset</span><span class="o">[</span><span class="kt">A</span><span class="o">]</span> <span class="k">=</span> <span class="n">ds</span><span class="o">.</span><span class="n">filter</span><span class="o">(</span><span class="n">in</span> <span class="k">=&gt;</span> <span class="n">filterPred</span><span class="o">(</span><span class="n">in</span><span class="o">)).</span><span class="n">as</span><span class="o">[</span><span class="kt">A</span><span class="o">]</span>
+
+    <span class="n">filteredDs</span><span class="o">.</span>
+      <span class="n">mapPartitions</span><span class="o">(</span><span class="k">_</span><span class="o">.</span><span class="n">map</span><span class="o">(</span><span class="n">projector</span><span class="o">.</span><span class="n">enforceNotNulls</span><span class="o">).</span><span class="n">collect</span> <span class="o">{</span>
+        <span class="k">case</span> <span class="nc">Some</span><span class="o">(</span><span class="n">x</span><span class="o">)</span> <span class="k">=&gt;</span> <span class="n">x</span>
+      <span class="o">})</span>
+<span class="o">}</span></code></pre></div>
+<h3 id="notnothing">NotNothing</h3>
+
+<p>As you may notice, the type arguments need some extra magic, because not all types can be transformed. Given types must
+implement <code>Product</code> for generic derivation, <code>TypeTag</code> so their type can be determined and finally <code>NotNothig</code>. The later
+is needed to prevent <code>Nothing</code> bottom type inference. More info about that &ldquo;type inference hack&rdquo; can be found in the
+<a href="http://hacking-scala.org/post/73854628325/advanced-type-constraints-with-type-classes">hacking-scala.org article</a> or
+just google &ldquo;NotNothing&rdquo;:</p>
+<div class="highlight"><pre class="chroma"><code class="language-scala" data-lang="scala"><span class="k">import</span> <span class="nn">scala.annotation.implicitNotFound</span>
+
+<span class="nd">@implicitNotFound</span><span class="o">(</span><span class="s">&#34;Sorry, type inference was unable to figure out the type. You need to provide it explicitly.&#34;</span><span class="o">)</span>
+<span class="k">trait</span> <span class="nc">NotNothing</span><span class="o">[</span><span class="kt">T</span><span class="o">]</span>
+
+<span class="nc">object</span> <span class="nc">NotNothing</span> <span class="o">{</span>
+
+  <span class="k">private</span> <span class="k">val</span> <span class="nc">Evidence</span><span class="k">:</span> <span class="kt">NotNothing</span><span class="o">[</span><span class="kt">Any</span><span class="o">]</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">Object</span> <span class="k">with</span> <span class="nc">NotNothing</span><span class="o">[</span><span class="kt">Any</span><span class="o">]</span>
+
+  <span class="k">implicit</span> <span class="k">def</span> <span class="n">notNothingEv</span><span class="o">[</span><span class="kt">T</span><span class="o">](</span><span class="k">implicit</span> <span class="n">n</span><span class="k">:</span> <span class="kt">T</span> <span class="o">=</span><span class="k">:</span><span class="o">=</span> <span class="n">T</span><span class="o">)</span><span class="k">:</span> <span class="kt">NotNothing</span><span class="o">[</span><span class="kt">T</span><span class="o">]</span> <span class="k">=</span> <span class="nc">Evidence</span><span class="o">.</span><span class="n">asInstanceOf</span><span class="o">[</span><span class="kt">NotNothing</span><span class="o">[</span><span class="kt">T</span><span class="o">]]</span>
+<span class="o">}</span></code></pre></div>
+<h3 id="examples">Examples</h3>
+
+<p>The <code>importData</code> function makes CSV loading very easy and keeps stuff generic. A simple example call will look like
+this:</p>
+<div class="highlight"><pre class="chroma"><code class="language-scala" data-lang="scala"><span class="k">case</span> <span class="k">class</span> <span class="nc">RawGroup</span><span class="o">(</span><span class="n">id</span><span class="k">:</span> <span class="kt">Option</span><span class="o">[</span><span class="kt">String</span><span class="o">],</span> <span class="n">isActive</span><span class="k">:</span> <span class="kt">Option</span><span class="o">[</span><span class="kt">Boolean</span><span class="o">],</span> <span class="n">description</span><span class="k">:</span> <span class="kt">Option</span><span class="o">[</span><span class="kt">String</span><span class="o">])</span>
+<span class="k">case</span> <span class="k">class</span> <span class="nc">Group</span><span class="o">(</span><span class="n">id</span><span class="k">:</span> <span class="kt">String</span><span class="o">,</span> <span class="n">isActive</span><span class="k">:</span> <span class="kt">Boolean</span><span class="o">,</span> <span class="n">description</span><span class="k">:</span> <span class="kt">Option</span><span class="o">[</span><span class="kt">String</span><span class="o">])</span>
+
+<span class="k">val</span> <span class="n">import1</span><span class="k">:</span> <span class="kt">DataSet</span><span class="o">[</span><span class="kt">Group</span><span class="o">]</span> <span class="k">=</span> <span class="n">importData</span><span class="o">[</span><span class="kt">RawGroup</span>, <span class="kt">Group</span><span class="o">](</span><span class="s">&#34;groups&#34;</span><span class="o">,</span> <span class="k">_</span><span class="o">.</span>
+  <span class="n">option</span><span class="o">(</span><span class="s">&#34;header&#34;</span><span class="o">,</span> <span class="s">&#34;true&#34;</span><span class="o">).</span>
+  <span class="n">csv</span><span class="o">(</span><span class="s">&#34;/data/some.csv&#34;</span><span class="o">).</span>
+  <span class="n">withColumnRenamed</span><span class="o">(</span><span class="s">&#34;Strange col N4m€&#34;</span><span class="o">,</span> <span class="s">&#34;colName&#34;</span><span class="o">).</span>
+  <span class="n">filter</span><span class="o">(</span><span class="s">&#34;colName is not null&#34;</span><span class="o">))</span></code></pre></div>
+<p>As you may noticed, an additional filter function can be passed, which becomes handy in some cases like filtering
+duplicates:</p>
+<div class="highlight"><pre class="chroma"><code class="language-scala" data-lang="scala"><span class="k">val</span> <span class="n">import2</span><span class="k">:</span> <span class="kt">DataSet</span><span class="o">[</span><span class="kt">User</span><span class="o">]</span> <span class="k">=</span> <span class="n">importData</span><span class="o">[</span><span class="kt">RawUser</span>, <span class="kt">User</span><span class="o">](</span><span class="s">&#34;doctors&#34;</span><span class="o">,</span> <span class="k">_</span><span class="o">.</span>
+  <span class="n">option</span><span class="o">(</span><span class="s">&#34;header&#34;</span><span class="o">,</span> <span class="s">&#34;true&#34;</span><span class="o">).</span>
+  <span class="n">option</span><span class="o">(</span><span class="s">&#34;delimiter&#34;</span><span class="o">,</span> <span class="s">&#34;;&#34;</span><span class="o">).</span>
+  <span class="n">csv</span><span class="o">(</span><span class="s">&#34;/data/user_*.csv&#34;</span><span class="o">),</span> <span class="n">rawUsers</span> <span class="k">=&gt;</span> <span class="o">{</span>
+    <span class="k">import</span> <span class="nn">spark.implicits._</span>
+    <span class="k">val</span> <span class="n">duplicateUserIds</span> <span class="k">=</span> <span class="n">rawUsers</span><span class="o">.</span>
+      <span class="n">groupBy</span><span class="o">(</span><span class="s">&#34;userId&#34;</span><span class="o">).</span><span class="n">count</span><span class="o">.</span>
+      <span class="n">filter</span><span class="o">(</span><span class="n">$</span><span class="s">&#34;count&#34;</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="o">).</span>
+      <span class="n">map</span><span class="o">(</span><span class="n">x</span> <span class="k">=&gt;</span> <span class="n">x</span><span class="o">.</span><span class="n">getAs</span><span class="o">[</span><span class="kt">Long</span><span class="o">](</span><span class="s">&#34;userId&#34;</span><span class="o">)).</span>
+      <span class="n">collect</span><span class="o">.</span><span class="n">toSet</span>
+
+    <span class="n">row</span> <span class="k">=&gt;</span> <span class="n">duplicateUserIds</span><span class="o">.</span><span class="n">contains</span><span class="o">(</span><span class="n">row</span><span class="o">.</span><span class="n">getAs</span><span class="o">[</span><span class="kt">Long</span><span class="o">](</span><span class="s">&#34;userId&#34;</span><span class="o">))</span>
+  <span class="o">})</span>
+<span class="o">}</span></code></pre></div>
+<h3 id="the-some-null-case">The Some(null) case</h3>
+
+<p>When reading CSV-data to typed <code>DataSet[T]</code>, <code>Option[_]</code> fields on nullable columns produce <code>None</code> values, as expected.
+Sometimes&hellip; But under certain conditions &ndash; which I am not able to further explain because I don&rsquo;t know &ndash;
+values can be <code>Some(null)</code> which is basically a fever nightmare when trying to clean up dirty data&hellip;</p>
+
+<p>That problem can be solved by implementing another implicit to transform <code>Some(null)</code> to <code>None</code>. But because the
+implementation will propagate <code>None</code> values, we need to return <code>Some(None)</code> instead of just <code>None</code>. Otherwise, all
+transformations on case classes containing Option types will result in <code>None</code> instead of <code>Option[B]</code>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-scala" data-lang="scala"><span class="k">implicit</span> <span class="k">def</span> <span class="n">optOptProjector</span><span class="o">[</span><span class="kt">A</span><span class="o">]</span><span class="k">:</span> <span class="kt">PartialProjector</span><span class="o">[</span><span class="kt">Option</span><span class="o">[</span><span class="kt">A</span><span class="o">]</span>, <span class="kt">Option</span><span class="o">[</span><span class="kt">A</span><span class="o">]]</span> <span class="k">=</span> <span class="n">instance</span> <span class="o">{</span>
+  <span class="k">case</span> <span class="nc">Some</span><span class="o">(</span><span class="n">x</span><span class="o">)</span> <span class="k">=&gt;</span> <span class="k">if</span> <span class="o">(</span><span class="n">x</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="nc">Some</span><span class="o">(</span><span class="nc">Some</span><span class="o">(</span><span class="n">x</span><span class="o">))</span> <span class="k">else</span> <span class="nc">Some</span><span class="o">(</span><span class="nc">None</span><span class="o">)</span>
+  <span class="k">case</span> <span class="nc">None</span> <span class="k">=&gt;</span> <span class="nc">Some</span><span class="o">(</span><span class="nc">None</span><span class="o">)</span>
+<span class="o">}</span></code></pre></div>
+<p><em>Note to myself: I suck at naming things</em></p>
+
+<h3 id="fat-jars">Fat-Jars</h3>
+
+<p>If you build a fat jar using SBT assembly, which is common for Spark-jobs, please don&rsquo;t forget to shade the dependent
+shapeless library, because spark also uses shapeless internally which may conflict otherwise.</p>
+
+<h2 id="limitations">Limitations</h2>
+
+<p>Because the transformation depend on the order of properties and not their labels, input and output case classes
+(<code>A</code> and <code>B</code>) must have the same number of properties in the same order. Of course it is also possible to build the
+HLists from labelled generics, so the properties with the same name would be mapped. I personally prefer mapping them by
+order, because by using this variant, properties can also be renamed during transformation.</p>
+
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://frne.github.io/post/2017-12-18-using-java-libs-in-scala/" data-toggle="tooltip" data-placement="top" title="Java Libs in Scala - A bit more Functional">&larr; Previous Post</a>
+            </li>
+          
+          
+        </ul>
+      
+
+
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1 col-md-12">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="https://github.com/frne" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/frank_neff" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/frankneff" title="LinkedIn">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://stackoverflow.com/users/1045760/frank-neff" title="StackOverflow">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              Frank Neff
+            
+          
+
+          &nbsp;&bull;&nbsp;
+          2018
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://frne.github.io/">Franks.codes</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.37</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://frne.github.io/js/main.js"></script><script> renderMathInElement(document.body); </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script>
+<script src="https://frne.github.io/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+  </body>
+</html>
+

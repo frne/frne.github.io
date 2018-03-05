@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Java Libs in Scala - A bit more Functional</title>
+  <meta property="og:title" content="Java Libs in Scala - A bit more Functional" />
+  <meta name="twitter:title" content="Java Libs in Scala - A bit more Functional" />
+  <meta name="description" content="Every Java library can be used in Scala, which is, for me, one of the good parts of the JVM world. But Java libs are mostly object-oriented and not functional, therefore full of side effects and somtimes &ldquo;ugly&rdquo; to use in Scala. But there are some approaches how to make Java libs (or their interfaces) more functional, so they can almost be used like a Scala lib.
+Java 8 Type Conversion Many Java types like Map or List, but also functional types (Java 8) like Optional&lt;T&gt; have Scala pendents.">
+  <meta property="og:description" content="Every Java library can be used in Scala, which is, for me, one of the good parts of the JVM world. But Java libs are mostly object-oriented and not functional, therefore full of side effects and somtimes &ldquo;ugly&rdquo; to use in Scala. But there are some approaches how to make Java libs (or their interfaces) more functional, so they can almost be used like a Scala lib.
+Java 8 Type Conversion Many Java types like Map or List, but also functional types (Java 8) like Optional&lt;T&gt; have Scala pendents.">
+  <meta name="twitter:description" content="Every Java library can be used in Scala, which is, for me, one of the good parts of the JVM world. But Java libs are mostly object-oriented and not functional, therefore full of side effects and …">
+  <meta name="author" content="Frank Neff"/>
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@frank_neff" />
+  <meta name="twitter:creator" content="@frank_neff" />
+  <meta property="og:url" content="https://frne.github.io/post/2017-12-18-using-java-libs-in-scala/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Franks.codes" />
+  <meta property="og:site_name" content="Franks.codes" />
+
+  <meta name="generator" content="Hugo 0.37" />
+  <link rel="canonical" href="https://frne.github.io/post/2017-12-18-using-java-libs-in-scala/" />
+  <link rel="alternate" href="https://frne.github.io/index.xml" type="application/rss+xml" title="Franks.codes">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://frne.github.io/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" /><link rel="stylesheet" href="https://frne.github.io/css/syntax.css" /><link rel="stylesheet" href="https://frne.github.io/css/codeblock.css" />
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://frne.github.io/">Franks.codes</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="categories" href="https://frne.github.io/categories">categories</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="tags" href="https://frne.github.io/tags">tags</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="source" href="https://github.com/frne/blog">source</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 col-lg-offset-1 col-md-12">
+            <div class="post-heading">
+              <h1>Java Libs in Scala - A bit more Functional</h1>
+                
+                
+                  <span class="post-meta">
+  
+  
+  
+  <i class="fa fa-calendar-o"></i>&nbsp;Posted on December 18, 2017
+  
+  
+      
+      in
+      
+          <a href="https://frne.github.io/categories/scala/">Scala</a>
+          
+            ,&nbsp;
+          
+      
+          <a href="https://frne.github.io/categories/functional-programming/">Functional Programming</a>
+          
+            ,&nbsp;
+          
+      
+          <a href="https://frne.github.io/categories/java/">Java</a>
+          
+      
+  
+  
+  
+</span>
+
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-10 col-lg-offset-1 col-md-12">
+      <article role="main" class="blog-post">
+        
+
+<p>Every Java library can be used in Scala, which is, for me, one of the good parts of the JVM world. But Java libs are
+mostly object-oriented and not functional, therefore full  of side effects and somtimes &ldquo;ugly&rdquo; to use in Scala. But
+there are some approaches how to make Java libs (or their interfaces) more functional, so they can almost be used like
+a Scala lib.</p>
+
+<h2 id="java-8-type-conversion">Java 8 Type Conversion</h2>
+
+<p>Many Java types like <code>Map</code> or <code>List</code>, but also functional types (Java 8) like <code>Optional&lt;T&gt;</code> have Scala pendents. As this
+is one of the really log hanging fruits, convert those types to Scala. All collection types of Java can be converted by
+using Scalas own <code>scala.collection.JavaConverters._</code>. After importing the implicits, one can call <code>.asScala</code> on every
+Java collection:</p>
+<div class="highlight"><pre class="chroma"><code class="language-scala" data-lang="scala"><span class="k">import</span> <span class="nn">java.util</span>
+<span class="k">import</span> <span class="nn">scala.collection.JavaConverters._</span>
+<span class="k">import</span> <span class="nn">scala.collection.mutable</span>
+
+<span class="k">val</span> <span class="n">jList</span><span class="k">:</span> <span class="kt">util.ArrayList</span><span class="o">[</span><span class="kt">String</span><span class="o">]</span> <span class="k">=</span> <span class="k">new</span> <span class="n">java</span><span class="o">.</span><span class="n">util</span><span class="o">.</span><span class="nc">ArrayList</span><span class="o">[</span><span class="kt">String</span><span class="o">]()</span>
+<span class="k">val</span> <span class="n">sBuf</span><span class="k">:</span> <span class="kt">mutable.Buffer</span><span class="o">[</span><span class="kt">String</span><span class="o">]</span> <span class="k">=</span> <span class="n">jList</span><span class="o">.</span><span class="n">asScala</span>
+<span class="k">val</span> <span class="n">sList</span><span class="k">:</span> <span class="kt">List</span><span class="o">[</span><span class="kt">String</span><span class="o">]</span> <span class="k">=</span> <span class="n">sBuf</span><span class="o">.</span><span class="n">toList</span></code></pre></div>
+<p>The <code>Optional&lt;T&gt;</code> of Java 8 is, in my humble opinion, a huge benefit, but a bit disfunctional compared to Scalas
+<code>Option[T]</code>. When using Java interfaces that return optionals, it can also be converted:</p>
+<div class="highlight"><pre class="chroma"><code class="language-scala" data-lang="scala"><span class="k">import</span> <span class="nn">java.util.Optional</span>
+
+<span class="k">implicit</span> <span class="k">class</span> <span class="nc">Java8Optional</span><span class="o">[</span><span class="kt">T</span><span class="o">](</span><span class="n">in</span><span class="k">:</span> <span class="kt">Optional</span><span class="o">[</span><span class="kt">T</span><span class="o">]){</span>
+  <span class="k">def</span> <span class="n">asScala</span><span class="k">:</span> <span class="kt">Option</span><span class="o">[</span><span class="kt">T</span><span class="o">]</span> <span class="k">=</span> <span class="k">if</span><span class="o">(</span><span class="n">in</span><span class="o">.</span><span class="n">isPresent</span><span class="o">)</span> <span class="nc">Option</span><span class="o">(</span><span class="n">in</span><span class="o">.</span><span class="n">get</span><span class="o">())</span> <span class="k">else</span> <span class="nc">None</span>
+<span class="o">}</span>
+
+<span class="k">val</span> <span class="n">jOpt</span><span class="k">:</span> <span class="kt">Optional</span><span class="o">[</span><span class="kt">String</span><span class="o">]</span> <span class="k">=</span> <span class="nc">Optional</span><span class="o">.</span><span class="n">of</span><span class="o">(</span><span class="s">&#34;foo&#34;</span><span class="o">)</span>
+<span class="k">val</span> <span class="n">sOpt</span><span class="k">:</span> <span class="kt">Option</span><span class="o">[</span><span class="kt">String</span><span class="o">]</span> <span class="k">=</span> <span class="n">jOpt</span><span class="o">.</span><span class="n">asScala</span></code></pre></div>
+<p>Also, Java 8 functional interfaces, like <code>java.util.Function&lt;A,B&gt;</code> can be converted:</p>
+<div class="highlight"><pre class="chroma"><code class="language-scala" data-lang="scala"><span class="k">implicit</span> <span class="k">class</span> <span class="nc">Java8Function</span><span class="o">[</span><span class="kt">A</span>, <span class="kt">B</span><span class="o">](</span><span class="n">in</span><span class="k">:</span> <span class="kt">java.util.function.Function</span><span class="o">[</span><span class="kt">A</span>, <span class="kt">B</span><span class="o">])</span> <span class="o">{</span>
+  <span class="k">def</span> <span class="n">asScala</span><span class="k">:</span> <span class="kt">A</span> <span class="o">=&gt;</span> <span class="n">B</span> <span class="k">=</span> <span class="o">(</span><span class="n">a</span><span class="k">:</span> <span class="kt">A</span><span class="o">)</span> <span class="k">=&gt;</span> <span class="n">in</span><span class="o">.</span><span class="n">apply</span><span class="o">(</span><span class="n">a</span><span class="o">)</span>
+<span class="o">}</span>
+
+<span class="k">val</span> <span class="n">jFunc</span><span class="k">:</span> <span class="kt">java.util.function.Function</span><span class="o">[</span><span class="kt">String</span>, <span class="kt">String</span><span class="o">]</span> <span class="k">=</span> <span class="o">???</span>
+
+<span class="k">val</span> <span class="n">sFunc</span><span class="k">:</span> <span class="kt">String</span> <span class="o">=&gt;</span> <span class="nc">String</span> <span class="k">=</span> <span class="n">jFunc</span><span class="o">.</span><span class="n">asScala</span></code></pre></div>
+<p><em><strong>Note:</strong> Despite those conversions work, they are only meant for demonstration purposes. Scala has a compatibility library
+<a href="https://github.com/scala/scala-java8-compat">scala-java8-compat</a> to convert Java to Scala types. Use it.</em></p>
+
+<h2 id="implicit-classes-as-decorators">Implicit Classes as Decorators</h2>
+
+<p>As you could see, implicit classes are very handy to decorate Java objects, which you cannot change. This becomes
+especially handy when using Java libraries, like, for example
+<a href="https://lucene.apache.org/solr/guide/6_6/using-solrj.html">SolrJ</a>.</p>
+
+<p>To simplify object construction (good old Java setters in that case) and minify observable side effects, functional
+object builders can be implemented that way. I used this approach, to design a Scala interface for the
+<code>org.apache.solr.common.SolrDocument</code>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-scala" data-lang="scala"><span class="cm">/** Implicit ops for solr documents */</span>
+<span class="k">private</span><span class="o">[</span><span class="kt">search</span><span class="o">]</span> <span class="k">implicit</span> <span class="k">class</span> <span class="nc">SolrDocumentOps</span><span class="o">(</span><span class="n">in</span><span class="k">:</span> <span class="kt">SolrDocument</span><span class="o">)</span> <span class="o">{</span>
+  <span class="k">def</span> <span class="n">asScala</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">ScalaSolrDocument</span><span class="o">(</span><span class="n">in</span><span class="o">)</span>
+<span class="o">}</span>
+
+<span class="cm">/** Typesafe representation of a solr document
+</span><span class="cm">  *
+</span><span class="cm">  * @param underlying The original (wrapped) solr document
+</span><span class="cm">  */</span>
+<span class="k">private</span><span class="o">[</span><span class="kt">search</span><span class="o">]</span> <span class="k">class</span> <span class="nc">ScalaSolrDocument</span><span class="o">(</span><span class="k">val</span> <span class="n">underlying</span><span class="k">:</span> <span class="kt">SolrDocument</span><span class="o">)</span> 
+
+  <span class="cm">/** Helper method to add fields to existing result documents **/</span>
+  <span class="k">def</span> <span class="n">withField</span><span class="o">(</span><span class="n">fieldName</span><span class="k">:</span> <span class="kt">String</span><span class="o">,</span> <span class="n">value</span><span class="k">:</span> <span class="kt">Any</span><span class="o">)</span><span class="k">:</span> <span class="kt">ScalaSolrDocument</span> <span class="o">=</span> <span class="o">{</span>
+    <span class="k">val</span> <span class="n">doc</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">SolrDocument</span><span class="o">()</span>
+    <span class="n">underlying</span><span class="o">.</span><span class="n">entrySet</span><span class="o">().</span><span class="n">asScala</span><span class="o">.</span><span class="n">foreach</span><span class="o">(</span><span class="n">f</span> <span class="k">=&gt;</span> <span class="n">doc</span><span class="o">.</span><span class="n">addField</span><span class="o">(</span><span class="n">f</span><span class="o">.</span><span class="n">getKey</span><span class="o">,</span> <span class="n">f</span><span class="o">.</span><span class="n">getValue</span><span class="o">))</span>
+    <span class="n">doc</span><span class="o">.</span><span class="n">addField</span><span class="o">(</span><span class="n">fieldName</span><span class="o">,</span> <span class="n">value</span><span class="o">)</span>
+    <span class="n">doc</span><span class="o">.</span><span class="n">asScala</span>
+  <span class="o">}</span>
+  
+  <span class="cm">/** Transform function to maintain fluid interface, because document is not monadic */</span>
+  <span class="k">def</span> <span class="n">transform</span><span class="o">[</span><span class="kt">T</span><span class="o">](</span><span class="n">f</span><span class="k">:</span> <span class="kt">SolrDocument</span> <span class="o">=&gt;</span> <span class="n">T</span><span class="o">)</span> <span class="k">=</span> <span class="n">f</span><span class="o">(</span><span class="n">underlying</span><span class="o">)</span>
+<span class="o">}</span></code></pre></div>
+<p>To prevent confusion of the newly added Scala methods with the existing interface, the only method on the implicit
+decorator class is <code>asScala</code> which returns the custom <code>ScalaSolrDocument</code> which wraps the original object. An example
+to get rid of side effects is the method <code>withField</code> which constructs a new underlying <code>SolrDocument</code> every time a field
+is modified.</p>
+
+<p>The usage is pretty simple:</p>
+<div class="highlight"><pre class="chroma"><code class="language-scala" data-lang="scala"><span class="k">val</span> <span class="n">doc</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">SolrDocument</span>
+<span class="k">val</span> <span class="n">sDoc</span><span class="k">:</span> <span class="kt">ScalaSolrDocument</span> <span class="o">=</span> <span class="n">doc</span><span class="o">.</span><span class="n">asScala</span><span class="o">.</span>
+  <span class="n">withField</span><span class="o">(</span><span class="s">&#34;name&#34;</span><span class="o">,</span> <span class="s">&#34;Frank&#34;</span><span class="o">),</span>
+  <span class="n">withField</span><span class="o">(</span><span class="s">&#34;profession&#34;</span><span class="o">,</span> <span class="s">&#34;programmer&#34;</span><span class="o">)</span>
+<span class="k">val</span> <span class="n">res</span><span class="k">:</span> <span class="kt">SolrDocument</span> <span class="o">=</span> <span class="n">sDoc</span><span class="o">.</span><span class="n">underlying</span></code></pre></div>
+<h2 id="implicit-conversion">Implicit Conversion</h2>
+
+<p>Another approach to convert between the original <code>SolrDocument</code> and the custom <code>ScalaSolrDocument</code> is Scalas
+<a href="https://docs.scala-lang.org/tour/implicit-conversions.html">implicit conversions</a> feature.</p>
+
+<p>By providing two implicit values containing the converter functions, the Scala compiler will implicitely convert between
+the two types where needed:</p>
+<div class="highlight"><pre class="chroma"><code class="language-scala" data-lang="scala"><span class="k">import</span> <span class="nn">scala.language.implicitConversions</span>
+
+<span class="k">implicit</span> <span class="k">val</span> <span class="n">solrDocToScala</span> <span class="k">=</span> <span class="o">(</span><span class="n">in</span><span class="k">:</span> <span class="kt">SolrDocument</span><span class="o">)</span> <span class="k">=&gt;</span> <span class="k">new</span> <span class="nc">ScalaSolrDocument</span><span class="o">(</span><span class="n">in</span><span class="o">)</span>
+<span class="k">implicit</span> <span class="k">val</span> <span class="n">solrDocFromScala</span> <span class="k">=</span> <span class="o">(</span><span class="n">in</span><span class="k">:</span> <span class="kt">ScalaSolrDocument</span><span class="o">)</span> <span class="k">=&gt;</span> <span class="n">in</span><span class="o">.</span><span class="n">underlying</span>
+
+<span class="c1">// could be a method of an interface which needs the original document
+</span><span class="c1"></span><span class="k">def</span> <span class="n">save</span><span class="o">(</span><span class="n">doc</span><span class="k">:</span> <span class="kt">SolrDocument</span><span class="o">)</span> <span class="k">=</span> <span class="o">???</span>
+
+<span class="k">val</span> <span class="n">jDoc</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">SolrDocument</span><span class="o">()</span> <span class="c1">// original doc
+</span><span class="c1"></span>
+<span class="c1">// implicit conversion to ScalaSolrDocument
+</span><span class="c1"></span><span class="k">val</span> <span class="n">sDoc</span> <span class="k">=</span> <span class="n">jDoc</span><span class="o">.</span><span class="n">withField</span><span class="o">(</span><span class="s">&#34;name&#34;</span><span class="o">,</span> <span class="s">&#34;Frank&#34;</span><span class="o">)</span> 
+
+<span class="c1">// implicit conversion back to SolrDocument
+</span><span class="c1"></span><span class="n">save</span><span class="o">(</span><span class="n">sDoc</span><span class="o">)</span></code></pre></div>
+<p><em><strong>Note:</strong> Implicit conversions are considered an <strong>advanced language feature</strong>, because things can get confusing fast.
+Don&rsquo;t overuse them.</em></p>
+
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://frne.github.io/post/2017-09-06-overcoming-checked-exceptions-in-java-lambdas/" data-toggle="tooltip" data-placement="top" title="Overcoming Checked Exceptions in Java Lambdas">&larr; Previous Post</a>
+            </li>
+          
+          
+            <li class="next">
+              <a href="https://frne.github.io/post/2018-03-02-generic-derivation-for-spark-data-cleaning/" data-toggle="tooltip" data-placement="top" title="Using Shapeless for Data Cleaning in Apache Spark">Next Post &rarr;</a>
+            </li>
+          
+        </ul>
+      
+
+
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1 col-md-12">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="https://github.com/frne" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/frank_neff" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/frankneff" title="LinkedIn">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://stackoverflow.com/users/1045760/frank-neff" title="StackOverflow">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              Frank Neff
+            
+          
+
+          &nbsp;&bull;&nbsp;
+          2018
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://frne.github.io/">Franks.codes</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.37</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://frne.github.io/js/main.js"></script><script> renderMathInElement(document.body); </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script>
+<script src="https://frne.github.io/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+  </body>
+</html>
+

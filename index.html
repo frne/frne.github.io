@@ -176,7 +176,7 @@
           
           
             <article class="post-preview">
-              <a href="https://frne.github.io/post/2017-12-14-generic-derivation-for-spark-data-cleaning/">
+              <a href="https://frne.github.io/post/2018-03-02-generic-derivation-for-spark-data-cleaning/">
                 <h2 class="post-title">Using Shapeless for Data Cleaning in Apache Spark</h2>
                 
                 
@@ -214,7 +214,7 @@
               <div class="post-entry">
                 
                   When it comes to importing data into a BigData infrastructure like Hadoop, Apache Spark is one of the most used tools for ETL jobs. Because input data &ndash; in this case CSV &ndash; has often invalid values, a data cleaning layer is needed. Most tasks in data cleaning are very specific and therefore need to be implemented depending on your data, but some tasks can be generalized. In this post, I&rsquo;ll not go into Spark, ETL or BigData in general, but provide one approach to clean null / empty values off a data set.
-                  <a href="https://frne.github.io/post/2017-12-14-generic-derivation-for-spark-data-cleaning/" class="post-read-more">[Read More]</a>
+                  <a href="https://frne.github.io/post/2018-03-02-generic-derivation-for-spark-data-cleaning/" class="post-read-more">[Read More]</a>
                 
               </div>
 
@@ -228,6 +228,113 @@
                   #<a href="https://frne.github.io//tags/typelevel/">typelevel</a>&nbsp;
                 
                   #<a href="https://frne.github.io//tags/shapeless/">shapeless</a>&nbsp;
+                
+                </span>
+              
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://frne.github.io/post/2017-12-18-using-java-libs-in-scala/">
+                <h2 class="post-title">Java Libs in Scala - A bit more Functional</h2>
+                
+                
+              </a>
+
+              <span class="post-meta">
+  
+  
+  
+  <i class="fa fa-calendar-o"></i>&nbsp;Posted on December 18, 2017
+  
+  
+      
+      in
+      
+          <a href="https://frne.github.io/categories/scala/">Scala</a>
+          
+            ,&nbsp;
+          
+      
+          <a href="https://frne.github.io/categories/functional-programming/">Functional Programming</a>
+          
+            ,&nbsp;
+          
+      
+          <a href="https://frne.github.io/categories/java/">Java</a>
+          
+      
+  
+  
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  Every Java library can be used in Scala, which is, for me, one of the good parts of the JVM world. But Java libs are mostly object-oriented and not functional, therefore full of side effects and somtimes &ldquo;ugly&rdquo; to use in Scala. But there are some approaches how to make Java libs (or their interfaces) more functional, so they can almost be used like a Scala lib.
+Java 8 Type Conversion Many Java types like Map or List, but also functional types (Java 8) like Optional&lt;T&gt; have Scala pendents.
+                  <a href="https://frne.github.io/post/2017-12-18-using-java-libs-in-scala/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <span class="post-meta">
+                
+                  #<a href="https://frne.github.io//tags/implicits/">implicits</a>&nbsp;
+                
+                  #<a href="https://frne.github.io//tags/libs/">libs</a>&nbsp;
+                
+                  #<a href="https://frne.github.io//tags/solrj/">solrj</a>&nbsp;
+                
+                </span>
+              
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://frne.github.io/post/2017-09-06-overcoming-checked-exceptions-in-java-lambdas/">
+                <h2 class="post-title">Overcoming Checked Exceptions in Java Lambdas</h2>
+                
+                
+              </a>
+
+              <span class="post-meta">
+  
+  
+  
+  <i class="fa fa-calendar-o"></i>&nbsp;Posted on September 6, 2017
+  
+  
+      
+      in
+      
+          <a href="https://frne.github.io/categories/java/">Java</a>
+          
+            ,&nbsp;
+          
+      
+          <a href="https://frne.github.io/categories/functional-programming/">Functional Programming</a>
+          
+      
+  
+  
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  In Java 8, the long awaited Lambda came to live, making it easy(-er) to do FP in Java. One problem I came across is, that most Java code throws checked exceptions which leads to IMHO ugly try/catch blocks in lambdas:
+Function&lt;A, B&gt; fun = (a: A) -&gt; { try { // some function call that trows checked exception$  return callFn(a); } catch (Exception e) { // return failure result  } }; The Good, the Bad and the Ugly A really simple, but also not really nice option is to wrap thrown exceptions into an unchecked one:
+                  <a href="https://frne.github.io/post/2017-09-06-overcoming-checked-exceptions-in-java-lambdas/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <span class="post-meta">
+                
+                  #<a href="https://frne.github.io//tags/exceptions/">exceptions</a>&nbsp;
+                
+                  #<a href="https://frne.github.io//tags/lambda/">lambda</a>&nbsp;
                 
                 </span>
               

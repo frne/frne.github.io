@@ -5,21 +5,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Fp</title>
-  <meta property="og:title" content="Fp" />
-  <meta name="twitter:title" content="Fp" />
+  <title>Exceptions</title>
+  <meta property="og:title" content="Exceptions" />
+  <meta name="twitter:title" content="Exceptions" />
   <meta name="author" content="Frank Neff"/>
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@frank_neff" />
   <meta name="twitter:creator" content="@frank_neff" />
-  <meta property="og:url" content="https://frne.github.io/tags/fp/" />
+  <meta property="og:url" content="https://frne.github.io/tags/exceptions/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Franks.codes" />
   <meta property="og:site_name" content="Franks.codes" />
 
   <meta name="generator" content="Hugo 0.37" />
-  <link rel="canonical" href="https://frne.github.io/tags/fp/" />
-  <link rel="alternate" href="https://frne.github.io/tags/fp/index.xml" type="application/rss+xml" title="Franks.codes">
+  <link rel="canonical" href="https://frne.github.io/tags/exceptions/" />
+  <link rel="alternate" href="https://frne.github.io/tags/exceptions/index.xml" type="application/rss+xml" title="Franks.codes">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -139,7 +139,7 @@
         <div class="row">
           <div class="col-lg-10 col-lg-offset-1 col-md-12">
             <div class="page-heading">
-              <h1>#Fp</h1>
+              <h1>#Exceptions</h1>
               <hr class="small">
             </div>
           </div>
@@ -156,32 +156,29 @@
         <div class="posts-list">
           
             <article class="post-preview">
-              <a href="https://frne.github.io/post/2018-03-02-generic-derivation-for-spark-data-cleaning/">
-                <h2 class="post-title">Using Shapeless for Data Cleaning in Apache Spark</h2>
+              <a href="https://frne.github.io/post/2017-09-06-overcoming-checked-exceptions-in-java-lambdas/">
+                <h2 class="post-title">Overcoming Checked Exceptions in Java Lambdas</h2>
 
                 
               </a>
 
               <p class="post-meta">
-                Posted on March 2, 2018
+                Posted on September 6, 2017
               </p>
               <div class="post-entry">
                 
-                  When it comes to importing data into a BigData infrastructure like Hadoop, Apache Spark is one of the most used tools for ETL jobs. Because input data &ndash; in this case CSV &ndash; has often invalid values, a data cleaning layer is needed. Most tasks in data cleaning are very specific and therefore need to be implemented depending on your data, but some tasks can be generalized. In this post, I&rsquo;ll not go into Spark, ETL or BigData in general, but provide one approach to clean null / empty values off a data set.
-                  <a href="https://frne.github.io/post/2018-03-02-generic-derivation-for-spark-data-cleaning/" class="post-read-more">[Read More]</a>
+                  In Java 8, the long awaited Lambda came to live, making it easy(-er) to do FP in Java. One problem I came across is, that most Java code throws checked exceptions which leads to IMHO ugly try/catch blocks in lambdas:
+Function&lt;A, B&gt; fun = (a: A) -&gt; { try { // some function call that trows checked exception$  return callFn(a); } catch (Exception e) { // return failure result  } }; The Good, the Bad and the Ugly A really simple, but also not really nice option is to wrap thrown exceptions into an unchecked one:
+                  <a href="https://frne.github.io/post/2017-09-06-overcoming-checked-exceptions-in-java-lambdas/" class="post-read-more">[Read More]</a>
                 
               </div>
 
               
                 <span class="post-meta">
                   
-                    #<a href="https://frne.github.io//tags/fp/">fp</a>&nbsp;
+                    #<a href="https://frne.github.io//tags/exceptions/">exceptions</a>&nbsp;
                   
-                    #<a href="https://frne.github.io//tags/spark/">spark</a>&nbsp;
-                  
-                    #<a href="https://frne.github.io//tags/typelevel/">typelevel</a>&nbsp;
-                  
-                    #<a href="https://frne.github.io//tags/shapeless/">shapeless</a>&nbsp;
+                    #<a href="https://frne.github.io//tags/lambda/">lambda</a>&nbsp;
                   
                 </span>
               
