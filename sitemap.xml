@@ -3,274 +3,303 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://frne.github.io/post/2018-03-02-generic-derivation-for-spark-data-cleaning/</loc>
+    <loc>https://www.franks.codes/post/2019-11-19-spring-security-oauth-blues-simplicity/</loc>
+    <lastmod>2019-12-14T13:58:28+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.franks.codes/post/2018-03-02-generic-derivation-for-spark-data-cleaning/</loc>
     <lastmod>2018-03-02T19:15:03+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://frne.github.io/post/2017-12-18-using-java-libs-in-scala/</loc>
+    <loc>https://www.franks.codes/post/2017-12-18-using-java-libs-in-scala/</loc>
     <lastmod>2017-12-18T22:04:38+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://frne.github.io/post/2017-09-06-overcoming-checked-exceptions-in-java-lambdas/</loc>
+    <loc>https://www.franks.codes/post/2017-09-06-overcoming-checked-exceptions-in-java-lambdas/</loc>
     <lastmod>2017-09-06T19:57:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://frne.github.io/post/2016-05-15-slides-principles-of-object-orientation/</loc>
+    <loc>https://www.franks.codes/post/2016-05-15-slides-principles-of-object-orientation/</loc>
     <lastmod>2016-05-15T10:27:49+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://frne.github.io/post/2016-05-12-new-blog/</loc>
+    <loc>https://www.franks.codes/post/2016-05-12-new-blog/</loc>
     <lastmod>2016-05-12T14:38:12+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://frne.github.io/post/2016-05-02-play-guice-actor-pooling/</loc>
+    <loc>https://www.franks.codes/post/2016-05-02-play-guice-actor-pooling/</loc>
     <lastmod>2016-05-02T23:11:01+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://frne.github.io/post/2016-04-15-scala-compiler-tuning/</loc>
+    <loc>https://www.franks.codes/post/2016-04-15-scala-compiler-tuning/</loc>
     <lastmod>2016-04-15T22:15:28+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://frne.github.io/post/2015-07-23-understanding-stemmers-nlp/</loc>
+    <loc>https://www.franks.codes/post/2015-07-23-understanding-stemmers-nlp/</loc>
     <lastmod>2015-07-23T18:05:12+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://frne.github.io/post/2015-04-21-pragmatism-technical-dept-oversimplification/</loc>
+    <loc>https://www.franks.codes/post/2015-04-21-pragmatism-technical-dept-oversimplification/</loc>
     <lastmod>2015-04-21T13:09:32+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://frne.github.io/tags/agile/</loc>
+    <loc>https://www.franks.codes/tags/agile/</loc>
     <lastmod>2015-04-21T13:09:32+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://frne.github.io/tags/akka/</loc>
+    <loc>https://www.franks.codes/tags/akka/</loc>
     <lastmod>2016-05-02T23:11:01+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://frne.github.io/categories/annoucements/</loc>
+    <loc>https://www.franks.codes/categories/annoucements/</loc>
     <lastmod>2016-05-12T14:38:12+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://frne.github.io/categories/bigdata/</loc>
+    <loc>https://www.franks.codes/categories/bigdata/</loc>
     <lastmod>2018-03-02T19:15:03+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://frne.github.io/categories/business/</loc>
+    <loc>https://www.franks.codes/categories/business/</loc>
     <lastmod>2015-04-21T13:09:32+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://frne.github.io/categories/</loc>
+    <loc>https://www.franks.codes/categories/</loc>
     <lastmod>2016-05-12T14:38:12+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://frne.github.io/tags/compiler/</loc>
+    <loc>https://www.franks.codes/tags/compiler/</loc>
     <lastmod>2016-04-15T22:15:28+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://frne.github.io/tags/exceptions/</loc>
-    <lastmod>2017-09-06T19:57:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://frne.github.io/tags/fp/</loc>
-    <lastmod>2018-03-02T19:15:03+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://frne.github.io/</loc>
-    <lastmod>2018-03-02T19:15:03+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://frne.github.io/categories/functional-programming/</loc>
-    <lastmod>2018-03-02T19:15:03+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://frne.github.io/tags/grasp/</loc>
-    <lastmod>2016-05-15T10:27:49+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://frne.github.io/tags/guice/</loc>
-    <lastmod>2016-05-02T23:11:01+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://frne.github.io/tags/implicits/</loc>
-    <lastmod>2017-12-18T22:04:38+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://frne.github.io/tags/java/</loc>
-    <lastmod>2016-05-02T23:11:01+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://frne.github.io/categories/java/</loc>
-    <lastmod>2017-12-18T22:04:38+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://frne.github.io/tags/job/</loc>
-    <lastmod>2016-05-12T14:38:12+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://frne.github.io/tags/lambda/</loc>
+    <loc>https://www.franks.codes/tags/exceptions/</loc>
     <lastmod>2017-09-06T19:57:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://frne.github.io/tags/libs/</loc>
-    <lastmod>2017-12-18T22:04:38+01:00</lastmod>
+    <loc>https://www.franks.codes/tags/fp/</loc>
+    <lastmod>2018-03-02T19:15:03+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://frne.github.io/tags/news/</loc>
-    <lastmod>2016-05-12T14:38:12+02:00</lastmod>
+    <loc>https://www.franks.codes/categories/frameworks/</loc>
+    <lastmod>2019-12-14T13:58:28+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://frne.github.io/tags/nlp/</loc>
-    <lastmod>2015-07-23T18:05:12+02:00</lastmod>
+    <loc>https://www.franks.codes/</loc>
+    <lastmod>2019-12-14T13:58:28+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://frne.github.io/tags/object-orientation/</loc>
+    <loc>https://www.franks.codes/categories/functional-programming/</loc>
+    <lastmod>2018-03-02T19:15:03+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.franks.codes/tags/grasp/</loc>
     <lastmod>2016-05-15T10:27:49+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://frne.github.io/tags/patterns/</loc>
-    <lastmod>2016-05-15T10:27:49+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://frne.github.io/tags/play/</loc>
+    <loc>https://www.franks.codes/tags/guice/</loc>
     <lastmod>2016-05-02T23:11:01+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://frne.github.io/post/</loc>
-    <lastmod>2018-03-02T19:15:03+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://frne.github.io/tags/pragmatism/</loc>
-    <lastmod>2015-04-21T13:09:32+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://frne.github.io/tags/sbt/</loc>
-    <lastmod>2016-04-15T22:15:28+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://frne.github.io/tags/scala/</loc>
-    <lastmod>2016-04-15T22:15:28+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://frne.github.io/categories/scala/</loc>
-    <lastmod>2018-03-02T19:15:03+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://frne.github.io/tags/shapeless/</loc>
-    <lastmod>2018-03-02T19:15:03+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://frne.github.io/categories/software-engineering/</loc>
-    <lastmod>2016-05-15T10:27:49+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://frne.github.io/tags/solid/</loc>
-    <lastmod>2016-05-15T10:27:49+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://frne.github.io/tags/solr/</loc>
-    <lastmod>2015-07-23T18:05:12+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://frne.github.io/tags/solrj/</loc>
+    <loc>https://www.franks.codes/tags/implicits/</loc>
     <lastmod>2017-12-18T22:04:38+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://frne.github.io/tags/spark/</loc>
-    <lastmod>2018-03-02T19:15:03+01:00</lastmod>
+    <loc>https://www.franks.codes/tags/java/</loc>
+    <lastmod>2016-05-02T23:11:01+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://frne.github.io/tags/</loc>
-    <lastmod>2015-04-21T13:09:32+02:00</lastmod>
+    <loc>https://www.franks.codes/categories/java/</loc>
+    <lastmod>2017-12-18T22:04:38+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://frne.github.io/categories/talks/</loc>
+    <loc>https://www.franks.codes/tags/job/</loc>
+    <lastmod>2016-05-12T14:38:12+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.franks.codes/categories/kotlin/</loc>
+    <lastmod>2019-12-14T13:58:28+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.franks.codes/tags/lambda/</loc>
+    <lastmod>2017-09-06T19:57:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.franks.codes/tags/libs/</loc>
+    <lastmod>2017-12-18T22:04:38+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.franks.codes/tags/news/</loc>
+    <lastmod>2016-05-12T14:38:12+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.franks.codes/tags/nlp/</loc>
+    <lastmod>2015-07-23T18:05:12+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.franks.codes/tags/object-orientation/</loc>
     <lastmod>2016-05-15T10:27:49+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://frne.github.io/tags/typelevel/</loc>
+    <loc>https://www.franks.codes/tags/patterns/</loc>
+    <lastmod>2016-05-15T10:27:49+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.franks.codes/tags/play/</loc>
+    <lastmod>2016-05-02T23:11:01+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.franks.codes/post/</loc>
+    <lastmod>2019-12-14T13:58:28+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.franks.codes/tags/pragmatism/</loc>
+    <lastmod>2015-04-21T13:09:32+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.franks.codes/tags/sbt/</loc>
+    <lastmod>2016-04-15T22:15:28+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.franks.codes/tags/scala/</loc>
+    <lastmod>2016-04-15T22:15:28+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.franks.codes/categories/scala/</loc>
+    <lastmod>2018-03-02T19:15:03+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.franks.codes/tags/security/</loc>
+    <lastmod>2019-12-14T13:58:28+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.franks.codes/tags/shapeless/</loc>
+    <lastmod>2018-03-02T19:15:03+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.franks.codes/categories/software-engineering/</loc>
+    <lastmod>2016-05-15T10:27:49+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.franks.codes/tags/solid/</loc>
+    <lastmod>2016-05-15T10:27:49+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.franks.codes/tags/solr/</loc>
+    <lastmod>2015-07-23T18:05:12+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.franks.codes/tags/solrj/</loc>
+    <lastmod>2017-12-18T22:04:38+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.franks.codes/tags/spark/</loc>
+    <lastmod>2018-03-02T19:15:03+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.franks.codes/tags/spring/</loc>
+    <lastmod>2019-12-14T13:58:28+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.franks.codes/tags/</loc>
+    <lastmod>2015-04-21T13:09:32+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.franks.codes/categories/talks/</loc>
+    <lastmod>2016-05-15T10:27:49+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.franks.codes/tags/typelevel/</loc>
     <lastmod>2018-03-02T19:15:03+01:00</lastmod>
     <priority>0</priority>
   </url>

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sbt on Franks.codes</title>
-    <link>https://frne.github.io/tags/sbt/</link>
+    <link>https://www.franks.codes/tags/sbt/</link>
     <description>Recent content in Sbt on Franks.codes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 15 Apr 2016 22:15:28 +0200</lastBuildDate>
     
-	<atom:link href="https://frne.github.io/tags/sbt/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.franks.codes/tags/sbt/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Scala Compiler Tuning</title>
-      <link>https://frne.github.io/post/2016-04-15-scala-compiler-tuning/</link>
+      <link>https://www.franks.codes/post/2016-04-15-scala-compiler-tuning/</link>
       <pubDate>Fri, 15 Apr 2016 22:15:28 +0200</pubDate>
       
-      <guid>https://frne.github.io/post/2016-04-15-scala-compiler-tuning/</guid>
+      <guid>https://www.franks.codes/post/2016-04-15-scala-compiler-tuning/</guid>
       <description>As my Scala projects go on, I want to share some compiler configuration and tricks with you, which I use on many projects. Some tiny configuration options can greatly improve your code and warn you about things, you would probably never discover.
 Basically, you can pass compiler options to scalac using console arguments:
 $ scalac -deprecation -unchecked -Xlint something.scala If you are using SBT, it&amp;rsquo;s even simpler&amp;hellip; You can just use the following configurations snippet in your build.</description>

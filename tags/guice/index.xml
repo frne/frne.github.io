@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Guice on Franks.codes</title>
-    <link>https://frne.github.io/tags/guice/</link>
+    <link>https://www.franks.codes/tags/guice/</link>
     <description>Recent content in Guice on Franks.codes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 02 May 2016 23:11:01 +0200</lastBuildDate>
     
-	<atom:link href="https://frne.github.io/tags/guice/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.franks.codes/tags/guice/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Play Framework Actor Pooling with Guice (Java)</title>
-      <link>https://frne.github.io/post/2016-05-02-play-guice-actor-pooling/</link>
+      <link>https://www.franks.codes/post/2016-05-02-play-guice-actor-pooling/</link>
       <pubDate>Mon, 02 May 2016 23:11:01 +0200</pubDate>
       
-      <guid>https://frne.github.io/post/2016-05-02-play-guice-actor-pooling/</guid>
+      <guid>https://www.franks.codes/post/2016-05-02-play-guice-actor-pooling/</guid>
       <description>Working with the Play! Framework means working with Akka, intentionally or not. But working with Akka Actors can be tricky, especially when it comes to dependency injection. Play! 2.4 uses Google&amp;rsquo;s Guice for DI and of course it has the ability to also bind Actors so an ActorRef can be injected anywhere.
 Single Actor DI Biding and injecting one single Actor is simple and well documented . Just bind it in a Module:</description>
     </item>

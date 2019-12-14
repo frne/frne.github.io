@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Object Orientation on Franks.codes</title>
-    <link>https://frne.github.io/tags/object-orientation/</link>
+    <link>https://www.franks.codes/tags/object-orientation/</link>
     <description>Recent content in Object Orientation on Franks.codes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 15 May 2016 10:27:49 +0200</lastBuildDate>
     
-	<atom:link href="https://frne.github.io/tags/object-orientation/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.franks.codes/tags/object-orientation/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Slides: Principles of Object Orientation</title>
-      <link>https://frne.github.io/post/2016-05-15-slides-principles-of-object-orientation/</link>
+      <link>https://www.franks.codes/post/2016-05-15-slides-principles-of-object-orientation/</link>
       <pubDate>Sun, 15 May 2016 10:27:49 +0200</pubDate>
       
-      <guid>https://frne.github.io/post/2016-05-15-slides-principles-of-object-orientation/</guid>
+      <guid>https://www.franks.codes/post/2016-05-15-slides-principles-of-object-orientation/</guid>
       <description>Some time ago, in school, there was a somehow funny situation: The prof was talking about object orientation and patterns. He came up with SRP but left out some important others. I asked if we will talk about all GRASP and SOLID principles, because in my personal opinion, they are part of &amp;ldquo;the basics&amp;rdquo;.
 His answer was not what is was expecting&amp;hellip; He told me to prepare a talk about those principles in front of the class.</description>
     </item>

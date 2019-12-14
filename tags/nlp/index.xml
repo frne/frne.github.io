@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nlp on Franks.codes</title>
-    <link>https://frne.github.io/tags/nlp/</link>
+    <link>https://www.franks.codes/tags/nlp/</link>
     <description>Recent content in Nlp on Franks.codes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 23 Jul 2015 18:05:12 +0200</lastBuildDate>
     
-	<atom:link href="https://frne.github.io/tags/nlp/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.franks.codes/tags/nlp/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Understanding Stemmers (Natural Language Processing)</title>
-      <link>https://frne.github.io/post/2015-07-23-understanding-stemmers-nlp/</link>
+      <link>https://www.franks.codes/post/2015-07-23-understanding-stemmers-nlp/</link>
       <pubDate>Thu, 23 Jul 2015 18:05:12 +0200</pubDate>
       
-      <guid>https://frne.github.io/post/2015-07-23-understanding-stemmers-nlp/</guid>
+      <guid>https://www.franks.codes/post/2015-07-23-understanding-stemmers-nlp/</guid>
       <description>I am interested in NLP and have already some experience with Apache Solr. It&amp;rsquo;s time to dig a little in-deep regarding stemmers. First of all, I was looking for a general definition of what a stemmer is, and I found this one, which IMHO is quite good:
  stemmer &amp;mdash; an algorithm for removing inflectional and derivational endings in order to reduce word forms to a common stem
  So what a stemmer does is nothing more, than converting words to their word stem.</description>
