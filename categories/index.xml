@@ -77,9 +77,18 @@
     <item>
       <title>Scala</title>
       <link>https://www.franks.codes/categories/scala/</link>
-      <pubDate>Fri, 02 Mar 2018 19:15:03 +0100</pubDate>
+      <pubDate>Wed, 26 Feb 2020 17:05:18 +0100</pubDate>
       
       <guid>https://www.franks.codes/categories/scala/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scala.js</title>
+      <link>https://www.franks.codes/categories/scala.js/</link>
+      <pubDate>Wed, 26 Feb 2020 17:05:18 +0100</pubDate>
+      
+      <guid>https://www.franks.codes/categories/scala.js/</guid>
       <description></description>
     </item>
     
