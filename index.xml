@@ -1,131 +1,207 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Franks.codes</title>
-    <link>https://www.franks.codes/</link>
-    <description>Recent content on Franks.codes</description>
+    <title>FrankNeff.com - Technology meets Business</title>
+    <link>https://www.frankneff.com/</link>
+    <description>Recent content on FrankNeff.com - Technology meets Business</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 26 Feb 2020 17:05:18 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 24 Sep 2018 11:07:10 +0600</lastBuildDate>
     
-	<atom:link href="https://www.franks.codes/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.frankneff.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Why complexity in software projects is bad (and you should not advertise it)</title>
+      <link>https://www.frankneff.com/blog/2021-08-10-why-complexity-in-software-is-bad/</link>
+      <pubDate>Tue, 10 Aug 2021 18:30:00 +0100</pubDate>
+      
+      <guid>https://www.frankneff.com/blog/2021-08-10-why-complexity-in-software-is-bad/</guid>
+      <description>&lt;p&gt;There are (still) many people telling proudly, how complex their product is. There are job ads, explaining that you will
+&amp;ldquo;create highly complex software&amp;rdquo;. These false signals, which I personally saw in many positions and projects, create a
+potentially huge long-tail problem, not primarily for engineers, but for the product management and engineering team
+lead. In this blogpost, I want to point out some of those impacts of advertising complexity&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Frank Neff</title>
+      <link>https://www.frankneff.com/author/frank-neff/</link>
+      <pubDate>Tue, 02 Feb 2021 10:20:19 +0600</pubDate>
+      
+      <guid>https://www.frankneff.com/author/frank-neff/</guid>
+      <description>I see myself as a curious problem solver. On a life-long mission to enable people, improve tools and optimize processes, I build software to make things work. Moreover, I like to talk about technology and sharing know-how in a team to improve my own skills and empower others.
+It&amp;rsquo;s my passion to build great tech, with great people, to make things better.</description>
+    </item>
+    
+    <item>
       <title>Crossbuilding Scala.js 1.0 and 0.6</title>
-      <link>https://www.franks.codes/post/2020-02-26-crossbuilding-scalajs-1-0-and-0-6/</link>
+      <link>https://www.frankneff.com/blog/2020-02-26-crossbuilding-scalajs-1-0-and-0-6/</link>
       <pubDate>Wed, 26 Feb 2020 17:05:18 +0100</pubDate>
       
-      <guid>https://www.franks.codes/post/2020-02-26-crossbuilding-scalajs-1-0-and-0-6/</guid>
+      <guid>https://www.frankneff.com/blog/2020-02-26-crossbuilding-scalajs-1-0-and-0-6/</guid>
       <description>&lt;p&gt;As you may know, Scala.js &lt;code&gt;1.0.0&lt;/code&gt; &lt;a href=&#34;https://www.scala-js.org/news/2020/02/25/announcing-scalajs-1.0.0/&#34;&gt;just went final&lt;/a&gt;.
 For end-products, the upgrade is rather simple, just bump the plugin version and fix potential compile issues. If
-you&amp;rsquo;re maintaining a library, cross-building for &lt;code&gt;0.6.x&lt;/code&gt; and &lt;code&gt;1.0.x&lt;/code&gt; is still a bit tricky, but possible&amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+you&amp;rsquo;re maintaining a library, cross-building for &lt;code&gt;0.6.x&lt;/code&gt; and &lt;code&gt;1.0.x&lt;/code&gt; is still a bit tricky, but possible&amp;hellip;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>The Spring Security Oauth2 Blues - Simplicity</title>
-      <link>https://www.franks.codes/post/2019-11-19-spring-security-oauth-blues-simplicity/</link>
+      <link>https://www.frankneff.com/blog/2019-11-19-spring-security-oauth-blues-simplicity/</link>
       <pubDate>Sat, 14 Dec 2019 13:58:28 +0100</pubDate>
       
-      <guid>https://www.franks.codes/post/2019-11-19-spring-security-oauth-blues-simplicity/</guid>
+      <guid>https://www.frankneff.com/blog/2019-11-19-spring-security-oauth-blues-simplicity/</guid>
       <description>&lt;p&gt;I personally like the Spring Framework and its security components, because it&amp;rsquo;s pretty full-featured and easy to use,
 but when it comes to Spring Security OAuth2, there&amp;rsquo;s a huge quality breakdown. In this (probably series) of blogposts,
-I&amp;rsquo;ll try to sum up the good, the bad, the evil and why I ended up completely dropping Spring Security OAuth2.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+I&amp;rsquo;ll try to sum up the good, the bad, the evil and why I ended up completely dropping Spring Security OAuth2.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Search Result</title>
+      <link>https://www.frankneff.com/search/</link>
+      <pubDate>Mon, 24 Sep 2018 11:07:10 +0600</pubDate>
+      
+      <guid>https://www.frankneff.com/search/</guid>
+      <description></description>
     </item>
     
     <item>
       <title>Using Shapeless for Data Cleaning in Apache Spark</title>
-      <link>https://www.franks.codes/post/2018-03-02-generic-derivation-for-spark-data-cleaning/</link>
+      <link>https://www.frankneff.com/blog/2018-03-02-generic-derivation-for-spark-data-cleaning/</link>
       <pubDate>Fri, 02 Mar 2018 19:15:03 +0100</pubDate>
       
-      <guid>https://www.franks.codes/post/2018-03-02-generic-derivation-for-spark-data-cleaning/</guid>
-      <description>When it comes to importing data into a BigData infrastructure like Hadoop, Apache Spark is one of the most used tools for ETL jobs. Because input data &amp;ndash; in this case CSV &amp;ndash; has often invalid values, a data cleaning layer is needed. Most tasks in data cleaning are very specific and therefore need to be implemented depending on your data, but some tasks can be generalized. In this post, I&amp;rsquo;ll not go into Spark, ETL or BigData in general, but provide one approach to clean null / empty values off a data set.</description>
+      <guid>https://www.frankneff.com/blog/2018-03-02-generic-derivation-for-spark-data-cleaning/</guid>
+      <description>&lt;p&gt;When it comes to importing data into a BigData infrastructure like Hadoop, &lt;a href=&#34;https://spark.apache.org/&#34;&gt;Apache Spark&lt;/a&gt; is
+one of the most used tools for &lt;a href=&#34;https://en.wikipedia.org/wiki/Extract,_transform,_load&#34;&gt;ETL&lt;/a&gt; jobs. Because input data
+– in this case CSV – has often invalid values, a data cleaning layer is needed.Most tasks in data cleaning
+are very specific and therefore need to be implemented depending on your data, but some tasks can be generalized&amp;hellip;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Java Libs in Scala - A bit more Functional</title>
-      <link>https://www.franks.codes/post/2017-12-18-using-java-libs-in-scala/</link>
+      <link>https://www.frankneff.com/blog/2017-12-18-using-java-libs-in-scala/</link>
       <pubDate>Mon, 18 Dec 2017 22:04:38 +0100</pubDate>
       
-      <guid>https://www.franks.codes/post/2017-12-18-using-java-libs-in-scala/</guid>
-      <description>Every Java library can be used in Scala, which is, for me, one of the good parts of the JVM world. But Java libs are mostly object-oriented and not functional, therefore full of side effects and somtimes &amp;ldquo;ugly&amp;rdquo; to use in Scala. But there are some approaches how to make Java libs (or their interfaces) more functional, so they can almost be used like a Scala lib.
-Java 8 Type Conversion Many Java types like Map or List, but also functional types (Java 8) like Optional&amp;lt;T&amp;gt; have Scala pendents.</description>
+      <guid>https://www.frankneff.com/blog/2017-12-18-using-java-libs-in-scala/</guid>
+      <description>&lt;p&gt;Every Java library can be used in Scala, which is, for me, one of the good parts of the JVM world. But Java libs are
+mostly object-oriented and not functional, therefore full  of side effects and somtimes &amp;ldquo;ugly&amp;rdquo; to use in Scala. But
+there are some approaches how to make Java libs (or their interfaces) more functional, so they can almost be used like
+a Scala lib.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Overcoming Checked Exceptions in Java Lambdas</title>
-      <link>https://www.franks.codes/post/2017-09-06-overcoming-checked-exceptions-in-java-lambdas/</link>
+      <link>https://www.frankneff.com/blog/2017-09-06-overcoming-checked-exceptions-in-java-lambdas/</link>
       <pubDate>Wed, 06 Sep 2017 19:57:00 +0100</pubDate>
       
-      <guid>https://www.franks.codes/post/2017-09-06-overcoming-checked-exceptions-in-java-lambdas/</guid>
-      <description>In Java 8, the long awaited Lambda came to live, making it easy(-er) to do FP in Java. One problem I came across is, that most Java code throws checked exceptions which leads to IMHO ugly try/catch blocks in lambdas:
-Function&amp;lt;A, B&amp;gt; fun = (a: A) -&amp;gt; { try { // some function call that trows checked exception$  return callFn(a); } catch (Exception e) { // return failure result  } }; The Good, the Bad and the Ugly A really simple, but also not really nice option is to wrap thrown exceptions into an unchecked one:</description>
-    </item>
-    
-    <item>
-      <title>Slides: Principles of Object Orientation</title>
-      <link>https://www.franks.codes/post/2016-05-15-slides-principles-of-object-orientation/</link>
-      <pubDate>Sun, 15 May 2016 10:27:49 +0200</pubDate>
-      
-      <guid>https://www.franks.codes/post/2016-05-15-slides-principles-of-object-orientation/</guid>
-      <description>Some time ago, in school, there was a somehow funny situation: The prof was talking about object orientation and patterns. He came up with SRP but left out some important others. I asked if we will talk about all GRASP and SOLID principles, because in my personal opinion, they are part of &amp;ldquo;the basics&amp;rdquo;.
-His answer was not what is was expecting&amp;hellip; He told me to prepare a talk about those principles in front of the class.</description>
+      <guid>https://www.frankneff.com/blog/2017-09-06-overcoming-checked-exceptions-in-java-lambdas/</guid>
+      <description>&lt;p&gt;In Java 8, the long awaited Lambda came to live, making it easy(-er) to do FP in Java. One problem I came across is,
+that most Java code throws checked exceptions which leads to IMHO ugly try/catch blocks in lambdas:&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>New Blog</title>
-      <link>https://www.franks.codes/post/2016-05-12-new-blog/</link>
+      <link>https://www.frankneff.com/blog/2016-05-12-new-blog/</link>
       <pubDate>Thu, 12 May 2016 14:38:12 +0200</pubDate>
       
-      <guid>https://www.franks.codes/post/2016-05-12-new-blog/</guid>
-      <description>You may have noticed, that I had not much time to blog about something in the past months&amp;hellip; One thing was, that we all need money, so I had to work very much. And as some of you know, I&amp;rsquo;m also studying in the evenings.
-Long story short, I&amp;rsquo;ve restarted blogging with a new engine and new design once again. Key is (not just to use new swag), to simplify blogging for me, so I can put more time in the articles and less in managing the blog itself.</description>
+      <guid>https://www.frankneff.com/blog/2016-05-12-new-blog/</guid>
+      <description>&lt;p&gt;You may have noticed, that I had not much time to blog about something in the past months&amp;hellip;
+One thing was, that we all need money, so I had to work very much. And as some of you know, I&amp;rsquo;m also studying in the evenings.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Play Framework Actor Pooling with Guice (Java)</title>
-      <link>https://www.franks.codes/post/2016-05-02-play-guice-actor-pooling/</link>
+      <link>https://www.frankneff.com/blog/2016-05-02-play-guice-actor-pooling/</link>
       <pubDate>Mon, 02 May 2016 23:11:01 +0200</pubDate>
       
-      <guid>https://www.franks.codes/post/2016-05-02-play-guice-actor-pooling/</guid>
-      <description>Working with the Play! Framework means working with Akka, intentionally or not. But working with Akka Actors can be tricky, especially when it comes to dependency injection. Play! 2.4 uses Google&amp;rsquo;s Guice for DI and of course it has the ability to also bind Actors so an ActorRef can be injected anywhere.
-Single Actor DI Biding and injecting one single Actor is simple and well documented . Just bind it in a Module:</description>
+      <guid>https://www.frankneff.com/blog/2016-05-02-play-guice-actor-pooling/</guid>
+      <description>&lt;p&gt;Working with the Play! Framework means working with Akka, intentionally or not. But working with Akka Actors can be
+tricky, especially when it comes to dependency injection. Play! 2.4 uses Google&amp;rsquo;s
+&lt;a href=&#34;https://www.playframework.com/documentation/2.4.x/JavaDependencyInjection&#34;&gt;Guice&lt;/a&gt; for DI and of course it has the
+ability to also bind Actors so an &lt;code&gt;ActorRef&lt;/code&gt; can be injected anywhere.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Scala Compiler Tuning</title>
-      <link>https://www.franks.codes/post/2016-04-15-scala-compiler-tuning/</link>
+      <link>https://www.frankneff.com/blog/2016-04-15-scala-compiler-tuning/</link>
       <pubDate>Fri, 15 Apr 2016 22:15:28 +0200</pubDate>
       
-      <guid>https://www.franks.codes/post/2016-04-15-scala-compiler-tuning/</guid>
-      <description>As my Scala projects go on, I want to share some compiler configuration and tricks with you, which I use on many projects. Some tiny configuration options can greatly improve your code and warn you about things, you would probably never discover.
-Basically, you can pass compiler options to scalac using console arguments:
-$ scalac -deprecation -unchecked -Xlint something.scala If you are using SBT, it&amp;rsquo;s even simpler&amp;hellip; You can just use the following configurations snippet in your build.</description>
+      <guid>https://www.frankneff.com/blog/2016-04-15-scala-compiler-tuning/</guid>
+      <description>&lt;p&gt;As my Scala projects go on, I want to share some compiler configuration and tricks with you, which I use on many
+projects. Some tiny configuration options can greatly improve your code and warn you about things, you would probably
+never discover.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Understanding Stemmers (Natural Language Processing)</title>
-      <link>https://www.franks.codes/post/2015-07-23-understanding-stemmers-nlp/</link>
+      <link>https://www.frankneff.com/blog/2015-07-23-understanding-stemmers-nlp/</link>
       <pubDate>Thu, 23 Jul 2015 18:05:12 +0200</pubDate>
       
-      <guid>https://www.franks.codes/post/2015-07-23-understanding-stemmers-nlp/</guid>
-      <description>I am interested in NLP and have already some experience with Apache Solr. It&amp;rsquo;s time to dig a little in-deep regarding stemmers. First of all, I was looking for a general definition of what a stemmer is, and I found this one, which IMHO is quite good:
- stemmer &amp;mdash; an algorithm for removing inflectional and derivational endings in order to reduce word forms to a common stem
- So what a stemmer does is nothing more, than converting words to their word stem.</description>
+      <guid>https://www.frankneff.com/blog/2015-07-23-understanding-stemmers-nlp/</guid>
+      <description>&lt;p&gt;I am interested in NLP and have already some experience with Apache Solr. It&amp;rsquo;s time to dig a little in-deep regarding
+stemmers. First of all, I was looking for a general definition of what a stemmer is, and I found this one, which IMHO
+is quite good:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;stemmer — an algorithm for removing inflectional and derivational endings in order to reduce word forms to a common stem&lt;/p&gt;
+&lt;/blockquote&gt;</description>
     </item>
     
     <item>
       <title>If pragmatism raises technical debt, call it oversimplification (rant)</title>
-      <link>https://www.franks.codes/post/2015-04-21-pragmatism-technical-dept-oversimplification/</link>
+      <link>https://www.frankneff.com/blog/2015-04-21-pragmatism-technical-dept-oversimplification/</link>
       <pubDate>Tue, 21 Apr 2015 13:09:32 +0200</pubDate>
       
-      <guid>https://www.franks.codes/post/2015-04-21-pragmatism-technical-dept-oversimplification/</guid>
-      <description>The word &amp;ldquo;pragmatism&amp;rdquo; or &amp;ldquo;pragmatic&amp;rdquo; is, in my personal opinion, the most overrated word in agile development. Many people use this as a buzzword without knowing what it means. I hear people saying &amp;ldquo;He solved that complex problem in half an hour, he&amp;rsquo;s so pragmatic!&amp;rdquo; and think for myself &amp;ldquo;Yeah, but that &amp;lsquo;solution&amp;rsquo; probably causes other devs three times more effort than a sustainable solution would take.&amp;rdquo;
-Okay, but that&amp;rsquo;s only my anger speaking.</description>
+      <guid>https://www.frankneff.com/blog/2015-04-21-pragmatism-technical-dept-oversimplification/</guid>
+      <description>&lt;p&gt;The word &amp;ldquo;pragmatism&amp;rdquo; or &amp;ldquo;pragmatic&amp;rdquo; is, in my personal opinion, the most
+overrated word in agile development. Many people use this as a buzzword without
+knowing what it means. I hear people saying &amp;ldquo;He solved that complex problem in
+half an hour, he&amp;rsquo;s so pragmatic!&amp;rdquo; and think for myself &amp;ldquo;Yeah, but that &amp;lsquo;solution&amp;rsquo;
+probably causes other devs three times more effort than a sustainable solution
+would take.&amp;rdquo;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://www.frankneff.com/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.frankneff.com/contact/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>No Search Found</title>
+      <link>https://www.frankneff.com/404/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.frankneff.com/404/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Privacy</title>
+      <link>https://www.frankneff.com/privacy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.frankneff.com/privacy/</guid>
+      <description>Responsibility of Contributors Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed
+pretium, aliquam sit. Praesent elementum magna amet, tincidunt eros, nibh in leo. Malesuada purus, lacus, at aliquam suspendisse tempus. Quis tempus amet, velit nascetur sollicitudin. At sollicitudin eget amet in. Eu velit nascetur sollicitudin erhdfvssfvrgss eget viverra nec elementum. Lacus, facilisis tristique lectus in.
+Gathering of Personal Information Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed
+Protection of Personal- Information Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus.
+Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat
+Privacy Policy Changes  Sll the Themefisher items are designed to be with the latest , We check all comments that threaten or harm the reputation of any person or organization personal information including, but limited to, email addresses, telephone numbers Any Update come in The technology Customer will get automatic Notification.  </description>
+    </item>
+    
+    <item>
+      <title>Terms And Conditions</title>
+      <link>https://www.frankneff.com/terms-conditions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.frankneff.com/terms-conditions/</guid>
+      <description>Responsibility of Contributors Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed
+pretium, aliquam sit. Praesent elementum magna amet, tincidunt eros, nibh in leo. Malesuada purus, lacus, at aliquam suspendisse tempus. Quis tempus amet, velit nascetur sollicitudin. At sollicitudin eget amet in. Eu velit nascetur sollicitudin erhdfvssfvrgss eget viverra nec elementum. Lacus, facilisis tristique lectus in.
+Gathering of Personal Information Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed
+Protection of Personal- Information Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus.
+Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat
+Privacy Policy Changes  Sll the Themefisher items are designed to be with the latest , We check all comments that threaten or harm the reputation of any person or organization personal information including, but limited to, email addresses, telephone numbers Any Update come in The technology Customer will get automatic Notification.  </description>
     </item>
     
   </channel>

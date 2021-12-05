@@ -1,330 +1,281 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.franks.codes/post/2020-02-26-crossbuilding-scalajs-1-0-and-0-6/</loc>
+    <loc>https://www.frankneff.com/blog/</loc>
+    <lastmod>2021-08-10T18:30:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.frankneff.com/categories/business/</loc>
+    <lastmod>2021-08-10T18:30:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.frankneff.com/categories/</loc>
+    <lastmod>2021-08-10T18:30:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.frankneff.com/tags/complexity/</loc>
+    <lastmod>2021-08-10T18:30:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.frankneff.com/categories/engineering-teams/</loc>
+    <lastmod>2021-08-10T18:30:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.frankneff.com/categories/leadership/</loc>
+    <lastmod>2021-08-10T18:30:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.frankneff.com/tags/product-management/</loc>
+    <lastmod>2021-08-10T18:30:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.frankneff.com/tags/software-design/</loc>
+    <lastmod>2021-08-10T18:30:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.frankneff.com/tags/</loc>
+    <lastmod>2021-08-10T18:30:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.frankneff.com/blog/2021-08-10-why-complexity-in-software-is-bad/</loc>
+    <lastmod>2021-08-10T18:30:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.frankneff.com/author/frank-neff/</loc>
+    <lastmod>2021-02-02T10:20:19+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.frankneff.com/author/</loc>
+    <lastmod>2021-01-26T10:13:00+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.frankneff.com/blog/2020-02-26-crossbuilding-scalajs-1-0-and-0-6/</loc>
     <lastmod>2020-02-26T17:05:18+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.franks.codes/post/2019-11-19-spring-security-oauth-blues-simplicity/</loc>
+    <loc>https://www.frankneff.com/categories/functional-programming/</loc>
+    <lastmod>2020-02-26T17:05:18+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.frankneff.com/tags/library/</loc>
+    <lastmod>2020-02-26T17:05:18+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.frankneff.com/categories/programming/</loc>
+    <lastmod>2020-02-26T17:05:18+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.frankneff.com/tags/sbt/</loc>
+    <lastmod>2020-02-26T17:05:18+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.frankneff.com/tags/scala/</loc>
+    <lastmod>2020-02-26T17:05:18+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.frankneff.com/tags/scala.js/</loc>
+    <lastmod>2020-02-26T17:05:18+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.frankneff.com/tags/security/</loc>
     <lastmod>2019-12-14T13:58:28+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.franks.codes/post/2018-03-02-generic-derivation-for-spark-data-cleaning/</loc>
+    <loc>https://www.frankneff.com/tags/spring/</loc>
+    <lastmod>2019-12-14T13:58:28+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.frankneff.com/blog/2019-11-19-spring-security-oauth-blues-simplicity/</loc>
+    <lastmod>2019-12-14T13:58:28+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.frankneff.com/</loc>
+    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.frankneff.com/search/</loc>
+    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.frankneff.com/categories/data-science/</loc>
     <lastmod>2018-03-02T19:15:03+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.franks.codes/post/2017-12-18-using-java-libs-in-scala/</loc>
+    <loc>https://www.frankneff.com/tags/shapeless/</loc>
+    <lastmod>2018-03-02T19:15:03+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.frankneff.com/tags/spark/</loc>
+    <lastmod>2018-03-02T19:15:03+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.frankneff.com/tags/typelevel/</loc>
+    <lastmod>2018-03-02T19:15:03+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.frankneff.com/blog/2018-03-02-generic-derivation-for-spark-data-cleaning/</loc>
+    <lastmod>2018-03-02T19:15:03+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.frankneff.com/tags/implicits/</loc>
     <lastmod>2017-12-18T22:04:38+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.franks.codes/post/2017-09-06-overcoming-checked-exceptions-in-java-lambdas/</loc>
+    <loc>https://www.frankneff.com/tags/java/</loc>
+    <lastmod>2017-12-18T22:04:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.frankneff.com/blog/2017-12-18-using-java-libs-in-scala/</loc>
+    <lastmod>2017-12-18T22:04:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.frankneff.com/tags/libs/</loc>
+    <lastmod>2017-12-18T22:04:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.frankneff.com/tags/solr/</loc>
+    <lastmod>2017-12-18T22:04:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.frankneff.com/tags/solrj/</loc>
+    <lastmod>2017-12-18T22:04:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.frankneff.com/tags/exceptions/</loc>
     <lastmod>2017-09-06T19:57:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.franks.codes/post/2016-05-15-slides-principles-of-object-orientation/</loc>
-    <lastmod>2016-05-15T10:27:49+02:00</lastmod>
+    <loc>https://www.frankneff.com/tags/lambda/</loc>
+    <lastmod>2017-09-06T19:57:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.franks.codes/post/2016-05-12-new-blog/</loc>
+    <loc>https://www.frankneff.com/blog/2017-09-06-overcoming-checked-exceptions-in-java-lambdas/</loc>
+    <lastmod>2017-09-06T19:57:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.frankneff.com/categories/annoucements/</loc>
     <lastmod>2016-05-12T14:38:12+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.franks.codes/post/2016-05-02-play-guice-actor-pooling/</loc>
+    <loc>https://www.frankneff.com/blog/2016-05-12-new-blog/</loc>
+    <lastmod>2016-05-12T14:38:12+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.frankneff.com/tags/news/</loc>
+    <lastmod>2016-05-12T14:38:12+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.frankneff.com/tags/akka/</loc>
     <lastmod>2016-05-02T23:11:01+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.franks.codes/post/2016-04-15-scala-compiler-tuning/</loc>
+    <loc>https://www.frankneff.com/tags/guice/</loc>
+    <lastmod>2016-05-02T23:11:01+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.frankneff.com/tags/play/</loc>
+    <lastmod>2016-05-02T23:11:01+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.frankneff.com/blog/2016-05-02-play-guice-actor-pooling/</loc>
+    <lastmod>2016-05-02T23:11:01+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.frankneff.com/tags/compiler/</loc>
     <lastmod>2016-04-15T22:15:28+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.franks.codes/post/2015-07-23-understanding-stemmers-nlp/</loc>
-    <lastmod>2015-07-23T18:05:12+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.franks.codes/post/2015-04-21-pragmatism-technical-dept-oversimplification/</loc>
-    <lastmod>2015-04-21T13:09:32+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.franks.codes/tags/agile/</loc>
-    <lastmod>2015-04-21T13:09:32+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.franks.codes/tags/akka/</loc>
-    <lastmod>2016-05-02T23:11:01+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.franks.codes/categories/annoucements/</loc>
-    <lastmod>2016-05-12T14:38:12+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.franks.codes/categories/bigdata/</loc>
-    <lastmod>2018-03-02T19:15:03+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.franks.codes/tags/build/</loc>
-    <lastmod>2020-02-26T17:05:18+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.franks.codes/categories/business/</loc>
-    <lastmod>2015-04-21T13:09:32+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.franks.codes/categories/</loc>
-    <lastmod>2016-05-12T14:38:12+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.franks.codes/tags/compiler/</loc>
+    <loc>https://www.frankneff.com/blog/2016-04-15-scala-compiler-tuning/</loc>
     <lastmod>2016-04-15T22:15:28+02:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.franks.codes/tags/exceptions/</loc>
-    <lastmod>2017-09-06T19:57:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.franks.codes/tags/fp/</loc>
-    <lastmod>2018-03-02T19:15:03+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.franks.codes/categories/frameworks/</loc>
-    <lastmod>2019-12-14T13:58:28+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.franks.codes/</loc>
-    <lastmod>2020-02-26T17:05:18+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.franks.codes/categories/functional-programming/</loc>
-    <lastmod>2018-03-02T19:15:03+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.franks.codes/tags/grasp/</loc>
-    <lastmod>2016-05-15T10:27:49+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.franks.codes/tags/guice/</loc>
-    <lastmod>2016-05-02T23:11:01+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.franks.codes/tags/implicits/</loc>
-    <lastmod>2017-12-18T22:04:38+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.franks.codes/categories/java/</loc>
-    <lastmod>2017-12-18T22:04:38+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.franks.codes/tags/java/</loc>
-    <lastmod>2016-05-02T23:11:01+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.franks.codes/tags/job/</loc>
-    <lastmod>2016-05-12T14:38:12+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.franks.codes/categories/kotlin/</loc>
-    <lastmod>2019-12-14T13:58:28+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.franks.codes/tags/lambda/</loc>
-    <lastmod>2017-09-06T19:57:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.franks.codes/tags/library/</loc>
-    <lastmod>2020-02-26T17:05:18+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.franks.codes/tags/libs/</loc>
-    <lastmod>2017-12-18T22:04:38+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.franks.codes/tags/news/</loc>
-    <lastmod>2016-05-12T14:38:12+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.franks.codes/tags/nlp/</loc>
+    <loc>https://www.frankneff.com/tags/nlp/</loc>
     <lastmod>2015-07-23T18:05:12+02:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.franks.codes/tags/object-orientation/</loc>
-    <lastmod>2016-05-15T10:27:49+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.franks.codes/tags/patterns/</loc>
-    <lastmod>2016-05-15T10:27:49+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.franks.codes/tags/play/</loc>
-    <lastmod>2016-05-02T23:11:01+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.franks.codes/post/</loc>
-    <lastmod>2020-02-26T17:05:18+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.franks.codes/tags/pragmatism/</loc>
-    <lastmod>2015-04-21T13:09:32+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.franks.codes/tags/sbt/</loc>
-    <lastmod>2020-02-26T17:05:18+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.franks.codes/categories/scala/</loc>
-    <lastmod>2020-02-26T17:05:18+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.franks.codes/tags/scala/</loc>
-    <lastmod>2020-02-26T17:05:18+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.franks.codes/categories/scala.js/</loc>
-    <lastmod>2020-02-26T17:05:18+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.franks.codes/tags/security/</loc>
-    <lastmod>2019-12-14T13:58:28+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.franks.codes/tags/shapeless/</loc>
-    <lastmod>2018-03-02T19:15:03+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.franks.codes/categories/software-engineering/</loc>
-    <lastmod>2016-05-15T10:27:49+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.franks.codes/tags/solid/</loc>
-    <lastmod>2016-05-15T10:27:49+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.franks.codes/tags/solr/</loc>
+    <loc>https://www.frankneff.com/blog/2015-07-23-understanding-stemmers-nlp/</loc>
     <lastmod>2015-07-23T18:05:12+02:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.franks.codes/tags/solrj/</loc>
-    <lastmod>2017-12-18T22:04:38+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.franks.codes/tags/spark/</loc>
-    <lastmod>2018-03-02T19:15:03+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.franks.codes/tags/spring/</loc>
-    <lastmod>2019-12-14T13:58:28+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.franks.codes/tags/</loc>
+    <loc>https://www.frankneff.com/tags/agile/</loc>
     <lastmod>2015-04-21T13:09:32+02:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.franks.codes/categories/talks/</loc>
-    <lastmod>2016-05-15T10:27:49+02:00</lastmod>
-    <priority>0</priority>
+    <loc>https://www.frankneff.com/blog/2015-04-21-pragmatism-technical-dept-oversimplification/</loc>
+    <lastmod>2015-04-21T13:09:32+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.franks.codes/tags/typelevel/</loc>
-    <lastmod>2018-03-02T19:15:03+01:00</lastmod>
-    <priority>0</priority>
+    <loc>https://www.frankneff.com/tags/pragmatism/</loc>
+    <lastmod>2015-04-21T13:09:32+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.frankneff.com/contact/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.frankneff.com/404/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.frankneff.com/privacy/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.frankneff.com/terms-conditions/</loc>
   </url>
   
 </urlset>

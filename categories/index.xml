@@ -1,112 +1,75 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Franks.codes</title>
-    <link>https://www.franks.codes/categories/</link>
-    <description>Recent content in Categories on Franks.codes</description>
+    <title>Categories on FrankNeff.com - Technology meets Business</title>
+    <link>https://www.frankneff.com/categories/</link>
+    <description>Recent content in Categories on FrankNeff.com - Technology meets Business</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 12 May 2016 14:38:12 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 10 Aug 2021 18:30:00 +0100</lastBuildDate>
     
-	<atom:link href="https://www.franks.codes/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.frankneff.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Annoucements</title>
-      <link>https://www.franks.codes/categories/annoucements/</link>
-      <pubDate>Thu, 12 May 2016 14:38:12 +0200</pubDate>
-      
-      <guid>https://www.franks.codes/categories/annoucements/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Bigdata</title>
-      <link>https://www.franks.codes/categories/bigdata/</link>
-      <pubDate>Fri, 02 Mar 2018 19:15:03 +0100</pubDate>
-      
-      <guid>https://www.franks.codes/categories/bigdata/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Business</title>
-      <link>https://www.franks.codes/categories/business/</link>
-      <pubDate>Tue, 21 Apr 2015 13:09:32 +0200</pubDate>
+      <link>https://www.frankneff.com/categories/business/</link>
+      <pubDate>Tue, 10 Aug 2021 18:30:00 +0100</pubDate>
       
-      <guid>https://www.franks.codes/categories/business/</guid>
+      <guid>https://www.frankneff.com/categories/business/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Frameworks</title>
-      <link>https://www.franks.codes/categories/frameworks/</link>
-      <pubDate>Sat, 14 Dec 2019 13:58:28 +0100</pubDate>
+      <title>Engineering Teams</title>
+      <link>https://www.frankneff.com/categories/engineering-teams/</link>
+      <pubDate>Tue, 10 Aug 2021 18:30:00 +0100</pubDate>
       
-      <guid>https://www.franks.codes/categories/frameworks/</guid>
+      <guid>https://www.frankneff.com/categories/engineering-teams/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Leadership</title>
+      <link>https://www.frankneff.com/categories/leadership/</link>
+      <pubDate>Tue, 10 Aug 2021 18:30:00 +0100</pubDate>
+      
+      <guid>https://www.frankneff.com/categories/leadership/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Functional Programming</title>
-      <link>https://www.franks.codes/categories/functional-programming/</link>
+      <link>https://www.frankneff.com/categories/functional-programming/</link>
+      <pubDate>Wed, 26 Feb 2020 17:05:18 +0100</pubDate>
+      
+      <guid>https://www.frankneff.com/categories/functional-programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programming</title>
+      <link>https://www.frankneff.com/categories/programming/</link>
+      <pubDate>Wed, 26 Feb 2020 17:05:18 +0100</pubDate>
+      
+      <guid>https://www.frankneff.com/categories/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Science</title>
+      <link>https://www.frankneff.com/categories/data-science/</link>
       <pubDate>Fri, 02 Mar 2018 19:15:03 +0100</pubDate>
       
-      <guid>https://www.franks.codes/categories/functional-programming/</guid>
+      <guid>https://www.frankneff.com/categories/data-science/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Java</title>
-      <link>https://www.franks.codes/categories/java/</link>
-      <pubDate>Mon, 18 Dec 2017 22:04:38 +0100</pubDate>
+      <title>Annoucements</title>
+      <link>https://www.frankneff.com/categories/annoucements/</link>
+      <pubDate>Thu, 12 May 2016 14:38:12 +0200</pubDate>
       
-      <guid>https://www.franks.codes/categories/java/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Kotlin</title>
-      <link>https://www.franks.codes/categories/kotlin/</link>
-      <pubDate>Sat, 14 Dec 2019 13:58:28 +0100</pubDate>
-      
-      <guid>https://www.franks.codes/categories/kotlin/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Scala</title>
-      <link>https://www.franks.codes/categories/scala/</link>
-      <pubDate>Wed, 26 Feb 2020 17:05:18 +0100</pubDate>
-      
-      <guid>https://www.franks.codes/categories/scala/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Scala.js</title>
-      <link>https://www.franks.codes/categories/scala.js/</link>
-      <pubDate>Wed, 26 Feb 2020 17:05:18 +0100</pubDate>
-      
-      <guid>https://www.franks.codes/categories/scala.js/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Software Engineering</title>
-      <link>https://www.franks.codes/categories/software-engineering/</link>
-      <pubDate>Sun, 15 May 2016 10:27:49 +0200</pubDate>
-      
-      <guid>https://www.franks.codes/categories/software-engineering/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Talks</title>
-      <link>https://www.franks.codes/categories/talks/</link>
-      <pubDate>Sun, 15 May 2016 10:27:49 +0200</pubDate>
-      
-      <guid>https://www.franks.codes/categories/talks/</guid>
+      <guid>https://www.frankneff.com/categories/annoucements/</guid>
       <description></description>
     </item>
     

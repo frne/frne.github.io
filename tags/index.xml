@@ -1,283 +1,255 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Franks.codes</title>
-    <link>https://www.franks.codes/tags/</link>
-    <description>Recent content in Tags on Franks.codes</description>
+    <title>Tags on FrankNeff.com - Technology meets Business</title>
+    <link>https://www.frankneff.com/tags/</link>
+    <description>Recent content in Tags on FrankNeff.com - Technology meets Business</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 21 Apr 2015 13:09:32 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 10 Aug 2021 18:30:00 +0100</lastBuildDate>
     
-	<atom:link href="https://www.franks.codes/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.frankneff.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Agile</title>
-      <link>https://www.franks.codes/tags/agile/</link>
-      <pubDate>Tue, 21 Apr 2015 13:09:32 +0200</pubDate>
+      <title>complexity</title>
+      <link>https://www.frankneff.com/tags/complexity/</link>
+      <pubDate>Tue, 10 Aug 2021 18:30:00 +0100</pubDate>
       
-      <guid>https://www.franks.codes/tags/agile/</guid>
+      <guid>https://www.frankneff.com/tags/complexity/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Akka</title>
-      <link>https://www.franks.codes/tags/akka/</link>
-      <pubDate>Mon, 02 May 2016 23:11:01 +0200</pubDate>
+      <title>product-management</title>
+      <link>https://www.frankneff.com/tags/product-management/</link>
+      <pubDate>Tue, 10 Aug 2021 18:30:00 +0100</pubDate>
       
-      <guid>https://www.franks.codes/tags/akka/</guid>
+      <guid>https://www.frankneff.com/tags/product-management/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Build</title>
-      <link>https://www.franks.codes/tags/build/</link>
+      <title>software-design</title>
+      <link>https://www.frankneff.com/tags/software-design/</link>
+      <pubDate>Tue, 10 Aug 2021 18:30:00 +0100</pubDate>
+      
+      <guid>https://www.frankneff.com/tags/software-design/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>library</title>
+      <link>https://www.frankneff.com/tags/library/</link>
       <pubDate>Wed, 26 Feb 2020 17:05:18 +0100</pubDate>
       
-      <guid>https://www.franks.codes/tags/build/</guid>
+      <guid>https://www.frankneff.com/tags/library/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Compiler</title>
-      <link>https://www.franks.codes/tags/compiler/</link>
+      <title>sbt</title>
+      <link>https://www.frankneff.com/tags/sbt/</link>
+      <pubDate>Wed, 26 Feb 2020 17:05:18 +0100</pubDate>
+      
+      <guid>https://www.frankneff.com/tags/sbt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scala</title>
+      <link>https://www.frankneff.com/tags/scala/</link>
+      <pubDate>Wed, 26 Feb 2020 17:05:18 +0100</pubDate>
+      
+      <guid>https://www.frankneff.com/tags/scala/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scala.js</title>
+      <link>https://www.frankneff.com/tags/scala.js/</link>
+      <pubDate>Wed, 26 Feb 2020 17:05:18 +0100</pubDate>
+      
+      <guid>https://www.frankneff.com/tags/scala.js/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>security</title>
+      <link>https://www.frankneff.com/tags/security/</link>
+      <pubDate>Sat, 14 Dec 2019 13:58:28 +0100</pubDate>
+      
+      <guid>https://www.frankneff.com/tags/security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>spring</title>
+      <link>https://www.frankneff.com/tags/spring/</link>
+      <pubDate>Sat, 14 Dec 2019 13:58:28 +0100</pubDate>
+      
+      <guid>https://www.frankneff.com/tags/spring/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shapeless</title>
+      <link>https://www.frankneff.com/tags/shapeless/</link>
+      <pubDate>Fri, 02 Mar 2018 19:15:03 +0100</pubDate>
+      
+      <guid>https://www.frankneff.com/tags/shapeless/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>spark</title>
+      <link>https://www.frankneff.com/tags/spark/</link>
+      <pubDate>Fri, 02 Mar 2018 19:15:03 +0100</pubDate>
+      
+      <guid>https://www.frankneff.com/tags/spark/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>typelevel</title>
+      <link>https://www.frankneff.com/tags/typelevel/</link>
+      <pubDate>Fri, 02 Mar 2018 19:15:03 +0100</pubDate>
+      
+      <guid>https://www.frankneff.com/tags/typelevel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>implicits</title>
+      <link>https://www.frankneff.com/tags/implicits/</link>
+      <pubDate>Mon, 18 Dec 2017 22:04:38 +0100</pubDate>
+      
+      <guid>https://www.frankneff.com/tags/implicits/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>java</title>
+      <link>https://www.frankneff.com/tags/java/</link>
+      <pubDate>Mon, 18 Dec 2017 22:04:38 +0100</pubDate>
+      
+      <guid>https://www.frankneff.com/tags/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>libs</title>
+      <link>https://www.frankneff.com/tags/libs/</link>
+      <pubDate>Mon, 18 Dec 2017 22:04:38 +0100</pubDate>
+      
+      <guid>https://www.frankneff.com/tags/libs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>solr</title>
+      <link>https://www.frankneff.com/tags/solr/</link>
+      <pubDate>Mon, 18 Dec 2017 22:04:38 +0100</pubDate>
+      
+      <guid>https://www.frankneff.com/tags/solr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>solrj</title>
+      <link>https://www.frankneff.com/tags/solrj/</link>
+      <pubDate>Mon, 18 Dec 2017 22:04:38 +0100</pubDate>
+      
+      <guid>https://www.frankneff.com/tags/solrj/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>exceptions</title>
+      <link>https://www.frankneff.com/tags/exceptions/</link>
+      <pubDate>Wed, 06 Sep 2017 19:57:00 +0100</pubDate>
+      
+      <guid>https://www.frankneff.com/tags/exceptions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>lambda</title>
+      <link>https://www.frankneff.com/tags/lambda/</link>
+      <pubDate>Wed, 06 Sep 2017 19:57:00 +0100</pubDate>
+      
+      <guid>https://www.frankneff.com/tags/lambda/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>news</title>
+      <link>https://www.frankneff.com/tags/news/</link>
+      <pubDate>Thu, 12 May 2016 14:38:12 +0200</pubDate>
+      
+      <guid>https://www.frankneff.com/tags/news/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>akka</title>
+      <link>https://www.frankneff.com/tags/akka/</link>
+      <pubDate>Mon, 02 May 2016 23:11:01 +0200</pubDate>
+      
+      <guid>https://www.frankneff.com/tags/akka/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>guice</title>
+      <link>https://www.frankneff.com/tags/guice/</link>
+      <pubDate>Mon, 02 May 2016 23:11:01 +0200</pubDate>
+      
+      <guid>https://www.frankneff.com/tags/guice/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>play</title>
+      <link>https://www.frankneff.com/tags/play/</link>
+      <pubDate>Mon, 02 May 2016 23:11:01 +0200</pubDate>
+      
+      <guid>https://www.frankneff.com/tags/play/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>compiler</title>
+      <link>https://www.frankneff.com/tags/compiler/</link>
       <pubDate>Fri, 15 Apr 2016 22:15:28 +0200</pubDate>
       
-      <guid>https://www.franks.codes/tags/compiler/</guid>
+      <guid>https://www.frankneff.com/tags/compiler/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Exceptions</title>
-      <link>https://www.franks.codes/tags/exceptions/</link>
-      <pubDate>Wed, 06 Sep 2017 19:57:00 +0100</pubDate>
-      
-      <guid>https://www.franks.codes/tags/exceptions/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Fp</title>
-      <link>https://www.franks.codes/tags/fp/</link>
-      <pubDate>Fri, 02 Mar 2018 19:15:03 +0100</pubDate>
-      
-      <guid>https://www.franks.codes/tags/fp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Grasp</title>
-      <link>https://www.franks.codes/tags/grasp/</link>
-      <pubDate>Sun, 15 May 2016 10:27:49 +0200</pubDate>
-      
-      <guid>https://www.franks.codes/tags/grasp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Guice</title>
-      <link>https://www.franks.codes/tags/guice/</link>
-      <pubDate>Mon, 02 May 2016 23:11:01 +0200</pubDate>
-      
-      <guid>https://www.franks.codes/tags/guice/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Implicits</title>
-      <link>https://www.franks.codes/tags/implicits/</link>
-      <pubDate>Mon, 18 Dec 2017 22:04:38 +0100</pubDate>
-      
-      <guid>https://www.franks.codes/tags/implicits/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Java</title>
-      <link>https://www.franks.codes/tags/java/</link>
-      <pubDate>Mon, 02 May 2016 23:11:01 +0200</pubDate>
-      
-      <guid>https://www.franks.codes/tags/java/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Job</title>
-      <link>https://www.franks.codes/tags/job/</link>
-      <pubDate>Thu, 12 May 2016 14:38:12 +0200</pubDate>
-      
-      <guid>https://www.franks.codes/tags/job/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Lambda</title>
-      <link>https://www.franks.codes/tags/lambda/</link>
-      <pubDate>Wed, 06 Sep 2017 19:57:00 +0100</pubDate>
-      
-      <guid>https://www.franks.codes/tags/lambda/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Library</title>
-      <link>https://www.franks.codes/tags/library/</link>
-      <pubDate>Wed, 26 Feb 2020 17:05:18 +0100</pubDate>
-      
-      <guid>https://www.franks.codes/tags/library/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Libs</title>
-      <link>https://www.franks.codes/tags/libs/</link>
-      <pubDate>Mon, 18 Dec 2017 22:04:38 +0100</pubDate>
-      
-      <guid>https://www.franks.codes/tags/libs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>News</title>
-      <link>https://www.franks.codes/tags/news/</link>
-      <pubDate>Thu, 12 May 2016 14:38:12 +0200</pubDate>
-      
-      <guid>https://www.franks.codes/tags/news/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Nlp</title>
-      <link>https://www.franks.codes/tags/nlp/</link>
+      <title>nlp</title>
+      <link>https://www.frankneff.com/tags/nlp/</link>
       <pubDate>Thu, 23 Jul 2015 18:05:12 +0200</pubDate>
       
-      <guid>https://www.franks.codes/tags/nlp/</guid>
+      <guid>https://www.frankneff.com/tags/nlp/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Object Orientation</title>
-      <link>https://www.franks.codes/tags/object-orientation/</link>
-      <pubDate>Sun, 15 May 2016 10:27:49 +0200</pubDate>
-      
-      <guid>https://www.franks.codes/tags/object-orientation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Patterns</title>
-      <link>https://www.franks.codes/tags/patterns/</link>
-      <pubDate>Sun, 15 May 2016 10:27:49 +0200</pubDate>
-      
-      <guid>https://www.franks.codes/tags/patterns/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Play</title>
-      <link>https://www.franks.codes/tags/play/</link>
-      <pubDate>Mon, 02 May 2016 23:11:01 +0200</pubDate>
-      
-      <guid>https://www.franks.codes/tags/play/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pragmatism</title>
-      <link>https://www.franks.codes/tags/pragmatism/</link>
+      <title>agile</title>
+      <link>https://www.frankneff.com/tags/agile/</link>
       <pubDate>Tue, 21 Apr 2015 13:09:32 +0200</pubDate>
       
-      <guid>https://www.franks.codes/tags/pragmatism/</guid>
+      <guid>https://www.frankneff.com/tags/agile/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Sbt</title>
-      <link>https://www.franks.codes/tags/sbt/</link>
-      <pubDate>Wed, 26 Feb 2020 17:05:18 +0100</pubDate>
+      <title>pragmatism</title>
+      <link>https://www.frankneff.com/tags/pragmatism/</link>
+      <pubDate>Tue, 21 Apr 2015 13:09:32 +0200</pubDate>
       
-      <guid>https://www.franks.codes/tags/sbt/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Scala</title>
-      <link>https://www.franks.codes/tags/scala/</link>
-      <pubDate>Wed, 26 Feb 2020 17:05:18 +0100</pubDate>
-      
-      <guid>https://www.franks.codes/tags/scala/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Security</title>
-      <link>https://www.franks.codes/tags/security/</link>
-      <pubDate>Sat, 14 Dec 2019 13:58:28 +0100</pubDate>
-      
-      <guid>https://www.franks.codes/tags/security/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Shapeless</title>
-      <link>https://www.franks.codes/tags/shapeless/</link>
-      <pubDate>Fri, 02 Mar 2018 19:15:03 +0100</pubDate>
-      
-      <guid>https://www.franks.codes/tags/shapeless/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Solid</title>
-      <link>https://www.franks.codes/tags/solid/</link>
-      <pubDate>Sun, 15 May 2016 10:27:49 +0200</pubDate>
-      
-      <guid>https://www.franks.codes/tags/solid/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Solr</title>
-      <link>https://www.franks.codes/tags/solr/</link>
-      <pubDate>Thu, 23 Jul 2015 18:05:12 +0200</pubDate>
-      
-      <guid>https://www.franks.codes/tags/solr/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Solrj</title>
-      <link>https://www.franks.codes/tags/solrj/</link>
-      <pubDate>Mon, 18 Dec 2017 22:04:38 +0100</pubDate>
-      
-      <guid>https://www.franks.codes/tags/solrj/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Spark</title>
-      <link>https://www.franks.codes/tags/spark/</link>
-      <pubDate>Fri, 02 Mar 2018 19:15:03 +0100</pubDate>
-      
-      <guid>https://www.franks.codes/tags/spark/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Spring</title>
-      <link>https://www.franks.codes/tags/spring/</link>
-      <pubDate>Sat, 14 Dec 2019 13:58:28 +0100</pubDate>
-      
-      <guid>https://www.franks.codes/tags/spring/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Typelevel</title>
-      <link>https://www.franks.codes/tags/typelevel/</link>
-      <pubDate>Fri, 02 Mar 2018 19:15:03 +0100</pubDate>
-      
-      <guid>https://www.franks.codes/tags/typelevel/</guid>
+      <guid>https://www.frankneff.com/tags/pragmatism/</guid>
       <description></description>
     </item>
     

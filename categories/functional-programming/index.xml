@@ -1,43 +1,69 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Functional Programming on Franks.codes</title>
-    <link>https://www.franks.codes/categories/functional-programming/</link>
-    <description>Recent content in Functional Programming on Franks.codes</description>
+    <title>Functional Programming on FrankNeff.com - Technology meets Business</title>
+    <link>https://www.frankneff.com/categories/functional-programming/</link>
+    <description>Recent content in Functional Programming on FrankNeff.com - Technology meets Business</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 02 Mar 2018 19:15:03 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 26 Feb 2020 17:05:18 +0100</lastBuildDate>
     
-	<atom:link href="https://www.franks.codes/categories/functional-programming/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.frankneff.com/categories/functional-programming/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Crossbuilding Scala.js 1.0 and 0.6</title>
+      <link>https://www.frankneff.com/blog/2020-02-26-crossbuilding-scalajs-1-0-and-0-6/</link>
+      <pubDate>Wed, 26 Feb 2020 17:05:18 +0100</pubDate>
+      
+      <guid>https://www.frankneff.com/blog/2020-02-26-crossbuilding-scalajs-1-0-and-0-6/</guid>
+      <description>&lt;p&gt;As you may know, Scala.js &lt;code&gt;1.0.0&lt;/code&gt; &lt;a href=&#34;https://www.scala-js.org/news/2020/02/25/announcing-scalajs-1.0.0/&#34;&gt;just went final&lt;/a&gt;.
+For end-products, the upgrade is rather simple, just bump the plugin version and fix potential compile issues. If
+you&amp;rsquo;re maintaining a library, cross-building for &lt;code&gt;0.6.x&lt;/code&gt; and &lt;code&gt;1.0.x&lt;/code&gt; is still a bit tricky, but possible&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Using Shapeless for Data Cleaning in Apache Spark</title>
-      <link>https://www.franks.codes/post/2018-03-02-generic-derivation-for-spark-data-cleaning/</link>
+      <link>https://www.frankneff.com/blog/2018-03-02-generic-derivation-for-spark-data-cleaning/</link>
       <pubDate>Fri, 02 Mar 2018 19:15:03 +0100</pubDate>
       
-      <guid>https://www.franks.codes/post/2018-03-02-generic-derivation-for-spark-data-cleaning/</guid>
-      <description>When it comes to importing data into a BigData infrastructure like Hadoop, Apache Spark is one of the most used tools for ETL jobs. Because input data &amp;ndash; in this case CSV &amp;ndash; has often invalid values, a data cleaning layer is needed. Most tasks in data cleaning are very specific and therefore need to be implemented depending on your data, but some tasks can be generalized. In this post, I&amp;rsquo;ll not go into Spark, ETL or BigData in general, but provide one approach to clean null / empty values off a data set.</description>
+      <guid>https://www.frankneff.com/blog/2018-03-02-generic-derivation-for-spark-data-cleaning/</guid>
+      <description>&lt;p&gt;When it comes to importing data into a BigData infrastructure like Hadoop, &lt;a href=&#34;https://spark.apache.org/&#34;&gt;Apache Spark&lt;/a&gt; is
+one of the most used tools for &lt;a href=&#34;https://en.wikipedia.org/wiki/Extract,_transform,_load&#34;&gt;ETL&lt;/a&gt; jobs. Because input data
+– in this case CSV – has often invalid values, a data cleaning layer is needed.Most tasks in data cleaning
+are very specific and therefore need to be implemented depending on your data, but some tasks can be generalized&amp;hellip;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Java Libs in Scala - A bit more Functional</title>
-      <link>https://www.franks.codes/post/2017-12-18-using-java-libs-in-scala/</link>
+      <link>https://www.frankneff.com/blog/2017-12-18-using-java-libs-in-scala/</link>
       <pubDate>Mon, 18 Dec 2017 22:04:38 +0100</pubDate>
       
-      <guid>https://www.franks.codes/post/2017-12-18-using-java-libs-in-scala/</guid>
-      <description>Every Java library can be used in Scala, which is, for me, one of the good parts of the JVM world. But Java libs are mostly object-oriented and not functional, therefore full of side effects and somtimes &amp;ldquo;ugly&amp;rdquo; to use in Scala. But there are some approaches how to make Java libs (or their interfaces) more functional, so they can almost be used like a Scala lib.
-Java 8 Type Conversion Many Java types like Map or List, but also functional types (Java 8) like Optional&amp;lt;T&amp;gt; have Scala pendents.</description>
+      <guid>https://www.frankneff.com/blog/2017-12-18-using-java-libs-in-scala/</guid>
+      <description>&lt;p&gt;Every Java library can be used in Scala, which is, for me, one of the good parts of the JVM world. But Java libs are
+mostly object-oriented and not functional, therefore full  of side effects and somtimes &amp;ldquo;ugly&amp;rdquo; to use in Scala. But
+there are some approaches how to make Java libs (or their interfaces) more functional, so they can almost be used like
+a Scala lib.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Overcoming Checked Exceptions in Java Lambdas</title>
-      <link>https://www.franks.codes/post/2017-09-06-overcoming-checked-exceptions-in-java-lambdas/</link>
+      <link>https://www.frankneff.com/blog/2017-09-06-overcoming-checked-exceptions-in-java-lambdas/</link>
       <pubDate>Wed, 06 Sep 2017 19:57:00 +0100</pubDate>
       
-      <guid>https://www.franks.codes/post/2017-09-06-overcoming-checked-exceptions-in-java-lambdas/</guid>
-      <description>In Java 8, the long awaited Lambda came to live, making it easy(-er) to do FP in Java. One problem I came across is, that most Java code throws checked exceptions which leads to IMHO ugly try/catch blocks in lambdas:
-Function&amp;lt;A, B&amp;gt; fun = (a: A) -&amp;gt; { try { // some function call that trows checked exception$  return callFn(a); } catch (Exception e) { // return failure result  } }; The Good, the Bad and the Ugly A really simple, but also not really nice option is to wrap thrown exceptions into an unchecked one:</description>
+      <guid>https://www.frankneff.com/blog/2017-09-06-overcoming-checked-exceptions-in-java-lambdas/</guid>
+      <description>&lt;p&gt;In Java 8, the long awaited Lambda came to live, making it easy(-er) to do FP in Java. One problem I came across is,
+that most Java code throws checked exceptions which leads to IMHO ugly try/catch blocks in lambdas:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Scala Compiler Tuning</title>
+      <link>https://www.frankneff.com/blog/2016-04-15-scala-compiler-tuning/</link>
+      <pubDate>Fri, 15 Apr 2016 22:15:28 +0200</pubDate>
+      
+      <guid>https://www.frankneff.com/blog/2016-04-15-scala-compiler-tuning/</guid>
+      <description>&lt;p&gt;As my Scala projects go on, I want to share some compiler configuration and tricks with you, which I use on many
+projects. Some tiny configuration options can greatly improve your code and warn you about things, you would probably
+never discover.&lt;/p&gt;</description>
     </item>
     
   </channel>
