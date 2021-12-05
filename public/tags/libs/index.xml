@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>libs on FrankNeff.com - Technology meets Business</title>
+    <link>https://www.frankneff.com/tags/libs/</link>
+    <description>Recent content in libs on FrankNeff.com - Technology meets Business</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 18 Dec 2017 22:04:38 +0100</lastBuildDate>
+    
+	<atom:link href="https://www.frankneff.com/tags/libs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Java Libs in Scala - A bit more Functional</title>
+      <link>https://www.frankneff.com/blog/2017-12-18-using-java-libs-in-scala/</link>
+      <pubDate>Mon, 18 Dec 2017 22:04:38 +0100</pubDate>
+      
+      <guid>https://www.frankneff.com/blog/2017-12-18-using-java-libs-in-scala/</guid>
+      <description>&lt;p&gt;Every Java library can be used in Scala, which is, for me, one of the good parts of the JVM world. But Java libs are
+mostly object-oriented and not functional, therefore full  of side effects and somtimes &amp;ldquo;ugly&amp;rdquo; to use in Scala. But
+there are some approaches how to make Java libs (or their interfaces) more functional, so they can almost be used like
+a Scala lib.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

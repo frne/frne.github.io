@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>solr on FrankNeff.com - Technology meets Business</title>
+    <link>https://www.frankneff.com/tags/solr/</link>
+    <description>Recent content in solr on FrankNeff.com - Technology meets Business</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 18 Dec 2017 22:04:38 +0100</lastBuildDate>
+    
+	<atom:link href="https://www.frankneff.com/tags/solr/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Understanding Stemmers (Natural Language Processing)</title>
+      <link>https://www.frankneff.com/blog/2015-07-23-understanding-stemmers-nlp/</link>
+      <pubDate>Thu, 23 Jul 2015 18:05:12 +0200</pubDate>
+      
+      <guid>https://www.frankneff.com/blog/2015-07-23-understanding-stemmers-nlp/</guid>
+      <description>&lt;p&gt;I am interested in NLP and have already some experience with Apache Solr. It&amp;rsquo;s time to dig a little in-deep regarding
+stemmers. First of all, I was looking for a general definition of what a stemmer is, and I found this one, which IMHO
+is quite good:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;stemmer — an algorithm for removing inflectional and derivational endings in order to reduce word forms to a common stem&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

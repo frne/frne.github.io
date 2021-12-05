@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>security on FrankNeff.com - Technology meets Business</title>
+    <link>https://www.frankneff.com/tags/security/</link>
+    <description>Recent content in security on FrankNeff.com - Technology meets Business</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 14 Dec 2019 13:58:28 +0100</lastBuildDate>
+    
+	<atom:link href="https://www.frankneff.com/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Spring Security Oauth2 Blues - Simplicity</title>
+      <link>https://www.frankneff.com/blog/2019-11-19-spring-security-oauth-blues-simplicity/</link>
+      <pubDate>Sat, 14 Dec 2019 13:58:28 +0100</pubDate>
+      
+      <guid>https://www.frankneff.com/blog/2019-11-19-spring-security-oauth-blues-simplicity/</guid>
+      <description>&lt;p&gt;I personally like the Spring Framework and its security components, because it&amp;rsquo;s pretty full-featured and easy to use,
+but when it comes to Spring Security OAuth2, there&amp;rsquo;s a huge quality breakdown. In this (probably series) of blogposts,
+I&amp;rsquo;ll try to sum up the good, the bad, the evil and why I ended up completely dropping Spring Security OAuth2.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

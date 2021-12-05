@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>agile on FrankNeff.com - Technology meets Business</title>
+    <link>https://www.frankneff.com/tags/agile/</link>
+    <description>Recent content in agile on FrankNeff.com - Technology meets Business</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 21 Apr 2015 13:09:32 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.frankneff.com/tags/agile/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>If pragmatism raises technical debt, call it oversimplification (rant)</title>
+      <link>https://www.frankneff.com/blog/2015-04-21-pragmatism-technical-dept-oversimplification/</link>
+      <pubDate>Tue, 21 Apr 2015 13:09:32 +0200</pubDate>
+      
+      <guid>https://www.frankneff.com/blog/2015-04-21-pragmatism-technical-dept-oversimplification/</guid>
+      <description>&lt;p&gt;The word &amp;ldquo;pragmatism&amp;rdquo; or &amp;ldquo;pragmatic&amp;rdquo; is, in my personal opinion, the most
+overrated word in agile development. Many people use this as a buzzword without
+knowing what it means. I hear people saying &amp;ldquo;He solved that complex problem in
+half an hour, he&amp;rsquo;s so pragmatic!&amp;rdquo; and think for myself &amp;ldquo;Yeah, but that &amp;lsquo;solution&amp;rsquo;
+probably causes other devs three times more effort than a sustainable solution
+would take.&amp;rdquo;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
