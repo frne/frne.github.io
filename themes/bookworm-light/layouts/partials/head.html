@@ -1,0 +1,26 @@
+<head>
+  <meta charset="utf-8">
+  <title>{{ .Title }}</title>
+
+  <meta name="author" content="{{ site.Params.author }}">
+  <meta name="description" content="{{ with .Params.description }} {{.}} {{else}} {{ with site.Params.description }} {{.}} {{end}} {{end}}">
+
+  {{ "<!-- mobile responsive meta -->" | safeHTML}}
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+
+  <!-- favicon -->
+  {{ partialCached "favicon" . }}
+
+  {{ "<!-- CSS Plugins -->" | safeHTML}}
+  {{ partialCached "style.html" . }}
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1WJ81MY752"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-1WJ81MY752');
+  </script>
+</head>
