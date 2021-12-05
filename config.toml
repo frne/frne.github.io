@@ -72,9 +72,6 @@ color_primary = "#01AD9F"
 #################### default parameters ################################
 [params]
 logo_text = "FrankNeff<span class=\"text-muted\">.com</span>"
-favicon = "images/favicon.png"
-# Meta data
-description = "This is meta description"
 author = "Frank Neff"
 # contact form action
 contact_form_action = "#" # contact form works with https://formspree.io
@@ -136,6 +133,16 @@ weight = 4
 name = "About"
 url = "/author/frank-neff"
 weight = 1
+
+[[menu.footer]]
+name = "Source"
+url = "https://github.com/frne/frne.github.io"
+weight = 2
+
+[[menu.footer]]
+name = "Sitemap"
+url = "/sitemap.xml"
+weight = 3
 
 # Social Icons
 [[params.social]]

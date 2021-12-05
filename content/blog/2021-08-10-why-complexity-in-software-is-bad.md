@@ -1,5 +1,6 @@
 ---
 title: "Why complexity in software projects is bad (and you should not advertise it)"
+description: "There are (still) many people telling proudly, how complex their product is. This creates a long-tail problem, not only for engineers..."
 image: "images/post/2021-08-10-why-complexity-in-software-is-bad.jpg"
 date: 2021-08-10T18:30:00+01:00
 author: "Frank Neff"
