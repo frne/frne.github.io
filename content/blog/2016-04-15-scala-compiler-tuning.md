@@ -1,11 +1,12 @@
-+++
-date = "2016-04-15T22:15:28+02:00"
-draft = false
-title = "Scala Compiler Tuning"
-tags = ["scala", "compiler", "sbt"]
-categories = ["Functional Programming"]
-author = "Frank Neff"
-+++
+---
+date: "2016-04-15T22:15:28+02:00"
+image: "images/post/legacy-blog-article-without-images.jpg"
+title: "Scala Compiler Tuning"
+tags: ["scala", "compiler", "sbt"]
+categories: ["Functional Programming"]
+author: "Frank Neff"
+draft: false
+---
 
 As my Scala projects go on, I want to share some compiler configuration and tricks with you, which I use on many 
 projects. Some tiny configuration options can greatly improve your code and warn you about things, you would probably 

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>procrastination on FrankNeff.com - Technology meets Business</title>
+    <link>https://www.frankneff.com/tags/procrastination/</link>
+    <description>Recent content in procrastination on FrankNeff.com - Technology meets Business</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 05 Dec 2021 13:22:00 +0100</lastBuildDate>
+    
+	<atom:link href="https://www.frankneff.com/tags/procrastination/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Blog Relaunch (Yes, again)</title>
+      <link>https://www.frankneff.com/blog/2021-12-05-blog-relaunch/</link>
+      <pubDate>Sun, 05 Dec 2021 13:22:00 +0100</pubDate>
+      
+      <guid>https://www.frankneff.com/blog/2021-12-05-blog-relaunch/</guid>
+      <description>&lt;p&gt;I noticed that I write not as often as I want to, so I procrastinated and first relaunched my blog instead of writing.
+It has a new design and some new functionality, also the posts have now images. The relaunch was, for me, some kind of
+personal retrospective, where I read all my old posts and found out that I&amp;rsquo;m probably a better webmaster than a writer&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

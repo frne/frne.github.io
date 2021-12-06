@@ -5,10 +5,21 @@
     <link>https://www.frankneff.com/tags/news/</link>
     <description>Recent content in news on FrankNeff.com - Technology meets Business</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 12 May 2016 14:38:12 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 05 Dec 2021 13:22:00 +0100</lastBuildDate>
     
 	<atom:link href="https://www.frankneff.com/tags/news/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Blog Relaunch (Yes, again)</title>
+      <link>https://www.frankneff.com/blog/2021-12-05-blog-relaunch/</link>
+      <pubDate>Sun, 05 Dec 2021 13:22:00 +0100</pubDate>
+      
+      <guid>https://www.frankneff.com/blog/2021-12-05-blog-relaunch/</guid>
+      <description>&lt;p&gt;I noticed that I write not as often as I want to, so I procrastinated and first relaunched my blog instead of writing.
+It has a new design and some new functionality, also the posts have now images. The relaunch was, for me, some kind of
+personal retrospective, where I read all my old posts and found out that I&amp;rsquo;m probably a better webmaster than a writer&amp;hellip;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>New Blog</title>

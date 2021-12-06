@@ -11,6 +11,17 @@
     
     
     <item>
+      <title>Blog Relaunch (Yes, again)</title>
+      <link>https://www.frankneff.com/blog/2021-12-05-blog-relaunch/</link>
+      <pubDate>Sun, 05 Dec 2021 13:22:00 +0100</pubDate>
+      
+      <guid>https://www.frankneff.com/blog/2021-12-05-blog-relaunch/</guid>
+      <description>&lt;p&gt;I noticed that I write not as often as I want to, so I procrastinated and first relaunched my blog instead of writing.
+It has a new design and some new functionality, also the posts have now images. The relaunch was, for me, some kind of
+personal retrospective, where I read all my old posts and found out that I&amp;rsquo;m probably a better webmaster than a writer&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Why complexity in software projects is bad (and you should not advertise it)</title>
       <link>https://www.frankneff.com/blog/2021-08-10-why-complexity-in-software-is-bad/</link>
       <pubDate>Tue, 10 Aug 2021 18:30:00 +0100</pubDate>
@@ -95,6 +106,15 @@ a Scala lib.&lt;/p&gt;</description>
       <guid>https://www.frankneff.com/blog/2017-09-06-overcoming-checked-exceptions-in-java-lambdas/</guid>
       <description>&lt;p&gt;In Java 8, the long awaited Lambda came to live, making it easy(-er) to do FP in Java. One problem I came across is,
 that most Java code throws checked exceptions which leads to IMHO ugly try/catch blocks in lambdas:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Functional Java 1 - Options</title>
+      <link>https://www.frankneff.com/blog/2016-11-22-functional-java-1-option/</link>
+      <pubDate>Tue, 22 Nov 2016 08:22:49 +0100</pubDate>
+      
+      <guid>https://www.frankneff.com/blog/2016-11-22-functional-java-1-option/</guid>
+      <description>&lt;p&gt;This is the first post of my series about functional programming in Java. There&amp;rsquo;s a lot of functional stuff one can do. Everyone knows the Java 8 Lambda expression, but with a little library support, there is way more&amp;hellip; In this series, I&amp;rsquo;ll coder som libraries which provide functional paradigms and constructs for Java:&lt;/p&gt;</description>
     </item>
     
     <item>

@@ -1,11 +1,12 @@
-+++
-date = "2016-05-02T23:11:01+02:00"
-draft = false
-title = "Play Framework Actor Pooling with Guice (Java)"
-tags = ["java", "play", "guice", "akka"]
-categories = [ "Programming" ]
-author = "Frank Neff"
-+++
+---
+date: "2016-05-02T23:11:01+02:00"
+image: "images/post/legacy-blog-article-without-images.jpg"
+title: "Play Framework Actor Pooling with Guice (Java)"
+tags: ["java", "play", "guice", "akka"]
+categories: ["Programming"]
+author: "Frank Neff"
+draft: false
+---
 
 Working with the Play! Framework means working with Akka, intentionally or not. But working with Akka Actors can be 
 tricky, especially when it comes to dependency injection. Play! 2.4 uses Google's 

@@ -33,6 +33,15 @@ that most Java code throws checked exceptions which leads to IMHO ugly try/catch
     </item>
     
     <item>
+      <title>Functional Java 1 - Options</title>
+      <link>https://www.frankneff.com/blog/2016-11-22-functional-java-1-option/</link>
+      <pubDate>Tue, 22 Nov 2016 08:22:49 +0100</pubDate>
+      
+      <guid>https://www.frankneff.com/blog/2016-11-22-functional-java-1-option/</guid>
+      <description>&lt;p&gt;This is the first post of my series about functional programming in Java. There&amp;rsquo;s a lot of functional stuff one can do. Everyone knows the Java 8 Lambda expression, but with a little library support, there is way more&amp;hellip; In this series, I&amp;rsquo;ll coder som libraries which provide functional paradigms and constructs for Java:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Play Framework Actor Pooling with Guice (Java)</title>
       <link>https://www.frankneff.com/blog/2016-05-02-play-guice-actor-pooling/</link>
       <pubDate>Mon, 02 May 2016 23:11:01 +0200</pubDate>

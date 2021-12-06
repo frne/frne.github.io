@@ -1,11 +1,12 @@
-+++
-date = "2016-11-22T08:22:49+01:00"
-draft = true
-title = "Functional Java 1 - Options"
-tags = ["java", "library"]
-categories = ["Programming", "Functional Programming"]
-author = "Frank Neff"
-+++
+---
+title: "Functional Java 1 - Options"
+image: "images/post/legacy-blog-article-without-images.jpg"
+date: "2016-11-22T08:22:49+01:00"
+author: "Frank Neff"
+tags: ["java", "library"]
+categories: ["Programming", "Functional Programming"]
+draft: false
+---
 
 This is the first post of my series about functional programming in Java. There's a lot of functional stuff one can do. Everyone knows the Java 8 Lambda expression, but with a little library support, there is way more... In this series, I'll coder som libraries which provide functional paradigms and constructs for Java:
 

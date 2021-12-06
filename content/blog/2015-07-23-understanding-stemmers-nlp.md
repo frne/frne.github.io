@@ -1,11 +1,12 @@
-+++
-date = "2015-07-23T18:05:12+02:00"
-draft = false
-title = "Understanding Stemmers (Natural Language Processing)"
-tags = [ "java", "nlp", "solr" ]
-categories = ["Programming", "Data Science"]
-author = "Frank Neff"
-+++
+---
+date: "2015-07-23T18:05:12+02:00"
+image: "images/post/legacy-blog-article-without-images.jpg"
+title: "Understanding Stemmers (Natural Language Processing)"
+tags: ["java", "nlp", "solr"]
+categories: ["Programming", "Data Science"]
+author: "Frank Neff"
+draft: false
+---
 
 I am interested in NLP and have already some experience with Apache Solr. It's time to dig a little in-deep regarding 
 stemmers. First of all, I was looking for a general definition of what a stemmer is, and I found this one, which IMHO 
