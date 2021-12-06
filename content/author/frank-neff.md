@@ -1,5 +1,5 @@
 ---
-title: "Frank Neff"
+title: "FrankNeff.com - Frank Neff"
 image: "images/author/frank-neff.jpg"
 email: "fneff89@gmail.com"
 date: 2021-02-02T10:20:19+06:00
