@@ -1,6 +1,6 @@
 ---
 title: "Overcoming Checked Exceptions in Java Lambdas"
-image: "images/post/2017-09-06-overcoming-checked-exceptions-in-java-lambdas.jpg"
+image: "images/post/2017-09-06-overcoming-checked-exceptions-lambda.jpg"
 date: "2017-09-06T19:57:00+01:00"
 author: "Frank Neff"
 tags: ["exceptions", "lambda", "java"]
