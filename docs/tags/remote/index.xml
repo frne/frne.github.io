@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>remote on FrankNeff.com - Technology meets Business</title>
+    <link>https://www.frankneff.com/tags/remote/</link>
+    <description>Recent content in remote on FrankNeff.com - Technology meets Business</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 07 Dec 2021 07:10:00 +0100</lastBuildDate>
+    
+	<atom:link href="https://www.frankneff.com/tags/remote/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hiring Devs - The Senior-Paradox</title>
+      <link>https://www.frankneff.com/blog/2021-12-10-hiring-devs-the-senior-paradox/</link>
+      <pubDate>Tue, 07 Dec 2021 07:10:00 +0100</pubDate>
+      
+      <guid>https://www.frankneff.com/blog/2021-12-10-hiring-devs-the-senior-paradox/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
