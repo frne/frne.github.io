@@ -2,6 +2,7 @@
 title: "Why complexity in software projects is bad (and you should not advertise it)"
 description: "There are (still) many people telling proudly, how complex their product is. This creates a long-tail problem, not only for engineers..."
 image: "images/post/2021-08-10-why-complexity-in-software-is-bad.jpg"
+imgcaption: "[Picture from Christina Morillo on Pexels](https://www.pexels.com/de-de/@divinetechygirl?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels)"
 date: 2021-08-10T18:30:00+01:00
 author: "Frank Neff"
 tags: ["complexity", "software-design", "product-management"]
@@ -12,7 +13,7 @@ draft: false
 There are (still) many people telling proudly, how complex their product is. There are job ads, explaining that you will 
 "create highly complex software". These false signals, which I personally saw in many positions and projects, create a 
 potentially huge long-tail problem, not primarily for engineers, but for the product management and engineering team 
-lead. In this blogpost, I want to point out some of those impacts of advertising complexity[^1]...
+lead. In this blogpost, I want to point out some of those impacts of advertising complexity...
 
 <!--more-->
 
@@ -22,7 +23,7 @@ When building digital products, it turned out as a good practice to categorize c
 call it "complexity of business process" describes how complex the process behind your product is. So for example, a 
 simple camera app (press button, take photo, show photo) is not very complex, but a full-blown CRM probably is. If the 
 requirements or even simpler, the process you want to digitalize is complex, the software you're building will always 
-be[^2].
+be[^1].
 
 Of course it's becoming worse, if the business process is broken or not well defined. Then the software made of it will 
 probably be broken or at least buggy.
@@ -41,7 +42,7 @@ complexity, e.g.:
 * "Superheroism" (an engineer wanted to make it more complex then needed for personal/egoistic reasons)
 
 Intrinsic complexity can be prevented to a certain extent by actively promoting knowledge and establishing a working 
-development process with quality assurance mechanisms like static code analysis and peer reviews[^3].
+development process with quality assurance mechanisms like static code analysis and peer reviews[^2].
 
 ### Impacts on the Product
 
@@ -53,7 +54,7 @@ product:
 ##### Bad User Experience (UX)
 
 To the user, the application feels unintuitive, difficult to handle, or even not usable. These problems often arise due 
-to poorly designed processes in the application or insufficient UX design[^4]. Of course, there is no standard solution 
+to poorly designed processes in the application or insufficient UX design[^3]. Of course, there is no standard solution 
 for these problems. However, it often helps enormously to staff the roles in the project (especially business analyst, 
 UX engineer and UI / frontend designer) strongly. Especially in projects with smaller budgets these roles often overlap, 
 but it is crucial that they are defined and staffed.
@@ -80,7 +81,7 @@ is, use technical tools to continuously measure and analyze performance.
 
 ##### High Ongoing Costs
 
-This is a purely logical conclusion, because complexity always causes additional costs[^5], but also simply an effect 
+This is a purely logical conclusion, because complexity always causes additional costs[^4], but also simply an effect 
 of the previous problems. Poor performance causes higher hosting expenses, confused users more support cases.
 
 {{< notice "tip" >}}
@@ -95,8 +96,7 @@ poor development culture and morale, but also because it can result in very high
 complexity always means effort and frustration, which you can lower for everyone involved, by taking business analysis, 
 development processes, and quality assurance seriously.
 
-[^1]: [Picture from Christina Morillo on Pexels](https://www.pexels.com/de-de/@divinetechygirl?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels)
-[^2]: [N. Fenton, P. Krause and M. Neil, "Software measurement: uncertainty and causal modeling," in IEEE Software, vol. 19, no. 4, pp. 116-122, July-Aug. 2002, doi: 10.1109/MS.2002.1020298.](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1020298&isnumber=21951)
-[^3]: [S. F. Ochoa and F. J. Gutierrez, "Architecting E-Coaching Systems: A First Step for Dealing with Their Intrinsic Design Complexity," in Computer, vol. 51, no. 3, pp. 16-23, March 2018, doi: 10.1109/MC.2018.1731079.](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8320209&isnumber=8320205)
-[^4]: [Francisco Inchauste, "The Dirtiest Word in UX: Complexity" on uxmag.com, 10.08.2021](https://uxmag.com/articles/the-dirtiest-word-in-ux-complexity)
-[^5]: ["Complexity Costs" on wilsonperumal.com, 10.08.2021](https://www.wilsonperumal.com/blog/blog/complexity-costs)
+[^1]: [N. Fenton, P. Krause and M. Neil, "Software measurement: uncertainty and causal modeling," in IEEE Software, vol. 19, no. 4, pp. 116-122, July-Aug. 2002, doi: 10.1109/MS.2002.1020298.](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1020298&isnumber=21951)
+[^2]: [S. F. Ochoa and F. J. Gutierrez, "Architecting E-Coaching Systems: A First Step for Dealing with Their Intrinsic Design Complexity," in Computer, vol. 51, no. 3, pp. 16-23, March 2018, doi: 10.1109/MC.2018.1731079.](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8320209&isnumber=8320205)
+[^3]: [Francisco Inchauste, "The Dirtiest Word in UX: Complexity" on uxmag.com, 10.08.2021](https://uxmag.com/articles/the-dirtiest-word-in-ux-complexity)
+[^4]: ["Complexity Costs" on wilsonperumal.com, 10.08.2021](https://www.wilsonperumal.com/blog/blog/complexity-costs)

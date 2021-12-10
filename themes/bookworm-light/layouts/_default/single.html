@@ -27,11 +27,15 @@
           </ul>
         </div>
 
-        {{ with .Params.image }}
+        {{ if .Params.image }}
         <div class="mb-5 text-center">
-          {{ partial "image.html" (dict "Src" . "Class" "img-fluid rounded" "Alt" "Post image") }}
+          {{ with .Params.image }}
+            {{ partial "image.html" (dict "Src" . "Class" "img-fluid rounded" "Alt" "Post image") }}
+          {{ end }}
+          {{ if .Params.imgcaption }}<figcaption class="text-muted">{{ .Params.imgcaption | markdownify }}</figcaption>{{ end }}
         </div>
         {{ end }}
+
 
         <div class="content">
           {{.Content}}

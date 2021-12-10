@@ -2,6 +2,7 @@
 title: "Blog Relaunch (Yes, again)"
 description: "I noticed that I write not as often as I want to, so I relaunched my blog instead of writing..."
 image: "images/post/2021-12-05-blog-relaunch.jpg"
+imgcaption: "Screenshot of the About page"
 date: 2021-12-05T13:22:00+01:00
 author: "Frank Neff"
 tags: ["news", "procrastination"]

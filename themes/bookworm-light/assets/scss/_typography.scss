@@ -37,7 +37,7 @@ button:focus {
 }
 a {
    color: $gray;
-   transition: all .3s;
+
    &:hover {
       text-decoration: none;
       color: $color-primary;
@@ -47,4 +47,8 @@ ul, li {
 	padding: 0;
    margin: 0;
    list-style-position: inside;
+}
+
+figcaption a {
+   border-bottom: 1px dotted $color-primary !important;
 }
