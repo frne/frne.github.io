@@ -5,11 +5,7 @@
     <link>https://www.frankneff.com/tags/</link>
     <description>Recent content in Tags on FrankNeff.com - Technology meets Business</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 10 Dec 2021 07:10:00 +0100</lastBuildDate>
-    
-	<atom:link href="https://www.frankneff.com/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 10 Dec 2021 07:10:00 +0100</lastBuildDate><atom:link href="https://www.frankneff.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>recruiting</title>
       <link>https://www.frankneff.com/tags/recruiting/</link>
@@ -191,15 +187,6 @@
     </item>
     
     <item>
-      <title>solr</title>
-      <link>https://www.frankneff.com/tags/solr/</link>
-      <pubDate>Mon, 18 Dec 2017 22:04:38 +0100</pubDate>
-      
-      <guid>https://www.frankneff.com/tags/solr/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>solrj</title>
       <link>https://www.frankneff.com/tags/solrj/</link>
       <pubDate>Mon, 18 Dec 2017 22:04:38 +0100</pubDate>
@@ -268,6 +255,15 @@
       <pubDate>Thu, 23 Jul 2015 18:05:12 +0200</pubDate>
       
       <guid>https://www.frankneff.com/tags/nlp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>solr</title>
+      <link>https://www.frankneff.com/tags/solr/</link>
+      <pubDate>Thu, 23 Jul 2015 18:05:12 +0200</pubDate>
+      
+      <guid>https://www.frankneff.com/tags/solr/</guid>
       <description></description>
     </item>
     

@@ -5,11 +5,7 @@
     <link>https://www.frankneff.com/tags/library/</link>
     <description>Recent content in library on FrankNeff.com - Technology meets Business</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 26 Feb 2020 17:05:18 +0100</lastBuildDate>
-    
-	<atom:link href="https://www.frankneff.com/tags/library/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 26 Feb 2020 17:05:18 +0100</lastBuildDate><atom:link href="https://www.frankneff.com/tags/library/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Crossbuilding Scala.js 1.0 and 0.6</title>
       <link>https://www.frankneff.com/blog/2020-02-26-crossbuilding-scalajs-1-0-and-0-6/</link>
