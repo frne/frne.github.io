@@ -1,7 +1,7 @@
 ######################## default configuration ####################
 baseURL = "https://www.frankneff.com/"
 publishdir = "./docs"
-title = "FrankNeff.com - Technology meets Business"
+title = "FrankNeff.com - Technology meets Leadership"
 theme = "bookworm-light"
 # post pagination
 paginate = "5"

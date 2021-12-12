@@ -1,5 +1,5 @@
-FrankNeff.com - Personal Homepage and Blog
-==========================================
+FrankNeff.com - Technology meets Leadership
+===========================================
 
 **This repository contains the sources for [FrankNeff.com](https://www.frankneff.com)**
 

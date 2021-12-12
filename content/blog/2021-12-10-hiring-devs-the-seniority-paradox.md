@@ -1,6 +1,6 @@
 ---
 title: "Hiring Devs - The Seniority Paradox"
-description: "..."
+description: "Blog post about implying a seniority-level in job titles, which is sometimes helpful for motivation but often misleading."
 image: "images/post/2021-12-10-hiring-devs-the-seniority-paradox.png"
 imgcaption: "Photo by [Polina Zimmerman](https://www.pexels.com/@polina-zimmerman?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels) from [Pexels](https://www.pexels.com/)"
 date: 2021-12-10T07:10:00+01:00

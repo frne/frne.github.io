@@ -1,5 +1,5 @@
 ---
-title: "FrankNeff.com - Personal Homepage and Blog"
-description: "Personal Homepage and Blog of Frank Neff - www.frankneff.com"
+title: "FrankNeff.com - Technology meets Leadership"
+description: "I blog about leadership and technology, recruiting, processes, planning, and strategy in tech teams and companies."
 draft: false
 ---

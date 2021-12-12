@@ -14,6 +14,9 @@
   {{ "<!-- CSS Plugins -->" | safeHTML}}
   {{ partialCached "style.html" . }}
 
+  {{ "<!-- Schema -->" | safeHTML}}
+  {{ partial "site_schema.html" . }}
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-1WJ81MY752"></script>
   <script>
