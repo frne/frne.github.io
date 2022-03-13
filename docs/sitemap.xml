@@ -3,18 +3,39 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.frankneff.com/categories/</loc>
-    <lastmod>2022-02-25T07:10:00+01:00</lastmod>
+    <lastmod>2022-03-12T07:10:00+01:00</lastmod>
+  </url><url>
+    <loc>https://www.frankneff.com/categories/engineering-teams/</loc>
+    <lastmod>2022-03-12T07:10:00+01:00</lastmod>
+  </url><url>
+    <loc>https://www.frankneff.com/blog/</loc>
+    <lastmod>2022-03-12T07:10:00+01:00</lastmod>
+  </url><url>
+    <loc>https://www.frankneff.com/</loc>
+    <lastmod>2022-03-12T07:10:00+01:00</lastmod>
+  </url><url>
+    <loc>https://www.frankneff.com/categories/hiring-devs/</loc>
+    <lastmod>2022-03-12T07:10:00+01:00</lastmod>
+  </url><url>
+    <loc>https://www.frankneff.com/blog/2022-03-12-hiring-devs-why-you-should-consider-juniors/</loc>
+    <lastmod>2022-03-12T07:10:00+01:00</lastmod>
+  </url><url>
+    <loc>https://www.frankneff.com/tags/recruiting/</loc>
+    <lastmod>2022-03-12T07:10:00+01:00</lastmod>
+  </url><url>
+    <loc>https://www.frankneff.com/tags/series/</loc>
+    <lastmod>2022-03-12T07:10:00+01:00</lastmod>
+  </url><url>
+    <loc>https://www.frankneff.com/tags/staffing/</loc>
+    <lastmod>2022-03-12T07:10:00+01:00</lastmod>
+  </url><url>
+    <loc>https://www.frankneff.com/tags/</loc>
+    <lastmod>2022-03-12T07:10:00+01:00</lastmod>
   </url><url>
     <loc>https://www.frankneff.com/tags/complexity/</loc>
     <lastmod>2022-02-25T07:10:00+01:00</lastmod>
   </url><url>
     <loc>https://www.frankneff.com/tags/config/</loc>
-    <lastmod>2022-02-25T07:10:00+01:00</lastmod>
-  </url><url>
-    <loc>https://www.frankneff.com/blog/</loc>
-    <lastmod>2022-02-25T07:10:00+01:00</lastmod>
-  </url><url>
-    <loc>https://www.frankneff.com/</loc>
     <lastmod>2022-02-25T07:10:00+01:00</lastmod>
   </url><url>
     <loc>https://www.frankneff.com/categories/programming/</loc>
@@ -26,28 +47,10 @@
     <loc>https://www.frankneff.com/tags/spring/</loc>
     <lastmod>2022-02-25T07:10:00+01:00</lastmod>
   </url><url>
-    <loc>https://www.frankneff.com/tags/</loc>
-    <lastmod>2022-02-25T07:10:00+01:00</lastmod>
-  </url><url>
     <loc>https://www.frankneff.com/blog/2022-02-25-why-you-dont-need-spring-cloud-config/</loc>
     <lastmod>2022-02-25T07:10:00+01:00</lastmod>
   </url><url>
-    <loc>https://www.frankneff.com/categories/engineering-teams/</loc>
-    <lastmod>2021-12-10T07:10:00+01:00</lastmod>
-  </url><url>
-    <loc>https://www.frankneff.com/categories/hiring-devs/</loc>
-    <lastmod>2021-12-10T07:10:00+01:00</lastmod>
-  </url><url>
     <loc>https://www.frankneff.com/blog/2021-12-10-hiring-devs-the-seniority-paradox/</loc>
-    <lastmod>2021-12-10T07:10:00+01:00</lastmod>
-  </url><url>
-    <loc>https://www.frankneff.com/tags/recruiting/</loc>
-    <lastmod>2021-12-10T07:10:00+01:00</lastmod>
-  </url><url>
-    <loc>https://www.frankneff.com/tags/series/</loc>
-    <lastmod>2021-12-10T07:10:00+01:00</lastmod>
-  </url><url>
-    <loc>https://www.frankneff.com/tags/staffing/</loc>
     <lastmod>2021-12-10T07:10:00+01:00</lastmod>
   </url><url>
     <loc>https://www.frankneff.com/categories/announcements/</loc>
