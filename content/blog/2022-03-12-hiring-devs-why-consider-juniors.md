@@ -1,7 +1,7 @@
 ---
 title: "Hiring Devs - Why you should consider Juniors"
 description: "Blog post about hiring junior developers for your tech team with some do, don't and why."
-image: "images/post/2022-03-12-hiring-devs-why-you-should-consider-juniors.png"
+image: "images/post/2022-03-12-hiring-devs-why-consider-juniors.png"
 imgcaption: "Photo by [Polina Zimmerman](https://www.pexels.com/@polina-zimmerman?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels) from [Pexels](https://www.pexels.com/)"
 date: 2022-03-12T07:10:00+01:00
 author: "Frank Neff"
