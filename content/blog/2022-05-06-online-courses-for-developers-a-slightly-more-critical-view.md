@@ -3,7 +3,7 @@ title: "Online Courses for Developers - A slightly more Critical View"
 description: "A slightly more critical view of online training and videos for aspiring or junior developers."
 image: "images/post/2022-05-07-online-courses-critical-view.jpg"
 imgcaption: "Photo by [Tim Gouw](https://www.pexels.com/de-de/foto/mann-im-weissen-hemd-mit-macbook-pro-52608/) from [Pexels](https://www.pexels.com/)"
-date: 2022-05-07T07:15:00+02:00
+date: 2022-05-06T07:15:00+02:00
 author: "Frank Neff"
 tags: ["knowledge", "training", "career", "engineering"]
 categories: ["Education"]
