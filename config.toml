@@ -17,7 +17,7 @@ min = "0.87.0"
 
 ############################# Image Processing ##############################
 [imaging]
-quality = "95"
+quality = 95
 
 ############################# Outputs ##############################
 [outputs]
@@ -127,6 +127,11 @@ weight = 3
 name = "About"
 url = "/author/frank-neff"
 weight = 4
+
+[[menu.main]]
+name = "Contact"
+url = "/contact"
+weight = 5
 
 ############################# Footer Menu ########################
 [[menu.footer]]
