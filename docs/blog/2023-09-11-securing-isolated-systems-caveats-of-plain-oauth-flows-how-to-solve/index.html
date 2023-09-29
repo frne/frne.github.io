@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>authentication</title>
+  <title>Securing isolated systems: Caveats of using plain OAUTH flows and how to solve them</title>
 
   <meta name="author" content="Frank Neff">
-  <meta name="description" content="  ">
+  <meta name="description" content=" While OIDC and OAUTH are well-known standards, they don&#39;t fit every purpose &#34;out of the box&#34;. In businesses with special requirements, like health-care, non-functional requirements to auth can be challenging. ">
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
@@ -50,6 +50,51 @@ AUTHOR WEBSITE: https://themefisher.com
 
   <!-- Schema -->
   
+
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "blog",
+        "name": "Securing isolated systems: Caveats of using plain OAUTH flows and how to solve them",
+        "headline": "Securing isolated systems: Caveats of using plain OAUTH flows and how to solve them",
+        "alternativeHeadline": "",
+        "description": "While OIDC and OAUTH are well-known standards, they don\u0027t fit every purpose \u0022out of the box\u0022. In businesses with special requirements, like health-care, non-functional requirements to auth can be challenging.",
+        "inLanguage": "en-us",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.frankneff.com/blog/2023-09-11-securing-isolated-systems-caveats-of-plain-oauth-flows-how-to-solve/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Frank Neff"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Frank Neff"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Frank Neff"
+        },
+        "copyrightHolder" : "Frank Neff",
+        "copyrightYear" : "2023",
+        "dateCreated": "2023-09-11T11:10:00.00Z",
+        "datePublished": "2023-09-11T11:10:00.00Z",
+        "dateModified": "2023-09-11T11:10:00.00Z",
+        "publisher":{
+            "@type": "Person",
+            "name": "Frank Neff"
+        },
+        "image": "https://www.frankneff.com/images/post/2023-09-11-securing-isolated-systems-caveats-of-plain-oauth-flows-how-to-solve/header.png",
+        "url" : "https://www.frankneff.com/blog/2023-09-11-securing-isolated-systems-caveats-of-plain-oauth-flows-how-to-solve/",
+        "wordCount" : "1281",
+        "genre" : [ "Architecture" , "Security" ],
+        "keywords" : [ "oauth" , "oidc" , "security" , "authentication" , "authorization" , "architecture" ]
+    }
+</script>
+
 
   
   <script data-ad-client="ca-pub-0438620747623841" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -183,44 +228,6 @@ FrankNeff<span class="text-muted">.com</span>
 </div>
 
   
-  <section class="section-sm pb-2 page-header">
-  <div class="container">
-    <div class="row">
-      <div class="col-8 mx-auto text-center">
-
-        
-        
-        <h4 class="mb-3 text-dark font-weight-bold">Showing posts from <mark>authentication</mark></h4>
-        
-        
-
-
-        <ul class="list-inline breadcrumb-menu">
-        
-        
-        <li class="list-inline-item"><a href="/">Home</a></li>
-        
-        
-        
-        <li class="list-inline-item">/ &nbsp; <a href="https://www.frankneff.com/tags">Tags</a></li>
-        
-        
-        
-        
-        
-        <li class="list-inline-item">/ &nbsp; <a href="https://www.frankneff.com/tags/authentication">Authentication</a></li>
-        
-        
-        
-        
-        
-        
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-  
   
 
 
@@ -228,15 +235,70 @@ FrankNeff<span class="text-muted">.com</span>
 
 <section class="section-sm">
   <div class="container">
-    <div class="row no-gutters justify-content-center">
+    <div class="row justify-content-center">
       <div class="col-lg-10">
-        <div class="row">
+        <div class="text-center mb-5">
+          <h3 class="h2 mb-4 post-title">Securing isolated systems: Caveats of using plain OAUTH flows and how to solve them</h3>
+          <ul class="card-meta list-inline">
+            <li class="list-inline-item">
+              <a href="#!" class="card-meta-author">
+                
+                <a href="https://www.frankneff.com/author/frank-neff/" class="card-meta-author">
+                  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img loading="lazy" decoding="async" src="/images/author/frank-neff_hu33cac40e2c9881176752d2c4d63be02f_20224_26x26_resize_q95_h2_box.webp" alt="Frank Neff" class="w-auto" width="26" height="26" onerror="this.onerror='null';this.src='\/images\/author\/frank-neff_hu33cac40e2c9881176752d2c4d63be02f_20224_26x26_resize_q95_box.jpg'">
+ 
+ 
+ 
+
+
+                  <span>Frank Neff</span>
+                </a>
+                
+              </a>
+            </li>
+            <li class="list-inline-item">|</li>
+            <li class="list-inline-item">
+              <span>11 September 2023</span>
+            </li>
+          </ul>
+        </div>
+
+        
+        <div class="mb-5 text-center">
           
-          <div class="col-lg-6">
-            <article class="card post-card">
-  
-  <a href="https://www.frankneff.com/blog/2023-09-11-securing-isolated-systems-caveats-of-plain-oauth-flows-how-to-solve/">
-    
+            
 
 
 
@@ -279,7 +341,466 @@ FrankNeff<span class="text-muted">.com</span>
   <source srcset="/images/post/2023-09-11-securing-isolated-systems-caveats-of-plain-oauth-flows-how-to-solve/header_hu16438d4256b0c2890b815519806030d7_1095994_600x0_resize_q95_h2_box_3.webp" media="(max-width: 767px)">
   <source srcset="/images/post/2023-09-11-securing-isolated-systems-caveats-of-plain-oauth-flows-how-to-solve/header_hu16438d4256b0c2890b815519806030d7_1095994_700x0_resize_q95_h2_box_3.webp" media="(max-width: 991px)">
   <source srcset="/images/post/2023-09-11-securing-isolated-systems-caveats-of-plain-oauth-flows-how-to-solve/header_hu16438d4256b0c2890b815519806030d7_1095994_1110x0_resize_q95_h2_box_3.webp">
-  <img loading="lazy" decoding="async" class="w-100 h-auto rounded" src="/images/post/2023-09-11-securing-isolated-systems-caveats-of-plain-oauth-flows-how-to-solve/header_hu16438d4256b0c2890b815519806030d7_1095994_1110x0_resize_box_3.png" alt="Securing isolated systems: Caveats of using plain OAUTH flows and how to solve them" width="1110" height="572">
+  <img loading="lazy" decoding="async" class="img-fluid rounded" src="/images/post/2023-09-11-securing-isolated-systems-caveats-of-plain-oauth-flows-how-to-solve/header_hu16438d4256b0c2890b815519806030d7_1095994_1110x0_resize_box_3.png" alt="Post image" width="1110" height="572">
+</picture>
+ 
+ 
+ 
+
+
+          
+          <figcaption class="text-muted">Photo by <a href="https://www.pexels.com/photo/photo-of-doctor-looking-deeply-unto-the-screen-7088530/">MART PRODUCTION</a> from <a href="https://www.pexels.com/">Pexels</a></figcaption>
+        </div>
+        
+
+
+        <div class="content">
+          <p>While OIDC and OAUTH are well-known standards, they don&rsquo;t fit every purpose &ldquo;out of the box.&rdquo; In businesses with <strong>special
+regulations</strong> like banking, health care, etc., non-functional requirements to auth can be challenging. Different
+solutions and ways were evaluated to create a new identity provider for a medical network. The first approach was &ldquo;just&rdquo;
+using simple <strong>OAUTH</strong> by its most famous <strong>Authorization Code Flow</strong>. Of course, it failed fast, and I&rsquo;ll show why and
+how we solved it in this post.</p>
+<h2 id="the-challenge">The Challenge</h2>
+<p>While re-architecting and (partially) rebuilding a healthcare-related platform, the identity layer was one of the central
+components we wanted to work on first. While an identity provider has always been there, the platform developed the need
+to add features and provide (token-based) access to third parties. As the project was an integration case with dozens of
+clients providing and consuming data, not only security and performance but also adoption by implementers was crucial. The
+most straightforward solution came up reasonably quickly:</p>
+<blockquote>
+<p>&ldquo;Let&rsquo;s just do OAUTH! It&rsquo;s easy &amp; secure, everyone knows it.&rdquo;</p>
+</blockquote>
+<p>After architecting and implementing a PoC, we tested auth &amp; integration with a client and gave it an internal security
+audit. As the solution should be &ldquo;straightforward&rdquo; to all involved parties, we used Implicit Flow for our own frontends
+and Authorization Code Flow for all backend clients, including external ones.</p>
+<h3 id="wrong-assumptions">Wrong Assumptions</h3>
+<p>While this worked for all internal needs, we immediately faced a massive architectural flaw.
+We implicitly anticipated that all clients:</p>
+<ul>
+<li>Are browser-based tools</li>
+<li>Are hosted on a central server (SaaS)</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure class="" role="group" aria-describedby="caption-Assumed high-level architecture of the authentication flow (source)">
+  <img title="Assumed high-level architecture of the authentication flow" loading="lazy" decoding="async" src="https://www.frankneff.com/diagrams/2023-09-11-securing-isolated-systems-caveats-of-plain-oauth-flows-how-to-solve/high-level-architecture-assumption.svg" alt="High-level architecture diagram showing wrong assumptions on auth-flow and deployment model" class=" mb-2" width="" height="">
+  <figcaption class="text-center" id="caption-Assumed high-level architecture of the authentication flow (source)">Assumed high-level architecture of the authentication flow (<a href="/diagrams/2023-09-11-securing-isolated-systems-caveats-of-plain-oauth-flows-how-to-solve/high-level-architecture-assumption.drawio">source</a>)</figcaption>
+</figure>
+
+
+
+
+
+<p>Of course, both assumptions were dead wrong. On the one hand, many clients were isolated &ldquo;fat clients&rdquo; running locally on
+PCs. While they had an internet connection and could communicate with HTTP APIs, they struggled to open browser windows /
+redirect clients to web endpoints. But there was another, way more significant challenge, which lies in the deployment
+model of many healthcare SaaS providers:</p>
+<h3 id="nowhere-to-redirect">Nowhere to Redirect</h3>
+<p>Especially in high-security environments like health care, where one needs to process highly protected patient data, tenant
+isolation is often done on a physical or instance level. This is contrary to SaaS, where we mostly have one big application
+that supports multi-tenancy and is centrally hosted. The majority of healthcare software suites, even if they&rsquo;re
+web-based, are hosted within the healthcare facility or an IT partner, using one isolated instance per tenant on their
+own machine with their dedicated database.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure class="" role="group" aria-describedby="caption-Reality high-level architecture &amp; caveats (source)">
+  <img title="Assumed high-level architecture of the authentication flow" loading="lazy" decoding="async" src="https://www.frankneff.com/diagrams/2023-09-11-securing-isolated-systems-caveats-of-plain-oauth-flows-how-to-solve/high-level-architecture-reality.svg" alt="High-level architecture diagram showing realistic deployment model and caveats" class=" mb-2" width="" height="">
+  <figcaption class="text-center" id="caption-Reality high-level architecture &amp; caveats (source)">Reality high-level architecture &amp; caveats (<a href="/diagrams/2023-09-11-securing-isolated-systems-caveats-of-plain-oauth-flows-how-to-solve/high-level-architecture-reality.drawio">source</a>)</figcaption>
+</figure>
+
+
+
+
+
+<p>In this area (A) we have to deal with all sorts of security mechanisms like network access control, firewalling,
+isolation, IDS/IPS, and many more, which we cannot anticipate. Some minor, self-operated instances (C) even used a
+regular consumer DSL router with a dynamic IP. Finally, we needed to accept that those systems could talk to us, but we
+could not talk to them, which left us, at least for the very common flows, with a huge issue:</p>
+<blockquote>
+<p>We can not work with redirects or basically any mechanism which implies bidirectional communication.</p>
+</blockquote>
+<h2 id="on-oauth-flows">On OAUTH Flows</h2>
+<p>The latter implication becomes effective when considering how the OAUTH <strong>Authorization Code Flow</strong> is designed.
+In a simple scenario, the unauthenticated user needs to complete the following steps to obtain an access token:</p>
+<ol>
+<li>User gets redirected from the original application UI to a login screen on the identity provider</li>
+<li>User logs in (and accepts scopes needed by the original application)</li>
+<li>User is redirected back to the original application URL, provided by the <code>redirect_uri</code> parameter supplied with the first call</li>
+<li>To that redirect URI, a short-lived auth token is appended and with this supplied to the client</li>
+<li>The client requests an access token by supplying the before-mentioned auth token, client id and secret to the IDP</li>
+<li>The IDP issues the access token to the client</li>
+</ol>
+<p>With the implications mentioned, this flow became impossible because the clients have no URI to redirect to. In fact, that
+flow implies that all clients have a public URL to redirect to.</p>
+<p>We looked at other well-known flows and came to the following conclusions:</p>
+<ul>
+<li><strong>Implicit Flow</strong> doesn&rsquo;t work because it is for frontends only and also works with redirects (same problem)</li>
+<li><strong>Resource Owner Password Credentials Flow</strong> would technically have been an option but could not be used for data
+security reasons. In fact, the users should not enter their credentials in any form but our own IDP by policy, which
+eliminated this option.</li>
+<li><strong>Client Credentials Flow</strong> also couldn&rsquo;t be used because the client is not the resource owner and, therefore, potentially
+untrusted unless authorized by the resource owner by client consent.</li>
+</ul>
+<h3 id="the-oauth-20-device-code-flow">The OAuth 2.0 Device Code Flow</h3>
+<p>Have you ever set up a device like a smart tv, set-top box, etc., where you needed to log in using your smartphone or
+browser and then enter a 4 to 6-digit code or scan a QR code that was shown on the device? That&rsquo;s a <strong>Device Code Flow</strong>.
+It&rsquo;s actually designed to authenticate devices that are not fully capable of executing the other flows.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure class="" role="group" aria-describedby="caption-GitHubs device code auth screen as used for GitHub CLI (source)">
+  <img title="Screenshot of GitHubs device code auth screen" loading="lazy" decoding="async" class="img-fluid mb-2" width="1952" height="1506" src="/images/post/2023-09-11-securing-isolated-systems-caveats-of-plain-oauth-flows-how-to-solve/github-device-code-auth_hu6a8b5e2f389b4877ef68503c774acf2a_489345_1952x1506_fill_q95_h2_box_smart1_3.webp" alt="Screenshot of GitHubs device code auth screen" onerror="this.onerror='null';this.src='\/images\/post\/2023-09-11-securing-isolated-systems-caveats-of-plain-oauth-flows-how-to-solve\/github-device-code-auth_hu6a8b5e2f389b4877ef68503c774acf2a_489345_1952x1506_fill_box_smart1_3.png'">
+  <figcaption class="text-center" id="caption-GitHubs device code auth screen as used for GitHub CLI (source)">GitHubs device code auth screen as used for GitHub CLI (<a href="https://github.com/cli/oauth">source</a>)</figcaption>
+</figure>
+
+
+
+
+
+
+
+<p>By using this lesser-known OAUTH flow, we were actually able to work around the missing / distributed redirect URI
+problem because all calls made are directed from the client to IDP, but not vice versa. Also, no redirects are used,
+as explained in the following simplified scenario:</p>
+<ol>
+<li>Client sends a <strong>Device Authorization Request</strong> to the IDP, containing the <code>client_id</code> and optionally a <code>scope</code></li>
+<li>IDP responds with a <strong>Device Authorization Response</strong>, containing <code>device_code</code>, <code>user_code</code> and <code>verification_uri</code></li>
+<li>The <code>user_code</code> and <code>verification_uri</code> need to be <strong>presented to the user</strong> in some way by the client</li>
+<li>Finally, the client requests a <strong>Device Access Token</strong> from the IDP by sending <code>grant_type</code>, <code>device_code</code> and <code>client_id</code>
+to the IDP</li>
+<li>The IDP responds either with a <strong>Device Access Token</strong> or one of the errors <code>authorization_pending</code>, <code>slow_down</code>,
+<code>access_denied</code> or <code>expired_token</code>, which are specific for device code auth. On <code>authorization_pending</code>, the user has
+not yet completed the flow; steps 4 &amp; 5 should be repeated after some waiting time.</li>
+</ol>
+<p>A more detailed explanation of the flow, incl. examples, can be found at the
+<a href="https://datatracker.ietf.org/doc/html/rfc8628">IETF RFC-8629 about the OAuth 2.0 Device Authorization Grant</a>.</p>
+<h2 id="convenience-measures">Convenience Measures</h2>
+<p>For the convenience of the user, we added mechanisms to make the code auth (typing or copying a code) as painless as
+possible. While some clients relied on the &ldquo;hard way&rdquo; because they could not open a browser, most could. Therefore, We
+have suggested that most clients open the URL with the code attached as a parameter directly in a browser instead of
+instructing the user to use another device. Like that, no code needs to be typed or copied.</p>
+<p>In addition, we enabled refresh tokens to be issued. Using those additionally granted, long-lived tokens and the client
+secret, clients can extend or re-issue access tokens without redoing a full Device Code Flow. If
+well-implemented, the user only needs to log in once using their browser and is authenticated automatically afterwords.
+From a useability perspective, this feels the same as an Authorization Code Flow but doesn&rsquo;t need a redirect URI and
+adds a convenient fallback solution for less tightly integrated clients.</p>
+<h3 id="added-security-with-mtls">Added security with mTLS</h3>
+<p>To add an extra layer of security, mutual TLS by using client-side X509 certificates was evaluated and planned. As the
+correct and secure implementation of mTLS can become complex to impossible for some clients, especially when dealing with
+legacy software &amp; and security mechanisms, the solution has been planned and rolled out as an additional measure and not as a hard
+technical requirement.</p>
+<p>The majority of all clients adopted the solution, including mTLS, or otherwise added different additional security measures on
+their side.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="single-post-meta">
+      <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-6 text-center text-md-left">
+          <ul class="post-meta-tags list-unstyled list-inline">
+            
+            <li class="list-inline-item"><a href="https://www.frankneff.com/tags/oauth">oauth</a></li>
+            
+            <li class="list-inline-item"><a href="https://www.frankneff.com/tags/oidc">oidc</a></li>
+            
+            <li class="list-inline-item"><a href="https://www.frankneff.com/tags/security">security</a></li>
+            
+            <li class="list-inline-item"><a href="https://www.frankneff.com/tags/authentication">authentication</a></li>
+            
+            <li class="list-inline-item"><a href="https://www.frankneff.com/tags/authorization">authorization</a></li>
+            
+            <li class="list-inline-item"><a href="https://www.frankneff.com/tags/architecture">architecture</a></li>
+            
+          </ul>
+        </div>
+        <div class="col-lg-5 col-md-6 text-center text-md-right mt-4 mt-md-0">
+<ul class="social-links has-bg-color list-unstyled list-inline" style="line-height:0">
+  <li class="list-inline-item">
+    
+    <a class="resp-sharing-button__link d-block" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.frankneff.com%2fblog%2f2023-09-11-securing-isolated-systems-caveats-of-plain-oauth-flows-how-to-solve%2f" target="_blank"
+      rel="noopener" aria-label="">
+      <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
+        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+          <i class="lab la-facebook-f text-dark"></i>
+        </div>
+      </div>
+    </a>
+  </li>
+
+  <li class="list-inline-item">
+    
+    <a class="resp-sharing-button__link d-block" href="https://twitter.com/intent/tweet/?text=Securing%20isolated%20systems%3a%20Caveats%20of%20using%20plain%20OAUTH%20flows%20and%20how%20to%20solve%20them&amp;url=https%3a%2f%2fwww.frankneff.com%2fblog%2f2023-09-11-securing-isolated-systems-caveats-of-plain-oauth-flows-how-to-solve%2f"
+      target="_blank" rel="noopener" aria-label="">
+      <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+          <i class="lab la-twitter text-dark"></i>
+        </div>
+      </div>
+    </a>
+  </li>
+
+  <li class="list-inline-item">
+    
+    <a class="resp-sharing-button__link d-block" href="https://plus.google.com/share?url=https%3a%2f%2fwww.frankneff.com%2fblog%2f2023-09-11-securing-isolated-systems-caveats-of-plain-oauth-flows-how-to-solve%2f" target="_blank"
+      rel="noopener" aria-label="">
+      <div class="resp-sharing-button resp-sharing-button--google resp-sharing-button--small">
+        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+          <i class="lab la-google-plus-g text-dark"></i>
+        </div>
+      </div>
+    </a>
+  </li>
+
+  <li class="list-inline-item">
+    
+    <a class="resp-sharing-button__link d-block" href="mailto:?subject=Securing%20isolated%20systems%3a%20Caveats%20of%20using%20plain%20OAUTH%20flows%20and%20how%20to%20solve%20them&amp;body=https%3a%2f%2fwww.frankneff.com%2fblog%2f2023-09-11-securing-isolated-systems-caveats-of-plain-oauth-flows-how-to-solve%2f" target="_self"
+      rel="noopener" aria-label="">
+      <div class="resp-sharing-button resp-sharing-button--email resp-sharing-button--small">
+        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+          <i class="las la-envelope text-dark"></i>
+        </div>
+      </div>
+    </a>
+  </li>
+
+  <li class="list-inline-item">
+    
+    <a class="resp-sharing-button__link d-block" href="whatsapp://send?text=Securing%20isolated%20systems%3a%20Caveats%20of%20using%20plain%20OAUTH%20flows%20and%20how%20to%20solve%20them%20https%3a%2f%2fwww.frankneff.com%2fblog%2f2023-09-11-securing-isolated-systems-caveats-of-plain-oauth-flows-how-to-solve%2f" target="_blank"
+      rel="noopener" aria-label="">
+      <div class="resp-sharing-button resp-sharing-button--whatsapp resp-sharing-button--small">
+        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+          <i class="lab la-whatsapp text-dark"></i>
+        </div>
+      </div>
+    </a>
+  </li>
+
+</ul></div>
+      </div>
+    </div>
+
+    <div class="single-post-author">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="media d-block d-sm-flex text-center text-sm-left">
+            
+            <a href="https://www.frankneff.com/author/frank-neff/">
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img loading="lazy" decoding="async" src="/images/author/frank-neff_hu33cac40e2c9881176752d2c4d63be02f_20224_150x150_resize_q95_h2_box.webp" alt="Frank Neff" class="img-fluid rounded-circle mr-0 mr-sm-4 mb-4" width="150" height="150" onerror="this.onerror='null';this.src='\/images\/author\/frank-neff_hu33cac40e2c9881176752d2c4d63be02f_20224_150x150_resize_q95_box.jpg'">
+ 
+ 
+ 
+
+
+            </a>
+            <div class="media-body">
+              <p class="font-primary mb-1">Written By</p>
+              <h4><a href="https://www.frankneff.com/author/frank-neff/" class="text-dark font-weight-700">Frank Neff</a></h4>
+              <p class="font-primary">I see myself as a curious problem solver. On a life-long mission to enable people, improve tools and optimize processes, I build software to make things work. Moreover, I like to talk about technology and sharing know-how in a team to improve my own …</p>
+              <ul class="social-links list-unstyled list-inline ml-0 ml-sm-n2">
+                
+                <li class="list-inline-item"><a href="https://twitter.com/frank_neff">
+                    <i class="lab la-twitter"></i>
+                  </a></li>
+                
+                <li class="list-inline-item"><a href="https://www.linkedin.com/in/frankneff/">
+                    <i class="lab la-linkedin-in"></i>
+                  </a></li>
+                
+                <li class="list-inline-item"><a href="https://github.com/frne">
+                    <i class="lab la-github"></i>
+                  </a></li>
+                
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="single-post-similer">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="row mt-3">
+            <div class="col-12">
+              <h3 class="text-dark font-weight-800 mb-4 pb-2">You May Also Like</h3>
+            </div>
+            
+              
+            <div class="col-md-6">
+              <article class="card post-card">
+  
+  <a href="https://www.frankneff.com/blog/2019-11-19-spring-security-oauth-blues-simplicity/">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<picture>
+  <source srcset="/images/post/2019-11-19-spring-security-oauth-blues-simplicity_hubc30c910d210ed67678c23912f4dd541_32111_545x0_resize_q95_h2_box.webp" media="(max-width: 575px)">
+  <source srcset="/images/post/2019-11-19-spring-security-oauth-blues-simplicity_hubc30c910d210ed67678c23912f4dd541_32111_600x0_resize_q95_h2_box.webp" media="(max-width: 767px)">
+  <source srcset="/images/post/2019-11-19-spring-security-oauth-blues-simplicity_hubc30c910d210ed67678c23912f4dd541_32111_700x0_resize_q95_h2_box.webp" media="(max-width: 991px)">
+  <source srcset="/images/post/2019-11-19-spring-security-oauth-blues-simplicity_hubc30c910d210ed67678c23912f4dd541_32111_1110x0_resize_q95_h2_box.webp">
+  <img loading="lazy" decoding="async" class="w-100 h-auto rounded" src="/images/post/2019-11-19-spring-security-oauth-blues-simplicity_hubc30c910d210ed67678c23912f4dd541_32111_1110x0_resize_q95_box.jpg" alt="The Spring Security Oauth2 Blues - Simplicity" width="970" height="500">
 </picture>
  
  
@@ -339,40 +860,163 @@ FrankNeff<span class="text-muted">.com</span>
         
       </li>
       <li class="list-inline-item mb-2">
-        <span>11 Sep, 2023</span>
+        <span>14 Dec, 2019</span>
       </li>
     </ul>
     <ul class="card-meta list-inline mb-2">
       <ul class="card-meta-tag list-inline">
         
-        <li class="list-inline-item"><a href="https://www.frankneff.com/tags/oauth">oauth</a></li>
-        
-        <li class="list-inline-item"><a href="https://www.frankneff.com/tags/oidc">oidc</a></li>
+        <li class="list-inline-item"><a href="https://www.frankneff.com/tags/spring">spring</a></li>
         
         <li class="list-inline-item"><a href="https://www.frankneff.com/tags/security">security</a></li>
-        
-        <li class="list-inline-item"><a href="https://www.frankneff.com/tags/authentication">authentication</a></li>
-        
-        <li class="list-inline-item"><a href="https://www.frankneff.com/tags/authorization">authorization</a></li>
-        
-        <li class="list-inline-item"><a href="https://www.frankneff.com/tags/architecture">architecture</a></li>
         
       </ul>
     </ul>
     <h3 class="mb-3">
-      <a class="post-title" href="https://www.frankneff.com/blog/2023-09-11-securing-isolated-systems-caveats-of-plain-oauth-flows-how-to-solve/">Securing isolated systems: Caveats of using plain OAUTH flows and how to solve them</a>
+      <a class="post-title" href="https://www.frankneff.com/blog/2019-11-19-spring-security-oauth-blues-simplicity/">The Spring Security Oauth2 Blues - Simplicity</a>
     </h3>
-    <p><p>While OIDC and OAUTH are well-known standards, they don&rsquo;t fit every purpose &ldquo;out of the box.&rdquo; In businesses with <strong>special
-regulations</strong> like banking, health care, etc., non-functional requirements to auth can be challenging. Different
-solutions and ways were evaluated to create a new identity provider for a medical network. The first approach was &ldquo;just&rdquo;
-using simple <strong>OAUTH</strong> by its most famous <strong>Authorization Code Flow</strong>. Of course, it failed fast, and I&rsquo;ll show why and
-how we solved it in this post.</p></p>
+    <p><p>I personally like the Spring Framework and its security components, because it&rsquo;s pretty full-featured and easy to use,
+but when it comes to Spring Security OAuth2, there&rsquo;s a huge quality breakdown. In this (probably series) of blogposts,
+I&rsquo;ll try to sum up the good, the bad, the evil and why I ended up completely dropping Spring Security OAuth2.</p></p>
 
     
   </div>
 </article>
-          </div>
+            </div>
+            
+            <div class="col-md-6">
+              <article class="card post-card">
+  
+  <a href="https://www.frankneff.com/blog/2022-05-07-umfrage_erfolg_digitalisierung_schweizer_gesundheit/">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<picture>
+  <source srcset="/images/post/2022-05-07-umfrage_digitalisierung_gesundheit_hu4164209bef11d723c5c8dcc0112dc7dd_130500_545x0_resize_q95_h2_box_3.webp" media="(max-width: 575px)">
+  <source srcset="/images/post/2022-05-07-umfrage_digitalisierung_gesundheit_hu4164209bef11d723c5c8dcc0112dc7dd_130500_600x0_resize_q95_h2_box_3.webp" media="(max-width: 767px)">
+  <source srcset="/images/post/2022-05-07-umfrage_digitalisierung_gesundheit_hu4164209bef11d723c5c8dcc0112dc7dd_130500_700x0_resize_q95_h2_box_3.webp" media="(max-width: 991px)">
+  <source srcset="/images/post/2022-05-07-umfrage_digitalisierung_gesundheit_hu4164209bef11d723c5c8dcc0112dc7dd_130500_1110x0_resize_q95_h2_box_3.webp">
+  <img loading="lazy" decoding="async" class="w-100 h-auto rounded" src="/images/post/2022-05-07-umfrage_digitalisierung_gesundheit_hu4164209bef11d723c5c8dcc0112dc7dd_130500_1110x0_resize_box_3.png" alt="Umfrage: Erfolg der Digitalisierung in der Schweizer Gesundheitsbranche" width="1110" height="569">
+</picture>
+ 
+ 
+ 
+
+
+  </a>
+  
+  <div class="card-body">
+    <ul class="card-meta list-inline">
+      <li class="list-inline-item mb-2">
+        
+        <a href="https://www.frankneff.com/author/frank-neff/" class="card-meta-author">
           
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img loading="lazy" decoding="async" src="/images/author/frank-neff_hu33cac40e2c9881176752d2c4d63be02f_20224_26x26_resize_q95_h2_box.webp" alt="Frank Neff" class="w-auto" width="26" height="26" onerror="this.onerror='null';this.src='\/images\/author\/frank-neff_hu33cac40e2c9881176752d2c4d63be02f_20224_26x26_resize_q95_box.jpg'">
+ 
+ 
+ 
+
+
+          
+          <span>Frank Neff</span>
+        </a>
+        
+      </li>
+      <li class="list-inline-item mb-2">
+        <span>07 May, 2022</span>
+      </li>
+    </ul>
+    <ul class="card-meta list-inline mb-2">
+      <ul class="card-meta-tag list-inline">
+        
+        <li class="list-inline-item"><a href="https://www.frankneff.com/tags/studie">studie</a></li>
+        
+        <li class="list-inline-item"><a href="https://www.frankneff.com/tags/german">german</a></li>
+        
+      </ul>
+    </ul>
+    <h3 class="mb-3">
+      <a class="post-title" href="https://www.frankneff.com/blog/2022-05-07-umfrage_erfolg_digitalisierung_schweizer_gesundheit/">Umfrage: Erfolg der Digitalisierung in der Schweizer Gesundheitsbranche</a>
+    </h3>
+    <p><p>Als Teil des Leistungsnachweises meiner Weiterbildung <strong>CAS IT Management und Agile Transformation</strong> an der
+<a href="https://hslu.ch">Hochschule Luzern</a> schreibe ich eine Arbeit über den Erfolg der Digitalisierung in der Schweizer
+Gesundheitsbranche in Form eines Blogposts. Teil der Arbeit ist eine quantitative Studie in Form einer Umfrage an
+Fachpersonen, Manager und Entscheider in der <strong>Schweizer Gesundheitsbranche</strong> zum Thema.</p></p>
+
+    
+  </div>
+</article>
+            </div>
+            
+          </div>
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
 ---
-title: "Securing closed systems: Caveats of using plain OAUTH flows and how to solve them"
+title: "Securing isolated systems: Caveats of using plain OAUTH flows and how to solve them"
 description: "While OIDC and OAUTH are well-known standards, they don't fit every purpose \"out of the box\". In businesses with special requirements, like health-care, non-functional requirements to auth can be challenging."
-image: "images/post/2023-09-11-securing-closed-systems-caveats-of-plain-oauth-flows-how-to-solve/header.png"
+image: "images/post/2023-09-11-securing-isolated-systems-caveats-of-plain-oauth-flows-how-to-solve/header.png"
 imgcaption: "Photo by [MART PRODUCTION](https://www.pexels.com/photo/photo-of-doctor-looking-deeply-unto-the-screen-7088530/) from [Pexels](https://www.pexels.com/)"
 date: 2023-09-11T11:10:00+02:00
 author: "Frank Neff"
@@ -41,12 +41,12 @@ We implicitly anticipated that all clients:
 - Are hosted on a central server (SaaS)
 
 {{< image 
-  src="/diagrams/2023-09-11-securing-closed-systems-caveats-of-plain-oauth-flows-how-to-solve/high-level-architecture-assumption.svg" 
+  src="/diagrams/2023-09-11-securing-isolated-systems-caveats-of-plain-oauth-flows-how-to-solve/high-level-architecture-assumption.svg" 
   alt="High-level architecture diagram showing wrong assumptions on auth-flow and deployment model"
   title="Assumed high-level architecture of the authentication flow"
-  caption="Assumed high-level architecture of the authentication flow ([source](/diagrams/2023-09-11-securing-closed-systems-caveats-of-plain-oauth-flows-how-to-solve/high-level-architecture-assumption.drawio))" >}}
+  caption="Assumed high-level architecture of the authentication flow ([source](/diagrams/2023-09-11-securing-isolated-systems-caveats-of-plain-oauth-flows-how-to-solve/high-level-architecture-assumption.drawio))" >}}
 
-Of course, both assumptions were dead wrong. On the one hand, many clients were closed "fat clients" running locally on 
+Of course, both assumptions were dead wrong. On the one hand, many clients were isolated "fat clients" running locally on 
 PCs. While they had an internet connection and could communicate with HTTP APIs, they struggled to open browser windows / 
 redirect clients to web endpoints. But there was another, way more significant challenge, which lies in the deployment 
 model of many healthcare SaaS providers:
@@ -60,10 +60,10 @@ web-based, are hosted within the healthcare facility or an IT partner, using one
 own machine with their dedicated database.
 
 {{< image
-  src="/diagrams/2023-09-11-securing-closed-systems-caveats-of-plain-oauth-flows-how-to-solve/high-level-architecture-reality.svg"
+  src="/diagrams/2023-09-11-securing-isolated-systems-caveats-of-plain-oauth-flows-how-to-solve/high-level-architecture-reality.svg"
   alt="High-level architecture diagram showing realistic deployment model and caveats"
   title="Assumed high-level architecture of the authentication flow"
-  caption="Reality high-level architecture & caveats ([source](/diagrams/2023-09-11-securing-closed-systems-caveats-of-plain-oauth-flows-how-to-solve/high-level-architecture-reality.drawio))" >}}
+  caption="Reality high-level architecture & caveats ([source](/diagrams/2023-09-11-securing-isolated-systems-caveats-of-plain-oauth-flows-how-to-solve/high-level-architecture-reality.drawio))" >}}
 
 In this area (A) we have to deal with all sorts of security mechanisms like network access control, firewalling, 
 isolation, IDS/IPS, and many more, which we cannot anticipate. Some minor, self-operated instances (C) even used a 
@@ -103,7 +103,7 @@ browser and then enter a 4 to 6-digit code or scan a QR code that was shown on t
 It's actually designed to authenticate devices that are not fully capable of executing the other flows.
 
 {{< image
-  src="/images/post/2023-09-11-securing-closed-systems-caveats-of-plain-oauth-flows-how-to-solve/github-device-code-auth.png"
+  src="/images/post/2023-09-11-securing-isolated-systems-caveats-of-plain-oauth-flows-how-to-solve/github-device-code-auth.png"
   alt="Screenshot of GitHubs device code auth screen"
   title="Screenshot of GitHubs device code auth screen"
   caption="GitHubs device code auth screen as used for GitHub CLI ([source](https://github.com/cli/oauth))"
