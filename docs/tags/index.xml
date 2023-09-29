@@ -6,7 +6,61 @@
     <description>Recent content in Tags on FrankNeff.com - Technology meets Leadership</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 07 May 2022 11:10:00 +0200</lastBuildDate><atom:link href="https://www.frankneff.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Sep 2023 11:10:00 +0200</lastBuildDate><atom:link href="https://www.frankneff.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>architecture</title>
+      <link>https://www.frankneff.com/tags/architecture/</link>
+      <pubDate>Mon, 11 Sep 2023 11:10:00 +0200</pubDate>
+      
+      <guid>https://www.frankneff.com/tags/architecture/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>authentication</title>
+      <link>https://www.frankneff.com/tags/authentication/</link>
+      <pubDate>Mon, 11 Sep 2023 11:10:00 +0200</pubDate>
+      
+      <guid>https://www.frankneff.com/tags/authentication/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>authorization</title>
+      <link>https://www.frankneff.com/tags/authorization/</link>
+      <pubDate>Mon, 11 Sep 2023 11:10:00 +0200</pubDate>
+      
+      <guid>https://www.frankneff.com/tags/authorization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>oauth</title>
+      <link>https://www.frankneff.com/tags/oauth/</link>
+      <pubDate>Mon, 11 Sep 2023 11:10:00 +0200</pubDate>
+      
+      <guid>https://www.frankneff.com/tags/oauth/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>oidc</title>
+      <link>https://www.frankneff.com/tags/oidc/</link>
+      <pubDate>Mon, 11 Sep 2023 11:10:00 +0200</pubDate>
+      
+      <guid>https://www.frankneff.com/tags/oidc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>security</title>
+      <link>https://www.frankneff.com/tags/security/</link>
+      <pubDate>Mon, 11 Sep 2023 11:10:00 +0200</pubDate>
+      
+      <guid>https://www.frankneff.com/tags/security/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>german</title>
       <link>https://www.frankneff.com/tags/german/</link>
@@ -184,15 +238,6 @@
       <pubDate>Wed, 26 Feb 2020 17:05:18 +0100</pubDate>
       
       <guid>https://www.frankneff.com/tags/scala.js/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>security</title>
-      <link>https://www.frankneff.com/tags/security/</link>
-      <pubDate>Sat, 14 Dec 2019 13:58:28 +0100</pubDate>
-      
-      <guid>https://www.frankneff.com/tags/security/</guid>
       <description></description>
     </item>
     
