@@ -7,3 +7,4 @@ Technologies used:
 
 - Markdown (see [content directory](./content))
 - [Hugo](https://gohugo.io/) - Static Page Builder & Web Framework
+- [Draw.io](https://draw.io) Diagrams
