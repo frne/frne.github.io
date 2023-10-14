@@ -49,6 +49,13 @@ ul, li {
    list-style-position: inside;
 }
 
-figcaption a {
-   border-bottom: 1px dotted $color-primary !important;
+figcaption {
+   a {
+      color: $color-primary !important;
+
+      &:hover,
+      &:active {
+         text-decoration: underline;
+      }
+   }
 }
