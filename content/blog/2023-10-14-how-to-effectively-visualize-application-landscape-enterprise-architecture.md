@@ -17,15 +17,13 @@ systems, component diagrams are not enough! When it comes to analysis or transfo
 on in this post.
 <!--more-->
 
-TODO: Source
-
 ## Definition & Dimensions
 
 {{< image
   src="/images/post/2023-10-14-how-to-effectively-visualize-application-landscape-enterprise-architecture/template.png"
   alt="Screenshot of GitHubs device code auth screen"
   title="Screenshot of GitHubs device code auth screen"
-  caption="Template file with highlighted dimensions ([source](https://github.com/cli/oauth))"
+  caption="Template file with highlighted dimensions"
   command="fill" class="img-fluid" >}}
 
 The template shown above is a simple matrix with two dimensions. Later more will be added, but first it is crucial to 
