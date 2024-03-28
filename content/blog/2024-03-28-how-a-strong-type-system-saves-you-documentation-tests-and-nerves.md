@@ -1,8 +1,8 @@
 ---
-title: "How a strict type system saves you documentation, tests, and nerves"
-description: "TODO"
-image: "images/post/2024-03-28-how-a-strict-type-system-saves-you-documentation-tests-and-nerves/header.png"
-imgcaption: "Strict vs. Dynamic Typing by [leolas95 on dev.to](https://dev.to/leolas95/static-and-dynamic-typing-strong-and-weak-typing-5b0m)"
+title: "How a strong type system saves you documentation, tests, and nerves"
+description: "Especially in weakly- or untyped languages, such as the JavaScript or PHP world, the added value of strict type systems is often not recognized. Instead, many discussions and comments revolve around the need for tests or code comments. Contrary to that, in the functional programming world, we leave such checks to the compiler."
+image: "images/post/2024-03-28-how-a-strong-type-system-saves-you-documentation-tests-and-nerves/header.png"
+imgcaption: "Static and Dynamic typing? by [leolas95 on dev.to](https://dev.to/leolas95/static-and-dynamic-typing-strong-and-weak-typing-5b0m)"
 date: 2024-03-28T12:25:00+02:00
 author: "Frank Neff"
 tags: ["compiler", "type system", "javascript", "scala", "software-design"]

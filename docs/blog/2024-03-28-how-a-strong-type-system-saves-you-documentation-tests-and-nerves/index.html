@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Software-Design</title>
+  <title>How a strong type system saves you documentation, tests, and nerves</title>
 
   <meta name="author" content="Frank Neff">
-  <meta name="description" content="  ">
+  <meta name="description" content=" Especially in weakly- or untyped languages, such as the JavaScript or PHP world, the added value of strict type systems is often not recognized. Instead, many discussions and comments revolve around the need for tests or code comments. Contrary to that, in the functional programming world, we leave such checks to the compiler. ">
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
@@ -50,6 +50,51 @@ AUTHOR WEBSITE: https://themefisher.com
 
   <!-- Schema -->
   
+
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "blog",
+        "name": "How a strong type system saves you documentation, tests, and nerves",
+        "headline": "How a strong type system saves you documentation, tests, and nerves",
+        "alternativeHeadline": "",
+        "description": "Especially in weakly- or untyped languages, such as the JavaScript or PHP world, the added value of strict type systems is often not recognized. Instead, many discussions and comments revolve around the need for tests or code comments. Contrary to that, in the functional programming world, we leave such checks to the compiler.",
+        "inLanguage": "en-us",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.frankneff.com/blog/2024-03-28-how-a-strong-type-system-saves-you-documentation-tests-and-nerves/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Frank Neff"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Frank Neff"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Frank Neff"
+        },
+        "copyrightHolder" : "Frank Neff",
+        "copyrightYear" : "2024",
+        "dateCreated": "2024-03-28T12:25:00.00Z",
+        "datePublished": "2024-03-28T12:25:00.00Z",
+        "dateModified": "2024-03-28T12:25:00.00Z",
+        "publisher":{
+            "@type": "Person",
+            "name": "Frank Neff"
+        },
+        "image": "https://www.frankneff.com/images/post/2024-03-28-how-a-strong-type-system-saves-you-documentation-tests-and-nerves/header.png",
+        "url" : "https://www.frankneff.com/blog/2024-03-28-how-a-strong-type-system-saves-you-documentation-tests-and-nerves/",
+        "wordCount" : "1609",
+        "genre" : [ "Programming" , "Functional Programming" ],
+        "keywords" : [ "compiler" , "type system" , "javascript" , "scala" , "software-design" ]
+    }
+</script>
+
 
   
   <script data-ad-client="ca-pub-0438620747623841" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -183,44 +228,6 @@ FrankNeff<span class="text-muted">.com</span>
 </div>
 
   
-  <section class="section-sm pb-2 page-header">
-  <div class="container">
-    <div class="row">
-      <div class="col-8 mx-auto text-center">
-
-        
-        
-        <h4 class="mb-3 text-dark font-weight-bold">Showing posts from <mark>Software-Design</mark></h4>
-        
-        
-
-
-        <ul class="list-inline breadcrumb-menu">
-        
-        
-        <li class="list-inline-item"><a href="/">Home</a></li>
-        
-        
-        
-        <li class="list-inline-item">/ &nbsp; <a href="https://www.frankneff.com/tags">Tags</a></li>
-        
-        
-        
-        
-        
-        <li class="list-inline-item">/ &nbsp; <a href="https://www.frankneff.com/tags/software-design">Software design</a></li>
-        
-        
-        
-        
-        
-        
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-  
   
 
 
@@ -228,15 +235,70 @@ FrankNeff<span class="text-muted">.com</span>
 
 <section class="section-sm">
   <div class="container">
-    <div class="row no-gutters justify-content-center">
+    <div class="row justify-content-center">
       <div class="col-lg-10">
-        <div class="row">
+        <div class="text-center mb-5">
+          <h1 class="h2 mb-4 post-title">How a strong type system saves you documentation, tests, and nerves</h1>
+          <ul class="card-meta list-inline">
+            <li class="list-inline-item">
+              <a href="#!" class="card-meta-author">
+                
+                <a href="https://www.frankneff.com/author/frank-neff/" class="card-meta-author">
+                  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img loading="lazy" decoding="async" src="/images/author/frank-neff_hu33cac40e2c9881176752d2c4d63be02f_20224_26x26_resize_q95_h2_box.webp" alt="Frank Neff" class="w-auto" width="26" height="26" onerror="this.onerror='null';this.src='\/images\/author\/frank-neff_hu33cac40e2c9881176752d2c4d63be02f_20224_26x26_resize_q95_box.jpg'">
+ 
+ 
+ 
+
+
+                  <span>Frank Neff</span>
+                </a>
+                
+              </a>
+            </li>
+            <li class="list-inline-item">|</li>
+            <li class="list-inline-item">
+              <span>28 March 2024</span>
+            </li>
+          </ul>
+        </div>
+
+        
+        <div class="mb-5 text-center">
           
-          <div class="col-lg-6">
-            <article class="card post-card">
-  
-  <a href="https://www.frankneff.com/blog/2024-03-28-how-a-strong-type-system-saves-you-documentation-tests-and-nerves/">
-    
+            
 
 
 
@@ -279,7 +341,636 @@ FrankNeff<span class="text-muted">.com</span>
   <source srcset="/images/post/2024-03-28-how-a-strong-type-system-saves-you-documentation-tests-and-nerves/header_hu69060c312db64953786dca1411c77673_174293_600x0_resize_q95_h2_box_3.webp" media="(max-width: 767px)">
   <source srcset="/images/post/2024-03-28-how-a-strong-type-system-saves-you-documentation-tests-and-nerves/header_hu69060c312db64953786dca1411c77673_174293_700x0_resize_q95_h2_box_3.webp" media="(max-width: 991px)">
   <source srcset="/images/post/2024-03-28-how-a-strong-type-system-saves-you-documentation-tests-and-nerves/header_hu69060c312db64953786dca1411c77673_174293_1110x0_resize_q95_h2_box_3.webp">
-  <img loading="lazy" decoding="async" class="w-100 h-auto rounded" src="/images/post/2024-03-28-how-a-strong-type-system-saves-you-documentation-tests-and-nerves/header_hu69060c312db64953786dca1411c77673_174293_1110x0_resize_box_3.png" alt="How a strong type system saves you documentation, tests, and nerves" width="1129" height="572">
+  <img loading="lazy" decoding="async" class="img-fluid rounded" src="/images/post/2024-03-28-how-a-strong-type-system-saves-you-documentation-tests-and-nerves/header_hu69060c312db64953786dca1411c77673_174293_1110x0_resize_box_3.png" alt="Post image" width="1129" height="572">
+</picture>
+ 
+ 
+ 
+
+
+          
+          <figcaption class="text-muted">Static and Dynamic typing? by <a href="https://dev.to/leolas95/static-and-dynamic-typing-strong-and-weak-typing-5b0m">leolas95 on dev.to</a></figcaption>
+        </div>
+        
+
+
+        <div class="content">
+          <p>I was recently inspired to finally write this post. Especially in <strong>weakly- or untyped</strong> languages, such as
+the JavaScript or PHP world, the added value of strict type systems is often not recognized. Instead, many discussions
+and comments revolve around the <strong>need for tests</strong> or code comments. Contrary to that, in the functional programming
+world, we <strong>leave such checks to the compiler</strong>. In this post I would like to give a short overview and
+explain how to use a strict type system for everyday checks instead of writing type checks, tests and documentation for it.</p>
+<h2 id="the-problem">The Problem</h2>
+<blockquote>
+<p>While a human being has a good understanding of what a birthdate is, its boundaries, semantics, and how it&rsquo;s
+syntactically expressed, many programming languages haven&rsquo;t. Depending on the technologies used, one needs to make
+extensive efforts regarding tests, documentation, and validation to ensure/enforce said boundaries and semantics.</p>
+</blockquote>
+<p>To explain the value of types over tests and comments, let us start with a very simple example in JavaScript:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// js
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">birthDateTimestamp</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">623458800</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">birthdateObj</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Date(<span style="color:#ae81ff">1989</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">4</span>);
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+<div class="notices note" ><p>The JS <code>Date</code> object actually does not add any validation or security, because we&rsquo;re still able to construct
+invalid dates, e.g. <code>new Date(2025, 1, 29)</code> or <code>new Date(9999, 99, 99)</code>. A Google search for the term &ldquo;<em>javascript
+validate date object</em>&rdquo; returns 135’000’000 results.</p></div>
+
+<p>The second line above represents a simple birthdate using JavaScripts own <code>Date</code> object. To reduce the complexity of the
+example, we&rsquo;re only working with the <code>Date</code> object and leave all other possible representations like timestamps and date
+strings aside. However, as JS is weakly typed, we&rsquo;ll have some effort to safely get the age by a given birthdate:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// js
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#75715e">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * Returns the current age by a given birthdate
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * @param birthdate Date object representing the birthdate of a human
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * @returns {number|null} Either the age as a number or null if input was invalid
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> */</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">getAge</span>(<span style="color:#a6e22e">birthdate</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">birthdate</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span> <span style="color:#f92672">&amp;&amp;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">birthdate</span> <span style="color:#66d9ef">instanceof</span> Date <span style="color:#f92672">&amp;&amp;</span>
+</span></span><span style="display:flex;"><span>        isFinite(<span style="color:#a6e22e">birthdate</span>) <span style="color:#f92672">&amp;&amp;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">!</span>isNaN(<span style="color:#a6e22e">birthdate</span>.<span style="color:#a6e22e">getTime</span>()) <span style="color:#f92672">&amp;&amp;</span>
+</span></span><span style="display:flex;"><span>        Date.<span style="color:#a6e22e">now</span>() <span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">birthdate</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">ageDifMs</span> <span style="color:#f92672">=</span> Date.<span style="color:#a6e22e">now</span>() <span style="color:#f92672">-</span> <span style="color:#a6e22e">birthdate</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">ageDate</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Date(<span style="color:#a6e22e">ageDifMs</span>); <span style="color:#75715e">// milliseconds from epoch
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#66d9ef">return</span> Math.<span style="color:#a6e22e">abs</span>(<span style="color:#a6e22e">ageDate</span>.<span style="color:#a6e22e">getUTCFullYear</span>() <span style="color:#f92672">-</span> <span style="color:#ae81ff">1970</span>);
+</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">null</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// correct:
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;1: &#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">getAge</span>(<span style="color:#66d9ef">new</span> Date(<span style="color:#ae81ff">1989</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">4</span>))); <span style="color:#75715e">// 34
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// correct:
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;2: &#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">getAge</span>(<span style="color:#66d9ef">null</span>)); <span style="color:#75715e">// null
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// correct:
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;3: &#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">getAge</span>(<span style="color:#66d9ef">undefined</span>)); <span style="color:#75715e">// null
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// correct, but needs documentation that the function only takes Date:
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;4: &#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">getAge</span>(<span style="color:#ae81ff">623458800</span>)); <span style="color:#75715e">// null
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// correct, but needs documentation that the function only takes Date:
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;5: &#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">getAge</span>(<span style="color:#e6db74">&#39;1989-10-04T00:00:00+0100&#39;</span>)); <span style="color:#75715e">// null
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// incorrect, there is no 13th month:
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;6: &#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">getAge</span>(<span style="color:#66d9ef">new</span> Date(<span style="color:#ae81ff">1989</span>, <span style="color:#ae81ff">13</span>, <span style="color:#ae81ff">4</span>))); <span style="color:#75715e">// 34
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// incorrect, there is no 32th day:
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;7: &#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">getAge</span>(<span style="color:#66d9ef">new</span> Date(<span style="color:#ae81ff">1989</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">32</span>))); <span style="color:#75715e">// 34
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// correct:
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;8: &#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">getAge</span>(<span style="color:#66d9ef">new</span> Date(<span style="color:#ae81ff">2124</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">4</span>))); <span style="color:#75715e">// null
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// incorrect, 2023 was not a leap year:
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;9: &#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">getAge</span>(<span style="color:#66d9ef">new</span> Date(<span style="color:#ae81ff">2023</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">29</span>))); <span style="color:#75715e">// 1
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>In the <code>getAge()</code> function above, we need to care about 4 different kinds of things:</p>
+<ol>
+<li>Make sure that the provided parameter actually is <code>Date</code> object, or in short <strong>type checking</strong></li>
+<li>Provide parameter <strong>documentation</strong> to let implementers know we expect a <code>Date</code> object</li>
+<li><strong>Validatation</strong> of the <code>Date</code> object, so we&rsquo;re sure that it represents a real date</li>
+<li><strong>Calculation</strong> of the difference between the date and now and transform it to years</li>
+</ol>
+<h2 id="strict-types--better-abstractions">Strict types &amp; better abstractions</h2>
+<p>If we try the (almost) same example with a <strong>strictly typed language</strong> with a (subjectively) better <strong>date abstraction</strong>,
+the task becomes a lot easier. The type system allows us, to just take care of nr. 4, because 1 to 3 are <strong>taken care of
+by the compiler</strong>.</p>
+<p>In the following example (in <strong><a href="https://scala-lang.org">Scala</a></strong>), the
+<strong><a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html">java.time.LocalDate</a></strong> object only lets us create
+valid dates. It even detects, that 2023 isn&rsquo;t a leap year:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-scala" data-lang="scala"><span style="display:flex;"><span><span style="color:#75715e">// scala
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">import</span> java.time.<span style="color:#f92672">{</span><span style="color:#a6e22e">Instant</span><span style="color:#f92672">,</span> <span style="color:#a6e22e">LocalDate</span><span style="color:#f92672">,</span> <span style="color:#a6e22e">Month</span><span style="color:#f92672">,</span> <span style="color:#a6e22e">ZoneId</span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#66d9ef">def</span> getAge<span style="color:#f92672">(</span>birthdate<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">LocalDate</span><span style="color:#f92672">)</span><span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Int</span> <span style="color:#f92672">=</span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span>  birthdate<span style="color:#f92672">.</span>until<span style="color:#f92672">(</span><span style="color:#a6e22e">LocalDate</span><span style="color:#f92672">.</span>now<span style="color:#f92672">()).</span>getYears
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// correct:
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>getAge<span style="color:#f92672">(</span><span style="color:#a6e22e">LocalDate</span><span style="color:#f92672">.</span>of<span style="color:#f92672">(</span><span style="color:#ae81ff">1989</span><span style="color:#f92672">,</span> <span style="color:#a6e22e">Month</span><span style="color:#f92672">.</span><span style="color:#a6e22e">OCTOBER</span><span style="color:#f92672">,</span> <span style="color:#ae81ff">4</span><span style="color:#f92672">))</span> <span style="color:#75715e">// 34
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// same, just with a number instead of enum
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>getAge<span style="color:#f92672">(</span><span style="color:#a6e22e">LocalDate</span><span style="color:#f92672">.</span>of<span style="color:#f92672">(</span><span style="color:#ae81ff">1989</span><span style="color:#f92672">,</span> <span style="color:#ae81ff">10</span><span style="color:#f92672">,</span> <span style="color:#ae81ff">4</span><span style="color:#f92672">))</span> <span style="color:#75715e">// 34
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// correct, doesn&#39;t compile:
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>getAge<span style="color:#f92672">(</span><span style="color:#a6e22e">LocalDate</span><span style="color:#f92672">.</span>of<span style="color:#f92672">(</span><span style="color:#66d9ef">null</span><span style="color:#f92672">))</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// valid
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>getAge<span style="color:#f92672">(</span><span style="color:#a6e22e">LocalDate</span><span style="color:#f92672">.</span>ofInstant<span style="color:#f92672">(</span><span style="color:#a6e22e">Instant</span><span style="color:#f92672">.</span>ofEpochSecond<span style="color:#f92672">(</span><span style="color:#ae81ff">623458800</span><span style="color:#f92672">),</span> <span style="color:#a6e22e">ZoneId</span><span style="color:#f92672">.</span>systemDefault<span style="color:#f92672">()))</span> <span style="color:#75715e">// 34
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// correct, doesn&#39;t compile:
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>getAge<span style="color:#f92672">(</span><span style="color:#a6e22e">LocalDate</span><span style="color:#f92672">.</span>of<span style="color:#f92672">(</span><span style="color:#ae81ff">623458800</span><span style="color:#f92672">))</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// correct, doesn&#39;t compile:
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>getAge<span style="color:#f92672">(</span><span style="color:#a6e22e">LocalDate</span><span style="color:#f92672">.</span>of<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;1989-10-04&#34;</span><span style="color:#f92672">))</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// correct, valid parsed LocalDate
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>getAge<span style="color:#f92672">(</span><span style="color:#a6e22e">LocalDate</span><span style="color:#f92672">.</span>parse<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;1989-10-04&#34;</span><span style="color:#f92672">))</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// correct: DateTimeException: Invalid value for MonthOfYear
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>getAge<span style="color:#f92672">(</span><span style="color:#a6e22e">LocalDate</span><span style="color:#f92672">.</span>of<span style="color:#f92672">(</span><span style="color:#ae81ff">1989</span><span style="color:#f92672">,</span> <span style="color:#ae81ff">13</span><span style="color:#f92672">,</span> <span style="color:#ae81ff">4</span><span style="color:#f92672">))</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// correct: DateTimeException: Invalid value for DayOfMonth
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>getAge<span style="color:#f92672">(</span><span style="color:#a6e22e">LocalDate</span><span style="color:#f92672">.</span>of<span style="color:#f92672">(</span><span style="color:#ae81ff">1989</span><span style="color:#f92672">,</span> <span style="color:#ae81ff">9</span><span style="color:#f92672">,</span> <span style="color:#ae81ff">32</span><span style="color:#f92672">))</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// correct: DateTimeException: Invalid date &#39;February 29&#39; as &#39;2023&#39; is not a leap year
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>getAge<span style="color:#f92672">(</span><span style="color:#a6e22e">LocalDate</span><span style="color:#f92672">.</span>of<span style="color:#f92672">(</span><span style="color:#ae81ff">2023</span><span style="color:#f92672">,</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">,</span> <span style="color:#ae81ff">29</span><span style="color:#f92672">))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>We simplified the code a lot by making use of the type system, which ensures we&rsquo;ll have a hard time creating invalid
+dates. Also, the <code>LocalDate</code> abstraction takes care of a lot of date &amp; time internals like calculations, leap years etc.
+However, this still doesn&rsquo;t guarantee that it&rsquo;s also a valid birthdate. We are still able to construct impossible
+birthdates, e.g. one in the future:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scala" data-lang="scala"><span style="display:flex;"><span><span style="color:#75715e">// scala
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>getAge<span style="color:#f92672">(</span><span style="color:#a6e22e">LocalDate</span><span style="color:#f92672">.</span>of<span style="color:#f92672">(</span><span style="color:#ae81ff">2128</span><span style="color:#f92672">,</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">,</span> <span style="color:#ae81ff">29</span><span style="color:#f92672">))</span> <span style="color:#75715e">// -103
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><br>
+<h2 id="semantics">Semantics</h2>
+<p>Every borthdate is a date, but not vice versa. Therefore, as a <code>Birthdate</code> is a specialization of a <code>Date</code>, we should
+probably create an explicit type for it using encapsulation:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-scala" data-lang="scala"><span style="display:flex;"><span><span style="color:#75715e">// scala
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">import</span> java.time.LocalDate
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#66d9ef">case</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Birthdate</span> <span style="color:#66d9ef">private</span> <span style="color:#f92672">(</span>date<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">LocalDate</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">def</span> age<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Int</span> <span style="color:#f92672">=</span> date<span style="color:#f92672">.</span>until<span style="color:#f92672">(</span><span style="color:#a6e22e">LocalDate</span><span style="color:#f92672">.</span>now<span style="color:#f92672">()).</span>getYears
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">object</span> <span style="color:#a6e22e">Birthdate</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span>  <span style="color:#66d9ef">def</span> of<span style="color:#f92672">(</span>year<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Int</span><span style="color:#f92672">,</span> month<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Int</span><span style="color:#f92672">,</span> day<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Int</span><span style="color:#f92672">)</span><span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Birthdate</span> <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Birthdate</span><span style="color:#f92672">(</span><span style="color:#a6e22e">LocalDate</span><span style="color:#f92672">.</span>of<span style="color:#f92672">(</span>year<span style="color:#f92672">,</span> month<span style="color:#f92672">,</span> day<span style="color:#f92672">))</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Birthdate</span><span style="color:#f92672">.</span>of<span style="color:#f92672">(</span><span style="color:#ae81ff">1989</span><span style="color:#f92672">,</span> <span style="color:#ae81ff">10</span><span style="color:#f92672">,</span> <span style="color:#ae81ff">4</span><span style="color:#f92672">)</span> <span style="color:#75715e">// Birthdate(1989-10-04)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">Birthdate</span><span style="color:#f92672">.</span>of<span style="color:#f92672">(</span><span style="color:#ae81ff">1989</span><span style="color:#f92672">,</span> <span style="color:#ae81ff">10</span><span style="color:#f92672">,</span> <span style="color:#ae81ff">4</span><span style="color:#f92672">).</span>age <span style="color:#75715e">// 34
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>For the developers eye, this is a big improvement because now we know explicitly that we&rsquo;re dealing with a <code>Birthdate</code>
+instead of just a date.</p>
+<p>We do this by wrapping a <code>LocalDate</code> instance into a specific case class, which only exposes specific functions like
+<code>Birthdate.age()</code> in this example. For convenience, and further development, we create a static <code>Birthdate.of</code> function
+that is, paired with a private constructor, the only way to instantiate a <code>Birthdate</code>.</p>
+<p>Naturally, birthdates come with additional constraints. In most cases, a human birthdate must:</p>
+<ul>
+<li>Not be null / zero / undefined</li>
+<li>Be in the past</li>
+<li>Not exceed a specific timespan (e.g. human lifespan for active users)</li>
+</ul>
+<p>Instantiating the new <code>Birthdate</code> type with a date in the future creates a valid <code>Birthdate</code> object, but it contains a
+date that can not be a birth date and therefore is semantically invalid. A type that that is able to represent invalid
+values is called &ldquo;<strong>underrestricted</strong>&rdquo; and should be refactored to be <strong>more restrictive</strong> in practice:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-scala" data-lang="scala"><span style="display:flex;"><span><span style="color:#75715e">// scala
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">import</span> java.time.LocalDate
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">case</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Birthdate</span> <span style="color:#66d9ef">private</span> <span style="color:#f92672">(</span>date<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">LocalDate</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">def</span> age<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Int</span> <span style="color:#f92672">=</span> date<span style="color:#f92672">.</span>until<span style="color:#f92672">(</span><span style="color:#a6e22e">LocalDate</span><span style="color:#f92672">.</span>now<span style="color:#f92672">()).</span>getYears
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">object</span> <span style="color:#a6e22e">Birthdate</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">def</span> of<span style="color:#f92672">(</span>year<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Int</span><span style="color:#f92672">,</span> month<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Int</span><span style="color:#f92672">,</span> day<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Int</span><span style="color:#f92672">)</span><span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Either</span><span style="color:#f92672">[</span><span style="color:#66d9ef">Error</span>, <span style="color:#66d9ef">Birthdate</span><span style="color:#f92672">]</span> <span style="color:#66d9ef">=</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">val</span> date <span style="color:#66d9ef">=</span> <span style="color:#a6e22e">LocalDate</span><span style="color:#f92672">.</span>of<span style="color:#f92672">(</span>year<span style="color:#f92672">,</span> month<span style="color:#f92672">,</span> day<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>date<span style="color:#f92672">.</span>isBefore<span style="color:#f92672">(</span><span style="color:#a6e22e">LocalDate</span><span style="color:#f92672">.</span>now<span style="color:#f92672">()))</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span>      <span style="color:#a6e22e">Right</span><span style="color:#f92672">(</span><span style="color:#a6e22e">Birthdate</span><span style="color:#f92672">(</span>date<span style="color:#f92672">))</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span>      <span style="color:#a6e22e">Left</span><span style="color:#f92672">(</span><span style="color:#a6e22e">Error</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Birthdate must be in the past!&#34;</span><span style="color:#f92672">))</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">case</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Error</span><span style="color:#f92672">(</span>msg<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">String</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Birthdate</span><span style="color:#f92672">.</span>of<span style="color:#f92672">(</span><span style="color:#ae81ff">1989</span><span style="color:#f92672">,</span> <span style="color:#ae81ff">10</span><span style="color:#f92672">,</span> <span style="color:#ae81ff">4</span><span style="color:#f92672">)</span> <span style="color:#75715e">// Right(Birthdate(1989-10-04))
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">Birthdate</span><span style="color:#f92672">.</span>of<span style="color:#f92672">(</span><span style="color:#ae81ff">1989</span><span style="color:#f92672">,</span> <span style="color:#ae81ff">10</span><span style="color:#f92672">,</span> <span style="color:#ae81ff">4</span><span style="color:#f92672">).</span>map<span style="color:#f92672">(</span><span style="color:#66d9ef">_</span><span style="color:#f92672">.</span>age<span style="color:#f92672">).</span>getOrElse<span style="color:#f92672">(</span><span style="color:#ae81ff">0</span><span style="color:#f92672">)</span> <span style="color:#75715e">// 34
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">Birthdate</span><span style="color:#f92672">.</span>of<span style="color:#f92672">(</span><span style="color:#ae81ff">2989</span><span style="color:#f92672">,</span> <span style="color:#ae81ff">10</span><span style="color:#f92672">,</span> <span style="color:#ae81ff">4</span><span style="color:#f92672">)</span> <span style="color:#75715e">// Left(Error(Birthdate must be in the past!))
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">Birthdate</span><span style="color:#f92672">.</span>of<span style="color:#f92672">(</span><span style="color:#ae81ff">2989</span><span style="color:#f92672">,</span> <span style="color:#ae81ff">10</span><span style="color:#f92672">,</span> <span style="color:#ae81ff">4</span><span style="color:#f92672">).</span>map<span style="color:#f92672">(</span><span style="color:#66d9ef">_</span><span style="color:#f92672">.</span>age<span style="color:#f92672">).</span>getOrElse<span style="color:#f92672">(</span><span style="color:#ae81ff">0</span><span style="color:#f92672">)</span> <span style="color:#75715e">// 0
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>Now, the <code>Birthdate.of()</code> function returns either a valid <code>Birthdate</code> object, or an error. By using this type of
+validation, we universally ensure, that a <code>Birthdate</code> object is always valid and semantically correct. Also, the
+type system forces us to handle errors by &ldquo;unwrapping&rdquo; the value out of <code>Either[A, E]</code>. In the example above, we do this
+by calling <code>.map(_.age).getOrElse(0)</code>.</p>
+<h2 id="more-swag-and-syntax-sugar">More swag and syntax sugar</h2>
+<p>To be semantically even more explicit (by using <code>Valid</code> and <code>Invalid</code> instead of <code>Right</code> / <code>Left</code>), to add more syntactic
+sugar, and finally to add more restrictions with ease, we can use <a href="https://typelevel.org/cats/">Cats</a> <code>Validated</code>. This
+does not provide any extra strictness or security, but makes code easier to read and understand.</p>
+<p>By using a bit of library support, we can easily wrap the <code>LocalDate</code>, add several tests / restrictions by adding
+<code>ensure()()</code> calls, and finally map it into our <code>Birthdate</code> object. As <code>Birthdate</code> has a private constructor, this is
+the only possible way to construct a <code>Birthdate</code> object, and therefore enforces validity by design:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-scala" data-lang="scala"><span style="display:flex;"><span><span style="color:#75715e">// scala
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">import</span> cats.data.Validated
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> java.time.LocalDate
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> java.time.temporal.ChronoUnit
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">case</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Birthdate</span> <span style="color:#66d9ef">private</span><span style="color:#f92672">(</span>date<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">LocalDate</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">def</span> age<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Int</span> <span style="color:#f92672">=</span> date<span style="color:#f92672">.</span>until<span style="color:#f92672">(</span><span style="color:#a6e22e">LocalDate</span><span style="color:#f92672">.</span>now<span style="color:#f92672">()).</span>getYears
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">object</span> <span style="color:#a6e22e">Birthdate</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">def</span> of<span style="color:#f92672">(</span>year<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Int</span><span style="color:#f92672">,</span> month<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Int</span><span style="color:#f92672">,</span> day<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Int</span><span style="color:#f92672">)</span><span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Validated</span><span style="color:#f92672">[</span><span style="color:#66d9ef">String</span>, <span style="color:#66d9ef">Birthdate</span><span style="color:#f92672">]</span> <span style="color:#66d9ef">=</span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span>    <span style="color:#a6e22e">Validated</span><span style="color:#f92672">.</span>valid<span style="color:#f92672">(</span><span style="color:#a6e22e">LocalDate</span><span style="color:#f92672">.</span>of<span style="color:#f92672">(</span>year<span style="color:#f92672">,</span> month<span style="color:#f92672">,</span> day<span style="color:#f92672">))</span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span>      <span style="color:#f92672">.</span>ensure<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Must be in the past!&#34;</span><span style="color:#f92672">)(</span><span style="color:#66d9ef">_</span><span style="color:#f92672">.</span>isBefore<span style="color:#f92672">(</span><span style="color:#a6e22e">LocalDate</span><span style="color:#f92672">.</span>now<span style="color:#f92672">()))</span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span>      <span style="color:#f92672">.</span>ensure<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Exceeds maximum age!&#34;</span><span style="color:#f92672">)(</span><span style="color:#a6e22e">ChronoUnit</span><span style="color:#f92672">.</span><span style="color:#a6e22e">YEARS</span><span style="color:#f92672">.</span>between<span style="color:#f92672">(</span><span style="color:#66d9ef">_</span><span style="color:#f92672">,</span> <span style="color:#a6e22e">LocalDate</span><span style="color:#f92672">.</span>now<span style="color:#f92672">())</span> <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">150</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span>      <span style="color:#f92672">.</span>map<span style="color:#f92672">(</span><span style="color:#a6e22e">Birthdate</span><span style="color:#f92672">(</span><span style="color:#66d9ef">_</span><span style="color:#f92672">))</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Birthdate</span><span style="color:#f92672">.</span>of<span style="color:#f92672">(</span><span style="color:#ae81ff">1989</span><span style="color:#f92672">,</span> <span style="color:#ae81ff">10</span><span style="color:#f92672">,</span> <span style="color:#ae81ff">4</span><span style="color:#f92672">)</span> <span style="color:#75715e">// Valid(Birthdate(1989-10-04))
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">Birthdate</span><span style="color:#f92672">.</span>of<span style="color:#f92672">(</span><span style="color:#ae81ff">1989</span><span style="color:#f92672">,</span> <span style="color:#ae81ff">10</span><span style="color:#f92672">,</span> <span style="color:#ae81ff">4</span><span style="color:#f92672">).</span>map<span style="color:#f92672">(</span><span style="color:#66d9ef">_</span><span style="color:#f92672">.</span>age<span style="color:#f92672">).</span>getOrElse<span style="color:#f92672">(</span><span style="color:#ae81ff">0</span><span style="color:#f92672">)</span> <span style="color:#75715e">// 34
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">Birthdate</span><span style="color:#f92672">.</span>of<span style="color:#f92672">(</span><span style="color:#ae81ff">2989</span><span style="color:#f92672">,</span> <span style="color:#ae81ff">10</span><span style="color:#f92672">,</span> <span style="color:#ae81ff">4</span><span style="color:#f92672">)</span> <span style="color:#75715e">// Invalid(Must be in the past!)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">Birthdate</span><span style="color:#f92672">.</span>of<span style="color:#f92672">(</span><span style="color:#ae81ff">2989</span><span style="color:#f92672">,</span> <span style="color:#ae81ff">10</span><span style="color:#f92672">,</span> <span style="color:#ae81ff">4</span><span style="color:#f92672">).</span>map<span style="color:#f92672">(</span><span style="color:#66d9ef">_</span><span style="color:#f92672">.</span>age<span style="color:#f92672">).</span>getOrElse<span style="color:#f92672">(</span><span style="color:#ae81ff">0</span><span style="color:#f92672">)</span> <span style="color:#75715e">// 0
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">Birthdate</span><span style="color:#f92672">.</span>of<span style="color:#f92672">(</span><span style="color:#ae81ff">1779</span><span style="color:#f92672">,</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">,</span> <span style="color:#ae81ff">12</span><span style="color:#f92672">)</span> <span style="color:#75715e">// Invalid(Exceeds maximum age!)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">Birthdate</span><span style="color:#f92672">.</span>of<span style="color:#f92672">(</span><span style="color:#ae81ff">1779</span><span style="color:#f92672">,</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">,</span> <span style="color:#ae81ff">12</span><span style="color:#f92672">).</span>map<span style="color:#f92672">(</span><span style="color:#66d9ef">_</span><span style="color:#f92672">.</span>age<span style="color:#f92672">).</span>getOrElse<span style="color:#f92672">(</span><span style="color:#ae81ff">0</span><span style="color:#f92672">)</span> <span style="color:#75715e">// 0
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><br>
+<h2 id="closing-words">Closing words</h2>
+<p>Here comes the typical disclaimer that one language isn&rsquo;t better than another, that it&rsquo;s always about how and what you
+use it for etc., but to be honest, this time I didn&rsquo;t feel like writing an inclusive conclusion that would put everything
+into perspective.</p>
+<p>For me personally, the advantages of a strong type system are obvious and outweigh the supposed disadvantages by several
+factors. Of course there a knowledge, team and governance factors. However, as of today, I can&rsquo;t think of any use case
+where I would technically favor a weakly typed language.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="single-post-meta">
+      <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-6 text-center text-md-left">
+          <ul class="post-meta-tags list-unstyled list-inline">
+            
+            <li class="list-inline-item"><a href="https://www.frankneff.com/tags/compiler">compiler</a></li>
+            
+            <li class="list-inline-item"><a href="https://www.frankneff.com/tags/type-system">type system</a></li>
+            
+            <li class="list-inline-item"><a href="https://www.frankneff.com/tags/javascript">javascript</a></li>
+            
+            <li class="list-inline-item"><a href="https://www.frankneff.com/tags/scala">scala</a></li>
+            
+            <li class="list-inline-item"><a href="https://www.frankneff.com/tags/software-design">software-design</a></li>
+            
+          </ul>
+        </div>
+        <div class="col-lg-5 col-md-6 text-center text-md-right mt-4 mt-md-0">
+<ul class="social-links has-bg-color list-unstyled list-inline" style="line-height:0">
+  <li class="list-inline-item">
+    
+    <a class="resp-sharing-button__link d-block" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.frankneff.com%2fblog%2f2024-03-28-how-a-strong-type-system-saves-you-documentation-tests-and-nerves%2f" target="_blank"
+      rel="noopener" aria-label="">
+      <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
+        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+          <i class="lab la-facebook-f text-dark"></i>
+        </div>
+      </div>
+    </a>
+  </li>
+
+  <li class="list-inline-item">
+    
+    <a class="resp-sharing-button__link d-block" href="https://twitter.com/intent/tweet/?text=How%20a%20strong%20type%20system%20saves%20you%20documentation%2c%20tests%2c%20and%20nerves&amp;url=https%3a%2f%2fwww.frankneff.com%2fblog%2f2024-03-28-how-a-strong-type-system-saves-you-documentation-tests-and-nerves%2f"
+      target="_blank" rel="noopener" aria-label="">
+      <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+          <i class="lab la-twitter text-dark"></i>
+        </div>
+      </div>
+    </a>
+  </li>
+
+  <li class="list-inline-item">
+    
+    <a class="resp-sharing-button__link d-block" href="https://plus.google.com/share?url=https%3a%2f%2fwww.frankneff.com%2fblog%2f2024-03-28-how-a-strong-type-system-saves-you-documentation-tests-and-nerves%2f" target="_blank"
+      rel="noopener" aria-label="">
+      <div class="resp-sharing-button resp-sharing-button--google resp-sharing-button--small">
+        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+          <i class="lab la-google-plus-g text-dark"></i>
+        </div>
+      </div>
+    </a>
+  </li>
+
+  <li class="list-inline-item">
+    
+    <a class="resp-sharing-button__link d-block" href="mailto:?subject=How%20a%20strong%20type%20system%20saves%20you%20documentation%2c%20tests%2c%20and%20nerves&amp;body=https%3a%2f%2fwww.frankneff.com%2fblog%2f2024-03-28-how-a-strong-type-system-saves-you-documentation-tests-and-nerves%2f" target="_self"
+      rel="noopener" aria-label="">
+      <div class="resp-sharing-button resp-sharing-button--email resp-sharing-button--small">
+        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+          <i class="las la-envelope text-dark"></i>
+        </div>
+      </div>
+    </a>
+  </li>
+
+  <li class="list-inline-item">
+    
+    <a class="resp-sharing-button__link d-block" href="whatsapp://send?text=How%20a%20strong%20type%20system%20saves%20you%20documentation%2c%20tests%2c%20and%20nerves%20https%3a%2f%2fwww.frankneff.com%2fblog%2f2024-03-28-how-a-strong-type-system-saves-you-documentation-tests-and-nerves%2f" target="_blank"
+      rel="noopener" aria-label="">
+      <div class="resp-sharing-button resp-sharing-button--whatsapp resp-sharing-button--small">
+        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+          <i class="lab la-whatsapp text-dark"></i>
+        </div>
+      </div>
+    </a>
+  </li>
+
+</ul></div>
+      </div>
+    </div>
+
+    <div class="single-post-author">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="media d-block d-sm-flex text-center text-sm-left">
+            
+            <a href="https://www.frankneff.com/author/frank-neff/">
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img loading="lazy" decoding="async" src="/images/author/frank-neff_hu33cac40e2c9881176752d2c4d63be02f_20224_150x150_resize_q95_h2_box.webp" alt="Frank Neff" class="img-fluid rounded-circle mr-0 mr-sm-4 mb-4" width="150" height="150" onerror="this.onerror='null';this.src='\/images\/author\/frank-neff_hu33cac40e2c9881176752d2c4d63be02f_20224_150x150_resize_q95_box.jpg'">
+ 
+ 
+ 
+
+
+            </a>
+            <div class="media-body">
+              <p class="font-primary mb-1">Written By</p>
+              <h4><a href="https://www.frankneff.com/author/frank-neff/" class="text-dark font-weight-700">Frank Neff</a></h4>
+              <p class="font-primary">I see myself as a curious problem solver. On a life-long mission to enable people, improve tools and optimize processes, I build software to make things work. Moreover, I like to talk about technology and sharing know-how in a team to improve my own …</p>
+              <ul class="social-links list-unstyled list-inline ml-0 ml-sm-n2">
+                
+                <li class="list-inline-item"><a href="https://twitter.com/frank_neff">
+                    <i class="lab la-twitter"></i>
+                  </a></li>
+                
+                <li class="list-inline-item"><a href="https://www.linkedin.com/in/frankneff/">
+                    <i class="lab la-linkedin-in"></i>
+                  </a></li>
+                
+                <li class="list-inline-item"><a href="https://github.com/frne">
+                    <i class="lab la-github"></i>
+                  </a></li>
+                
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="single-post-similer">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="row mt-3">
+            <div class="col-12">
+              <h3 class="text-dark font-weight-800 mb-4 pb-2">You May Also Like</h3>
+            </div>
+            
+              
+            <div class="col-md-6">
+              <article class="card post-card">
+  
+  <a href="https://www.frankneff.com/blog/2016-04-15-scala-compiler-tuning/">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<picture>
+  <source srcset="/images/post/legacy-blog-article-without-images_hu7987a50157926afb108f2fcbd5b88db9_12370_545x0_resize_q95_h2_box.webp" media="(max-width: 575px)">
+  <source srcset="/images/post/legacy-blog-article-without-images_hu7987a50157926afb108f2fcbd5b88db9_12370_600x0_resize_q95_h2_box.webp" media="(max-width: 767px)">
+  <source srcset="/images/post/legacy-blog-article-without-images_hu7987a50157926afb108f2fcbd5b88db9_12370_700x0_resize_q95_h2_box.webp" media="(max-width: 991px)">
+  <source srcset="/images/post/legacy-blog-article-without-images_hu7987a50157926afb108f2fcbd5b88db9_12370_1110x0_resize_q95_h2_box.webp">
+  <img loading="lazy" decoding="async" class="w-100 h-auto rounded" src="/images/post/legacy-blog-article-without-images_hu7987a50157926afb108f2fcbd5b88db9_12370_1110x0_resize_q95_box.jpg" alt="Scala Compiler Tuning" width="970" height="500">
 </picture>
  
  
@@ -339,40 +1030,34 @@ FrankNeff<span class="text-muted">.com</span>
         
       </li>
       <li class="list-inline-item mb-2">
-        <span>28 Mar, 2024</span>
+        <span>15 Apr, 2016</span>
       </li>
     </ul>
     <ul class="card-meta list-inline mb-2">
       <ul class="card-meta-tag list-inline">
         
-        <li class="list-inline-item"><a href="https://www.frankneff.com/tags/compiler">compiler</a></li>
-        
-        <li class="list-inline-item"><a href="https://www.frankneff.com/tags/type-system">type system</a></li>
-        
-        <li class="list-inline-item"><a href="https://www.frankneff.com/tags/javascript">javascript</a></li>
-        
         <li class="list-inline-item"><a href="https://www.frankneff.com/tags/scala">scala</a></li>
         
-        <li class="list-inline-item"><a href="https://www.frankneff.com/tags/software-design">software-design</a></li>
+        <li class="list-inline-item"><a href="https://www.frankneff.com/tags/compiler">compiler</a></li>
+        
+        <li class="list-inline-item"><a href="https://www.frankneff.com/tags/sbt">sbt</a></li>
         
       </ul>
     </ul>
     <h3 class="mb-3">
-      <a class="post-title" href="https://www.frankneff.com/blog/2024-03-28-how-a-strong-type-system-saves-you-documentation-tests-and-nerves/">How a strong type system saves you documentation, tests, and nerves</a>
+      <a class="post-title" href="https://www.frankneff.com/blog/2016-04-15-scala-compiler-tuning/">Scala Compiler Tuning</a>
     </h3>
-    <p><p>I was recently inspired to finally write this post. Especially in <strong>weakly- or untyped</strong> languages, such as
-the JavaScript or PHP world, the added value of strict type systems is often not recognized. Instead, many discussions
-and comments revolve around the <strong>need for tests</strong> or code comments. Contrary to that, in the functional programming
-world, we <strong>leave such checks to the compiler</strong>. In this post I would like to give a short overview and
-explain how to use a strict type system for everyday checks instead of writing type checks, tests and documentation for it.</p></p>
+    <p><p>As my Scala projects go on, I want to share some compiler configuration and tricks with you, which I use on many
+projects. Some tiny configuration options can greatly improve your code and warn you about things, you would probably
+never discover.</p></p>
 
     
   </div>
 </article>
-          </div>
-          
-          <div class="col-lg-6">
-            <article class="card post-card">
+            </div>
+            
+            <div class="col-md-6">
+              <article class="card post-card">
   
   <a href="https://www.frankneff.com/blog/2021-08-10-why-complexity-in-software-is-bad/">
     
@@ -503,8 +1188,9 @@ lead. In this blogpost, I want to point out some of those impacts of advertising
     
   </div>
 </article>
+            </div>
+            
           </div>
-          
         </div>
       </div>
     </div>

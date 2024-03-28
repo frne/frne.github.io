@@ -9,10 +9,10 @@
     <lastBuildDate>Thu, 28 Mar 2024 12:25:00 +0200</lastBuildDate>
     <atom:link href="https://www.frankneff.com/tags/type-system/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>How a strict type system saves you documentation, tests, and nerves</title>
-      <link>https://www.frankneff.com/blog/2024-03-28-how-a-strict-type-system-saves-you-documentation-tests-and-nerves/</link>
+      <title>How a strong type system saves you documentation, tests, and nerves</title>
+      <link>https://www.frankneff.com/blog/2024-03-28-how-a-strong-type-system-saves-you-documentation-tests-and-nerves/</link>
       <pubDate>Thu, 28 Mar 2024 12:25:00 +0200</pubDate>
-      <guid>https://www.frankneff.com/blog/2024-03-28-how-a-strict-type-system-saves-you-documentation-tests-and-nerves/</guid>
+      <guid>https://www.frankneff.com/blog/2024-03-28-how-a-strong-type-system-saves-you-documentation-tests-and-nerves/</guid>
       <description>&lt;p&gt;I was recently inspired to finally write this post. Especially in &lt;strong&gt;weakly- or untyped&lt;/strong&gt; languages, such as&#xA;the JavaScript or PHP world, the added value of strict type systems is often not recognized. Instead, many discussions&#xA;and comments revolve around the &lt;strong&gt;need for tests&lt;/strong&gt; or code comments. Contrary to that, in the functional programming&#xA;world, we &lt;strong&gt;leave such checks to the compiler&lt;/strong&gt;. In this post I would like to give a short overview and&#xA;explain how to use a strict type system for everyday checks instead of writing type checks, tests and documentation for it.&lt;/p&gt;</description>
     </item>
   </channel>
