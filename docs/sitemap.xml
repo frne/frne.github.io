@@ -2,31 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.frankneff.com/categories/</loc>
+    <lastmod>2024-03-28T12:25:00+02:00</lastmod>
+  </url><url>
+    <loc>https://www.frankneff.com/tags/compiler/</loc>
+    <lastmod>2024-03-28T12:25:00+02:00</lastmod>
+  </url><url>
+    <loc>https://www.frankneff.com/blog/</loc>
+    <lastmod>2024-03-28T12:25:00+02:00</lastmod>
+  </url><url>
+    <loc>https://www.frankneff.com/</loc>
+    <lastmod>2024-03-28T12:25:00+02:00</lastmod>
+  </url><url>
+    <loc>https://www.frankneff.com/categories/functional-programming/</loc>
+    <lastmod>2024-03-28T12:25:00+02:00</lastmod>
+  </url><url>
+    <loc>https://www.frankneff.com/blog/2024-03-28-how-a-strict-type-system-saves-you-documentation-tests-and-nerves/</loc>
+    <lastmod>2024-03-28T12:25:00+02:00</lastmod>
+  </url><url>
+    <loc>https://www.frankneff.com/tags/javascript/</loc>
+    <lastmod>2024-03-28T12:25:00+02:00</lastmod>
+  </url><url>
+    <loc>https://www.frankneff.com/categories/programming/</loc>
+    <lastmod>2024-03-28T12:25:00+02:00</lastmod>
+  </url><url>
+    <loc>https://www.frankneff.com/tags/scala/</loc>
+    <lastmod>2024-03-28T12:25:00+02:00</lastmod>
+  </url><url>
+    <loc>https://www.frankneff.com/tags/software-design/</loc>
+    <lastmod>2024-03-28T12:25:00+02:00</lastmod>
+  </url><url>
+    <loc>https://www.frankneff.com/tags/</loc>
+    <lastmod>2024-03-28T12:25:00+02:00</lastmod>
+  </url><url>
+    <loc>https://www.frankneff.com/tags/type-system/</loc>
+    <lastmod>2024-03-28T12:25:00+02:00</lastmod>
+  </url><url>
     <loc>https://www.frankneff.com/tags/architecture/</loc>
     <lastmod>2023-10-13T14:25:00+02:00</lastmod>
   </url><url>
     <loc>https://www.frankneff.com/categories/architecture/</loc>
     <lastmod>2023-10-13T14:25:00+02:00</lastmod>
   </url><url>
-    <loc>https://www.frankneff.com/categories/</loc>
-    <lastmod>2023-10-13T14:25:00+02:00</lastmod>
-  </url><url>
     <loc>https://www.frankneff.com/tags/enterprise/</loc>
-    <lastmod>2023-10-13T14:25:00+02:00</lastmod>
-  </url><url>
-    <loc>https://www.frankneff.com/blog/</loc>
-    <lastmod>2023-10-13T14:25:00+02:00</lastmod>
-  </url><url>
-    <loc>https://www.frankneff.com/</loc>
     <lastmod>2023-10-13T14:25:00+02:00</lastmod>
   </url><url>
     <loc>https://www.frankneff.com/blog/2023-10-14-how-to-effectively-visualize-application-landscape-enterprise-architecture/</loc>
     <lastmod>2023-10-13T14:25:00+02:00</lastmod>
   </url><url>
     <loc>https://www.frankneff.com/tags/systems/</loc>
-    <lastmod>2023-10-13T14:25:00+02:00</lastmod>
-  </url><url>
-    <loc>https://www.frankneff.com/tags/</loc>
     <lastmod>2023-10-13T14:25:00+02:00</lastmod>
   </url><url>
     <loc>https://www.frankneff.com/tags/visualization/</loc>
@@ -104,9 +128,6 @@
     <loc>https://www.frankneff.com/tags/config/</loc>
     <lastmod>2022-02-25T07:10:00+01:00</lastmod>
   </url><url>
-    <loc>https://www.frankneff.com/categories/programming/</loc>
-    <lastmod>2022-02-25T07:10:00+01:00</lastmod>
-  </url><url>
     <loc>https://www.frankneff.com/categories/software-architecture/</loc>
     <lastmod>2022-02-25T07:10:00+01:00</lastmod>
   </url><url>
@@ -140,9 +161,6 @@
     <loc>https://www.frankneff.com/tags/product-management/</loc>
     <lastmod>2021-08-10T18:30:00+01:00</lastmod>
   </url><url>
-    <loc>https://www.frankneff.com/tags/software-design/</loc>
-    <lastmod>2021-08-10T18:30:00+01:00</lastmod>
-  </url><url>
     <loc>https://www.frankneff.com/blog/2021-08-10-why-complexity-in-software-is-bad/</loc>
     <lastmod>2021-08-10T18:30:00+01:00</lastmod>
   </url><url>
@@ -155,16 +173,10 @@
     <loc>https://www.frankneff.com/blog/2020-02-26-crossbuilding-scalajs-1-0-and-0-6/</loc>
     <lastmod>2020-02-26T17:05:18+01:00</lastmod>
   </url><url>
-    <loc>https://www.frankneff.com/categories/functional-programming/</loc>
-    <lastmod>2020-02-26T17:05:18+01:00</lastmod>
-  </url><url>
     <loc>https://www.frankneff.com/tags/library/</loc>
     <lastmod>2020-02-26T17:05:18+01:00</lastmod>
   </url><url>
     <loc>https://www.frankneff.com/tags/sbt/</loc>
-    <lastmod>2020-02-26T17:05:18+01:00</lastmod>
-  </url><url>
-    <loc>https://www.frankneff.com/tags/scala/</loc>
     <lastmod>2020-02-26T17:05:18+01:00</lastmod>
   </url><url>
     <loc>https://www.frankneff.com/tags/scala.js/</loc>
@@ -232,9 +244,6 @@
   </url><url>
     <loc>https://www.frankneff.com/blog/2016-05-02-play-guice-actor-pooling/</loc>
     <lastmod>2016-05-02T23:11:01+02:00</lastmod>
-  </url><url>
-    <loc>https://www.frankneff.com/tags/compiler/</loc>
-    <lastmod>2016-04-15T22:15:28+02:00</lastmod>
   </url><url>
     <loc>https://www.frankneff.com/blog/2016-04-15-scala-compiler-tuning/</loc>
     <lastmod>2016-04-15T22:15:28+02:00</lastmod>
