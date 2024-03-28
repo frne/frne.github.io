@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>spark on FrankNeff.com - Technology meets Leadership</title>
+    <title>Spark on FrankNeff.com - Technology meets Leadership</title>
     <link>https://www.frankneff.com/tags/spark/</link>
-    <description>Recent content in spark on FrankNeff.com - Technology meets Leadership</description>
+    <description>Recent content in Spark on FrankNeff.com - Technology meets Leadership</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 02 Mar 2018 19:15:03 +0100</lastBuildDate><atom:link href="https://www.frankneff.com/tags/spark/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Fri, 02 Mar 2018 19:15:03 +0100</lastBuildDate>
+    <atom:link href="https://www.frankneff.com/tags/spark/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using Shapeless for Data Cleaning in Apache Spark</title>
       <link>https://www.frankneff.com/blog/2018-03-02-generic-derivation-for-spark-data-cleaning/</link>
       <pubDate>Fri, 02 Mar 2018 19:15:03 +0100</pubDate>
-      
       <guid>https://www.frankneff.com/blog/2018-03-02-generic-derivation-for-spark-data-cleaning/</guid>
-      <description>&lt;p&gt;When it comes to importing data into a BigData infrastructure like Hadoop, &lt;a href=&#34;https://spark.apache.org/&#34;&gt;Apache Spark&lt;/a&gt; is
-one of the most used tools for &lt;a href=&#34;https://en.wikipedia.org/wiki/Extract,_transform,_load&#34;&gt;ETL&lt;/a&gt; jobs. Because input data
-– in this case CSV – has often invalid values, a data cleaning layer is needed.Most tasks in data cleaning
-are very specific and therefore need to be implemented depending on your data, but some tasks can be generalized&amp;hellip;&lt;/p&gt;</description>
+      <description>&lt;p&gt;When it comes to importing data into a BigData infrastructure like Hadoop, &lt;a href=&#34;https://spark.apache.org/&#34;&gt;Apache Spark&lt;/a&gt; is&#xA;one of the most used tools for &lt;a href=&#34;https://en.wikipedia.org/wiki/Extract,_transform,_load&#34;&gt;ETL&lt;/a&gt; jobs. Because input data&#xA;– in this case CSV – has often invalid values, a data cleaning layer is needed.Most tasks in data cleaning&#xA;are very specific and therefore need to be implemented depending on your data, but some tasks can be generalized&amp;hellip;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

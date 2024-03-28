@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>guice on FrankNeff.com - Technology meets Leadership</title>
+    <title>Guice on FrankNeff.com - Technology meets Leadership</title>
     <link>https://www.frankneff.com/tags/guice/</link>
-    <description>Recent content in guice on FrankNeff.com - Technology meets Leadership</description>
+    <description>Recent content in Guice on FrankNeff.com - Technology meets Leadership</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 02 May 2016 23:11:01 +0200</lastBuildDate><atom:link href="https://www.frankneff.com/tags/guice/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Mon, 02 May 2016 23:11:01 +0200</lastBuildDate>
+    <atom:link href="https://www.frankneff.com/tags/guice/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Play Framework Actor Pooling with Guice (Java)</title>
       <link>https://www.frankneff.com/blog/2016-05-02-play-guice-actor-pooling/</link>
       <pubDate>Mon, 02 May 2016 23:11:01 +0200</pubDate>
-      
       <guid>https://www.frankneff.com/blog/2016-05-02-play-guice-actor-pooling/</guid>
-      <description>&lt;p&gt;Working with the Play! Framework means working with Akka, intentionally or not. But working with Akka Actors can be
-tricky, especially when it comes to dependency injection. Play! 2.4 uses Google&amp;rsquo;s
-&lt;a href=&#34;https://www.playframework.com/documentation/2.4.x/JavaDependencyInjection&#34;&gt;Guice&lt;/a&gt; for DI and of course it has the
-ability to also bind Actors so an &lt;code&gt;ActorRef&lt;/code&gt; can be injected anywhere.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Working with the Play! Framework means working with Akka, intentionally or not. But working with Akka Actors can be&#xA;tricky, especially when it comes to dependency injection. Play! 2.4 uses Google&amp;rsquo;s&#xA;&lt;a href=&#34;https://www.playframework.com/documentation/2.4.x/JavaDependencyInjection&#34;&gt;Guice&lt;/a&gt; for DI and of course it has the&#xA;ability to also bind Actors so an &lt;code&gt;ActorRef&lt;/code&gt; can be injected anywhere.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

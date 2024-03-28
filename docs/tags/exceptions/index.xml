@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>exceptions on FrankNeff.com - Technology meets Leadership</title>
+    <title>Exceptions on FrankNeff.com - Technology meets Leadership</title>
     <link>https://www.frankneff.com/tags/exceptions/</link>
-    <description>Recent content in exceptions on FrankNeff.com - Technology meets Leadership</description>
+    <description>Recent content in Exceptions on FrankNeff.com - Technology meets Leadership</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 06 Sep 2017 19:57:00 +0100</lastBuildDate><atom:link href="https://www.frankneff.com/tags/exceptions/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Wed, 06 Sep 2017 19:57:00 +0100</lastBuildDate>
+    <atom:link href="https://www.frankneff.com/tags/exceptions/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Overcoming Checked Exceptions in Java Lambdas</title>
       <link>https://www.frankneff.com/blog/2017-09-06-overcoming-checked-exceptions-in-java-lambdas/</link>
       <pubDate>Wed, 06 Sep 2017 19:57:00 +0100</pubDate>
-      
       <guid>https://www.frankneff.com/blog/2017-09-06-overcoming-checked-exceptions-in-java-lambdas/</guid>
-      <description>&lt;p&gt;In Java 8, the long awaited Lambda came to live, making it easy(-er) to do FP in Java. One problem I came across is,
-that most Java code throws checked exceptions which leads to IMHO ugly try/catch blocks in lambdas:&lt;/p&gt;</description>
+      <description>&lt;p&gt;In Java 8, the long awaited Lambda came to live, making it easy(-er) to do FP in Java. One problem I came across is,&#xA;that most Java code throws checked exceptions which leads to IMHO ugly try/catch blocks in lambdas:&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

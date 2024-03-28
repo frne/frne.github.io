@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>product-management on FrankNeff.com - Technology meets Leadership</title>
+    <title>Product-Management on FrankNeff.com - Technology meets Leadership</title>
     <link>https://www.frankneff.com/tags/product-management/</link>
-    <description>Recent content in product-management on FrankNeff.com - Technology meets Leadership</description>
+    <description>Recent content in Product-Management on FrankNeff.com - Technology meets Leadership</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 10 Aug 2021 18:30:00 +0100</lastBuildDate><atom:link href="https://www.frankneff.com/tags/product-management/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Tue, 10 Aug 2021 18:30:00 +0100</lastBuildDate>
+    <atom:link href="https://www.frankneff.com/tags/product-management/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why complexity in software projects is bad (and you should not advertise it)</title>
       <link>https://www.frankneff.com/blog/2021-08-10-why-complexity-in-software-is-bad/</link>
       <pubDate>Tue, 10 Aug 2021 18:30:00 +0100</pubDate>
-      
       <guid>https://www.frankneff.com/blog/2021-08-10-why-complexity-in-software-is-bad/</guid>
-      <description>&lt;p&gt;There are (still) many people telling proudly, how complex their product is. There are job ads, explaining that you will
-&amp;ldquo;create highly complex software&amp;rdquo;. These false signals, which I personally saw in many positions and projects, create a
-potentially huge long-tail problem, not primarily for engineers, but for the product management and engineering team
-lead. In this blogpost, I want to point out some of those impacts of advertising complexity&amp;hellip;&lt;/p&gt;</description>
+      <description>&lt;p&gt;There are (still) many people telling proudly, how complex their product is. There are job ads, explaining that you will&#xA;&amp;ldquo;create highly complex software&amp;rdquo;. These false signals, which I personally saw in many positions and projects, create a&#xA;potentially huge long-tail problem, not primarily for engineers, but for the product management and engineering team&#xA;lead. In this blogpost, I want to point out some of those impacts of advertising complexity&amp;hellip;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

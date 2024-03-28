@@ -1,34 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>recruiting on FrankNeff.com - Technology meets Leadership</title>
+    <title>Recruiting on FrankNeff.com - Technology meets Leadership</title>
     <link>https://www.frankneff.com/tags/recruiting/</link>
-    <description>Recent content in recruiting on FrankNeff.com - Technology meets Leadership</description>
+    <description>Recent content in Recruiting on FrankNeff.com - Technology meets Leadership</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 12 Mar 2022 07:10:00 +0100</lastBuildDate><atom:link href="https://www.frankneff.com/tags/recruiting/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Sat, 12 Mar 2022 07:10:00 +0100</lastBuildDate>
+    <atom:link href="https://www.frankneff.com/tags/recruiting/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hiring Devs - Why you should consider Juniors</title>
       <link>https://www.frankneff.com/blog/2022-03-12-hiring-devs-why-you-should-consider-juniors/</link>
       <pubDate>Sat, 12 Mar 2022 07:10:00 +0100</pubDate>
-      
       <guid>https://www.frankneff.com/blog/2022-03-12-hiring-devs-why-you-should-consider-juniors/</guid>
-      <description>&lt;p&gt;When it comes to developer maturity, I heard many tech recruiters and decision-makers saying: &amp;ldquo;We should only hire senior
-devs.&amp;rdquo; This may be justified in some situations, projects, or teams, but I do not accept this statement as a general
-premise. In this blog post, I want to highlight the benefits that juniors can bring to the team and encourage you to find
-and foster new talent actively.&lt;/p&gt;</description>
+      <description>&lt;p&gt;When it comes to developer maturity, I heard many tech recruiters and decision-makers saying: &amp;ldquo;We should only hire senior&#xA;devs.&amp;rdquo; This may be justified in some situations, projects, or teams, but I do not accept this statement as a general&#xA;premise. In this blog post, I want to highlight the benefits that juniors can bring to the team and encourage you to find&#xA;and foster new talent actively.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Hiring Devs - The Seniority Paradox</title>
       <link>https://www.frankneff.com/blog/2021-12-10-hiring-devs-the-seniority-paradox/</link>
       <pubDate>Fri, 10 Dec 2021 07:10:00 +0100</pubDate>
-      
       <guid>https://www.frankneff.com/blog/2021-12-10-hiring-devs-the-seniority-paradox/</guid>
-      <description>&lt;p&gt;In IT, there is a paradox when it comes to job titles. Somewhere along the way, the practice of linking job titles to a
-candidate&amp;rsquo;s (desired) experience became established in large parts of the market. This then created the now famous and
-omnipresent job titles like &amp;ldquo;Senior Software Engineer&amp;rdquo;, &amp;ldquo;Professional DevOps Engineer&amp;rdquo;, etc. In this blog post, I would
-like to explain the paradox around these designations and how I use them in the course of the talent search&amp;hellip;&lt;/p&gt;</description>
+      <description>&lt;p&gt;In IT, there is a paradox when it comes to job titles. Somewhere along the way, the practice of linking job titles to a&#xA;candidate&amp;rsquo;s (desired) experience became established in large parts of the market. This then created the now famous and&#xA;omnipresent job titles like &amp;ldquo;Senior Software Engineer&amp;rdquo;, &amp;ldquo;Professional DevOps Engineer&amp;rdquo;, etc. In this blog post, I would&#xA;like to explain the paradox around these designations and how I use them in the course of the talent search&amp;hellip;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

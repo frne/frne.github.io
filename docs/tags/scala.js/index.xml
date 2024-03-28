@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>scala.js on FrankNeff.com - Technology meets Leadership</title>
+    <title>Scala.js on FrankNeff.com - Technology meets Leadership</title>
     <link>https://www.frankneff.com/tags/scala.js/</link>
-    <description>Recent content in scala.js on FrankNeff.com - Technology meets Leadership</description>
+    <description>Recent content in Scala.js on FrankNeff.com - Technology meets Leadership</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 26 Feb 2020 17:05:18 +0100</lastBuildDate><atom:link href="https://www.frankneff.com/tags/scala.js/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Wed, 26 Feb 2020 17:05:18 +0100</lastBuildDate>
+    <atom:link href="https://www.frankneff.com/tags/scala.js/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Crossbuilding Scala.js 1.0 and 0.6</title>
       <link>https://www.frankneff.com/blog/2020-02-26-crossbuilding-scalajs-1-0-and-0-6/</link>
       <pubDate>Wed, 26 Feb 2020 17:05:18 +0100</pubDate>
-      
       <guid>https://www.frankneff.com/blog/2020-02-26-crossbuilding-scalajs-1-0-and-0-6/</guid>
-      <description>&lt;p&gt;As you may know, Scala.js &lt;code&gt;1.0.0&lt;/code&gt; &lt;a href=&#34;https://www.scala-js.org/news/2020/02/25/announcing-scalajs-1.0.0/&#34;&gt;just went final&lt;/a&gt;.
-For end-products, the upgrade is rather simple, just bump the plugin version and fix potential compile issues. If
-you&amp;rsquo;re maintaining a library, cross-building for &lt;code&gt;0.6.x&lt;/code&gt; and &lt;code&gt;1.0.x&lt;/code&gt; is still a bit tricky, but possible&amp;hellip;&lt;/p&gt;</description>
+      <description>&lt;p&gt;As you may know, Scala.js &lt;code&gt;1.0.0&lt;/code&gt; &lt;a href=&#34;https://www.scala-js.org/news/2020/02/25/announcing-scalajs-1.0.0/&#34;&gt;just went final&lt;/a&gt;.&#xA;For end-products, the upgrade is rather simple, just bump the plugin version and fix potential compile issues. If&#xA;you&amp;rsquo;re maintaining a library, cross-building for &lt;code&gt;0.6.x&lt;/code&gt; and &lt;code&gt;1.0.x&lt;/code&gt; is still a bit tricky, but possible&amp;hellip;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

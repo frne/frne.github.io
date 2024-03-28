@@ -1,22 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>software-design on FrankNeff.com - Technology meets Leadership</title>
+    <title>Software-Design on FrankNeff.com - Technology meets Leadership</title>
     <link>https://www.frankneff.com/tags/software-design/</link>
-    <description>Recent content in software-design on FrankNeff.com - Technology meets Leadership</description>
+    <description>Recent content in Software-Design on FrankNeff.com - Technology meets Leadership</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 10 Aug 2021 18:30:00 +0100</lastBuildDate><atom:link href="https://www.frankneff.com/tags/software-design/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Thu, 28 Mar 2024 12:25:00 +0200</lastBuildDate>
+    <atom:link href="https://www.frankneff.com/tags/software-design/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How a strict type system saves you documentation, tests, and nerves</title>
+      <link>https://www.frankneff.com/blog/2024-03-28-how-a-strict-type-system-saves-you-documentation-tests-and-nerves/</link>
+      <pubDate>Thu, 28 Mar 2024 12:25:00 +0200</pubDate>
+      <guid>https://www.frankneff.com/blog/2024-03-28-how-a-strict-type-system-saves-you-documentation-tests-and-nerves/</guid>
+      <description>&lt;p&gt;I was recently inspired to finally write this post. Especially in &lt;strong&gt;weakly- or untyped&lt;/strong&gt; languages, such as&#xA;the JavaScript or PHP world, the added value of strict type systems is often not recognized. Instead, many discussions&#xA;and comments revolve around the &lt;strong&gt;need for tests&lt;/strong&gt; or code comments. Contrary to that, in the functional programming&#xA;world, we &lt;strong&gt;leave such checks to the compiler&lt;/strong&gt;. In this post I would like to give a short overview and&#xA;explain how to use a strict type system for everyday checks instead of writing type checks, tests and documentation for it.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Why complexity in software projects is bad (and you should not advertise it)</title>
       <link>https://www.frankneff.com/blog/2021-08-10-why-complexity-in-software-is-bad/</link>
       <pubDate>Tue, 10 Aug 2021 18:30:00 +0100</pubDate>
-      
       <guid>https://www.frankneff.com/blog/2021-08-10-why-complexity-in-software-is-bad/</guid>
-      <description>&lt;p&gt;There are (still) many people telling proudly, how complex their product is. There are job ads, explaining that you will
-&amp;ldquo;create highly complex software&amp;rdquo;. These false signals, which I personally saw in many positions and projects, create a
-potentially huge long-tail problem, not primarily for engineers, but for the product management and engineering team
-lead. In this blogpost, I want to point out some of those impacts of advertising complexity&amp;hellip;&lt;/p&gt;</description>
+      <description>&lt;p&gt;There are (still) many people telling proudly, how complex their product is. There are job ads, explaining that you will&#xA;&amp;ldquo;create highly complex software&amp;rdquo;. These false signals, which I personally saw in many positions and projects, create a&#xA;potentially huge long-tail problem, not primarily for engineers, but for the product management and engineering team&#xA;lead. In this blogpost, I want to point out some of those impacts of advertising complexity&amp;hellip;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

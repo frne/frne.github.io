@@ -5,98 +5,71 @@
     <link>https://www.frankneff.com/categories/programming/</link>
     <description>Recent content in Programming on FrankNeff.com - Technology meets Leadership</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 25 Feb 2022 07:10:00 +0100</lastBuildDate><atom:link href="https://www.frankneff.com/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Thu, 28 Mar 2024 12:25:00 +0200</lastBuildDate>
+    <atom:link href="https://www.frankneff.com/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How a strict type system saves you documentation, tests, and nerves</title>
+      <link>https://www.frankneff.com/blog/2024-03-28-how-a-strict-type-system-saves-you-documentation-tests-and-nerves/</link>
+      <pubDate>Thu, 28 Mar 2024 12:25:00 +0200</pubDate>
+      <guid>https://www.frankneff.com/blog/2024-03-28-how-a-strict-type-system-saves-you-documentation-tests-and-nerves/</guid>
+      <description>&lt;p&gt;I was recently inspired to finally write this post. Especially in &lt;strong&gt;weakly- or untyped&lt;/strong&gt; languages, such as&#xA;the JavaScript or PHP world, the added value of strict type systems is often not recognized. Instead, many discussions&#xA;and comments revolve around the &lt;strong&gt;need for tests&lt;/strong&gt; or code comments. Contrary to that, in the functional programming&#xA;world, we &lt;strong&gt;leave such checks to the compiler&lt;/strong&gt;. In this post I would like to give a short overview and&#xA;explain how to use a strict type system for everyday checks instead of writing type checks, tests and documentation for it.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Why you probably don&#39;t need Spring Cloud Config</title>
       <link>https://www.frankneff.com/blog/2022-02-25-why-you-dont-need-spring-cloud-config/</link>
       <pubDate>Fri, 25 Feb 2022 07:10:00 +0100</pubDate>
-      
       <guid>https://www.frankneff.com/blog/2022-02-25-why-you-dont-need-spring-cloud-config/</guid>
-      <description>&lt;p&gt;Spring cloud config is a configuration management solution and part of the Spring ecosystem. It&amp;rsquo;s easy to integrate and
-use, but it has severe downsides from an architectural perspective. Also, I have seen many projects where
-it was added just because &amp;ldquo;it is a thing&amp;rdquo; and even more often, it was used to solve or work around problems in the
-software architecture or deployment for which it doesn&amp;rsquo;t provide a real solution. In this blog post, I&amp;rsquo;ll point out some
-conceptional issues and downsides of that project I have seen so far.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Spring cloud config is a configuration management solution and part of the Spring ecosystem. It&amp;rsquo;s easy to integrate and&#xA;use, but it has severe downsides from an architectural perspective. Also, I have seen many projects where&#xA;it was added just because &amp;ldquo;it is a thing&amp;rdquo; and even more often, it was used to solve or work around problems in the&#xA;software architecture or deployment for which it doesn&amp;rsquo;t provide a real solution. In this blog post, I&amp;rsquo;ll point out some&#xA;conceptional issues and downsides of that project I have seen so far.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Crossbuilding Scala.js 1.0 and 0.6</title>
       <link>https://www.frankneff.com/blog/2020-02-26-crossbuilding-scalajs-1-0-and-0-6/</link>
       <pubDate>Wed, 26 Feb 2020 17:05:18 +0100</pubDate>
-      
       <guid>https://www.frankneff.com/blog/2020-02-26-crossbuilding-scalajs-1-0-and-0-6/</guid>
-      <description>&lt;p&gt;As you may know, Scala.js &lt;code&gt;1.0.0&lt;/code&gt; &lt;a href=&#34;https://www.scala-js.org/news/2020/02/25/announcing-scalajs-1.0.0/&#34;&gt;just went final&lt;/a&gt;.
-For end-products, the upgrade is rather simple, just bump the plugin version and fix potential compile issues. If
-you&amp;rsquo;re maintaining a library, cross-building for &lt;code&gt;0.6.x&lt;/code&gt; and &lt;code&gt;1.0.x&lt;/code&gt; is still a bit tricky, but possible&amp;hellip;&lt;/p&gt;</description>
+      <description>&lt;p&gt;As you may know, Scala.js &lt;code&gt;1.0.0&lt;/code&gt; &lt;a href=&#34;https://www.scala-js.org/news/2020/02/25/announcing-scalajs-1.0.0/&#34;&gt;just went final&lt;/a&gt;.&#xA;For end-products, the upgrade is rather simple, just bump the plugin version and fix potential compile issues. If&#xA;you&amp;rsquo;re maintaining a library, cross-building for &lt;code&gt;0.6.x&lt;/code&gt; and &lt;code&gt;1.0.x&lt;/code&gt; is still a bit tricky, but possible&amp;hellip;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>The Spring Security Oauth2 Blues - Simplicity</title>
       <link>https://www.frankneff.com/blog/2019-11-19-spring-security-oauth-blues-simplicity/</link>
       <pubDate>Sat, 14 Dec 2019 13:58:28 +0100</pubDate>
-      
       <guid>https://www.frankneff.com/blog/2019-11-19-spring-security-oauth-blues-simplicity/</guid>
-      <description>&lt;p&gt;I personally like the Spring Framework and its security components, because it&amp;rsquo;s pretty full-featured and easy to use,
-but when it comes to Spring Security OAuth2, there&amp;rsquo;s a huge quality breakdown. In this (probably series) of blogposts,
-I&amp;rsquo;ll try to sum up the good, the bad, the evil and why I ended up completely dropping Spring Security OAuth2.&lt;/p&gt;</description>
+      <description>&lt;p&gt;I personally like the Spring Framework and its security components, because it&amp;rsquo;s pretty full-featured and easy to use,&#xA;but when it comes to Spring Security OAuth2, there&amp;rsquo;s a huge quality breakdown. In this (probably series) of blogposts,&#xA;I&amp;rsquo;ll try to sum up the good, the bad, the evil and why I ended up completely dropping Spring Security OAuth2.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Java Libs in Scala - A bit more Functional</title>
       <link>https://www.frankneff.com/blog/2017-12-18-using-java-libs-in-scala/</link>
       <pubDate>Mon, 18 Dec 2017 22:04:38 +0100</pubDate>
-      
       <guid>https://www.frankneff.com/blog/2017-12-18-using-java-libs-in-scala/</guid>
-      <description>&lt;p&gt;Every Java library can be used in Scala, which is, for me, one of the good parts of the JVM world. But Java libs are
-mostly object-oriented and not functional, therefore full  of side effects and somtimes &amp;ldquo;ugly&amp;rdquo; to use in Scala. But
-there are some approaches how to make Java libs (or their interfaces) more functional, so they can almost be used like
-a Scala lib.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Every Java library can be used in Scala, which is, for me, one of the good parts of the JVM world. But Java libs are&#xA;mostly object-oriented and not functional, therefore full  of side effects and somtimes &amp;ldquo;ugly&amp;rdquo; to use in Scala. But&#xA;there are some approaches how to make Java libs (or their interfaces) more functional, so they can almost be used like&#xA;a Scala lib.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Overcoming Checked Exceptions in Java Lambdas</title>
       <link>https://www.frankneff.com/blog/2017-09-06-overcoming-checked-exceptions-in-java-lambdas/</link>
       <pubDate>Wed, 06 Sep 2017 19:57:00 +0100</pubDate>
-      
       <guid>https://www.frankneff.com/blog/2017-09-06-overcoming-checked-exceptions-in-java-lambdas/</guid>
-      <description>&lt;p&gt;In Java 8, the long awaited Lambda came to live, making it easy(-er) to do FP in Java. One problem I came across is,
-that most Java code throws checked exceptions which leads to IMHO ugly try/catch blocks in lambdas:&lt;/p&gt;</description>
+      <description>&lt;p&gt;In Java 8, the long awaited Lambda came to live, making it easy(-er) to do FP in Java. One problem I came across is,&#xA;that most Java code throws checked exceptions which leads to IMHO ugly try/catch blocks in lambdas:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Functional Java 1 - Options</title>
       <link>https://www.frankneff.com/blog/2016-11-22-functional-java-1-option/</link>
       <pubDate>Tue, 22 Nov 2016 08:22:49 +0100</pubDate>
-      
       <guid>https://www.frankneff.com/blog/2016-11-22-functional-java-1-option/</guid>
       <description>&lt;p&gt;This is the first post of my series about functional programming in Java. There&amp;rsquo;s a lot of functional stuff one can do. Everyone knows the Java 8 Lambda expression, but with a little library support, there is way more&amp;hellip; In this series, I&amp;rsquo;ll coder som libraries which provide functional paradigms and constructs for Java:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Play Framework Actor Pooling with Guice (Java)</title>
       <link>https://www.frankneff.com/blog/2016-05-02-play-guice-actor-pooling/</link>
       <pubDate>Mon, 02 May 2016 23:11:01 +0200</pubDate>
-      
       <guid>https://www.frankneff.com/blog/2016-05-02-play-guice-actor-pooling/</guid>
-      <description>&lt;p&gt;Working with the Play! Framework means working with Akka, intentionally or not. But working with Akka Actors can be
-tricky, especially when it comes to dependency injection. Play! 2.4 uses Google&amp;rsquo;s
-&lt;a href=&#34;https://www.playframework.com/documentation/2.4.x/JavaDependencyInjection&#34;&gt;Guice&lt;/a&gt; for DI and of course it has the
-ability to also bind Actors so an &lt;code&gt;ActorRef&lt;/code&gt; can be injected anywhere.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Working with the Play! Framework means working with Akka, intentionally or not. But working with Akka Actors can be&#xA;tricky, especially when it comes to dependency injection. Play! 2.4 uses Google&amp;rsquo;s&#xA;&lt;a href=&#34;https://www.playframework.com/documentation/2.4.x/JavaDependencyInjection&#34;&gt;Guice&lt;/a&gt; for DI and of course it has the&#xA;ability to also bind Actors so an &lt;code&gt;ActorRef&lt;/code&gt; can be injected anywhere.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Understanding Stemmers (Natural Language Processing)</title>
       <link>https://www.frankneff.com/blog/2015-07-23-understanding-stemmers-nlp/</link>
       <pubDate>Thu, 23 Jul 2015 18:05:12 +0200</pubDate>
-      
       <guid>https://www.frankneff.com/blog/2015-07-23-understanding-stemmers-nlp/</guid>
-      <description>&lt;p&gt;I am interested in NLP and have already some experience with Apache Solr. It&amp;rsquo;s time to dig a little in-deep regarding
-stemmers. First of all, I was looking for a general definition of what a stemmer is, and I found this one, which IMHO
-is quite good:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;stemmer — an algorithm for removing inflectional and derivational endings in order to reduce word forms to a common stem&lt;/p&gt;
-&lt;/blockquote&gt;</description>
+      <description>&lt;p&gt;I am interested in NLP and have already some experience with Apache Solr. It&amp;rsquo;s time to dig a little in-deep regarding&#xA;stemmers. First of all, I was looking for a general definition of what a stemmer is, and I found this one, which IMHO&#xA;is quite good:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;stemmer — an algorithm for removing inflectional and derivational endings in order to reduce word forms to a common stem&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
     </item>
-    
   </channel>
 </rss>

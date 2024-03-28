@@ -5,315 +5,197 @@
     <link>https://www.frankneff.com/</link>
     <description>Recent content on FrankNeff.com - Technology meets Leadership</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 13 Oct 2023 14:25:00 +0200</lastBuildDate><atom:link href="https://www.frankneff.com/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Thu, 28 Mar 2024 12:25:00 +0200</lastBuildDate>
+    <atom:link href="https://www.frankneff.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How a strict type system saves you documentation, tests, and nerves</title>
+      <link>https://www.frankneff.com/blog/2024-03-28-how-a-strict-type-system-saves-you-documentation-tests-and-nerves/</link>
+      <pubDate>Thu, 28 Mar 2024 12:25:00 +0200</pubDate>
+      <guid>https://www.frankneff.com/blog/2024-03-28-how-a-strict-type-system-saves-you-documentation-tests-and-nerves/</guid>
+      <description>&lt;p&gt;I was recently inspired to finally write this post. Especially in &lt;strong&gt;weakly- or untyped&lt;/strong&gt; languages, such as&#xA;the JavaScript or PHP world, the added value of strict type systems is often not recognized. Instead, many discussions&#xA;and comments revolve around the &lt;strong&gt;need for tests&lt;/strong&gt; or code comments. Contrary to that, in the functional programming&#xA;world, we &lt;strong&gt;leave such checks to the compiler&lt;/strong&gt;. In this post I would like to give a short overview and&#xA;explain how to use a strict type system for everyday checks instead of writing type checks, tests and documentation for it.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>How to effectively visualize an Application Landscape in Enterprise Architecture</title>
       <link>https://www.frankneff.com/blog/2023-10-14-how-to-effectively-visualize-application-landscape-enterprise-architecture/</link>
       <pubDate>Fri, 13 Oct 2023 14:25:00 +0200</pubDate>
-      
       <guid>https://www.frankneff.com/blog/2023-10-14-how-to-effectively-visualize-application-landscape-enterprise-architecture/</guid>
-      <description>&lt;p&gt;In enterprise &amp;amp; solution architecture, &lt;strong&gt;connecting boxes with arrows&lt;/strong&gt; is an often used and overrated visualization
-from high-level, thru component architecture, down to data and class diagrams. However, to create a &lt;strong&gt;holistic view&lt;/strong&gt; on
-systems, component diagrams are not enough! When it comes to analysis or transformation of a high-level application- or
-&lt;strong&gt;service-architecture&lt;/strong&gt;, I prefer to draw an &lt;strong&gt;Application Landscape Diagram&lt;/strong&gt;, which I would like to show and elaborate
-on in this post.&lt;/p&gt;</description>
+      <description>&lt;p&gt;In enterprise &amp;amp; solution architecture, &lt;strong&gt;connecting boxes with arrows&lt;/strong&gt; is an often used and overrated visualization&#xA;from high-level, thru component architecture, down to data and class diagrams. However, to create a &lt;strong&gt;holistic view&lt;/strong&gt; on&#xA;systems, component diagrams are not enough! When it comes to analysis or transformation of a high-level application- or&#xA;&lt;strong&gt;service-architecture&lt;/strong&gt;, I prefer to draw an &lt;strong&gt;Application Landscape Diagram&lt;/strong&gt;, which I would like to show and elaborate&#xA;on in this post.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Securing isolated systems: Caveats of using plain OAUTH flows and how to solve them</title>
       <link>https://www.frankneff.com/blog/2023-09-11-securing-isolated-systems-caveats-of-plain-oauth-flows-how-to-solve/</link>
       <pubDate>Mon, 11 Sep 2023 11:10:00 +0200</pubDate>
-      
       <guid>https://www.frankneff.com/blog/2023-09-11-securing-isolated-systems-caveats-of-plain-oauth-flows-how-to-solve/</guid>
-      <description>&lt;p&gt;While OIDC and OAUTH are well-known standards, they don&amp;rsquo;t fit every purpose &amp;ldquo;out of the box.&amp;rdquo; In businesses with &lt;strong&gt;special
-regulations&lt;/strong&gt; like banking, health care, etc., non-functional requirements to auth can be challenging. Different
-solutions and ways were evaluated to create a new identity provider for a medical network. The first approach was &amp;ldquo;just&amp;rdquo;
-using simple &lt;strong&gt;OAUTH&lt;/strong&gt; by its most famous &lt;strong&gt;Authorization Code Flow&lt;/strong&gt;. Of course, it failed fast, and I&amp;rsquo;ll show why and
-how we solved it in this post.&lt;/p&gt;</description>
+      <description>&lt;p&gt;While OIDC and OAUTH are well-known standards, they don&amp;rsquo;t fit every purpose &amp;ldquo;out of the box.&amp;rdquo; In businesses with &lt;strong&gt;special&#xA;regulations&lt;/strong&gt; like banking, health care, etc., non-functional requirements to auth can be challenging. Different&#xA;solutions and ways were evaluated to create a new identity provider for a medical network. The first approach was &amp;ldquo;just&amp;rdquo;&#xA;using simple &lt;strong&gt;OAUTH&lt;/strong&gt; by its most famous &lt;strong&gt;Authorization Code Flow&lt;/strong&gt;. Of course, it failed fast, and I&amp;rsquo;ll show why and&#xA;how we solved it in this post.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Umfrage: Erfolg der Digitalisierung in der Schweizer Gesundheitsbranche</title>
       <link>https://www.frankneff.com/blog/2022-05-07-umfrage_erfolg_digitalisierung_schweizer_gesundheit/</link>
       <pubDate>Sat, 07 May 2022 11:10:00 +0200</pubDate>
-      
       <guid>https://www.frankneff.com/blog/2022-05-07-umfrage_erfolg_digitalisierung_schweizer_gesundheit/</guid>
-      <description>&lt;p&gt;Als Teil des Leistungsnachweises meiner Weiterbildung &lt;strong&gt;CAS IT Management und Agile Transformation&lt;/strong&gt; an der
-&lt;a href=&#34;https://hslu.ch&#34;&gt;Hochschule Luzern&lt;/a&gt; schreibe ich eine Arbeit über den Erfolg der Digitalisierung in der Schweizer
-Gesundheitsbranche in Form eines Blogposts. Teil der Arbeit ist eine quantitative Studie in Form einer Umfrage an
-Fachpersonen, Manager und Entscheider in der &lt;strong&gt;Schweizer Gesundheitsbranche&lt;/strong&gt; zum Thema.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Als Teil des Leistungsnachweises meiner Weiterbildung &lt;strong&gt;CAS IT Management und Agile Transformation&lt;/strong&gt; an der&#xA;&lt;a href=&#34;https://hslu.ch&#34;&gt;Hochschule Luzern&lt;/a&gt; schreibe ich eine Arbeit über den Erfolg der Digitalisierung in der Schweizer&#xA;Gesundheitsbranche in Form eines Blogposts. Teil der Arbeit ist eine quantitative Studie in Form einer Umfrage an&#xA;Fachpersonen, Manager und Entscheider in der &lt;strong&gt;Schweizer Gesundheitsbranche&lt;/strong&gt; zum Thema.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Online Courses for Developers - A slightly more Critical View</title>
       <link>https://www.frankneff.com/blog/2022-05-06-online-courses-for-developers-a-slightly-more-critical-view/</link>
       <pubDate>Fri, 06 May 2022 07:15:00 +0200</pubDate>
-      
       <guid>https://www.frankneff.com/blog/2022-05-06-online-courses-for-developers-a-slightly-more-critical-view/</guid>
-      <description>&lt;p&gt;We have a massive skills shortage in IT, especially in development. A natural effect of this is that there are many
-career changers and, as a result, alternative educational opportunities. These alternatives, mostly YouTube video
-courses and other online offerings, are good knowledge brokers but have downsides. Especially in such a knowledge-driven
-environment, scientific methods are more important than entertaining course design.&lt;/p&gt;</description>
+      <description>&lt;p&gt;We have a massive skills shortage in IT, especially in development. A natural effect of this is that there are many&#xA;career changers and, as a result, alternative educational opportunities. These alternatives, mostly YouTube video&#xA;courses and other online offerings, are good knowledge brokers but have downsides. Especially in such a knowledge-driven&#xA;environment, scientific methods are more important than entertaining course design.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Hiring Devs - Why you should consider Juniors</title>
       <link>https://www.frankneff.com/blog/2022-03-12-hiring-devs-why-you-should-consider-juniors/</link>
       <pubDate>Sat, 12 Mar 2022 07:10:00 +0100</pubDate>
-      
       <guid>https://www.frankneff.com/blog/2022-03-12-hiring-devs-why-you-should-consider-juniors/</guid>
-      <description>&lt;p&gt;When it comes to developer maturity, I heard many tech recruiters and decision-makers saying: &amp;ldquo;We should only hire senior
-devs.&amp;rdquo; This may be justified in some situations, projects, or teams, but I do not accept this statement as a general
-premise. In this blog post, I want to highlight the benefits that juniors can bring to the team and encourage you to find
-and foster new talent actively.&lt;/p&gt;</description>
+      <description>&lt;p&gt;When it comes to developer maturity, I heard many tech recruiters and decision-makers saying: &amp;ldquo;We should only hire senior&#xA;devs.&amp;rdquo; This may be justified in some situations, projects, or teams, but I do not accept this statement as a general&#xA;premise. In this blog post, I want to highlight the benefits that juniors can bring to the team and encourage you to find&#xA;and foster new talent actively.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Why you probably don&#39;t need Spring Cloud Config</title>
       <link>https://www.frankneff.com/blog/2022-02-25-why-you-dont-need-spring-cloud-config/</link>
       <pubDate>Fri, 25 Feb 2022 07:10:00 +0100</pubDate>
-      
       <guid>https://www.frankneff.com/blog/2022-02-25-why-you-dont-need-spring-cloud-config/</guid>
-      <description>&lt;p&gt;Spring cloud config is a configuration management solution and part of the Spring ecosystem. It&amp;rsquo;s easy to integrate and
-use, but it has severe downsides from an architectural perspective. Also, I have seen many projects where
-it was added just because &amp;ldquo;it is a thing&amp;rdquo; and even more often, it was used to solve or work around problems in the
-software architecture or deployment for which it doesn&amp;rsquo;t provide a real solution. In this blog post, I&amp;rsquo;ll point out some
-conceptional issues and downsides of that project I have seen so far.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Spring cloud config is a configuration management solution and part of the Spring ecosystem. It&amp;rsquo;s easy to integrate and&#xA;use, but it has severe downsides from an architectural perspective. Also, I have seen many projects where&#xA;it was added just because &amp;ldquo;it is a thing&amp;rdquo; and even more often, it was used to solve or work around problems in the&#xA;software architecture or deployment for which it doesn&amp;rsquo;t provide a real solution. In this blog post, I&amp;rsquo;ll point out some&#xA;conceptional issues and downsides of that project I have seen so far.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Hiring Devs - The Seniority Paradox</title>
       <link>https://www.frankneff.com/blog/2021-12-10-hiring-devs-the-seniority-paradox/</link>
       <pubDate>Fri, 10 Dec 2021 07:10:00 +0100</pubDate>
-      
       <guid>https://www.frankneff.com/blog/2021-12-10-hiring-devs-the-seniority-paradox/</guid>
-      <description>&lt;p&gt;In IT, there is a paradox when it comes to job titles. Somewhere along the way, the practice of linking job titles to a
-candidate&amp;rsquo;s (desired) experience became established in large parts of the market. This then created the now famous and
-omnipresent job titles like &amp;ldquo;Senior Software Engineer&amp;rdquo;, &amp;ldquo;Professional DevOps Engineer&amp;rdquo;, etc. In this blog post, I would
-like to explain the paradox around these designations and how I use them in the course of the talent search&amp;hellip;&lt;/p&gt;</description>
+      <description>&lt;p&gt;In IT, there is a paradox when it comes to job titles. Somewhere along the way, the practice of linking job titles to a&#xA;candidate&amp;rsquo;s (desired) experience became established in large parts of the market. This then created the now famous and&#xA;omnipresent job titles like &amp;ldquo;Senior Software Engineer&amp;rdquo;, &amp;ldquo;Professional DevOps Engineer&amp;rdquo;, etc. In this blog post, I would&#xA;like to explain the paradox around these designations and how I use them in the course of the talent search&amp;hellip;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Blog Relaunch (Yes, again)</title>
       <link>https://www.frankneff.com/blog/2021-12-05-blog-relaunch/</link>
       <pubDate>Sun, 05 Dec 2021 13:22:00 +0100</pubDate>
-      
       <guid>https://www.frankneff.com/blog/2021-12-05-blog-relaunch/</guid>
-      <description>&lt;p&gt;I noticed that I write not as often as I want to, so I procrastinated and first relaunched my blog instead of writing.
-It has a new design and some new functionality, also the posts have now images. The relaunch was, for me, some kind of
-personal retrospective, where I read all my old posts and found out that I&amp;rsquo;m probably a better webmaster than a writer&amp;hellip;&lt;/p&gt;</description>
+      <description>&lt;p&gt;I noticed that I write not as often as I want to, so I procrastinated and first relaunched my blog instead of writing.&#xA;It has a new design and some new functionality, also the posts have now images. The relaunch was, for me, some kind of&#xA;personal retrospective, where I read all my old posts and found out that I&amp;rsquo;m probably a better webmaster than a writer&amp;hellip;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Why complexity in software projects is bad (and you should not advertise it)</title>
       <link>https://www.frankneff.com/blog/2021-08-10-why-complexity-in-software-is-bad/</link>
       <pubDate>Tue, 10 Aug 2021 18:30:00 +0100</pubDate>
-      
       <guid>https://www.frankneff.com/blog/2021-08-10-why-complexity-in-software-is-bad/</guid>
-      <description>&lt;p&gt;There are (still) many people telling proudly, how complex their product is. There are job ads, explaining that you will
-&amp;ldquo;create highly complex software&amp;rdquo;. These false signals, which I personally saw in many positions and projects, create a
-potentially huge long-tail problem, not primarily for engineers, but for the product management and engineering team
-lead. In this blogpost, I want to point out some of those impacts of advertising complexity&amp;hellip;&lt;/p&gt;</description>
+      <description>&lt;p&gt;There are (still) many people telling proudly, how complex their product is. There are job ads, explaining that you will&#xA;&amp;ldquo;create highly complex software&amp;rdquo;. These false signals, which I personally saw in many positions and projects, create a&#xA;potentially huge long-tail problem, not primarily for engineers, but for the product management and engineering team&#xA;lead. In this blogpost, I want to point out some of those impacts of advertising complexity&amp;hellip;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Frank Neff</title>
       <link>https://www.frankneff.com/author/frank-neff/</link>
       <pubDate>Tue, 02 Feb 2021 10:20:19 +0600</pubDate>
-      
       <guid>https://www.frankneff.com/author/frank-neff/</guid>
-      <description>I see myself as a curious problem solver. On a life-long mission to enable people, improve tools and optimize processes, I build software to make things work. Moreover, I like to talk about technology and sharing know-how in a team to improve my own skills and empower others.
-It&amp;rsquo;s my passion to build great tech, with great people, to make things better.</description>
+      <description>I see myself as a curious problem solver. On a life-long mission to enable people, improve tools and optimize processes, I build software to make things work. Moreover, I like to talk about technology and sharing know-how in a team to improve my own skills and empower others.&#xA;It&amp;rsquo;s my passion to build great tech, with great people, to make things better.</description>
     </item>
-    
     <item>
       <title>Crossbuilding Scala.js 1.0 and 0.6</title>
       <link>https://www.frankneff.com/blog/2020-02-26-crossbuilding-scalajs-1-0-and-0-6/</link>
       <pubDate>Wed, 26 Feb 2020 17:05:18 +0100</pubDate>
-      
       <guid>https://www.frankneff.com/blog/2020-02-26-crossbuilding-scalajs-1-0-and-0-6/</guid>
-      <description>&lt;p&gt;As you may know, Scala.js &lt;code&gt;1.0.0&lt;/code&gt; &lt;a href=&#34;https://www.scala-js.org/news/2020/02/25/announcing-scalajs-1.0.0/&#34;&gt;just went final&lt;/a&gt;.
-For end-products, the upgrade is rather simple, just bump the plugin version and fix potential compile issues. If
-you&amp;rsquo;re maintaining a library, cross-building for &lt;code&gt;0.6.x&lt;/code&gt; and &lt;code&gt;1.0.x&lt;/code&gt; is still a bit tricky, but possible&amp;hellip;&lt;/p&gt;</description>
+      <description>&lt;p&gt;As you may know, Scala.js &lt;code&gt;1.0.0&lt;/code&gt; &lt;a href=&#34;https://www.scala-js.org/news/2020/02/25/announcing-scalajs-1.0.0/&#34;&gt;just went final&lt;/a&gt;.&#xA;For end-products, the upgrade is rather simple, just bump the plugin version and fix potential compile issues. If&#xA;you&amp;rsquo;re maintaining a library, cross-building for &lt;code&gt;0.6.x&lt;/code&gt; and &lt;code&gt;1.0.x&lt;/code&gt; is still a bit tricky, but possible&amp;hellip;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>The Spring Security Oauth2 Blues - Simplicity</title>
       <link>https://www.frankneff.com/blog/2019-11-19-spring-security-oauth-blues-simplicity/</link>
       <pubDate>Sat, 14 Dec 2019 13:58:28 +0100</pubDate>
-      
       <guid>https://www.frankneff.com/blog/2019-11-19-spring-security-oauth-blues-simplicity/</guid>
-      <description>&lt;p&gt;I personally like the Spring Framework and its security components, because it&amp;rsquo;s pretty full-featured and easy to use,
-but when it comes to Spring Security OAuth2, there&amp;rsquo;s a huge quality breakdown. In this (probably series) of blogposts,
-I&amp;rsquo;ll try to sum up the good, the bad, the evil and why I ended up completely dropping Spring Security OAuth2.&lt;/p&gt;</description>
+      <description>&lt;p&gt;I personally like the Spring Framework and its security components, because it&amp;rsquo;s pretty full-featured and easy to use,&#xA;but when it comes to Spring Security OAuth2, there&amp;rsquo;s a huge quality breakdown. In this (probably series) of blogposts,&#xA;I&amp;rsquo;ll try to sum up the good, the bad, the evil and why I ended up completely dropping Spring Security OAuth2.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Search Result</title>
       <link>https://www.frankneff.com/search/</link>
       <pubDate>Mon, 24 Sep 2018 11:07:10 +0600</pubDate>
-      
       <guid>https://www.frankneff.com/search/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Using Shapeless for Data Cleaning in Apache Spark</title>
       <link>https://www.frankneff.com/blog/2018-03-02-generic-derivation-for-spark-data-cleaning/</link>
       <pubDate>Fri, 02 Mar 2018 19:15:03 +0100</pubDate>
-      
       <guid>https://www.frankneff.com/blog/2018-03-02-generic-derivation-for-spark-data-cleaning/</guid>
-      <description>&lt;p&gt;When it comes to importing data into a BigData infrastructure like Hadoop, &lt;a href=&#34;https://spark.apache.org/&#34;&gt;Apache Spark&lt;/a&gt; is
-one of the most used tools for &lt;a href=&#34;https://en.wikipedia.org/wiki/Extract,_transform,_load&#34;&gt;ETL&lt;/a&gt; jobs. Because input data
-– in this case CSV – has often invalid values, a data cleaning layer is needed.Most tasks in data cleaning
-are very specific and therefore need to be implemented depending on your data, but some tasks can be generalized&amp;hellip;&lt;/p&gt;</description>
+      <description>&lt;p&gt;When it comes to importing data into a BigData infrastructure like Hadoop, &lt;a href=&#34;https://spark.apache.org/&#34;&gt;Apache Spark&lt;/a&gt; is&#xA;one of the most used tools for &lt;a href=&#34;https://en.wikipedia.org/wiki/Extract,_transform,_load&#34;&gt;ETL&lt;/a&gt; jobs. Because input data&#xA;– in this case CSV – has often invalid values, a data cleaning layer is needed.Most tasks in data cleaning&#xA;are very specific and therefore need to be implemented depending on your data, but some tasks can be generalized&amp;hellip;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Java Libs in Scala - A bit more Functional</title>
       <link>https://www.frankneff.com/blog/2017-12-18-using-java-libs-in-scala/</link>
       <pubDate>Mon, 18 Dec 2017 22:04:38 +0100</pubDate>
-      
       <guid>https://www.frankneff.com/blog/2017-12-18-using-java-libs-in-scala/</guid>
-      <description>&lt;p&gt;Every Java library can be used in Scala, which is, for me, one of the good parts of the JVM world. But Java libs are
-mostly object-oriented and not functional, therefore full  of side effects and somtimes &amp;ldquo;ugly&amp;rdquo; to use in Scala. But
-there are some approaches how to make Java libs (or their interfaces) more functional, so they can almost be used like
-a Scala lib.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Every Java library can be used in Scala, which is, for me, one of the good parts of the JVM world. But Java libs are&#xA;mostly object-oriented and not functional, therefore full  of side effects and somtimes &amp;ldquo;ugly&amp;rdquo; to use in Scala. But&#xA;there are some approaches how to make Java libs (or their interfaces) more functional, so they can almost be used like&#xA;a Scala lib.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Overcoming Checked Exceptions in Java Lambdas</title>
       <link>https://www.frankneff.com/blog/2017-09-06-overcoming-checked-exceptions-in-java-lambdas/</link>
       <pubDate>Wed, 06 Sep 2017 19:57:00 +0100</pubDate>
-      
       <guid>https://www.frankneff.com/blog/2017-09-06-overcoming-checked-exceptions-in-java-lambdas/</guid>
-      <description>&lt;p&gt;In Java 8, the long awaited Lambda came to live, making it easy(-er) to do FP in Java. One problem I came across is,
-that most Java code throws checked exceptions which leads to IMHO ugly try/catch blocks in lambdas:&lt;/p&gt;</description>
+      <description>&lt;p&gt;In Java 8, the long awaited Lambda came to live, making it easy(-er) to do FP in Java. One problem I came across is,&#xA;that most Java code throws checked exceptions which leads to IMHO ugly try/catch blocks in lambdas:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Functional Java 1 - Options</title>
       <link>https://www.frankneff.com/blog/2016-11-22-functional-java-1-option/</link>
       <pubDate>Tue, 22 Nov 2016 08:22:49 +0100</pubDate>
-      
       <guid>https://www.frankneff.com/blog/2016-11-22-functional-java-1-option/</guid>
       <description>&lt;p&gt;This is the first post of my series about functional programming in Java. There&amp;rsquo;s a lot of functional stuff one can do. Everyone knows the Java 8 Lambda expression, but with a little library support, there is way more&amp;hellip; In this series, I&amp;rsquo;ll coder som libraries which provide functional paradigms and constructs for Java:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>New Blog</title>
       <link>https://www.frankneff.com/blog/2016-05-12-new-blog/</link>
       <pubDate>Thu, 12 May 2016 14:38:12 +0200</pubDate>
-      
       <guid>https://www.frankneff.com/blog/2016-05-12-new-blog/</guid>
-      <description>&lt;p&gt;You may have noticed, that I had not much time to blog about something in the past months&amp;hellip;
-One thing was, that we all need money, so I had to work very much. And as some of you know, I&amp;rsquo;m also studying in the evenings.&lt;/p&gt;</description>
+      <description>&lt;p&gt;You may have noticed, that I had not much time to blog about something in the past months&amp;hellip;&#xA;One thing was, that we all need money, so I had to work very much. And as some of you know, I&amp;rsquo;m also studying in the evenings.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Play Framework Actor Pooling with Guice (Java)</title>
       <link>https://www.frankneff.com/blog/2016-05-02-play-guice-actor-pooling/</link>
       <pubDate>Mon, 02 May 2016 23:11:01 +0200</pubDate>
-      
       <guid>https://www.frankneff.com/blog/2016-05-02-play-guice-actor-pooling/</guid>
-      <description>&lt;p&gt;Working with the Play! Framework means working with Akka, intentionally or not. But working with Akka Actors can be
-tricky, especially when it comes to dependency injection. Play! 2.4 uses Google&amp;rsquo;s
-&lt;a href=&#34;https://www.playframework.com/documentation/2.4.x/JavaDependencyInjection&#34;&gt;Guice&lt;/a&gt; for DI and of course it has the
-ability to also bind Actors so an &lt;code&gt;ActorRef&lt;/code&gt; can be injected anywhere.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Working with the Play! Framework means working with Akka, intentionally or not. But working with Akka Actors can be&#xA;tricky, especially when it comes to dependency injection. Play! 2.4 uses Google&amp;rsquo;s&#xA;&lt;a href=&#34;https://www.playframework.com/documentation/2.4.x/JavaDependencyInjection&#34;&gt;Guice&lt;/a&gt; for DI and of course it has the&#xA;ability to also bind Actors so an &lt;code&gt;ActorRef&lt;/code&gt; can be injected anywhere.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Scala Compiler Tuning</title>
       <link>https://www.frankneff.com/blog/2016-04-15-scala-compiler-tuning/</link>
       <pubDate>Fri, 15 Apr 2016 22:15:28 +0200</pubDate>
-      
       <guid>https://www.frankneff.com/blog/2016-04-15-scala-compiler-tuning/</guid>
-      <description>&lt;p&gt;As my Scala projects go on, I want to share some compiler configuration and tricks with you, which I use on many
-projects. Some tiny configuration options can greatly improve your code and warn you about things, you would probably
-never discover.&lt;/p&gt;</description>
+      <description>&lt;p&gt;As my Scala projects go on, I want to share some compiler configuration and tricks with you, which I use on many&#xA;projects. Some tiny configuration options can greatly improve your code and warn you about things, you would probably&#xA;never discover.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Understanding Stemmers (Natural Language Processing)</title>
       <link>https://www.frankneff.com/blog/2015-07-23-understanding-stemmers-nlp/</link>
       <pubDate>Thu, 23 Jul 2015 18:05:12 +0200</pubDate>
-      
       <guid>https://www.frankneff.com/blog/2015-07-23-understanding-stemmers-nlp/</guid>
-      <description>&lt;p&gt;I am interested in NLP and have already some experience with Apache Solr. It&amp;rsquo;s time to dig a little in-deep regarding
-stemmers. First of all, I was looking for a general definition of what a stemmer is, and I found this one, which IMHO
-is quite good:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;stemmer — an algorithm for removing inflectional and derivational endings in order to reduce word forms to a common stem&lt;/p&gt;
-&lt;/blockquote&gt;</description>
+      <description>&lt;p&gt;I am interested in NLP and have already some experience with Apache Solr. It&amp;rsquo;s time to dig a little in-deep regarding&#xA;stemmers. First of all, I was looking for a general definition of what a stemmer is, and I found this one, which IMHO&#xA;is quite good:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;stemmer — an algorithm for removing inflectional and derivational endings in order to reduce word forms to a common stem&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
     </item>
-    
     <item>
       <title>If pragmatism raises technical debt, call it oversimplification (rant)</title>
       <link>https://www.frankneff.com/blog/2015-04-21-pragmatism-technical-dept-oversimplification/</link>
       <pubDate>Tue, 21 Apr 2015 13:09:32 +0200</pubDate>
-      
       <guid>https://www.frankneff.com/blog/2015-04-21-pragmatism-technical-dept-oversimplification/</guid>
-      <description>&lt;p&gt;The word &amp;ldquo;pragmatism&amp;rdquo; or &amp;ldquo;pragmatic&amp;rdquo; is, in my personal opinion, the most
-overrated word in agile development. Many people use this as a buzzword without
-knowing what it means. I hear people saying &amp;ldquo;He solved that complex problem in
-half an hour, he&amp;rsquo;s so pragmatic!&amp;rdquo; and think for myself &amp;ldquo;Yeah, but that &amp;lsquo;solution&amp;rsquo;
-probably causes other devs three times more effort than a sustainable solution
-would take.&amp;rdquo;&lt;/p&gt;</description>
+      <description>&lt;p&gt;The word &amp;ldquo;pragmatism&amp;rdquo; or &amp;ldquo;pragmatic&amp;rdquo; is, in my personal opinion, the most&#xA;overrated word in agile development. Many people use this as a buzzword without&#xA;knowing what it means. I hear people saying &amp;ldquo;He solved that complex problem in&#xA;half an hour, he&amp;rsquo;s so pragmatic!&amp;rdquo; and think for myself &amp;ldquo;Yeah, but that &amp;lsquo;solution&amp;rsquo;&#xA;probably causes other devs three times more effort than a sustainable solution&#xA;would take.&amp;rdquo;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Contact</title>
       <link>https://www.frankneff.com/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://www.frankneff.com/contact/</guid>
-      <description>Dear individual or company. Contacting me is very easy. Despite the variety of digital communication channels, I choose to provide two for now. If you want to make a first contact, or have an occasional chat, connect me on LinkedIn. For regular, or a bit more &amp;ldquo;official&amp;rdquo; communication, I use e-mail.
-I&amp;rsquo;m looking forward to hearing from you.
-PS: I&amp;rsquo;m pretty quick in reporting / adding spammers to blacklists ;)
-LinkedIn Frank Neff on LinkedIn
-E-Mail If you don&amp;rsquo;t already have my email address, please contact me on LinkedIn first. Otherwise, feel free to just write me&amp;hellip;
-I like privacy and security, therefore, all my outgoing emails are signed and, if possible, encrypted using PGP.
-Fingerprint:
-db6b20d2d3bf07f442d0449340aa242afa39e96a PublicKey:
------BEGIN PGP PUBLIC KEY BLOCK----- xjMEZIL4RxYJKwYBBAHaRw8BAQdAGn6rXyAi8lOrPS82f5O50UFUQ3cyn2NB XGOrnardiaTNI21lQGZyYW5rbmVmZi5jb20gPG1lQGZyYW5rbmVmZi5jb20+ wowEEBYKAD4FgmSC+EcECwkHCAmQQKokKvo56WoDFQgKBBYAAgECGQECmwMC HgEWIQTbayDS078H9ELQRJNAqiQq+jnpagAAXCsA/RtgYsjCZ9kWvVRQ1S4J QpP0hfI8MQ4Zq/WGcytpguoRAP9xlxOQf/Ye2kgxDFUiXtcFylX6TsS1NY7u tD6D7vTQA844BGSC+EcSCisGAQQBl1UBBQEBB0Bj9dhVDqYEyNhca5p7qbUx ZGAJeyyLfP002LRkUhItSAMBCAfCeAQYFggAKgWCZIL4RwmQQKokKvo56WoC mwwWIQTbayDS078H9ELQRJNAqiQq+jnpagAAg0QBAOaUcQ07H/NsF0v1oX1J UKcVh5hOAHtNNVGXueev7zz5AP9ZvSYlK+mekZATENpmO+dnXTGz0cmK5t3D vDs7MZZ3Dw== =oPJ2 -----END PGP PUBLIC KEY BLOCK----- On first contact, I normally attach a copy of my pubkey to the email. You can also download it here.</description>
+      <description>Dear individual or company. Contacting me is very easy. Despite the variety of digital communication channels, I choose to provide two for now. If you want to make a first contact, or have an occasional chat, connect me on LinkedIn. For regular, or a bit more &amp;ldquo;official&amp;rdquo; communication, I use e-mail.&#xA;I&amp;rsquo;m looking forward to hearing from you.&#xA;PS: I&amp;rsquo;m pretty quick in reporting / adding spammers to blacklists ;)&#xA;LinkedIn Frank Neff on LinkedIn&#xA;E-Mail If you don&amp;rsquo;t already have my email address, please contact me on LinkedIn first. Otherwise, feel free to just write me&amp;hellip;&#xA;I like privacy and security, therefore, all my outgoing emails are signed and, if possible, encrypted using PGP.&#xA;Fingerprint:&#xA;db6b20d2d3bf07f442d0449340aa242afa39e96a PublicKey:&#xA;-----BEGIN PGP PUBLIC KEY BLOCK----- xjMEZIL4RxYJKwYBBAHaRw8BAQdAGn6rXyAi8lOrPS82f5O50UFUQ3cyn2NB XGOrnardiaTNI21lQGZyYW5rbmVmZi5jb20gPG1lQGZyYW5rbmVmZi5jb20+ wowEEBYKAD4FgmSC+EcECwkHCAmQQKokKvo56WoDFQgKBBYAAgECGQECmwMC HgEWIQTbayDS078H9ELQRJNAqiQq+jnpagAAXCsA/RtgYsjCZ9kWvVRQ1S4J QpP0hfI8MQ4Zq/WGcytpguoRAP9xlxOQf/Ye2kgxDFUiXtcFylX6TsS1NY7u tD6D7vTQA844BGSC+EcSCisGAQQBl1UBBQEBB0Bj9dhVDqYEyNhca5p7qbUx ZGAJeyyLfP002LRkUhItSAMBCAfCeAQYFggAKgWCZIL4RwmQQKokKvo56WoC mwwWIQTbayDS078H9ELQRJNAqiQq+jnpagAAg0QBAOaUcQ07H/NsF0v1oX1J UKcVh5hOAHtNNVGXueev7zz5AP9ZvSYlK+mekZATENpmO+dnXTGz0cmK5t3D vDs7MZZ3Dw== =oPJ2 -----END PGP PUBLIC KEY BLOCK----- On first contact, I normally attach a copy of my pubkey to the email. You can also download it here.</description>
     </item>
-    
     <item>
       <title>No Search Found</title>
       <link>https://www.frankneff.com/404/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://www.frankneff.com/404/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Privacy</title>
       <link>https://www.frankneff.com/privacy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://www.frankneff.com/privacy/</guid>
-      <description>Responsibility of Contributors Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed
-pretium, aliquam sit. Praesent elementum magna amet, tincidunt eros, nibh in leo. Malesuada purus, lacus, at aliquam suspendisse tempus. Quis tempus amet, velit nascetur sollicitudin. At sollicitudin eget amet in. Eu velit nascetur sollicitudin erhdfvssfvrgss eget viverra nec elementum. Lacus, facilisis tristique lectus in.
-Gathering of Personal Information Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed
-Protection of Personal- Information Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus.
-Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat
-Privacy Policy Changes Sll the Themefisher items are designed to be with the latest , We check all comments that threaten or harm the reputation of any person or organization personal information including, but limited to, email addresses, telephone numbers Any Update come in The technology Customer will get automatic Notification. </description>
+      <description>Responsibility of Contributors Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed&#xA;pretium, aliquam sit. Praesent elementum magna amet, tincidunt eros, nibh in leo. Malesuada purus, lacus, at aliquam suspendisse tempus. Quis tempus amet, velit nascetur sollicitudin. At sollicitudin eget amet in. Eu velit nascetur sollicitudin erhdfvssfvrgss eget viverra nec elementum. Lacus, facilisis tristique lectus in.&#xA;Gathering of Personal Information Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed&#xA;Protection of Personal- Information Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus.&#xA;Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat&#xA;Privacy Policy Changes Sll the Themefisher items are designed to be with the latest , We check all comments that threaten or harm the reputation of any person or organization personal information including, but limited to, email addresses, telephone numbers Any Update come in The technology Customer will get automatic Notification. </description>
     </item>
-    
     <item>
       <title>Terms And Conditions</title>
       <link>https://www.frankneff.com/terms-conditions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://www.frankneff.com/terms-conditions/</guid>
-      <description>Responsibility of Contributors Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed
-pretium, aliquam sit. Praesent elementum magna amet, tincidunt eros, nibh in leo. Malesuada purus, lacus, at aliquam suspendisse tempus. Quis tempus amet, velit nascetur sollicitudin. At sollicitudin eget amet in. Eu velit nascetur sollicitudin erhdfvssfvrgss eget viverra nec elementum. Lacus, facilisis tristique lectus in.
-Gathering of Personal Information Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed
-Protection of Personal- Information Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus.
-Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat
-Privacy Policy Changes Sll the Themefisher items are designed to be with the latest , We check all comments that threaten or harm the reputation of any person or organization personal information including, but limited to, email addresses, telephone numbers Any Update come in The technology Customer will get automatic Notification. </description>
+      <description>Responsibility of Contributors Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed&#xA;pretium, aliquam sit. Praesent elementum magna amet, tincidunt eros, nibh in leo. Malesuada purus, lacus, at aliquam suspendisse tempus. Quis tempus amet, velit nascetur sollicitudin. At sollicitudin eget amet in. Eu velit nascetur sollicitudin erhdfvssfvrgss eget viverra nec elementum. Lacus, facilisis tristique lectus in.&#xA;Gathering of Personal Information Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed&#xA;Protection of Personal- Information Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus.&#xA;Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat&#xA;Privacy Policy Changes Sll the Themefisher items are designed to be with the latest , We check all comments that threaten or harm the reputation of any person or organization personal information including, but limited to, email addresses, telephone numbers Any Update come in The technology Customer will get automatic Notification. </description>
     </item>
-    
   </channel>
 </rss>

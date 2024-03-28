@@ -5,71 +5,57 @@
     <link>https://www.frankneff.com/categories/functional-programming/</link>
     <description>Recent content in Functional Programming on FrankNeff.com - Technology meets Leadership</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 26 Feb 2020 17:05:18 +0100</lastBuildDate><atom:link href="https://www.frankneff.com/categories/functional-programming/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Thu, 28 Mar 2024 12:25:00 +0200</lastBuildDate>
+    <atom:link href="https://www.frankneff.com/categories/functional-programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How a strict type system saves you documentation, tests, and nerves</title>
+      <link>https://www.frankneff.com/blog/2024-03-28-how-a-strict-type-system-saves-you-documentation-tests-and-nerves/</link>
+      <pubDate>Thu, 28 Mar 2024 12:25:00 +0200</pubDate>
+      <guid>https://www.frankneff.com/blog/2024-03-28-how-a-strict-type-system-saves-you-documentation-tests-and-nerves/</guid>
+      <description>&lt;p&gt;I was recently inspired to finally write this post. Especially in &lt;strong&gt;weakly- or untyped&lt;/strong&gt; languages, such as&#xA;the JavaScript or PHP world, the added value of strict type systems is often not recognized. Instead, many discussions&#xA;and comments revolve around the &lt;strong&gt;need for tests&lt;/strong&gt; or code comments. Contrary to that, in the functional programming&#xA;world, we &lt;strong&gt;leave such checks to the compiler&lt;/strong&gt;. In this post I would like to give a short overview and&#xA;explain how to use a strict type system for everyday checks instead of writing type checks, tests and documentation for it.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Crossbuilding Scala.js 1.0 and 0.6</title>
       <link>https://www.frankneff.com/blog/2020-02-26-crossbuilding-scalajs-1-0-and-0-6/</link>
       <pubDate>Wed, 26 Feb 2020 17:05:18 +0100</pubDate>
-      
       <guid>https://www.frankneff.com/blog/2020-02-26-crossbuilding-scalajs-1-0-and-0-6/</guid>
-      <description>&lt;p&gt;As you may know, Scala.js &lt;code&gt;1.0.0&lt;/code&gt; &lt;a href=&#34;https://www.scala-js.org/news/2020/02/25/announcing-scalajs-1.0.0/&#34;&gt;just went final&lt;/a&gt;.
-For end-products, the upgrade is rather simple, just bump the plugin version and fix potential compile issues. If
-you&amp;rsquo;re maintaining a library, cross-building for &lt;code&gt;0.6.x&lt;/code&gt; and &lt;code&gt;1.0.x&lt;/code&gt; is still a bit tricky, but possible&amp;hellip;&lt;/p&gt;</description>
+      <description>&lt;p&gt;As you may know, Scala.js &lt;code&gt;1.0.0&lt;/code&gt; &lt;a href=&#34;https://www.scala-js.org/news/2020/02/25/announcing-scalajs-1.0.0/&#34;&gt;just went final&lt;/a&gt;.&#xA;For end-products, the upgrade is rather simple, just bump the plugin version and fix potential compile issues. If&#xA;you&amp;rsquo;re maintaining a library, cross-building for &lt;code&gt;0.6.x&lt;/code&gt; and &lt;code&gt;1.0.x&lt;/code&gt; is still a bit tricky, but possible&amp;hellip;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Using Shapeless for Data Cleaning in Apache Spark</title>
       <link>https://www.frankneff.com/blog/2018-03-02-generic-derivation-for-spark-data-cleaning/</link>
       <pubDate>Fri, 02 Mar 2018 19:15:03 +0100</pubDate>
-      
       <guid>https://www.frankneff.com/blog/2018-03-02-generic-derivation-for-spark-data-cleaning/</guid>
-      <description>&lt;p&gt;When it comes to importing data into a BigData infrastructure like Hadoop, &lt;a href=&#34;https://spark.apache.org/&#34;&gt;Apache Spark&lt;/a&gt; is
-one of the most used tools for &lt;a href=&#34;https://en.wikipedia.org/wiki/Extract,_transform,_load&#34;&gt;ETL&lt;/a&gt; jobs. Because input data
-– in this case CSV – has often invalid values, a data cleaning layer is needed.Most tasks in data cleaning
-are very specific and therefore need to be implemented depending on your data, but some tasks can be generalized&amp;hellip;&lt;/p&gt;</description>
+      <description>&lt;p&gt;When it comes to importing data into a BigData infrastructure like Hadoop, &lt;a href=&#34;https://spark.apache.org/&#34;&gt;Apache Spark&lt;/a&gt; is&#xA;one of the most used tools for &lt;a href=&#34;https://en.wikipedia.org/wiki/Extract,_transform,_load&#34;&gt;ETL&lt;/a&gt; jobs. Because input data&#xA;– in this case CSV – has often invalid values, a data cleaning layer is needed.Most tasks in data cleaning&#xA;are very specific and therefore need to be implemented depending on your data, but some tasks can be generalized&amp;hellip;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Java Libs in Scala - A bit more Functional</title>
       <link>https://www.frankneff.com/blog/2017-12-18-using-java-libs-in-scala/</link>
       <pubDate>Mon, 18 Dec 2017 22:04:38 +0100</pubDate>
-      
       <guid>https://www.frankneff.com/blog/2017-12-18-using-java-libs-in-scala/</guid>
-      <description>&lt;p&gt;Every Java library can be used in Scala, which is, for me, one of the good parts of the JVM world. But Java libs are
-mostly object-oriented and not functional, therefore full  of side effects and somtimes &amp;ldquo;ugly&amp;rdquo; to use in Scala. But
-there are some approaches how to make Java libs (or their interfaces) more functional, so they can almost be used like
-a Scala lib.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Every Java library can be used in Scala, which is, for me, one of the good parts of the JVM world. But Java libs are&#xA;mostly object-oriented and not functional, therefore full  of side effects and somtimes &amp;ldquo;ugly&amp;rdquo; to use in Scala. But&#xA;there are some approaches how to make Java libs (or their interfaces) more functional, so they can almost be used like&#xA;a Scala lib.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Overcoming Checked Exceptions in Java Lambdas</title>
       <link>https://www.frankneff.com/blog/2017-09-06-overcoming-checked-exceptions-in-java-lambdas/</link>
       <pubDate>Wed, 06 Sep 2017 19:57:00 +0100</pubDate>
-      
       <guid>https://www.frankneff.com/blog/2017-09-06-overcoming-checked-exceptions-in-java-lambdas/</guid>
-      <description>&lt;p&gt;In Java 8, the long awaited Lambda came to live, making it easy(-er) to do FP in Java. One problem I came across is,
-that most Java code throws checked exceptions which leads to IMHO ugly try/catch blocks in lambdas:&lt;/p&gt;</description>
+      <description>&lt;p&gt;In Java 8, the long awaited Lambda came to live, making it easy(-er) to do FP in Java. One problem I came across is,&#xA;that most Java code throws checked exceptions which leads to IMHO ugly try/catch blocks in lambdas:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Functional Java 1 - Options</title>
       <link>https://www.frankneff.com/blog/2016-11-22-functional-java-1-option/</link>
       <pubDate>Tue, 22 Nov 2016 08:22:49 +0100</pubDate>
-      
       <guid>https://www.frankneff.com/blog/2016-11-22-functional-java-1-option/</guid>
       <description>&lt;p&gt;This is the first post of my series about functional programming in Java. There&amp;rsquo;s a lot of functional stuff one can do. Everyone knows the Java 8 Lambda expression, but with a little library support, there is way more&amp;hellip; In this series, I&amp;rsquo;ll coder som libraries which provide functional paradigms and constructs for Java:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Scala Compiler Tuning</title>
       <link>https://www.frankneff.com/blog/2016-04-15-scala-compiler-tuning/</link>
       <pubDate>Fri, 15 Apr 2016 22:15:28 +0200</pubDate>
-      
       <guid>https://www.frankneff.com/blog/2016-04-15-scala-compiler-tuning/</guid>
-      <description>&lt;p&gt;As my Scala projects go on, I want to share some compiler configuration and tricks with you, which I use on many
-projects. Some tiny configuration options can greatly improve your code and warn you about things, you would probably
-never discover.&lt;/p&gt;</description>
+      <description>&lt;p&gt;As my Scala projects go on, I want to share some compiler configuration and tricks with you, which I use on many&#xA;projects. Some tiny configuration options can greatly improve your code and warn you about things, you would probably&#xA;never discover.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

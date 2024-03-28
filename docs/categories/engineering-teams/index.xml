@@ -5,56 +5,36 @@
     <link>https://www.frankneff.com/categories/engineering-teams/</link>
     <description>Recent content in Engineering Teams on FrankNeff.com - Technology meets Leadership</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 12 Mar 2022 07:10:00 +0100</lastBuildDate><atom:link href="https://www.frankneff.com/categories/engineering-teams/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Sat, 12 Mar 2022 07:10:00 +0100</lastBuildDate>
+    <atom:link href="https://www.frankneff.com/categories/engineering-teams/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hiring Devs - Why you should consider Juniors</title>
       <link>https://www.frankneff.com/blog/2022-03-12-hiring-devs-why-you-should-consider-juniors/</link>
       <pubDate>Sat, 12 Mar 2022 07:10:00 +0100</pubDate>
-      
       <guid>https://www.frankneff.com/blog/2022-03-12-hiring-devs-why-you-should-consider-juniors/</guid>
-      <description>&lt;p&gt;When it comes to developer maturity, I heard many tech recruiters and decision-makers saying: &amp;ldquo;We should only hire senior
-devs.&amp;rdquo; This may be justified in some situations, projects, or teams, but I do not accept this statement as a general
-premise. In this blog post, I want to highlight the benefits that juniors can bring to the team and encourage you to find
-and foster new talent actively.&lt;/p&gt;</description>
+      <description>&lt;p&gt;When it comes to developer maturity, I heard many tech recruiters and decision-makers saying: &amp;ldquo;We should only hire senior&#xA;devs.&amp;rdquo; This may be justified in some situations, projects, or teams, but I do not accept this statement as a general&#xA;premise. In this blog post, I want to highlight the benefits that juniors can bring to the team and encourage you to find&#xA;and foster new talent actively.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Hiring Devs - The Seniority Paradox</title>
       <link>https://www.frankneff.com/blog/2021-12-10-hiring-devs-the-seniority-paradox/</link>
       <pubDate>Fri, 10 Dec 2021 07:10:00 +0100</pubDate>
-      
       <guid>https://www.frankneff.com/blog/2021-12-10-hiring-devs-the-seniority-paradox/</guid>
-      <description>&lt;p&gt;In IT, there is a paradox when it comes to job titles. Somewhere along the way, the practice of linking job titles to a
-candidate&amp;rsquo;s (desired) experience became established in large parts of the market. This then created the now famous and
-omnipresent job titles like &amp;ldquo;Senior Software Engineer&amp;rdquo;, &amp;ldquo;Professional DevOps Engineer&amp;rdquo;, etc. In this blog post, I would
-like to explain the paradox around these designations and how I use them in the course of the talent search&amp;hellip;&lt;/p&gt;</description>
+      <description>&lt;p&gt;In IT, there is a paradox when it comes to job titles. Somewhere along the way, the practice of linking job titles to a&#xA;candidate&amp;rsquo;s (desired) experience became established in large parts of the market. This then created the now famous and&#xA;omnipresent job titles like &amp;ldquo;Senior Software Engineer&amp;rdquo;, &amp;ldquo;Professional DevOps Engineer&amp;rdquo;, etc. In this blog post, I would&#xA;like to explain the paradox around these designations and how I use them in the course of the talent search&amp;hellip;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Why complexity in software projects is bad (and you should not advertise it)</title>
       <link>https://www.frankneff.com/blog/2021-08-10-why-complexity-in-software-is-bad/</link>
       <pubDate>Tue, 10 Aug 2021 18:30:00 +0100</pubDate>
-      
       <guid>https://www.frankneff.com/blog/2021-08-10-why-complexity-in-software-is-bad/</guid>
-      <description>&lt;p&gt;There are (still) many people telling proudly, how complex their product is. There are job ads, explaining that you will
-&amp;ldquo;create highly complex software&amp;rdquo;. These false signals, which I personally saw in many positions and projects, create a
-potentially huge long-tail problem, not primarily for engineers, but for the product management and engineering team
-lead. In this blogpost, I want to point out some of those impacts of advertising complexity&amp;hellip;&lt;/p&gt;</description>
+      <description>&lt;p&gt;There are (still) many people telling proudly, how complex their product is. There are job ads, explaining that you will&#xA;&amp;ldquo;create highly complex software&amp;rdquo;. These false signals, which I personally saw in many positions and projects, create a&#xA;potentially huge long-tail problem, not primarily for engineers, but for the product management and engineering team&#xA;lead. In this blogpost, I want to point out some of those impacts of advertising complexity&amp;hellip;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>If pragmatism raises technical debt, call it oversimplification (rant)</title>
       <link>https://www.frankneff.com/blog/2015-04-21-pragmatism-technical-dept-oversimplification/</link>
       <pubDate>Tue, 21 Apr 2015 13:09:32 +0200</pubDate>
-      
       <guid>https://www.frankneff.com/blog/2015-04-21-pragmatism-technical-dept-oversimplification/</guid>
-      <description>&lt;p&gt;The word &amp;ldquo;pragmatism&amp;rdquo; or &amp;ldquo;pragmatic&amp;rdquo; is, in my personal opinion, the most
-overrated word in agile development. Many people use this as a buzzword without
-knowing what it means. I hear people saying &amp;ldquo;He solved that complex problem in
-half an hour, he&amp;rsquo;s so pragmatic!&amp;rdquo; and think for myself &amp;ldquo;Yeah, but that &amp;lsquo;solution&amp;rsquo;
-probably causes other devs three times more effort than a sustainable solution
-would take.&amp;rdquo;&lt;/p&gt;</description>
+      <description>&lt;p&gt;The word &amp;ldquo;pragmatism&amp;rdquo; or &amp;ldquo;pragmatic&amp;rdquo; is, in my personal opinion, the most&#xA;overrated word in agile development. Many people use this as a buzzword without&#xA;knowing what it means. I hear people saying &amp;ldquo;He solved that complex problem in&#xA;half an hour, he&amp;rsquo;s so pragmatic!&amp;rdquo; and think for myself &amp;ldquo;Yeah, but that &amp;lsquo;solution&amp;rsquo;&#xA;probably causes other devs three times more effort than a sustainable solution&#xA;would take.&amp;rdquo;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

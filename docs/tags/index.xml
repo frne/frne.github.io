@@ -5,420 +5,344 @@
     <link>https://www.frankneff.com/tags/</link>
     <description>Recent content in Tags on FrankNeff.com - Technology meets Leadership</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 13 Oct 2023 14:25:00 +0200</lastBuildDate><atom:link href="https://www.frankneff.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Thu, 28 Mar 2024 12:25:00 +0200</lastBuildDate>
+    <atom:link href="https://www.frankneff.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>architecture</title>
-      <link>https://www.frankneff.com/tags/architecture/</link>
-      <pubDate>Fri, 13 Oct 2023 14:25:00 +0200</pubDate>
-      
-      <guid>https://www.frankneff.com/tags/architecture/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>enterprise</title>
-      <link>https://www.frankneff.com/tags/enterprise/</link>
-      <pubDate>Fri, 13 Oct 2023 14:25:00 +0200</pubDate>
-      
-      <guid>https://www.frankneff.com/tags/enterprise/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>systems</title>
-      <link>https://www.frankneff.com/tags/systems/</link>
-      <pubDate>Fri, 13 Oct 2023 14:25:00 +0200</pubDate>
-      
-      <guid>https://www.frankneff.com/tags/systems/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>visualization</title>
-      <link>https://www.frankneff.com/tags/visualization/</link>
-      <pubDate>Fri, 13 Oct 2023 14:25:00 +0200</pubDate>
-      
-      <guid>https://www.frankneff.com/tags/visualization/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>authentication</title>
-      <link>https://www.frankneff.com/tags/authentication/</link>
-      <pubDate>Mon, 11 Sep 2023 11:10:00 +0200</pubDate>
-      
-      <guid>https://www.frankneff.com/tags/authentication/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>authorization</title>
-      <link>https://www.frankneff.com/tags/authorization/</link>
-      <pubDate>Mon, 11 Sep 2023 11:10:00 +0200</pubDate>
-      
-      <guid>https://www.frankneff.com/tags/authorization/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>oauth</title>
-      <link>https://www.frankneff.com/tags/oauth/</link>
-      <pubDate>Mon, 11 Sep 2023 11:10:00 +0200</pubDate>
-      
-      <guid>https://www.frankneff.com/tags/oauth/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>oidc</title>
-      <link>https://www.frankneff.com/tags/oidc/</link>
-      <pubDate>Mon, 11 Sep 2023 11:10:00 +0200</pubDate>
-      
-      <guid>https://www.frankneff.com/tags/oidc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>security</title>
-      <link>https://www.frankneff.com/tags/security/</link>
-      <pubDate>Mon, 11 Sep 2023 11:10:00 +0200</pubDate>
-      
-      <guid>https://www.frankneff.com/tags/security/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>german</title>
-      <link>https://www.frankneff.com/tags/german/</link>
-      <pubDate>Sat, 07 May 2022 11:10:00 +0200</pubDate>
-      
-      <guid>https://www.frankneff.com/tags/german/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>studie</title>
-      <link>https://www.frankneff.com/tags/studie/</link>
-      <pubDate>Sat, 07 May 2022 11:10:00 +0200</pubDate>
-      
-      <guid>https://www.frankneff.com/tags/studie/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>career</title>
-      <link>https://www.frankneff.com/tags/career/</link>
-      <pubDate>Fri, 06 May 2022 07:15:00 +0200</pubDate>
-      
-      <guid>https://www.frankneff.com/tags/career/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>engineering</title>
-      <link>https://www.frankneff.com/tags/engineering/</link>
-      <pubDate>Fri, 06 May 2022 07:15:00 +0200</pubDate>
-      
-      <guid>https://www.frankneff.com/tags/engineering/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>knowledge</title>
-      <link>https://www.frankneff.com/tags/knowledge/</link>
-      <pubDate>Fri, 06 May 2022 07:15:00 +0200</pubDate>
-      
-      <guid>https://www.frankneff.com/tags/knowledge/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>training</title>
-      <link>https://www.frankneff.com/tags/training/</link>
-      <pubDate>Fri, 06 May 2022 07:15:00 +0200</pubDate>
-      
-      <guid>https://www.frankneff.com/tags/training/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>recruiting</title>
-      <link>https://www.frankneff.com/tags/recruiting/</link>
-      <pubDate>Sat, 12 Mar 2022 07:10:00 +0100</pubDate>
-      
-      <guid>https://www.frankneff.com/tags/recruiting/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>series</title>
-      <link>https://www.frankneff.com/tags/series/</link>
-      <pubDate>Sat, 12 Mar 2022 07:10:00 +0100</pubDate>
-      
-      <guid>https://www.frankneff.com/tags/series/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>staffing</title>
-      <link>https://www.frankneff.com/tags/staffing/</link>
-      <pubDate>Sat, 12 Mar 2022 07:10:00 +0100</pubDate>
-      
-      <guid>https://www.frankneff.com/tags/staffing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>complexity</title>
-      <link>https://www.frankneff.com/tags/complexity/</link>
-      <pubDate>Fri, 25 Feb 2022 07:10:00 +0100</pubDate>
-      
-      <guid>https://www.frankneff.com/tags/complexity/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>config</title>
-      <link>https://www.frankneff.com/tags/config/</link>
-      <pubDate>Fri, 25 Feb 2022 07:10:00 +0100</pubDate>
-      
-      <guid>https://www.frankneff.com/tags/config/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>spring</title>
-      <link>https://www.frankneff.com/tags/spring/</link>
-      <pubDate>Fri, 25 Feb 2022 07:10:00 +0100</pubDate>
-      
-      <guid>https://www.frankneff.com/tags/spring/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>news</title>
-      <link>https://www.frankneff.com/tags/news/</link>
-      <pubDate>Sun, 05 Dec 2021 13:22:00 +0100</pubDate>
-      
-      <guid>https://www.frankneff.com/tags/news/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>procrastination</title>
-      <link>https://www.frankneff.com/tags/procrastination/</link>
-      <pubDate>Sun, 05 Dec 2021 13:22:00 +0100</pubDate>
-      
-      <guid>https://www.frankneff.com/tags/procrastination/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>product-management</title>
-      <link>https://www.frankneff.com/tags/product-management/</link>
-      <pubDate>Tue, 10 Aug 2021 18:30:00 +0100</pubDate>
-      
-      <guid>https://www.frankneff.com/tags/product-management/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>software-design</title>
-      <link>https://www.frankneff.com/tags/software-design/</link>
-      <pubDate>Tue, 10 Aug 2021 18:30:00 +0100</pubDate>
-      
-      <guid>https://www.frankneff.com/tags/software-design/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>library</title>
-      <link>https://www.frankneff.com/tags/library/</link>
-      <pubDate>Wed, 26 Feb 2020 17:05:18 +0100</pubDate>
-      
-      <guid>https://www.frankneff.com/tags/library/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>sbt</title>
-      <link>https://www.frankneff.com/tags/sbt/</link>
-      <pubDate>Wed, 26 Feb 2020 17:05:18 +0100</pubDate>
-      
-      <guid>https://www.frankneff.com/tags/sbt/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>scala</title>
-      <link>https://www.frankneff.com/tags/scala/</link>
-      <pubDate>Wed, 26 Feb 2020 17:05:18 +0100</pubDate>
-      
-      <guid>https://www.frankneff.com/tags/scala/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>scala.js</title>
-      <link>https://www.frankneff.com/tags/scala.js/</link>
-      <pubDate>Wed, 26 Feb 2020 17:05:18 +0100</pubDate>
-      
-      <guid>https://www.frankneff.com/tags/scala.js/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>shapeless</title>
-      <link>https://www.frankneff.com/tags/shapeless/</link>
-      <pubDate>Fri, 02 Mar 2018 19:15:03 +0100</pubDate>
-      
-      <guid>https://www.frankneff.com/tags/shapeless/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>spark</title>
-      <link>https://www.frankneff.com/tags/spark/</link>
-      <pubDate>Fri, 02 Mar 2018 19:15:03 +0100</pubDate>
-      
-      <guid>https://www.frankneff.com/tags/spark/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>typelevel</title>
-      <link>https://www.frankneff.com/tags/typelevel/</link>
-      <pubDate>Fri, 02 Mar 2018 19:15:03 +0100</pubDate>
-      
-      <guid>https://www.frankneff.com/tags/typelevel/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>implicits</title>
-      <link>https://www.frankneff.com/tags/implicits/</link>
-      <pubDate>Mon, 18 Dec 2017 22:04:38 +0100</pubDate>
-      
-      <guid>https://www.frankneff.com/tags/implicits/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>java</title>
-      <link>https://www.frankneff.com/tags/java/</link>
-      <pubDate>Mon, 18 Dec 2017 22:04:38 +0100</pubDate>
-      
-      <guid>https://www.frankneff.com/tags/java/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>libs</title>
-      <link>https://www.frankneff.com/tags/libs/</link>
-      <pubDate>Mon, 18 Dec 2017 22:04:38 +0100</pubDate>
-      
-      <guid>https://www.frankneff.com/tags/libs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>solrj</title>
-      <link>https://www.frankneff.com/tags/solrj/</link>
-      <pubDate>Mon, 18 Dec 2017 22:04:38 +0100</pubDate>
-      
-      <guid>https://www.frankneff.com/tags/solrj/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>exceptions</title>
-      <link>https://www.frankneff.com/tags/exceptions/</link>
-      <pubDate>Wed, 06 Sep 2017 19:57:00 +0100</pubDate>
-      
-      <guid>https://www.frankneff.com/tags/exceptions/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>lambda</title>
-      <link>https://www.frankneff.com/tags/lambda/</link>
-      <pubDate>Wed, 06 Sep 2017 19:57:00 +0100</pubDate>
-      
-      <guid>https://www.frankneff.com/tags/lambda/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>akka</title>
-      <link>https://www.frankneff.com/tags/akka/</link>
-      <pubDate>Mon, 02 May 2016 23:11:01 +0200</pubDate>
-      
-      <guid>https://www.frankneff.com/tags/akka/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>guice</title>
-      <link>https://www.frankneff.com/tags/guice/</link>
-      <pubDate>Mon, 02 May 2016 23:11:01 +0200</pubDate>
-      
-      <guid>https://www.frankneff.com/tags/guice/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>play</title>
-      <link>https://www.frankneff.com/tags/play/</link>
-      <pubDate>Mon, 02 May 2016 23:11:01 +0200</pubDate>
-      
-      <guid>https://www.frankneff.com/tags/play/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>compiler</title>
+      <title>Compiler</title>
       <link>https://www.frankneff.com/tags/compiler/</link>
-      <pubDate>Fri, 15 Apr 2016 22:15:28 +0200</pubDate>
-      
+      <pubDate>Thu, 28 Mar 2024 12:25:00 +0200</pubDate>
       <guid>https://www.frankneff.com/tags/compiler/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>nlp</title>
+      <title>Javascript</title>
+      <link>https://www.frankneff.com/tags/javascript/</link>
+      <pubDate>Thu, 28 Mar 2024 12:25:00 +0200</pubDate>
+      <guid>https://www.frankneff.com/tags/javascript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Scala</title>
+      <link>https://www.frankneff.com/tags/scala/</link>
+      <pubDate>Thu, 28 Mar 2024 12:25:00 +0200</pubDate>
+      <guid>https://www.frankneff.com/tags/scala/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Software-Design</title>
+      <link>https://www.frankneff.com/tags/software-design/</link>
+      <pubDate>Thu, 28 Mar 2024 12:25:00 +0200</pubDate>
+      <guid>https://www.frankneff.com/tags/software-design/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Type System</title>
+      <link>https://www.frankneff.com/tags/type-system/</link>
+      <pubDate>Thu, 28 Mar 2024 12:25:00 +0200</pubDate>
+      <guid>https://www.frankneff.com/tags/type-system/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Architecture</title>
+      <link>https://www.frankneff.com/tags/architecture/</link>
+      <pubDate>Fri, 13 Oct 2023 14:25:00 +0200</pubDate>
+      <guid>https://www.frankneff.com/tags/architecture/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Enterprise</title>
+      <link>https://www.frankneff.com/tags/enterprise/</link>
+      <pubDate>Fri, 13 Oct 2023 14:25:00 +0200</pubDate>
+      <guid>https://www.frankneff.com/tags/enterprise/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Systems</title>
+      <link>https://www.frankneff.com/tags/systems/</link>
+      <pubDate>Fri, 13 Oct 2023 14:25:00 +0200</pubDate>
+      <guid>https://www.frankneff.com/tags/systems/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Visualization</title>
+      <link>https://www.frankneff.com/tags/visualization/</link>
+      <pubDate>Fri, 13 Oct 2023 14:25:00 +0200</pubDate>
+      <guid>https://www.frankneff.com/tags/visualization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Authentication</title>
+      <link>https://www.frankneff.com/tags/authentication/</link>
+      <pubDate>Mon, 11 Sep 2023 11:10:00 +0200</pubDate>
+      <guid>https://www.frankneff.com/tags/authentication/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Authorization</title>
+      <link>https://www.frankneff.com/tags/authorization/</link>
+      <pubDate>Mon, 11 Sep 2023 11:10:00 +0200</pubDate>
+      <guid>https://www.frankneff.com/tags/authorization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Oauth</title>
+      <link>https://www.frankneff.com/tags/oauth/</link>
+      <pubDate>Mon, 11 Sep 2023 11:10:00 +0200</pubDate>
+      <guid>https://www.frankneff.com/tags/oauth/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Oidc</title>
+      <link>https://www.frankneff.com/tags/oidc/</link>
+      <pubDate>Mon, 11 Sep 2023 11:10:00 +0200</pubDate>
+      <guid>https://www.frankneff.com/tags/oidc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Security</title>
+      <link>https://www.frankneff.com/tags/security/</link>
+      <pubDate>Mon, 11 Sep 2023 11:10:00 +0200</pubDate>
+      <guid>https://www.frankneff.com/tags/security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>German</title>
+      <link>https://www.frankneff.com/tags/german/</link>
+      <pubDate>Sat, 07 May 2022 11:10:00 +0200</pubDate>
+      <guid>https://www.frankneff.com/tags/german/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Studie</title>
+      <link>https://www.frankneff.com/tags/studie/</link>
+      <pubDate>Sat, 07 May 2022 11:10:00 +0200</pubDate>
+      <guid>https://www.frankneff.com/tags/studie/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Career</title>
+      <link>https://www.frankneff.com/tags/career/</link>
+      <pubDate>Fri, 06 May 2022 07:15:00 +0200</pubDate>
+      <guid>https://www.frankneff.com/tags/career/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Engineering</title>
+      <link>https://www.frankneff.com/tags/engineering/</link>
+      <pubDate>Fri, 06 May 2022 07:15:00 +0200</pubDate>
+      <guid>https://www.frankneff.com/tags/engineering/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Knowledge</title>
+      <link>https://www.frankneff.com/tags/knowledge/</link>
+      <pubDate>Fri, 06 May 2022 07:15:00 +0200</pubDate>
+      <guid>https://www.frankneff.com/tags/knowledge/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Training</title>
+      <link>https://www.frankneff.com/tags/training/</link>
+      <pubDate>Fri, 06 May 2022 07:15:00 +0200</pubDate>
+      <guid>https://www.frankneff.com/tags/training/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Recruiting</title>
+      <link>https://www.frankneff.com/tags/recruiting/</link>
+      <pubDate>Sat, 12 Mar 2022 07:10:00 +0100</pubDate>
+      <guid>https://www.frankneff.com/tags/recruiting/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Series</title>
+      <link>https://www.frankneff.com/tags/series/</link>
+      <pubDate>Sat, 12 Mar 2022 07:10:00 +0100</pubDate>
+      <guid>https://www.frankneff.com/tags/series/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Staffing</title>
+      <link>https://www.frankneff.com/tags/staffing/</link>
+      <pubDate>Sat, 12 Mar 2022 07:10:00 +0100</pubDate>
+      <guid>https://www.frankneff.com/tags/staffing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Complexity</title>
+      <link>https://www.frankneff.com/tags/complexity/</link>
+      <pubDate>Fri, 25 Feb 2022 07:10:00 +0100</pubDate>
+      <guid>https://www.frankneff.com/tags/complexity/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Config</title>
+      <link>https://www.frankneff.com/tags/config/</link>
+      <pubDate>Fri, 25 Feb 2022 07:10:00 +0100</pubDate>
+      <guid>https://www.frankneff.com/tags/config/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Spring</title>
+      <link>https://www.frankneff.com/tags/spring/</link>
+      <pubDate>Fri, 25 Feb 2022 07:10:00 +0100</pubDate>
+      <guid>https://www.frankneff.com/tags/spring/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>News</title>
+      <link>https://www.frankneff.com/tags/news/</link>
+      <pubDate>Sun, 05 Dec 2021 13:22:00 +0100</pubDate>
+      <guid>https://www.frankneff.com/tags/news/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Procrastination</title>
+      <link>https://www.frankneff.com/tags/procrastination/</link>
+      <pubDate>Sun, 05 Dec 2021 13:22:00 +0100</pubDate>
+      <guid>https://www.frankneff.com/tags/procrastination/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Product-Management</title>
+      <link>https://www.frankneff.com/tags/product-management/</link>
+      <pubDate>Tue, 10 Aug 2021 18:30:00 +0100</pubDate>
+      <guid>https://www.frankneff.com/tags/product-management/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Library</title>
+      <link>https://www.frankneff.com/tags/library/</link>
+      <pubDate>Wed, 26 Feb 2020 17:05:18 +0100</pubDate>
+      <guid>https://www.frankneff.com/tags/library/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sbt</title>
+      <link>https://www.frankneff.com/tags/sbt/</link>
+      <pubDate>Wed, 26 Feb 2020 17:05:18 +0100</pubDate>
+      <guid>https://www.frankneff.com/tags/sbt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Scala.js</title>
+      <link>https://www.frankneff.com/tags/scala.js/</link>
+      <pubDate>Wed, 26 Feb 2020 17:05:18 +0100</pubDate>
+      <guid>https://www.frankneff.com/tags/scala.js/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Shapeless</title>
+      <link>https://www.frankneff.com/tags/shapeless/</link>
+      <pubDate>Fri, 02 Mar 2018 19:15:03 +0100</pubDate>
+      <guid>https://www.frankneff.com/tags/shapeless/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Spark</title>
+      <link>https://www.frankneff.com/tags/spark/</link>
+      <pubDate>Fri, 02 Mar 2018 19:15:03 +0100</pubDate>
+      <guid>https://www.frankneff.com/tags/spark/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Typelevel</title>
+      <link>https://www.frankneff.com/tags/typelevel/</link>
+      <pubDate>Fri, 02 Mar 2018 19:15:03 +0100</pubDate>
+      <guid>https://www.frankneff.com/tags/typelevel/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Implicits</title>
+      <link>https://www.frankneff.com/tags/implicits/</link>
+      <pubDate>Mon, 18 Dec 2017 22:04:38 +0100</pubDate>
+      <guid>https://www.frankneff.com/tags/implicits/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Java</title>
+      <link>https://www.frankneff.com/tags/java/</link>
+      <pubDate>Mon, 18 Dec 2017 22:04:38 +0100</pubDate>
+      <guid>https://www.frankneff.com/tags/java/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Libs</title>
+      <link>https://www.frankneff.com/tags/libs/</link>
+      <pubDate>Mon, 18 Dec 2017 22:04:38 +0100</pubDate>
+      <guid>https://www.frankneff.com/tags/libs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Solrj</title>
+      <link>https://www.frankneff.com/tags/solrj/</link>
+      <pubDate>Mon, 18 Dec 2017 22:04:38 +0100</pubDate>
+      <guid>https://www.frankneff.com/tags/solrj/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Exceptions</title>
+      <link>https://www.frankneff.com/tags/exceptions/</link>
+      <pubDate>Wed, 06 Sep 2017 19:57:00 +0100</pubDate>
+      <guid>https://www.frankneff.com/tags/exceptions/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lambda</title>
+      <link>https://www.frankneff.com/tags/lambda/</link>
+      <pubDate>Wed, 06 Sep 2017 19:57:00 +0100</pubDate>
+      <guid>https://www.frankneff.com/tags/lambda/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Akka</title>
+      <link>https://www.frankneff.com/tags/akka/</link>
+      <pubDate>Mon, 02 May 2016 23:11:01 +0200</pubDate>
+      <guid>https://www.frankneff.com/tags/akka/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Guice</title>
+      <link>https://www.frankneff.com/tags/guice/</link>
+      <pubDate>Mon, 02 May 2016 23:11:01 +0200</pubDate>
+      <guid>https://www.frankneff.com/tags/guice/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Play</title>
+      <link>https://www.frankneff.com/tags/play/</link>
+      <pubDate>Mon, 02 May 2016 23:11:01 +0200</pubDate>
+      <guid>https://www.frankneff.com/tags/play/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nlp</title>
       <link>https://www.frankneff.com/tags/nlp/</link>
       <pubDate>Thu, 23 Jul 2015 18:05:12 +0200</pubDate>
-      
       <guid>https://www.frankneff.com/tags/nlp/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>solr</title>
+      <title>Solr</title>
       <link>https://www.frankneff.com/tags/solr/</link>
       <pubDate>Thu, 23 Jul 2015 18:05:12 +0200</pubDate>
-      
       <guid>https://www.frankneff.com/tags/solr/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>agile</title>
+      <title>Agile</title>
       <link>https://www.frankneff.com/tags/agile/</link>
       <pubDate>Tue, 21 Apr 2015 13:09:32 +0200</pubDate>
-      
       <guid>https://www.frankneff.com/tags/agile/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>pragmatism</title>
+      <title>Pragmatism</title>
       <link>https://www.frankneff.com/tags/pragmatism/</link>
       <pubDate>Tue, 21 Apr 2015 13:09:32 +0200</pubDate>
-      
       <guid>https://www.frankneff.com/tags/pragmatism/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

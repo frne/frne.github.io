@@ -5,32 +5,22 @@
     <link>https://www.frankneff.com/categories/architecture/</link>
     <description>Recent content in Architecture on FrankNeff.com - Technology meets Leadership</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 13 Oct 2023 14:25:00 +0200</lastBuildDate><atom:link href="https://www.frankneff.com/categories/architecture/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Fri, 13 Oct 2023 14:25:00 +0200</lastBuildDate>
+    <atom:link href="https://www.frankneff.com/categories/architecture/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to effectively visualize an Application Landscape in Enterprise Architecture</title>
       <link>https://www.frankneff.com/blog/2023-10-14-how-to-effectively-visualize-application-landscape-enterprise-architecture/</link>
       <pubDate>Fri, 13 Oct 2023 14:25:00 +0200</pubDate>
-      
       <guid>https://www.frankneff.com/blog/2023-10-14-how-to-effectively-visualize-application-landscape-enterprise-architecture/</guid>
-      <description>&lt;p&gt;In enterprise &amp;amp; solution architecture, &lt;strong&gt;connecting boxes with arrows&lt;/strong&gt; is an often used and overrated visualization
-from high-level, thru component architecture, down to data and class diagrams. However, to create a &lt;strong&gt;holistic view&lt;/strong&gt; on
-systems, component diagrams are not enough! When it comes to analysis or transformation of a high-level application- or
-&lt;strong&gt;service-architecture&lt;/strong&gt;, I prefer to draw an &lt;strong&gt;Application Landscape Diagram&lt;/strong&gt;, which I would like to show and elaborate
-on in this post.&lt;/p&gt;</description>
+      <description>&lt;p&gt;In enterprise &amp;amp; solution architecture, &lt;strong&gt;connecting boxes with arrows&lt;/strong&gt; is an often used and overrated visualization&#xA;from high-level, thru component architecture, down to data and class diagrams. However, to create a &lt;strong&gt;holistic view&lt;/strong&gt; on&#xA;systems, component diagrams are not enough! When it comes to analysis or transformation of a high-level application- or&#xA;&lt;strong&gt;service-architecture&lt;/strong&gt;, I prefer to draw an &lt;strong&gt;Application Landscape Diagram&lt;/strong&gt;, which I would like to show and elaborate&#xA;on in this post.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Securing isolated systems: Caveats of using plain OAUTH flows and how to solve them</title>
       <link>https://www.frankneff.com/blog/2023-09-11-securing-isolated-systems-caveats-of-plain-oauth-flows-how-to-solve/</link>
       <pubDate>Mon, 11 Sep 2023 11:10:00 +0200</pubDate>
-      
       <guid>https://www.frankneff.com/blog/2023-09-11-securing-isolated-systems-caveats-of-plain-oauth-flows-how-to-solve/</guid>
-      <description>&lt;p&gt;While OIDC and OAUTH are well-known standards, they don&amp;rsquo;t fit every purpose &amp;ldquo;out of the box.&amp;rdquo; In businesses with &lt;strong&gt;special
-regulations&lt;/strong&gt; like banking, health care, etc., non-functional requirements to auth can be challenging. Different
-solutions and ways were evaluated to create a new identity provider for a medical network. The first approach was &amp;ldquo;just&amp;rdquo;
-using simple &lt;strong&gt;OAUTH&lt;/strong&gt; by its most famous &lt;strong&gt;Authorization Code Flow&lt;/strong&gt;. Of course, it failed fast, and I&amp;rsquo;ll show why and
-how we solved it in this post.&lt;/p&gt;</description>
+      <description>&lt;p&gt;While OIDC and OAUTH are well-known standards, they don&amp;rsquo;t fit every purpose &amp;ldquo;out of the box.&amp;rdquo; In businesses with &lt;strong&gt;special&#xA;regulations&lt;/strong&gt; like banking, health care, etc., non-functional requirements to auth can be challenging. Different&#xA;solutions and ways were evaluated to create a new identity provider for a medical network. The first approach was &amp;ldquo;just&amp;rdquo;&#xA;using simple &lt;strong&gt;OAUTH&lt;/strong&gt; by its most famous &lt;strong&gt;Authorization Code Flow&lt;/strong&gt;. Of course, it failed fast, and I&amp;rsquo;ll show why and&#xA;how we solved it in this post.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
