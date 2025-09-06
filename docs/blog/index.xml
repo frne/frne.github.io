@@ -4,10 +4,17 @@
     <title>FrankNeff.com - Blog on FrankNeff.com - Technology meets Leadership</title>
     <link>https://www.frankneff.com/blog/</link>
     <description>Recent content in FrankNeff.com - Blog on FrankNeff.com - Technology meets Leadership</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 28 Mar 2024 12:25:00 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 12 Feb 2025 09:00:00 +0200</lastBuildDate>
     <atom:link href="https://www.frankneff.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Scalability Trap: How Premature Technical Excellence Kills the Product</title>
+      <link>https://www.frankneff.com/blog/2025-02-12-scalability-trap-how-premature-technical-excellence-kills-product/</link>
+      <pubDate>Wed, 12 Feb 2025 09:00:00 +0200</pubDate>
+      <guid>https://www.frankneff.com/blog/2025-02-12-scalability-trap-how-premature-technical-excellence-kills-product/</guid>
+      <description>&lt;p&gt;The “Build it right the first time” mantra has sunk more startups than bad code ever did.&lt;/p&gt;&#xA;&lt;p&gt;I’ve seen it firsthand: One developer built his own &lt;strong&gt;message broker in PHP&lt;/strong&gt; because ActiveMQ “didn’t fit his needs.”&#xA;Another rebuilt &lt;strong&gt;Ansible in Perl&lt;/strong&gt; to provision VMs. And the wildest one? Someone started designing a &lt;strong&gt;version control&#xA;system on top of Elasticsearch&lt;/strong&gt; because Git was “inefficient.”&lt;/p&gt;&#xA;&lt;p&gt;These weren’t feats of brilliance. They were ego-driven distractions that added fragility, wasted money, and created&#xA;zero customer value. And they all happened because leadership failed to ask the only question that matters:&#xA;&amp;ldquo;How does this help the user?&amp;rdquo;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>How a Strong Type System Saves You Documentation, Tests, and Nerves</title>
       <link>https://www.frankneff.com/blog/2024-03-28-how-a-strong-type-system-saves-you-documentation-tests-and-nerves/</link>
@@ -146,7 +153,7 @@
       <link>https://www.frankneff.com/blog/2015-07-23-understanding-stemmers-nlp/</link>
       <pubDate>Thu, 23 Jul 2015 18:05:12 +0200</pubDate>
       <guid>https://www.frankneff.com/blog/2015-07-23-understanding-stemmers-nlp/</guid>
-      <description>&lt;p&gt;I am interested in NLP and have already some experience with Apache Solr. It&amp;rsquo;s time to dig a little in-deep regarding&#xA;stemmers. First of all, I was looking for a general definition of what a stemmer is, and I found this one, which IMHO&#xA;is quite good:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;stemmer — an algorithm for removing inflectional and derivational endings in order to reduce word forms to a common stem&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
+      <description>&lt;p&gt;I am interested in NLP and have already some experience with Apache Solr. It&amp;rsquo;s time to dig a little in-deep regarding&#xA;stemmers. First of all, I was looking for a general definition of what a stemmer is, and I found this one, which IMHO&#xA;is quite good:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;stemmer — an algorithm for removing inflectional and derivational endings in order to reduce word forms to a common stem&lt;/p&gt;&lt;/blockquote&gt;</description>
     </item>
     <item>
       <title>If pragmatism raises technical debt, call it oversimplification (rant)</title>
@@ -154,6 +161,13 @@
       <pubDate>Tue, 21 Apr 2015 13:09:32 +0200</pubDate>
       <guid>https://www.frankneff.com/blog/2015-04-21-pragmatism-technical-dept-oversimplification/</guid>
       <description>&lt;p&gt;The word &amp;ldquo;pragmatism&amp;rdquo; or &amp;ldquo;pragmatic&amp;rdquo; is, in my personal opinion, the most&#xA;overrated word in agile development. Many people use this as a buzzword without&#xA;knowing what it means. I hear people saying &amp;ldquo;He solved that complex problem in&#xA;half an hour, he&amp;rsquo;s so pragmatic!&amp;rdquo; and think for myself &amp;ldquo;Yeah, but that &amp;lsquo;solution&amp;rsquo;&#xA;probably causes other devs three times more effort than a sustainable solution&#xA;would take.&amp;rdquo;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://www.frankneff.com/blog/todo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.frankneff.com/blog/todo/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://stackoverflow.com/a/70878181/1045760&#34;&gt;https://stackoverflow.com/a/70878181/1045760&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

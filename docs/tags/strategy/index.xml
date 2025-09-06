@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Strategy on FrankNeff.com - Technology meets Leadership</title>
+    <link>https://www.frankneff.com/tags/strategy/</link>
+    <description>Recent content in Strategy on FrankNeff.com - Technology meets Leadership</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 12 Feb 2025 09:00:00 +0200</lastBuildDate>
+    <atom:link href="https://www.frankneff.com/tags/strategy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Scalability Trap: How Premature Technical Excellence Kills the Product</title>
+      <link>https://www.frankneff.com/blog/2025-02-12-scalability-trap-how-premature-technical-excellence-kills-product/</link>
+      <pubDate>Wed, 12 Feb 2025 09:00:00 +0200</pubDate>
+      <guid>https://www.frankneff.com/blog/2025-02-12-scalability-trap-how-premature-technical-excellence-kills-product/</guid>
+      <description>&lt;p&gt;The “Build it right the first time” mantra has sunk more startups than bad code ever did.&lt;/p&gt;&#xA;&lt;p&gt;I’ve seen it firsthand: One developer built his own &lt;strong&gt;message broker in PHP&lt;/strong&gt; because ActiveMQ “didn’t fit his needs.”&#xA;Another rebuilt &lt;strong&gt;Ansible in Perl&lt;/strong&gt; to provision VMs. And the wildest one? Someone started designing a &lt;strong&gt;version control&#xA;system on top of Elasticsearch&lt;/strong&gt; because Git was “inefficient.”&lt;/p&gt;&#xA;&lt;p&gt;These weren’t feats of brilliance. They were ego-driven distractions that added fragility, wasted money, and created&#xA;zero customer value. And they all happened because leadership failed to ask the only question that matters:&#xA;&amp;ldquo;How does this help the user?&amp;rdquo;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

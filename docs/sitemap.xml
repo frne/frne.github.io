@@ -2,16 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.frankneff.com/categories/</loc>
-    <lastmod>2024-03-28T12:25:00+02:00</lastmod>
+    <loc>https://www.frankneff.com/categories/architecture/</loc>
+    <lastmod>2025-02-12T09:00:00+02:00</lastmod>
   </url><url>
-    <loc>https://www.frankneff.com/tags/compiler/</loc>
-    <lastmod>2024-03-28T12:25:00+02:00</lastmod>
+    <loc>https://www.frankneff.com/tags/architecture/</loc>
+    <lastmod>2025-02-12T09:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://www.frankneff.com/categories/</loc>
+    <lastmod>2025-02-12T09:00:00+02:00</lastmod>
   </url><url>
     <loc>https://www.frankneff.com/blog/</loc>
-    <lastmod>2024-03-28T12:25:00+02:00</lastmod>
+    <lastmod>2025-02-12T09:00:00+02:00</lastmod>
   </url><url>
     <loc>https://www.frankneff.com/</loc>
+    <lastmod>2025-02-12T09:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://www.frankneff.com/tags/product-focus/</loc>
+    <lastmod>2025-02-12T09:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://www.frankneff.com/tags/scaling/</loc>
+    <lastmod>2025-02-12T09:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://www.frankneff.com/tags/startup-lessons/</loc>
+    <lastmod>2025-02-12T09:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://www.frankneff.com/categories/strategy/</loc>
+    <lastmod>2025-02-12T09:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://www.frankneff.com/tags/strategy/</loc>
+    <lastmod>2025-02-12T09:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://www.frankneff.com/tags/</loc>
+    <lastmod>2025-02-12T09:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://www.frankneff.com/blog/2025-02-12-scalability-trap-how-premature-technical-excellence-kills-product/</loc>
+    <lastmod>2025-02-12T09:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://www.frankneff.com/tags/compiler/</loc>
     <lastmod>2024-03-28T12:25:00+02:00</lastmod>
   </url><url>
     <loc>https://www.frankneff.com/categories/functional-programming/</loc>
@@ -32,17 +59,8 @@
     <loc>https://www.frankneff.com/tags/software-design/</loc>
     <lastmod>2024-03-28T12:25:00+02:00</lastmod>
   </url><url>
-    <loc>https://www.frankneff.com/tags/</loc>
-    <lastmod>2024-03-28T12:25:00+02:00</lastmod>
-  </url><url>
     <loc>https://www.frankneff.com/tags/type-system/</loc>
     <lastmod>2024-03-28T12:25:00+02:00</lastmod>
-  </url><url>
-    <loc>https://www.frankneff.com/tags/architecture/</loc>
-    <lastmod>2023-10-13T14:25:00+02:00</lastmod>
-  </url><url>
-    <loc>https://www.frankneff.com/categories/architecture/</loc>
-    <lastmod>2023-10-13T14:25:00+02:00</lastmod>
   </url><url>
     <loc>https://www.frankneff.com/tags/enterprise/</loc>
     <lastmod>2023-10-13T14:25:00+02:00</lastmod>
@@ -71,10 +89,10 @@
     <loc>https://www.frankneff.com/blog/2023-09-11-securing-isolated-systems-caveats-of-plain-oauth-flows-how-to-solve/</loc>
     <lastmod>2023-09-11T11:10:00+02:00</lastmod>
   </url><url>
-    <loc>https://www.frankneff.com/tags/security/</loc>
+    <loc>https://www.frankneff.com/categories/security/</loc>
     <lastmod>2023-09-11T11:10:00+02:00</lastmod>
   </url><url>
-    <loc>https://www.frankneff.com/categories/security/</loc>
+    <loc>https://www.frankneff.com/tags/security/</loc>
     <lastmod>2023-09-11T11:10:00+02:00</lastmod>
   </url><url>
     <loc>https://www.frankneff.com/categories/education/</loc>
@@ -265,6 +283,8 @@
   </url><url>
     <loc>https://www.frankneff.com/tags/pragmatism/</loc>
     <lastmod>2015-04-21T13:09:32+02:00</lastmod>
+  </url><url>
+    <loc>https://www.frankneff.com/blog/todo/</loc>
   </url><url>
     <loc>https://www.frankneff.com/contact/</loc>
   </url><url>

@@ -4,7 +4,7 @@ publishdir = "./docs"
 title = "FrankNeff.com - Technology meets Leadership"
 theme = "bookworm-light"
 # post pagination
-paginate = "5"
+pagination.pagerSize = 5
 # post excerpt
 summaryLength = "500"
 # disqus short name

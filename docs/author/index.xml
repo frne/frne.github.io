@@ -4,7 +4,7 @@
     <title>FrankNeff.com - Author on FrankNeff.com - Technology meets Leadership</title>
     <link>https://www.frankneff.com/author/</link>
     <description>Recent content in FrankNeff.com - Author on FrankNeff.com - Technology meets Leadership</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Tue, 02 Feb 2021 10:20:19 +0600</lastBuildDate>
     <atom:link href="https://www.frankneff.com/author/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>https://www.frankneff.com/author/frank-neff/</link>
       <pubDate>Tue, 02 Feb 2021 10:20:19 +0600</pubDate>
       <guid>https://www.frankneff.com/author/frank-neff/</guid>
-      <description>I see myself as a curious problem solver. On a life-long mission to enable people, improve tools and optimize processes, I build software to make things work. Moreover, I like to talk about technology and sharing know-how in a team to improve my own skills and empower others.&#xA;It&amp;rsquo;s my passion to build great tech, with great people, to make things better.</description>
+      <description>&lt;p&gt;I see myself as a curious problem solver. On a life-long mission to enable people, improve tools and optimize processes,&#xA;I build software to make things work. Moreover, I like to talk about technology and sharing know-how in a team to&#xA;improve my own skills and empower others.&lt;/p&gt;&#xA;&lt;p&gt;It&amp;rsquo;s my passion to build great tech, with great people, to make things better.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

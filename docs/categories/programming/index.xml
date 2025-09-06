@@ -4,7 +4,7 @@
     <title>Programming on FrankNeff.com - Technology meets Leadership</title>
     <link>https://www.frankneff.com/categories/programming/</link>
     <description>Recent content in Programming on FrankNeff.com - Technology meets Leadership</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Thu, 28 Mar 2024 12:25:00 +0200</lastBuildDate>
     <atom:link href="https://www.frankneff.com/categories/programming/index.xml" rel="self" type="application/rss+xml" />
@@ -69,7 +69,7 @@
       <link>https://www.frankneff.com/blog/2015-07-23-understanding-stemmers-nlp/</link>
       <pubDate>Thu, 23 Jul 2015 18:05:12 +0200</pubDate>
       <guid>https://www.frankneff.com/blog/2015-07-23-understanding-stemmers-nlp/</guid>
-      <description>&lt;p&gt;I am interested in NLP and have already some experience with Apache Solr. It&amp;rsquo;s time to dig a little in-deep regarding&#xA;stemmers. First of all, I was looking for a general definition of what a stemmer is, and I found this one, which IMHO&#xA;is quite good:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;stemmer — an algorithm for removing inflectional and derivational endings in order to reduce word forms to a common stem&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
+      <description>&lt;p&gt;I am interested in NLP and have already some experience with Apache Solr. It&amp;rsquo;s time to dig a little in-deep regarding&#xA;stemmers. First of all, I was looking for a general definition of what a stemmer is, and I found this one, which IMHO&#xA;is quite good:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;stemmer — an algorithm for removing inflectional and derivational endings in order to reduce word forms to a common stem&lt;/p&gt;&lt;/blockquote&gt;</description>
     </item>
   </channel>
 </rss>
